@@ -3,332 +3,96 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Practical AI Systems for Wood River Valley Businesses | Samuel</title>
-  <meta name="description" content="Samuel builds practical AI systems for Wood River Valley businesses: missed-call rescue, quote intake, review requests, AI front desk workflows, and local business automation.">
+  <title>Practical AI Systems Powered by Custom Agents | Samuel</title>
+  <meta name="description" content="Samuel builds practical AI systems powered by custom agents for Wood River Valley businesses: missed-call rescue, quote intake, research, insights, bookkeeping support, and operations workflows.">
   <meta name="robots" content="index,follow">
-  <meta name="theme-color" content="#231e18">
+  <meta name="theme-color" content="#27231d">
   <link rel="canonical" href="https://samuel-t.vercel.app/">
   <link rel="icon" href="/favicon.svg" type="image/svg+xml">
-
   <meta property="og:type" content="website">
-  <meta property="og:title" content="Practical AI Systems for Wood River Valley Businesses | Samuel">
-  <meta property="og:description" content="Answer, follow up, and organize the work. Local AI systems for missed leads, quotes, reviews, and owner-run teams.">
+  <meta property="og:title" content="Practical AI Systems Powered by Custom Agents | Samuel">
+  <meta property="og:description" content="Custom AI agents that answer, follow up, research, organize, surface weak points, and hand work back to people before anything risky goes out.">
   <meta property="og:url" content="https://samuel-t.vercel.app/">
   <meta property="og:image" content="https://samuel-t.vercel.app/og-card.png">
   <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="Practical AI Systems for Wood River Valley Businesses | Samuel">
-  <meta name="twitter:description" content="AI systems that help local businesses answer faster, follow up better, and stop losing work in the cracks.">
-  <meta name="twitter:image" content="https://samuel-t.vercel.app/og-card.png">
-
-  <link rel="preload" href="styles.css" as="style">
-  <link rel="stylesheet" href="styles.css">
-
+  <style>
+    @font-face{font-family:Merom;src:url('/assets/fonts/MeromSans-Regular.ttf') format('truetype');font-weight:400;font-display:swap}@font-face{font-family:Merom;src:url('/assets/fonts/MeromSans-SemiBold.ttf') format('truetype');font-weight:700;font-display:swap}@font-face{font-family:Merom;src:url('/assets/fonts/MeromSans-Bold.ttf') format('truetype');font-weight:850;font-display:swap}
+    :root{--bg:#27231d;--bg2:#1f1c17;--panel:#302a22;--panel2:#3a3228;--paper:#f1e7d3;--muted:#cfc2aa;--soft:#978c7c;--line:rgba(241,231,211,.18);--line2:rgba(241,231,211,.32);--copper:#d48735;--amber:#f1c56e;--sage:#9ca77d;--danger:#d66d4b;--radius:18px;--font-title:Merom,"Arial Narrow",system-ui,sans-serif;--font-body:Aptos,"Segoe UI","Helvetica Neue",system-ui,sans-serif;--container:1180px}
+    *{box-sizing:border-box}html{scroll-behavior:smooth;background:var(--bg)}body{margin:0;min-width:320px;overflow-x:hidden;background:linear-gradient(90deg,rgba(241,231,211,.025) 1px,transparent 1px),linear-gradient(rgba(241,231,211,.018) 1px,transparent 1px),radial-gradient(circle at 18% 0%,rgba(212,135,53,.16),transparent 34rem),linear-gradient(135deg,#2b261f,var(--bg) 44%,var(--bg2));background-size:64px 64px,64px 64px,auto,auto;color:var(--paper);font-family:var(--font-body);line-height:1.58;text-rendering:optimizeLegibility}a{color:inherit;text-decoration:none}:focus-visible{outline:2px solid var(--amber);outline-offset:4px}.skip{position:fixed;left:12px;top:12px;z-index:99;transform:translateY(-140%);background:var(--amber);color:var(--bg2);padding:10px 12px;border-radius:10px;font-weight:900}.skip:focus{transform:translateY(0)}
+    .nav{position:sticky;top:0;z-index:20;padding:14px 0;background:rgba(39,35,29,.76);backdrop-filter:blur(18px);border-bottom:1px solid rgba(241,231,211,.08)}.nav-shell{width:min(1240px,calc(100% - 28px));margin:auto;display:flex;align-items:center;justify-content:space-between;gap:18px;border:1px solid var(--line);border-radius:16px;background:rgba(48,42,34,.82);padding:10px 10px 10px 14px;box-shadow:0 10px 28px rgba(31,28,23,.22)}.brand{display:flex;align-items:center;gap:11px;min-width:0}.mark{width:40px;height:40px;display:grid;place-items:center;border-radius:10px;background:linear-gradient(135deg,rgba(212,135,53,.28),rgba(156,167,125,.12)),var(--panel2);border:1px solid rgba(241,197,110,.34);position:relative;overflow:hidden}.mark:before{content:"";position:absolute;inset:9px 9px 9px 14px;border-left:2px solid var(--amber);border-top:2px solid rgba(241,231,211,.5)}.mark span{width:22px;height:2px;background:var(--amber);transform:rotate(-28deg);box-shadow:0 0 18px rgba(241,197,110,.62)}.brand strong{display:block;font-weight:850;letter-spacing:.02em}.brand small{display:block;color:var(--muted);font-size:.74rem;line-height:1.15}.links{display:flex;align-items:center;gap:5px}.links a{padding:10px 11px;border-radius:10px;color:var(--muted);font-size:.91rem;font-weight:800}.links a:hover{background:rgba(241,231,211,.06);color:var(--paper)}.phone{color:var(--amber)!important;border:1px solid rgba(241,197,110,.28)}.cta,.btn{display:inline-flex;align-items:center;justify-content:center;gap:9px;border-radius:12px;border:1px solid transparent;font-weight:900}.cta,.btn-primary{background:linear-gradient(135deg,var(--amber),#f0aa4c);color:#21180f;box-shadow:0 12px 24px rgba(212,135,53,.22)}.cta{padding:10px 13px}.btn{min-height:50px;padding:13px 18px}.btn:after,.cta:after{content:"→"}.btn-secondary{border-color:var(--line2);background:rgba(241,231,211,.06);color:var(--paper)}
+    main{overflow:hidden}.section,.hero{width:min(var(--container),calc(100% - 40px));margin:auto}.hero{display:grid;grid-template-columns:minmax(0,1.02fr) minmax(340px,.8fr);gap:54px;align-items:center;padding:86px 0 74px;min-height:760px}.eyebrow{display:inline-flex;align-items:center;gap:10px;margin:0 0 18px;color:var(--amber);text-transform:uppercase;letter-spacing:.12em;font-size:.76rem;font-weight:950}.eyebrow:before{content:"";width:34px;height:1px;background:var(--amber);box-shadow:0 0 14px rgba(241,197,110,.6)}h1,h2,h3{font-family:var(--font-title);margin:0;letter-spacing:-.025em;line-height:1}.hero h1{font-size:clamp(3rem,6.1vw,5.95rem);max-width:780px;font-weight:850}.hero h1 span{color:var(--amber)}.lede{max-width:680px;margin:24px 0 0;color:var(--muted);font-size:clamp(1.05rem,2vw,1.27rem)}.actions{display:flex;flex-wrap:wrap;gap:12px;margin-top:32px}.contact-line{display:flex;gap:9px;flex-wrap:wrap;margin-top:17px;color:var(--muted);font-weight:800}.contact-line a:first-child{color:var(--amber)}.trust{display:flex;flex-wrap:wrap;gap:8px;margin:26px 0 0;padding:0;list-style:none}.trust li{border:1px solid var(--line);border-radius:9px;padding:8px 10px;color:var(--muted);background:rgba(241,231,211,.045);font-size:.88rem}
+    .agent-card{border:1px solid var(--line);border-radius:20px;background:linear-gradient(180deg,rgba(58,50,40,.98),rgba(36,32,26,.96));box-shadow:0 24px 64px rgba(31,28,23,.36);overflow:hidden}.agent-top{display:flex;justify-content:space-between;gap:14px;padding:18px 20px;border-bottom:1px solid rgba(241,231,211,.1);color:var(--muted);font-size:.86rem}.agent-top strong{color:var(--paper)}.task{margin:18px;border:1px solid var(--line);border-radius:14px;background:rgba(31,28,23,.58);padding:18px}.task small,.tag{color:var(--amber);text-transform:uppercase;letter-spacing:.1em;font-size:.7rem;font-weight:950}.task h2{margin-top:7px;font-size:1.55rem}.agent-list{display:grid;gap:10px;padding:0 18px 18px;margin:0;list-style:none}.agent-list li{display:grid;grid-template-columns:36px 1fr;gap:12px;align-items:start;border:1px solid rgba(241,231,211,.12);border-radius:12px;padding:12px;background:rgba(241,231,211,.045)}.agent-list span{display:grid;place-items:center;width:34px;height:34px;border-radius:10px;background:rgba(212,135,53,.16);color:var(--amber);font-weight:950}.agent-list p{margin:0;color:var(--muted);font-size:.92rem}.agent-list strong{display:block;color:var(--paper);margin-bottom:2px}
+    .section{padding:72px 0;border-top:1px solid rgba(241,231,211,.09)}.head{display:grid;grid-template-columns:minmax(0,.95fr) minmax(280px,.58fr);gap:38px;align-items:end;margin-bottom:30px}.head h2,.faq h2{font-size:clamp(2.25rem,4.3vw,4.55rem)}.head p{color:var(--muted);margin:0;font-size:1.03rem}.flow-board{border:1px solid var(--line);border-radius:22px;background:rgba(48,42,34,.74);box-shadow:0 18px 48px rgba(31,28,23,.24);padding:22px}.flow-grid{display:grid;grid-template-columns:1fr 1fr 1fr;gap:14px}.flow-col{border:1px solid rgba(241,231,211,.13);border-radius:16px;background:rgba(31,28,23,.42);padding:16px}.flow-col h3{font-size:1.35rem;color:var(--paper);margin-bottom:12px}.flow-card{border-left:3px solid var(--copper);padding:11px 0 11px 13px;margin-top:10px;background:linear-gradient(90deg,rgba(212,135,53,.1),transparent)}.flow-card strong{display:block;color:var(--paper)}.flow-card span{color:var(--muted);font-size:.92rem}.flow-arrow{display:grid;grid-template-columns:1fr auto 1fr auto 1fr;gap:10px;align-items:center;margin-top:18px}.flow-arrow div{height:2px;background:linear-gradient(90deg,transparent,var(--amber),transparent)}.flow-arrow span{color:var(--amber);font-weight:950}.systems-grid{display:grid;grid-template-columns:1.1fr .95fr .95fr;gap:15px}.system{border:1px solid var(--line);border-radius:18px;background:linear-gradient(180deg,rgba(241,231,211,.055),transparent 34%),rgba(48,42,34,.82);box-shadow:0 12px 30px rgba(31,28,23,.22);padding:22px}.system.feature{min-height:420px}.num{color:var(--amber);font-size:.78rem;font-weight:950;letter-spacing:.12em}.system h3{font-size:1.7rem;margin-top:14px}.system p{color:var(--muted);margin:12px 0 0}.system ul{display:grid;gap:9px;padding:0;margin:22px 0 0;list-style:none;color:var(--muted)}.system li:before{content:"";display:inline-block;width:7px;height:7px;background:var(--sage);border-radius:2px;margin-right:8px}.system-link{display:inline-flex;margin-top:18px;color:var(--amber);font-weight:900}.faq{display:grid;grid-template-columns:minmax(0,.75fr) minmax(0,1fr);gap:42px;align-items:start}.faq-list{display:grid;gap:10px}.faq details{border:1px solid var(--line);border-radius:15px;background:rgba(48,42,34,.76);padding:15px 17px}.faq summary{cursor:pointer;font-weight:900;color:var(--paper)}.faq p{color:var(--muted);margin:10px 0 0}.footer{width:min(var(--container),calc(100% - 40px));margin:auto;padding:28px 0 46px;display:flex;justify-content:space-between;gap:18px;color:var(--soft);border-top:1px solid rgba(241,231,211,.09)}
+    @media(max-width:920px){.links a:not(.phone):not(.cta){display:none}.hero,.head,.faq{grid-template-columns:1fr}.hero{min-height:auto;padding-top:48px}.agent-card{max-width:620px}.flow-grid,.systems-grid{grid-template-columns:1fr}.flow-arrow{display:none}.system.feature{min-height:auto}.footer{flex-direction:column}}@media(max-width:520px){.nav-shell{width:min(100% - 18px,1240px);align-items:flex-start}.brand small{max-width:160px}.phone{display:none}.cta{font-size:.86rem;padding:10px 11px}.section,.hero,.footer{width:min(100% - 32px,var(--container))}.hero h1{font-size:clamp(2.1rem,10.5vw,3.05rem);line-height:1.04;letter-spacing:-.018em}.actions .btn{width:100%}.agent-top{display:grid}.task h2{font-size:1.3rem}.section{padding:52px 0}.head h2,.faq h2{font-size:clamp(2rem,10vw,3rem)}}
+  </style>
   <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@graph": [
-      {
-        "@type": "ProfessionalService",
-        "@id": "https://samuel-t.vercel.app/#business",
-        "name": "Samuel — Practical AI Systems for Local Business",
-        "description": "Practical AI automation, missed-call rescue, quote intake, AI front desk workflows, review request systems, and business integrations for Wood River Valley businesses.",
-        "url": "https://samuel-t.vercel.app/",
-        "telephone": "+12083666111",
-        "email": "wpbfls@gmail.com",
-        "areaServed": [
-          { "@type": "City", "name": "Hailey" },
-          { "@type": "City", "name": "Ketchum" },
-          { "@type": "City", "name": "Sun Valley" },
-          { "@type": "City", "name": "Bellevue" },
-          { "@type": "AdministrativeArea", "name": "Wood River Valley" }
-        ],
-        "founder": { "@type": "Person", "name": "Samuel" },
-        "makesOffer": [
-          { "@type": "Offer", "name": "AI Business Audit", "priceSpecification": { "@type": "PriceSpecification", "priceCurrency": "USD", "minPrice": 300 }, "itemOffered": { "@type": "Service", "name": "AI Business Audit", "description": "A practical review of where AI or automation would actually help a local business and where it would be a waste." } },
-          { "@type": "Offer", "name": "Starter Automation", "priceSpecification": { "@type": "PriceSpecification", "priceCurrency": "USD", "minPrice": 950 }, "itemOffered": { "@type": "Service", "name": "Starter Automation", "description": "One focused AI system for missed calls, lead follow-up, quote intake, reviews, or customer FAQs." } },
-          { "@type": "Offer", "name": "Custom AI Operations System", "priceSpecification": { "@type": "PriceSpecification", "priceCurrency": "USD", "minPrice": 2500 }, "itemOffered": { "@type": "Service", "name": "Custom AI Operations System", "description": "A custom workflow connecting forms, inboxes, calendars, texts, documents, dashboards, and human approval steps." } }
-        ]
-      },
-      {
-        "@type": "WebSite",
-        "@id": "https://samuel-t.vercel.app/#website",
-        "url": "https://samuel-t.vercel.app/",
-        "name": "Samuel — Practical AI Systems",
-        "publisher": { "@id": "https://samuel-t.vercel.app/#business" },
-        "inLanguage": "en-US"
-      },
-      {
-        "@type": "FAQPage",
-        "@id": "https://samuel-t.vercel.app/#faq-schema",
-        "mainEntity": [
-          { "@type": "Question", "name": "Is this just ChatGPT for my business?", "acceptedAnswer": { "@type": "Answer", "text": "No. ChatGPT can be part of the stack, but the real work is building a system around your actual workflow: intake rules, approved scripts, follow-up timing, handoffs, dashboards, and human review." } },
-          { "@type": "Question", "name": "Can we start small?", "acceptedAnswer": { "@type": "Answer", "text": "Yes. The recommended path is one narrow pilot such as missed-call rescue, quote intake, review requests, website FAQ help, or lead follow-up. Prove the first system before expanding." } },
-          { "@type": "Question", "name": "Will AI talk to customers without approval?", "acceptedAnswer": { "@type": "Answer", "text": "Human approval is the default for anything involving money, scheduling, safety, sensitive information, or customer trust. Many systems start by drafting replies for review before anything sends automatically." } },
-          { "@type": "Question", "name": "What businesses is this for?", "acceptedAnswer": { "@type": "Answer", "text": "This is for owner-run local businesses: contractors, shops, clinics, restaurants, property managers, salons, repair shops, and professional services with repeated intake, quoting, follow-up, or admin tasks." } },
-          { "@type": "Question", "name": "Do I need to change all my software?", "acceptedAnswer": { "@type": "Answer", "text": "Usually no. The first step is mapping the tools you already use, then adding automation where it fits. A good AI system should reduce friction, not force a full platform migration on day one." } }
-        ]
-      }
-    ]
-  }
+  {"@context":"https://schema.org","@type":"ProfessionalService","name":"Samuel — Practical AI Systems Powered by Custom Agents","description":"Practical AI systems powered by custom agents for Wood River Valley businesses.","url":"https://samuel-t.vercel.app/","telephone":"+12083666111","email":"wpbfls@gmail.com","areaServed":["Hailey","Ketchum","Sun Valley","Bellevue","Wood River Valley"],"founder":{"@type":"Person","name":"Samuel"}}
   </script>
 </head>
 <body>
-  <a class="skip-link" href="#main">Skip to main content</a>
-
-  <header class="site-header" data-header>
+  <a class="skip" href="#main">Skip to content</a>
+  <header class="nav">
     <div class="nav-shell">
-      <a class="brand" href="#top" aria-label="Samuel AI Systems home">
-        <span class="brand-mark" aria-hidden="true"><span></span><span></span></span>
-        <span class="brand-copy"><strong>Samuel</strong><small>The Valley's practical AI guy</small></span>
-      </a>
-      <button class="nav-toggle" type="button" aria-label="Open navigation" aria-expanded="false" data-nav-toggle><span></span><span></span></button>
-      <nav class="nav-links" aria-label="Primary navigation" data-nav-menu>
-        <a href="/local-ai-starter-systems">Starter systems</a>
-        <a href="/openclaw-ai-assistant">OpenClaw</a>
-        <a href="/hermes-agent-automation">Hermes Agent</a>
-        <a href="/#pricing">Pricing</a>
-        <a class="nav-phone" href="tel:+120****6111">(208) 366-6111</a>
-        <a class="nav-cta" href="/#contact">Book walkthrough</a>
-      </nav>
+      <a class="brand" href="/" aria-label="Samuel home"><span class="mark" aria-hidden="true"><span></span></span><span><strong>Samuel</strong><small>The Valley's practical AI guy</small></span></a>
+      <nav class="links" aria-label="Primary navigation"><a href="#agent-flow">Agent flow</a><a href="#starter-systems">Starter systems</a><a href="/solutions">Solutions</a><a href="#faq">FAQ</a><a class="phone" href="tel:+12083666111">(208) 366-6111</a><a class="cta" href="sms:+12083666111?&body=Hi%20Samuel%2C%20I%20want%20a%2015-minute%20AI%20walkthrough%20for%20my%20business.">Book walkthrough</a></nav>
     </div>
   </header>
 
   <main id="main">
-    <section class="hero" id="top" aria-labelledby="hero-title">
-      <div class="hero-map" aria-hidden="true">
-        <svg viewBox="0 0 1200 760" preserveAspectRatio="none">
-          <path d="M-80 640 C150 540 210 720 430 590 C610 480 700 570 880 450 C1020 355 1120 390 1300 260" />
-          <path d="M-90 500 C130 430 240 520 430 410 C620 302 720 360 910 250 C1070 158 1140 200 1310 112" />
-          <path d="M-120 350 C80 310 180 370 330 285 C520 175 650 250 805 165 C980 70 1100 95 1280 25" />
-          <path class="signal-route" d="M80 612 C260 520 390 555 540 420 C680 296 810 330 956 212 C1040 145 1110 138 1160 102" />
-        </svg>
+    <section class="hero" aria-labelledby="hero-title">
+      <div>
+        <p class="eyebrow">Custom agents · practical systems</p>
+        <h1 id="hero-title">Practical AI systems powered by <span>custom agents.</span></h1>
+        <p class="lede">Built with custom AI agents that answer, follow up, organize requests, find weak points, explore new strategies, and hand work back to a human before anything risky goes out.</p>
+        <div class="actions"><a class="btn btn-primary" href="sms:+12083666111?&body=Hi%20Samuel%2C%20I%20want%20a%2015-minute%20AI%20walkthrough%20for%20my%20business.">Book a 15-minute walkthrough</a><a class="btn btn-secondary" href="/solutions">See deeper solutions</a></div>
+        <div class="contact-line"><a href="tel:+12083666111">(208) 366-6111</a><span>/</span><a href="mailto:wpbfls@gmail.com">wpbfls@gmail.com</a></div>
+        <ul class="trust" aria-label="Operating principles"><li>Local setup in Hailey</li><li>Custom agents, not generic chatbots</li><li>Human approval where it matters</li></ul>
       </div>
+      <aside class="agent-card" aria-label="Example custom agent work queue">
+        <div class="agent-top"><span>Agent work queue</span><strong>Owner-approved operations</strong></div>
+        <div class="task"><small>Next best work</small><h2>Find the leak, draft the move, route the handoff.</h2></div>
+        <ol class="agent-list">
+          <li><span>01</span><p><strong>Watch the business</strong>Read leads, messages, forms, calendars, notes, and spreadsheets you already use.</p></li>
+          <li><span>02</span><p><strong>Surface weak points</strong>Flag slow replies, missing follow-ups, messy quote requests, review gaps, and repeated admin drag.</p></li>
+          <li><span>03</span><p><strong>Do useful work</strong>Draft replies, organize books, prepare summaries, compare strategies, and create tasks.</p></li>
+          <li><span>04</span><p><strong>Hand back control</strong>Ask for approval before sending, changing records, or making sensitive decisions.</p></li>
+        </ol>
+      </aside>
+    </section>
 
-      <div class="container hero-grid">
-        <div class="hero-copy">
-          <p class="eyebrow"><span></span> Built locally in Hailey</p>
-          <a class="hero-phone-pill" href="tel:+12083666111">Text or call (208) 366-6111</a>
-          <h1 id="hero-title">Answer, follow up, and organize the work.</h1>
-          <p class="hero-lede">Done-for-you AI workflows for missed calls, quote intake, review requests, and front-desk questions — built around the tools your business already uses.</p>
-
-          <div class="hero-actions" aria-label="Contact options">
-            <a class="btn btn-primary" href="sms:+12083666111?&body=Hi%20Samuel%2C%20I%20want%20a%2015-minute%20AI%20walkthrough%20for%20my%20business.">Book a 15-minute walkthrough</a>
-            <a class="btn btn-secondary" href="#systems">See starter systems</a>
-          </div>
-
-          <div class="hero-contact-line" aria-label="Direct contact">
-            <a href="tel:+12083666111">(208) 366-6111</a><span aria-hidden="true">/</span><a href="mailto:wpbfls@gmail.com">wpbfls@gmail.com</a>
-          </div>
-
-          <ul class="trust-strip" aria-label="Operating principles">
-            <li>Local setup in Hailey</li>
-            <li>Works with your current tools</li>
-            <li>First useful system in days, not months</li>
-          </ul>
+    <section class="section" id="agent-flow" aria-labelledby="flow-title">
+      <div class="head"><div><p class="eyebrow">What an agent can do next</p><h2 id="flow-title">A custom agent is not just a receptionist. It is a work loop.</h2></div><p>Reception is the obvious first use. The bigger value is an agent that observes the business, decides what should happen next, does the safe parts, and packages the rest for a person.</p></div>
+      <div class="flow-board" aria-label="Agent workflow chart">
+        <div class="flow-grid">
+          <div class="flow-col"><h3>1 · Sense</h3><div class="flow-card"><strong>Customer signals</strong><span>Calls, forms, email, website chat, reviews, DMs.</span></div><div class="flow-card"><strong>Business records</strong><span>Spreadsheets, invoices, job notes, calendars, CRM.</span></div></div>
+          <div class="flow-col"><h3>2 · Think</h3><div class="flow-card"><strong>Find weak points</strong><span>Slow follow-up, underpriced jobs, recurring questions, missed reviews.</span></div><div class="flow-card"><strong>Explore strategy</strong><span>New offers, seasonal campaigns, pricing tests, staffing bottlenecks.</span></div></div>
+          <div class="flow-col"><h3>3 · Act</h3><div class="flow-card"><strong>Draft and organize</strong><span>Replies, quote briefs, task lists, book summaries, owner reports.</span></div><div class="flow-card"><strong>Ask for approval</strong><span>Human review before sending, posting, spending, or changing records.</span></div></div>
         </div>
-
-        <aside class="ops-console" aria-label="Example AI workflow console">
-          <div class="console-topbar"><span class="console-dot"></span><span class="console-dot"></span><span class="console-dot"></span><strong>Missed Call Rescue</strong></div>
-
-          <div class="console-ticket">
-            <div><span class="ticket-label">Incoming lead</span><h2>Missed call at 6:42 PM</h2></div>
-            <span class="ticket-status">Owner review</span>
-          </div>
-
-          <div class="workflow-rail" aria-hidden="true">
-            <div class="rail-line"></div><div class="rail-pulse"></div>
-            <div class="rail-step active"><span>01</span><p>Customer gets a fast text-back</p></div>
-            <div class="rail-step active"><span>02</span><p>AI asks for the missing details</p></div>
-            <div class="rail-step"><span>03</span><p>Job summary lands in your inbox</p></div>
-            <div class="rail-step"><span>04</span><p>You approve the reply</p></div>
-          </div>
-
-          <div class="console-response">
-            <span>Draft reply</span>
-            <p>“Thanks for reaching out. I can help. Can you send one photo, the job location, and whether this is urgent or flexible?”</p>
-          </div>
-
-          <div class="console-meter" aria-label="Automation readiness meter">
-            <div class="meter-row"><span>Lead saved</span><strong>Before morning</strong></div>
-            <div class="meter-track"><span style="width: 88%"></span></div>
-            <div class="meter-row"><span>Risk level</span><strong>Human approval</strong></div>
-            <div class="meter-track caution"><span style="width: 34%"></span></div>
-          </div>
-        </aside>
+        <div class="flow-arrow" aria-hidden="true"><div></div><span>observe</span><div></div><span>recommend</span><div></div></div>
       </div>
     </section>
 
-    <section class="section intro-band" aria-labelledby="plain-title">
-      <div class="container intro-grid">
-        <div>
-          <p class="section-kicker">No AI theater</p>
-          <h2 id="plain-title">You do not need “AI transformation.” You need fewer dropped leads and less admin drag.</h2>
-        </div>
-        <div class="intro-copy">
-          <p>Most small businesses lose time in the same places: missed calls, vague quote requests, repetitive questions, slow follow-up, review requests that never get sent, and customer details scattered across texts, email, forms, and notebooks.</p>
-          <p>The job is to find one painful repeat, build a careful AI-assisted version of it, keep people in control, and prove it works in the real workday.</p>
-        </div>
-      </div>
-    </section>
-
-    <section class="section" id="systems" aria-labelledby="systems-title">
-      <div class="container">
-        <div class="section-heading split-heading">
-          <div><p class="section-kicker">Starter systems</p><h2 id="systems-title">Concrete systems a local owner can understand in 30 seconds.</h2></div>
-          <p>These are not vague consulting packages. They are focused workflows built around revenue, response time, and owner relief.</p>
-        </div>
-
-        <div class="systems-grid">
-          <article class="system-card tall-card"><span class="card-number">01</span><h3>Missed Call Rescue</h3><p>When nobody answers, the customer gets a fast text-back, the right questions get asked, and the lead turns into a clean owner-ready summary.</p><ul><li>After-hours text-back</li><li>Photo/detail collection</li><li>Owner approval before sending</li></ul></article>
-          <article class="system-card"><span class="card-number">02</span><h3>AI Quote Intake</h3><p>Turns “how much?” into job type, urgency, location, photos, constraints, and a quote-ready note.</p></article>
-          <article class="system-card"><span class="card-number">03</span><h3>Review Booster</h3><p>Sends tasteful review requests after the job, routes unhappy feedback privately, and helps build local trust.</p></article>
-          <article class="system-card wide-card"><span class="card-number">04</span><h3>AI Front Desk</h3><p>Answers approved questions from your website: hours, services, booking steps, policies, menus, basic pricing ranges, and what to send next.</p><div class="mini-ledger"><span>“Are you open today?”</span><span>“Can I book this service?”</span><span>“What info do you need from me?”</span></div></article>
-          <article class="system-card"><span class="card-number">05</span><h3>Owner Inbox Cleanup</h3><p>Summarizes messages, flags urgency, sorts requests, and turns messy threads into tasks.</p></article>
-          <article class="system-card"><span class="card-number">06</span><h3>Website + AI Workflow</h3><p>A custom website that does more than sit there: intake, route, follow up, and prepare the next step.</p></article>
-        </div>
-      </div>
-    </section>
-
-    <section class="section proof-interrupt" aria-labelledby="proof-title">
-      <div class="container proof-grid">
-        <div class="proof-stat"><span>The wedge</span><strong>AI lead handling for local service businesses.</strong></div>
-        <div>
-          <h2 id="proof-title">The easiest system to sell is the one that catches money already trying to come in.</h2>
-          <p>A contractor, clinic, salon, restaurant, repair shop, or property manager does not need a lecture about agents. They need someone to catch the lead, ask the missing questions, organize the request, and make follow-up happen.</p>
-          <p>That is the first category to own: practical AI lead handling for businesses in Hailey, Ketchum, Sun Valley, Bellevue, and the Wood River Valley.</p>
-        </div>
-      </div>
-    </section>
-
-    <section class="section examples" id="examples" aria-labelledby="examples-title">
-      <div class="container examples-grid">
-        <div class="example-copy">
-          <p class="section-kicker">Live workflow examples</p>
-          <h2 id="examples-title">Pick the business type. See the first useful AI system.</h2>
-          <p>The pitch is not “AI can do everything.” The pitch is “here is the one repeat task we can take off your plate first.”</p>
-          <div class="example-tabs" role="tablist" aria-label="Business type examples">
-            <button class="tab-button active" type="button" role="tab" aria-selected="true" data-example="contractor">Contractor</button>
-            <button class="tab-button" type="button" role="tab" aria-selected="false" data-example="restaurant">Restaurant</button>
-            <button class="tab-button" type="button" role="tab" aria-selected="false" data-example="property">Property manager</button>
-            <button class="tab-button" type="button" role="tab" aria-selected="false" data-example="clinic">Clinic / wellness</button>
-            <button class="tab-button" type="button" role="tab" aria-selected="false" data-example="retail">Retail / service</button>
-          </div>
-        </div>
-
-        <article class="workflow-card" aria-live="polite">
-          <div class="workflow-card-header"><span data-example-label>Contractor system</span><strong data-example-risk>Approval required</strong></div>
-          <h3 data-example-title>Estimate intake that turns vague jobs into quote-ready details.</h3>
-          <p data-example-summary>A lead asks for a repair or remodel quote. The system replies quickly, asks for dimensions, photos, location, urgency, and rough budget, then drafts a clean estimate note for owner review.</p>
-          <ol class="flow-list" data-example-steps><li><span>1</span><p>Lead comes in from text, email, or form.</p></li><li><span>2</span><p>AI asks for missing photos, measurements, and timeline.</p></li><li><span>3</span><p>Job details are summarized into a quote-ready brief.</p></li><li><span>4</span><p>Owner approves the reply and sends next steps.</p></li></ol>
-          <div class="workflow-output"><span>What you get back</span><p data-example-output>“Deck repair lead — Bellevue. Needs stair tread replacement, two photos received, flexible timeline, wants rough range before site visit.”</p></div>
-        </article>
-      </div>
-    </section>
-
-    <section class="section stack-section" aria-labelledby="stack-title">
-      <div class="container stack-grid">
-        <div><p class="section-kicker">The control room</p><h2 id="stack-title">Connect the boring places where work actually happens.</h2><p>The system can sit between your website, texts, inbox, calendar, forms, Google Sheets, docs, booking tools, and staff handoffs. Customers should feel a faster response. Owners should feel less chaos.</p></div>
-        <div class="tool-board" aria-label="Possible AI integration layers">
-          <div><span>Inputs</span><strong>Calls · Forms · Email · SMS · Website</strong></div>
-          <div><span>AI help</span><strong>Draft · Ask · Sort · Summarize</strong></div>
-          <div><span>Approval</span><strong>Owner review · Staff handoff · Safety gates</strong></div>
-          <div><span>Outputs</span><strong>Reply · Quote · Task · Review request</strong></div>
-        </div>
-      </div>
-    </section>
-
-    <section class="section offers" id="pricing" aria-labelledby="offers-title">
-      <div class="container">
-        <div class="section-heading split-heading"><div><p class="section-kicker">Simple entry points</p><h2 id="offers-title">Start small enough to trust. Useful enough to matter.</h2></div><p>Ranges are public so owners know this is a real implementation service, not a mystery sales funnel.</p></div>
-        <div class="offer-grid">
-          <article class="offer-card"><span>Find the best first system</span><h3>AI Business Audit</h3><p>Map the current workflow, identify repeated tasks, and leave with a prioritized automation plan.</p><strong>From $300</strong></article>
-          <article class="offer-card featured-offer"><span>Best first build</span><h3>Starter Automation</h3><p>One focused system: missed calls, lead follow-up, quote intake, review requests, or customer FAQs.</p><a href="#contact">Book walkthrough</a><strong>From $950</strong></article>
-          <article class="offer-card"><span>Full workflow</span><h3>Custom AI System</h3><p>Multiple connected pieces: intake, dashboard, inbox, follow-up, handoffs, approvals, and reporting.</p><strong>From $2,500</strong></article>
-          <article class="offer-card"><span>Keep it working</span><h3>Monthly AI Support</h3><p>Monitoring, prompt/system updates, small workflow improvements, and owner support as the business changes.</p><strong>From $250/mo</strong></article>
-        </div>
-      </div>
-    </section>
-
-    <section class="section process" id="process" aria-labelledby="process-title">
-      <div class="container">
-        <div class="section-heading centered"><p class="section-kicker">How it starts</p><h2 id="process-title">One bottleneck. One pilot. Real use before expansion.</h2></div>
-        <div class="process-rail">
-          <article><span>01</span><h3>Show me the repeat</h3><p>We identify the task that keeps coming back: quote requests, intake, follow-up, FAQs, reviews, scheduling questions, or inbox sorting.</p></article>
-          <article><span>02</span><h3>Set the guardrails</h3><p>We decide what AI can draft, what it must never decide alone, where approval happens, and what info stays private.</p></article>
-          <article><span>03</span><h3>Build the small version</h3><p>The first version solves one narrow workflow and should become useful within days, not months.</p></article>
-          <article><span>04</span><h3>Tune from real work</h3><p>We improve prompts, forms, routing, templates, and handoffs based on the requests your business actually receives.</p></article>
-        </div>
-      </div>
-    </section>
-
-    <section class="section safety" aria-labelledby="safety-title">
-      <div class="container safety-grid">
-        <div><p class="section-kicker">Trust matters</p><h2 id="safety-title">AI should make the business calmer, not riskier.</h2><p>Most local businesses should not start with fully autonomous systems. Start with drafts, summaries, reminders, and approval steps that reduce workload without handing the keys to an opaque tool.</p></div>
-        <div class="safety-table" role="table" aria-label="AI safety principles">
-          <div role="row"><span role="cell">Customer replies</span><strong role="cell">Draft first, approve before sending</strong></div>
-          <div role="row"><span role="cell">Money decisions</span><strong role="cell">Quote support, not blind pricing</strong></div>
-          <div role="row"><span role="cell">Private info</span><strong role="cell">Only connect what the workflow needs</strong></div>
-          <div role="row"><span role="cell">Reliability</span><strong role="cell">Logs, fallbacks, and easy human override</strong></div>
-        </div>
-      </div>
-    </section>
-
-    <section class="section note-section" aria-labelledby="note-title">
-      <div class="container note-card">
-        <p class="section-kicker">A note from Samuel</p>
-        <h2 id="note-title">I care less about making AI sound impressive and more about making the next workday easier.</h2>
-        <p>There is a lot of noise around AI right now. The useful version is smaller and more practical: a system that remembers your rules, drafts the thing you were about to type again, asks customers better questions, and keeps you in control.</p>
-        <p>If you can show me the task you keep repeating, I can usually show you where AI belongs — and where it definitely does not.</p>
-      </div>
-    </section>
-
-    <section class="section contact-section" id="contact" aria-labelledby="contact-title">
-      <div class="container contact-grid">
-        <div class="contact-copy">
-          <p class="section-kicker">Book the walkthrough</p>
-          <h2 id="contact-title">Send the task you want off your plate.</h2>
-          <p>The best first message is not “I need AI.” It is “here is the thing we keep doing by hand.” Text the task, or use the brief builder.</p>
-          <div class="direct-contact-card"><a href="tel:+12083666111">Call or text: <strong>(208) 366-6111</strong></a><a href="mailto:wpbfls@gmail.com">Email: <strong>wpbfls@gmail.com</strong></a></div>
-        </div>
-
-        <form class="brief-builder" data-brief-form>
-          <div class="builder-top"><span>AI walkthrough brief</span><strong>Copy or email this to Samuel</strong></div>
-          <label>Business type<select name="businessType" data-brief-input><option>Contractor / trades</option><option>Restaurant / hospitality</option><option>Property management</option><option>Clinic / wellness</option><option>Salon / spa</option><option>Retail / local shop</option><option>Professional service</option><option>Other local business</option></select></label>
-          <label>Repeated task<textarea name="task" rows="3" placeholder="Example: People text asking for quotes, but they never send enough details." data-brief-input></textarea></label>
-          <label>Tools you already use<input name="tools" type="text" placeholder="Example: Gmail, Square, Google Sheets, website form, text messages" data-brief-input></label>
-          <label>What would make this a win?<input name="win" type="text" placeholder="Example: Fewer missed leads, faster estimates, cleaner follow-up" data-brief-input></label>
-          <div class="brief-preview" aria-live="polite"><span>Generated message</span><p data-brief-output>Hi Samuel — I run a contractor / trades business. The repeated task I want help with is: [add a task]. Current tools: [add tools]. A win would be: [add result].</p></div>
-          <div class="builder-actions"><a class="btn btn-primary" href="mailto:wpbfls@gmail.com?subject=AI%20systems%20walkthrough" data-mail-brief>Email the brief</a><button class="btn btn-secondary" type="button" data-copy-brief>Copy message</button></div>
-          <p class="copy-status" data-copy-status aria-live="polite"></p>
-        </form>
+    <section class="section" id="starter-systems" aria-labelledby="systems-title">
+      <div class="head"><div><p class="eyebrow">Starter systems</p><h2 id="systems-title">Start narrow. Prove value. Then let the agent grow.</h2></div><p>These are the first systems because they are easy to understand and fast to validate. They also become the foundation for deeper custom agents.</p></div>
+      <div class="systems-grid">
+        <article class="system feature"><span class="num">01</span><h3>Missed Call Rescue</h3><p>When nobody answers, the customer gets a fast text-back, the right questions get asked, and the lead turns into a clean owner-ready summary.</p><ul><li>After-hours text-back</li><li>Photo/detail collection</li><li>Owner approval before sending</li></ul></article>
+        <article class="system"><span class="num">02</span><h3>AI Quote Intake</h3><p>Turns “how much?” into job type, urgency, location, photos, constraints, budget clues, and a quote-ready note.</p><a class="system-link" href="/solutions#sales">How this expands →</a></article>
+        <article class="system"><span class="num">03</span><h3>Owner Insight Agent</h3><p>Looks across messages, leads, tasks, reviews, and simple books to surface weak points and possible next moves.</p><a class="system-link" href="/solutions#insight">See insight workflows →</a></article>
       </div>
     </section>
 
     <section class="section faq" id="faq" aria-labelledby="faq-title">
-      <div class="container faq-grid">
-        <div><p class="section-kicker">Questions owners usually ask</p><h2 id="faq-title">Plain answers before anything gets automated.</h2></div>
-        <div class="faq-list">
-          <details open><summary>Is this just ChatGPT for my business?</summary><p>No. ChatGPT can be part of the stack, but the real work is the system around it: intake rules, prompts, approvals, data sources, handoffs, templates, and fallback behavior.</p></details>
-          <details><summary>Can we start small?</summary><p>Yes. That is the recommended path. Start with one repeated workflow: missed-call rescue, quote intake, review requests, customer FAQs, or follow-up reminders.</p></details>
-          <details><summary>Will AI talk to customers without me approving it?</summary><p>Not by default. For anything involving money, scheduling, safety, sensitive customer info, or brand trust, the safer first version drafts for human review.</p></details>
-          <details><summary>What if my team is not technical?</summary><p>That is normal. The system should meet the business where it already works: email, texts, forms, spreadsheets, shared docs, calendars, or lightweight dashboards.</p></details>
-          <details><summary>What businesses is this for?</summary><p>Contractors, restaurants, property managers, clinics, salons, service shops, retailers, repair shops, and professional services — especially businesses where the owner is still doing too much admin by hand.</p></details>
-          <details><summary>Do I need to change all my software?</summary><p>Usually no. The first move is mapping the current workflow and building around it. If a tool is blocking the system, then a change can be discussed — not assumed.</p></details>
-        </div>
+      <div><p class="eyebrow">FAQ</p><h2 id="faq-title">Plain answers before the walkthrough.</h2></div>
+      <div class="faq-list">
+        <details open><summary>Is this just a chatbot?</summary><p>No. A chatbot answers questions. A custom agent can read context, prepare work, draft next steps, organize records, surface patterns, and route decisions back to a person.</p></details>
+        <details><summary>Do I need to know exactly what agent I want?</summary><p>No. Bring one bottleneck: missed calls, messy quotes, bookkeeping cleanup, review gaps, repeated admin, or “I know we’re leaking time somewhere.” We map from there.</p></details>
+        <details><summary>Can agents manage sensitive work like books or customer records?</summary><p>They can help organize, summarize, reconcile, and flag issues, but the system should be designed with approval points for anything sensitive, financial, legal, medical, or reputation-risky.</p></details>
+        <details><summary>What kind of business is this for?</summary><p>Owner-run service businesses, contractors, wellness clinics, salons, hospitality, retail, professional services, and local teams that rely on fast follow-up and clean handoffs.</p></details>
+        <details><summary>What should I text first?</summary><p>Text: “I want an AI walkthrough. The bottleneck is ___.” If you do not know the bottleneck, text what feels messy or repetitive and I’ll help narrow it.</p></details>
       </div>
     </section>
   </main>
 
-  <footer class="site-footer">
-    <div class="container footer-grid">
-      <div><a class="brand footer-brand" href="#top" aria-label="Back to top"><span class="brand-mark" aria-hidden="true"><span></span><span></span></span><span class="brand-copy"><strong>Samuel</strong><small>The Valley's practical AI guy</small></span></a><p>Practical AI systems for Wood River Valley businesses. Independent, local, and built around real workflows.</p></div>
-      <div><span class="footer-label">Contact</span><a href="tel:+120****6111">(208) 366-6111</a><a href="mailto:wpbfls@gmail.com">wpbfls@gmail.com</a></div>
-      <div><span class="footer-label">AI pages</span><a href="/local-ai-starter-systems">Starter systems</a><a href="/openclaw-ai-assistant">OpenClaw</a><a href="/hermes-agent-automation">Hermes Agent</a><a href="/#contact">Walkthrough</a></div>
-      <div><span class="footer-label">Service area</span><p>Hailey · Ketchum · Sun Valley · Bellevue · Wood River Valley</p></div>
-    </div>
-    <div class="container footer-bottom"><span>© <span data-year></span> Samuel. Practical AI systems for local business.</span><a href="#top">Back to top</a></div>
-  </footer>
-
-  <script src="script.js" defer></script>
+  <footer class="footer"><span>© 2026 Samuel. Practical AI systems powered by custom agents.</span><a href="tel:+12083666111">(208) 366-6111</a></footer>
 </body>
 </html>

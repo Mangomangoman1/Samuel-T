@@ -1,25 +1,25 @@
 :root {
   color-scheme: dark;
-  --bg: #231e18;
-  --bg-deep: #1c1814;
-  --panel: #2c251d;
-  --panel-strong: #372d23;
-  --paper: #efe3cc;
-  --paper-muted: #cdbf9f;
-  --muted: #9f927b;
-  --copper: #d98b3a;
-  --copper-bright: #f0b762;
-  --ember: #f3d08a;
-  --sage: #a1ad84;
+  --bg: #27231d;
+  --bg-deep: #1f1c17;
+  --panel: #302a22;
+  --panel-strong: #3a3228;
+  --paper: #f1e7d3;
+  --paper-muted: #cfc2aa;
+  --muted: #978c7c;
+  --copper: #d48735;
+  --copper-bright: #f0aa4c;
+  --ember: #f1c56e;
+  --sage: #9ca77d;
   --clay: #8f5d3d;
   --danger: #d66d4b;
-  --line: rgba(239, 227, 204, 0.14);
-  --line-strong: rgba(239, 227, 204, 0.24);
-  --shadow: 0 28px 90px rgba(28, 24, 20, 0.42);
-  --radius-xl: 34px;
-  --radius-lg: 24px;
-  --radius-md: 16px;
-  --radius-sm: 11px;
+  --line: rgba(241, 231, 211, 0.18);
+  --line-strong: rgba(241, 231, 211, 0.32);
+  --shadow: 0 18px 46px rgba(31, 28, 23, 0.34);
+  --radius-xl: 22px;
+  --radius-lg: 16px;
+  --radius-md: 11px;
+  --radius-sm: 7px;
   --container: 1180px;
   --font-display: Georgia, "Times New Roman", serif;
   --font-body: Aptos, "Segoe UI", system-ui, -apple-system, sans-serif;
@@ -39,9 +39,10 @@ body {
   min-width: 320px;
   overflow-x: hidden;
   background:
-    radial-gradient(circle at 20% 0%, rgba(217, 139, 58, 0.16), transparent 32rem),
-    radial-gradient(circle at 84% 16%, rgba(161, 173, 132, 0.11), transparent 34rem),
-    linear-gradient(135deg, var(--bg), var(--bg-deep) 70%);
+    linear-gradient(90deg, rgba(241, 231, 211, 0.025) 1px, transparent 1px),
+    linear-gradient(rgba(241, 231, 211, 0.018) 1px, transparent 1px),
+    linear-gradient(135deg, #2b261f 0%, var(--bg) 44%, var(--bg-deep) 100%);
+  background-size: 64px 64px, 64px 64px, auto;
   color: var(--paper);
   font-family: var(--font-body);
   line-height: 1.6;
@@ -54,22 +55,21 @@ body::before {
   inset: 0;
   pointer-events: none;
   z-index: -2;
-  opacity: 0.46;
+  opacity: 0.22;
   background-image:
     linear-gradient(rgba(239, 227, 204, 0.035) 1px, transparent 1px),
     linear-gradient(90deg, rgba(239, 227, 204, 0.026) 1px, transparent 1px);
-  background-size: 42px 42px;
+  background-size: 96px 96px;
   mask-image: radial-gradient(circle at 50% 18%, rgba(28, 24, 20, 0.98), transparent 72%);
 }
 
 body::after {
   content: "";
   position: fixed;
-  inset: auto -12vw -24vh auto;
-  width: 52vw;
-  height: 52vw;
-  border-radius: 999px;
-  background: radial-gradient(circle, rgba(217, 139, 58, 0.13), transparent 66%);
+  inset: 0 0 auto auto;
+  width: 38vw;
+  height: 100vh;
+  background: linear-gradient(90deg, transparent, rgba(217, 135, 53, 0.045));
   pointer-events: none;
   z-index: -1;
 }
@@ -145,9 +145,9 @@ button {
   justify-content: space-between;
   gap: 18px;
   border: 1px solid rgba(239, 227, 204, 0.12);
-  border-radius: 999px;
-  background: rgba(44, 37, 29, 0.72);
-  box-shadow: 0 16px 48px rgba(28, 24, 20, 0.26);
+  border-radius: 18px;
+  background: rgba(43, 37, 30, 0.92);
+  box-shadow: 0 10px 28px rgba(31, 28, 23, 0.22);
   padding: 9px 10px 9px 14px;
 }
 
@@ -165,7 +165,7 @@ button {
   width: 40px;
   height: 40px;
   flex: 0 0 auto;
-  border-radius: 14px;
+  border-radius: 10px;
   background:
     linear-gradient(135deg, rgba(217, 139, 58, 0.28), rgba(161, 173, 132, 0.12)),
     var(--panel-strong);
@@ -179,7 +179,7 @@ button {
   inset: 9px 9px 9px 14px;
   border-left: 2px solid var(--ember);
   border-top: 2px solid rgba(239, 227, 204, 0.5);
-  border-radius: 8px 0 0 0;
+  border-radius: 4px 0 0 0;
 }
 
 .brand-mark span:first-child {
@@ -197,7 +197,7 @@ button {
   height: 5px;
   right: 9px;
   bottom: 9px;
-  border-radius: 999px;
+  border-radius: 3px;
   background: var(--sage);
 }
 
@@ -286,10 +286,10 @@ button {
 
 .hero {
   position: relative;
-  min-height: 820px;
+  min-height: 760px;
   display: flex;
   align-items: center;
-  padding: 90px 0 70px;
+  padding: 74px 0 60px;
   overflow: hidden;
 }
 
@@ -297,7 +297,7 @@ button {
   position: absolute;
   inset: 0;
   pointer-events: none;
-  opacity: 0.42;
+  opacity: 0.22;
   overflow: hidden;
   mask-image: radial-gradient(circle at 60% 45%, rgba(28, 24, 20, 0.9), rgba(28, 24, 20, 0.45) 35%, transparent 78%);
 }
@@ -321,7 +321,7 @@ button {
   stroke-linecap: round;
   stroke-dasharray: 10 18;
   animation: routeMove 5.8s linear infinite;
-  filter: drop-shadow(0 0 12px rgba(240, 183, 98, 0.38));
+  filter: none;
 }
 
 @keyframes routeMove {
@@ -334,7 +334,7 @@ button {
   display: grid;
   grid-template-columns: minmax(0, 1.04fr) minmax(360px, 0.76fr);
   align-items: center;
-  gap: 54px;
+  gap: 66px;
 }
 
 .eyebrow,
@@ -370,23 +370,23 @@ button {
 
 .hero h1 {
   max-width: 720px;
-  font-size: clamp(3.45rem, 8vw, 7.45rem);
+  font-size: clamp(3.1rem, 6.8vw, 6.35rem);
 }
 
 .hero-phone-pill {
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  margin: 0 0 20px;
-  min-height: 42px;
-  padding: 9px 13px;
-  border-radius: 999px;
-  border: 1px solid rgba(240, 183, 98, 0.34);
-  background: rgba(217, 139, 58, 0.12);
+  margin: 0 0 18px;
+  min-height: 38px;
+  padding: 8px 12px;
+  border-radius: 10px;
+  border: 1px solid rgba(240, 170, 76, 0.38);
+  background: rgba(31, 28, 23, 0.52);
   color: var(--ember);
-  font-size: 0.92rem;
+  font-size: 0.9rem;
   font-weight: 900;
-  box-shadow: 0 12px 28px rgba(217, 139, 58, 0.12);
+  box-shadow: none;
 }
 
 .hero-lede {
@@ -409,7 +409,7 @@ button {
   justify-content: center;
   min-height: 50px;
   padding: 13px 18px;
-  border-radius: 999px;
+  border-radius: 12px;
   border: 1px solid transparent;
   font-weight: 850;
   line-height: 1;
@@ -424,7 +424,7 @@ button {
 .btn-primary {
   color: var(--bg-deep);
   background: linear-gradient(135deg, var(--ember), var(--copper-bright));
-  box-shadow: 0 18px 44px rgba(217, 139, 58, 0.25);
+  box-shadow: 0 12px 24px rgba(217, 135, 53, 0.20);
 }
 
 .btn-secondary {
@@ -465,7 +465,7 @@ button {
   border: 1px solid rgba(239, 227, 204, 0.13);
   background: rgba(239, 227, 204, 0.055);
   color: var(--paper-muted);
-  border-radius: 999px;
+  border-radius: 9px;
   padding: 8px 11px;
   font-size: 0.88rem;
 }
@@ -475,8 +475,7 @@ button {
   border: 1px solid rgba(239, 227, 204, 0.15);
   border-radius: var(--radius-xl);
   background:
-    linear-gradient(160deg, rgba(239, 227, 204, 0.075), transparent 28%),
-    linear-gradient(180deg, rgba(55, 45, 35, 0.96), rgba(35, 30, 24, 0.94));
+    linear-gradient(180deg, rgba(58, 50, 40, 0.98), rgba(36, 32, 26, 0.96));
   box-shadow: var(--shadow);
   overflow: hidden;
 }
@@ -488,8 +487,8 @@ button {
   background-image:
     linear-gradient(90deg, rgba(239, 227, 204, 0.045) 1px, transparent 1px),
     linear-gradient(rgba(239, 227, 204, 0.045) 1px, transparent 1px);
-  background-size: 24px 24px;
-  mask-image: linear-gradient(180deg, rgba(28, 24, 20, 0.55), transparent 62%);
+  background-size: 32px 32px;
+  mask-image: linear-gradient(180deg, rgba(31, 28, 23, 0.34), transparent 58%);
   pointer-events: none;
 }
 
@@ -528,8 +527,8 @@ button {
   z-index: 1;
   margin: 20px;
   border: 1px solid rgba(239, 227, 204, 0.14);
-  border-radius: 22px;
-  background: rgba(28, 24, 20, 0.46);
+  border-radius: 14px;
+  background: rgba(31, 28, 23, 0.58);
 }
 
 .console-ticket {
@@ -569,7 +568,7 @@ button {
   flex: 0 0 auto;
   border: 1px solid rgba(240, 183, 98, 0.35);
   color: var(--ember);
-  border-radius: 999px;
+  border-radius: 8px;
   padding: 7px 10px;
   font-size: 0.72rem;
   font-weight: 900;
@@ -625,7 +624,7 @@ button {
   width: 38px;
   height: 38px;
   border: 1px solid rgba(239, 227, 204, 0.14);
-  border-radius: 999px;
+  border-radius: 11px;
   background: var(--panel);
   color: var(--paper-muted);
   font-size: 0.76rem;
@@ -801,10 +800,10 @@ button {
 .faq-list details {
   border: 1px solid rgba(239, 227, 204, 0.13);
   background:
-    linear-gradient(150deg, rgba(239, 227, 204, 0.065), transparent 38%),
-    rgba(44, 37, 29, 0.78);
+    linear-gradient(180deg, rgba(241, 231, 211, 0.052), transparent 34%),
+    rgba(43, 37, 30, 0.86);
   border-radius: var(--radius-lg);
-  box-shadow: 0 18px 54px rgba(28, 24, 20, 0.24);
+  box-shadow: 0 12px 30px rgba(31, 28, 23, 0.22);
 }
 
 .system-card {
@@ -1618,4 +1617,64 @@ button {
     scroll-behavior: auto !important;
     transition-duration: 0.001ms !important;
   }
+}
+
+
+/* Edge polish pass: crisper, lighter, more professional while retaining warm charcoal/amber. */
+.nav-links a,
+.tab-button,
+.doc-links a { border-radius: 10px; }
+
+.btn,
+.btn-primary,
+.btn-secondary,
+.nav-links .nav-cta { border-radius: 12px; }
+
+.ops-console,
+.system-card,
+.offer-card,
+.workflow-card,
+.note-card,
+.brief-builder,
+.direct-contact-card,
+.tool-board,
+.safety-table,
+.faq-list details,
+.proof-grid,
+.proof-stat,
+.flow-list li,
+.workflow-output,
+.brief-preview {
+  border-color: rgba(241, 231, 211, 0.18);
+}
+
+.system-card::after,
+.proof-grid {
+  background-image: none;
+}
+
+.ops-console,
+.workflow-card,
+.system-card,
+.offer-card {
+  outline: 1px solid rgba(31, 28, 23, 0.45);
+  outline-offset: -2px;
+}
+
+.section { padding: 82px 0; }
+
+.section + .section::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: max(20px, calc((100vw - var(--container)) / 2));
+  right: max(20px, calc((100vw - var(--container)) / 2));
+  height: 1px;
+  background: linear-gradient(90deg, rgba(240,170,76,.42), rgba(241,231,211,.08), transparent);
+}
+
+@media (max-width: 768px) {
+  .hero { min-height: auto; padding-top: 42px; }
+  .hero h1 { font-size: clamp(2.75rem, 16vw, 4.55rem); }
+  .nav-shell { border-radius: 16px; }
 }

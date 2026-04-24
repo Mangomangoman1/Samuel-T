@@ -1,3 +1,27 @@
+@font-face {
+  font-family: "Merom Sans";
+  src: url("/assets/fonts/MeromSans-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Merom Sans";
+  src: url("/assets/fonts/MeromSans-SemiBold.ttf") format("truetype");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Merom Sans";
+  src: url("/assets/fonts/MeromSans-Bold.ttf") format("truetype");
+  font-weight: 850;
+  font-style: normal;
+  font-display: swap;
+}
+
 :root {
   color-scheme: dark;
   --bg: #27231d;
@@ -21,8 +45,8 @@
   --radius-md: 11px;
   --radius-sm: 7px;
   --container: 1180px;
-  --font-display: Georgia, "Times New Roman", serif;
-  --font-body: Aptos, "Segoe UI", system-ui, -apple-system, sans-serif;
+  --font-display: "Merom Sans", "Arial Narrow", "Aptos Display", system-ui, sans-serif;
+  --font-body: Aptos, "Segoe UI", "Helvetica Neue", system-ui, -apple-system, sans-serif;
 }
 
 * {
@@ -364,13 +388,14 @@ button {
   margin: 0;
   font-family: var(--font-display);
   font-weight: 700;
-  letter-spacing: -0.055em;
-  line-height: 0.96;
+  letter-spacing: -0.032em;
+  line-height: 0.98;
+  text-transform: none;
 }
 
 .hero h1 {
-  max-width: 720px;
-  font-size: clamp(3.1rem, 6.8vw, 6.35rem);
+  max-width: 760px;
+  font-size: clamp(3.0rem, 6.35vw, 6.05rem);
 }
 
 .hero-phone-pill {
@@ -1675,6 +1700,21 @@ button {
 
 @media (max-width: 768px) {
   .hero { min-height: auto; padding-top: 42px; }
-  .hero h1 { font-size: clamp(2.75rem, 16vw, 4.55rem); }
+  .hero h1 {
+    font-size: clamp(2.05rem, 10.5vw, 3.05rem);
+    line-height: 1.04;
+    letter-spacing: -0.018em;
+    max-width: 100%;
+    overflow-wrap: normal;
+    text-wrap: balance;
+  }
+  .hero-phone-pill {
+    display: flex;
+    width: 100%;
+    max-width: 260px;
+    white-space: normal;
+    text-align: center;
+    margin-top: 4px;
+  }
   .nav-shell { border-radius: 16px; }
 }

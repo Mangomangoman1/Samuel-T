@@ -298,12 +298,15 @@ button {
   inset: 0;
   pointer-events: none;
   opacity: 0.42;
+  overflow: hidden;
   mask-image: radial-gradient(circle at 60% 45%, rgba(28, 24, 20, 0.9), rgba(28, 24, 20, 0.45) 35%, transparent 78%);
 }
 
 .hero-map svg {
+  display: block;
   width: 100%;
   height: 100%;
+  overflow: hidden;
 }
 
 .hero-map path {
@@ -713,6 +716,17 @@ button {
   grid-template-columns: minmax(0, 0.92fr) minmax(0, 1.08fr);
   gap: 52px;
   align-items: start;
+}
+
+.intro-grid > *,
+.stack-grid > *,
+.safety-grid > *,
+.contact-grid > *,
+.faq-grid > *,
+.proof-grid > *,
+.examples-grid > *,
+.split-heading > * {
+  min-width: 0;
 }
 
 .intro-grid h2,
@@ -1437,9 +1451,12 @@ button {
   }
 
   .hero h1 {
-    font-size: clamp(2.44rem, 11vw, 3.15rem);
-    line-height: 1.03;
-    letter-spacing: -0.04em;
+    font-size: clamp(2.08rem, 9.2vw, 2.72rem);
+    line-height: 1.06;
+    letter-spacing: -0.035em;
+    max-width: 10.8ch;
+    overflow-wrap: normal;
+    text-wrap: balance;
   }
 
   .hero-lede {
@@ -1540,7 +1557,8 @@ button {
   }
 
   .hero h1 {
-    letter-spacing: -0.062em;
+    letter-spacing: -0.032em;
+    max-width: 100%;
   }
 
   .ops-console {
@@ -1571,7 +1589,10 @@ button {
   .contact-copy h2,
   .faq-grid h2,
   .proof-grid h2 {
-    font-size: clamp(2.12rem, 12vw, 3.2rem);
+    font-size: clamp(1.92rem, 10.2vw, 2.72rem);
+    line-height: 1.02;
+    letter-spacing: -0.04em;
+    overflow-wrap: break-word;
   }
 
   .system-card,

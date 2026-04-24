@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630" role="img" aria-label="AI Systems for Wood River Valley Businesses by Samuel">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#372d23"/>
+      <stop offset="0.55" stop-color="#231e18"/>
+      <stop offset="1" stop-color="#1c1814"/>
+    </linearGradient>
+    <radialGradient id="glow" cx="28%" cy="18%" r="72%">
+      <stop offset="0" stop-color="#d98b3a" stop-opacity="0.34"/>
+      <stop offset="0.48" stop-color="#d98b3a" stop-opacity="0.08"/>
+      <stop offset="1" stop-color="#d98b3a" stop-opacity="0"/>
+    </radialGradient>
+    <filter id="soft">
+      <feGaussianBlur stdDeviation="10"/>
+    </filter>
+  </defs>
+  <rect width="1200" height="630" fill="url(#bg)"/>
+  <rect width="1200" height="630" fill="url(#glow)"/>
+  <g opacity="0.18" fill="none" stroke="#efe3cc" stroke-width="1.25">
+    <path d="M-40 520 C120 450 250 550 430 420 C600 300 720 350 880 238 C1040 126 1120 168 1260 70"/>
+    <path d="M-30 420 C130 350 250 430 410 318 C600 180 750 260 910 142 C1040 50 1140 78 1280 -20"/>
+    <path d="M-70 610 C180 520 280 650 500 480 C680 342 790 390 980 254 C1100 166 1195 170 1300 94"/>
+  </g>
+  <path d="M92 520 C260 440 382 478 530 350 C685 216 820 260 970 146 C1055 82 1115 74 1160 48" fill="none" stroke="#f0b762" stroke-width="6" stroke-linecap="round" stroke-dasharray="18 22" opacity="0.86"/>
+  <g transform="translate(78 92)">
+    <rect x="0" y="0" width="1044" height="446" rx="38" fill="#2c251d" opacity="0.76" stroke="#efe3cc" stroke-opacity="0.14"/>
+    <text x="54" y="92" fill="#f0b762" font-family="Aptos, Segoe UI, sans-serif" font-size="23" font-weight="800" letter-spacing="4">WOOD RIVER VALLEY AI SYSTEMS</text>
+    <text x="54" y="190" fill="#efe3cc" font-family="Georgia, Times New Roman, serif" font-size="76" font-weight="700">Put AI to work</text>
+    <text x="54" y="270" fill="#efe3cc" font-family="Georgia, Times New Roman, serif" font-size="76" font-weight="700">where business repeats.</text>
+    <text x="58" y="340" fill="#cdbf9f" font-family="Aptos, Segoe UI, sans-serif" font-size="30">Custom agents · automated replies · quote workflows · practical integrations</text>
+    <text x="58" y="392" fill="#f3d08a" font-family="Aptos, Segoe UI, sans-serif" font-size="28" font-weight="800">Samuel · (208) 366-6111 · wpbfls@gmail.com</text>
+  </g>
+</svg>

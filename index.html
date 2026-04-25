@@ -25,9 +25,38 @@
     .section{padding:72px 0;border-top:1px solid rgba(241,231,211,.09)}.head{display:grid;grid-template-columns:minmax(0,.95fr) minmax(280px,.58fr);gap:38px;align-items:end;margin-bottom:30px}.head h2,.faq h2{font-size:clamp(2.25rem,4.3vw,4.55rem)}.head p{color:var(--muted);margin:0;font-size:1.03rem}.flow-board{border:1px solid var(--line);border-radius:22px;background:rgba(48,42,34,.74);box-shadow:0 18px 48px rgba(31,28,23,.24);padding:22px}.flow-grid{display:grid;grid-template-columns:1fr 1fr 1fr;gap:14px}.flow-col{border:1px solid rgba(241,231,211,.13);border-radius:16px;background:rgba(31,28,23,.42);padding:16px}.flow-col h3{font-size:1.35rem;color:var(--paper);margin-bottom:12px}.flow-card{border-left:3px solid var(--copper);padding:11px 0 11px 13px;margin-top:10px;background:linear-gradient(90deg,rgba(212,135,53,.1),transparent)}.flow-card strong{display:block;color:var(--paper)}.flow-card span{color:var(--muted);font-size:.92rem}.flow-arrow{display:grid;grid-template-columns:1fr auto 1fr auto 1fr;gap:10px;align-items:center;margin-top:18px}.flow-arrow div{height:2px;background:linear-gradient(90deg,transparent,var(--amber),transparent)}.flow-arrow span{color:var(--amber);font-weight:950}.systems-grid{display:grid;grid-template-columns:1.1fr .95fr .95fr;gap:15px}.system{border:1px solid var(--line);border-radius:18px;background:linear-gradient(180deg,rgba(241,231,211,.055),transparent 34%),rgba(48,42,34,.82);box-shadow:0 12px 30px rgba(31,28,23,.22);padding:22px}.system.feature{min-height:420px}.num{color:var(--amber);font-size:.78rem;font-weight:950;letter-spacing:.12em}.system h3{font-size:1.7rem;margin-top:14px}.system p{color:var(--muted);margin:12px 0 0}.system ul{display:grid;gap:9px;padding:0;margin:22px 0 0;list-style:none;color:var(--muted)}.system li:before{content:"";display:inline-block;width:7px;height:7px;background:var(--sage);border-radius:2px;margin-right:8px}.system-link{display:inline-flex;margin-top:18px;color:var(--amber);font-weight:900}.faq{display:grid;grid-template-columns:minmax(0,.75fr) minmax(0,1fr);gap:42px;align-items:start}.faq-list{display:grid;gap:10px}.faq details{border:1px solid var(--line);border-radius:15px;background:rgba(48,42,34,.76);padding:15px 17px}.faq summary{cursor:pointer;font-weight:900;color:var(--paper)}.faq p{color:var(--muted);margin:10px 0 0}.footer{width:min(var(--container),calc(100% - 40px));margin:auto;padding:28px 0 46px;display:flex;justify-content:space-between;gap:18px;color:var(--soft);border-top:1px solid rgba(241,231,211,.09)}
     @media(max-width:520px){.nav-shell{width:min(100% - 18px,1240px);align-items:flex-start}.brand small{max-width:160px}.phone{display:none}.cta{font-size:.86rem;padding:10px 11px}.section,.hero,.footer{width:min(100% - 32px,var(--container))}.hero h1{font-size:clamp(1.9rem,9.2vw,2.7rem);line-height:1.06;letter-spacing:-.012em;max-width:100%;overflow-wrap:normal;text-wrap:balance}.actions .btn{width:100%}.links .cta{display:none}.agent-top{display:grid}.metrics,.activity{grid-template-columns:1fr}.orch-map{grid-template-columns:1fr}.route{height:24px;width:2px;margin:auto;background:linear-gradient(180deg,transparent,var(--amber),transparent)}.route:after{content:"↓";right:-8px;top:6px}.trusted{display:none}.trust{display:none}.trusted div{gap:7px}.section{padding:52px 0}.head h2,.faq h2{font-size:clamp(2rem,10vw,3rem)}}
 
-    /* Sam feedback pass: simpler hero visual, thinner display type, readable nav CTA. */
-    h1,h2,h3{font-weight:400}.hero h1{font-weight:400}.links a.cta{color:#120d08!important;text-shadow:none}.links a.cta:hover{color:#120d08!important}.simple-agent-card{padding:0;background:linear-gradient(180deg,rgba(58,50,40,.94),rgba(36,32,26,.96));min-height:auto}.simple-card-head{display:flex;justify-content:space-between;gap:14px;padding:18px 20px;border-bottom:1px solid rgba(241,231,211,.1);color:var(--muted);font-size:.86rem}.simple-card-head span{color:var(--amber);text-transform:uppercase;letter-spacing:.11em;font-size:.7rem;font-weight:950}.simple-card-head strong{color:var(--paper)}.simple-rail{display:none}.simple-steps{display:grid;gap:0;padding:20px 22px}.simple-steps div{border:0;border-bottom:1px solid rgba(241,231,211,.12);border-radius:0;background:transparent;padding:17px 0}.simple-steps div:last-child{border-bottom:0}.simple-steps small,.simple-result span{display:block;color:var(--amber);text-transform:uppercase;letter-spacing:.1em;font-size:.66rem;font-weight:950}.simple-steps strong{display:block;color:var(--paper);font-size:1.05rem;line-height:1.35;margin-top:5px}.simple-result{margin:0 22px 22px;border:1px solid rgba(156,167,125,.24);border-radius:14px;background:rgba(156,167,125,.08);padding:16px}.simple-result p{margin:7px 0 0;color:var(--muted);font-weight:800}
-    @media(max-width:520px){.simple-rail{grid-template-columns:28px 1fr 28px 1fr 28px;padding:22px 20px 6px}.simple-rail span{height:28px}.simple-steps{padding:14px 16px 16px}.simple-result{margin:0 16px 16px}.hero h1{font-weight:400}}
+    /* Missed Call Rescue hero card */
+    .mcr-card{border:1px solid var(--line);border-radius:18px;background:linear-gradient(180deg,rgba(58,50,40,.98),rgba(36,32,26,.96));box-shadow:0 26px 70px rgba(31,28,23,.38);overflow:hidden;position:relative;min-width:360px}
+    .mcr-card:before{content:"";position:absolute;inset:0;background-image:linear-gradient(90deg,rgba(241,231,211,.045) 1px,transparent 1px),linear-gradient(rgba(241,231,211,.035) 1px,transparent 1px);background-size:28px 28px;mask-image:linear-gradient(180deg,rgba(0,0,0,.65),transparent 68%);pointer-events:none}
+    .mcr-head{display:flex;align-items:center;gap:8px;padding:14px 18px;border-bottom:1px solid rgba(241,231,211,.1);color:var(--muted);font-size:.84rem;position:relative;z-index:1}
+    .mcr-dot{width:9px;height:9px;border-radius:50%}
+    .mcr-dot.red{background:#c45d4b}.mcr-dot.amber{background:var(--copper)}.mcr-dot.sage{background:var(--sage)}
+    .mcr-head strong{margin-left:6px;color:var(--paper);font-size:.9rem}
+    .mcr-body{padding:20px 22px 22px;position:relative;z-index:1}
+    .mcr-label{display:block;color:var(--copper);text-transform:uppercase;letter-spacing:.1em;font-size:.62rem;font-weight:950;margin-bottom:8px}
+    .mcr-lead{border:1px solid rgba(241,231,211,.12);border-radius:14px;background:rgba(31,28,23,.5);padding:14px 16px;margin-bottom:16px}
+    .mcr-lead h3{margin:0;font-family:var(--font-title);font-size:1.15rem;color:var(--paper);font-weight:700}
+    .mcr-lead-row{display:flex;justify-content:space-between;align-items:center;gap:12px}
+    .mcr-badge{border:1px solid rgba(241,197,110,.35);border-radius:999px;padding:5px 10px;color:var(--amber);font-size:.72rem;font-weight:900;white-space:nowrap}
+    .mcr-track{margin-bottom:18px}
+    .mcr-track-line{display:flex;align-items:center;gap:0;position:relative;margin-bottom:10px}
+    .mcr-track-line:before{content:"";position:absolute;top:50%;left:0;right:0;height:2px;background:linear-gradient(90deg,var(--copper) 0%,var(--copper) 45%,rgba(241,231,211,.12) 45%,rgba(241,231,211,.12) 100%);transform:translateY(-50%)}
+    .mcr-pip{width:22px;height:22px;border-radius:50%;border:2px solid rgba(241,231,211,.15);background:var(--bg2);position:relative;z-index:1;display:grid;place-items:center;color:var(--muted);font-size:.65rem;font-weight:950;margin-right:auto}
+    .mcr-pip:last-child{margin-right:0}
+    .mcr-pip.on{border-color:var(--copper);background:rgba(212,135,53,.15);color:var(--amber)}
+    .mcr-track-labels{display:grid;grid-template-columns:1fr 1fr 1fr 1fr;gap:8px}
+    .mcr-track-labels span{color:var(--muted);font-size:.7rem;line-height:1.35}
+    .mcr-track-labels span:nth-child(1),.mcr-track-labels span:nth-child(2){color:var(--paper-muted)}
+    .mcr-draft{border:1px solid rgba(241,231,211,.1);border-radius:14px;background:rgba(241,231,211,.04);padding:14px 16px;margin-bottom:16px}
+    .mcr-draft p{margin:0;color:var(--paper);font-size:.92rem;line-height:1.5;font-style:italic}
+    .mcr-status{display:grid;gap:10px}
+    .mcr-bar-row{display:flex;justify-content:space-between;color:var(--muted);font-size:.72rem;font-weight:800}
+    .mcr-bar{height:5px;border-radius:0;background:rgba(241,231,211,.1);overflow:hidden}
+    .mcr-bar span{display:block;height:100%;border-radius:0}
+    .mcr-bar.green span{background:linear-gradient(90deg,var(--sage),#b8c49a)}
+    .mcr-bar.orange span{background:linear-gradient(90deg,var(--copper),#e09a6a)}
+    @media(max-width:920px){.mcr-card{max-width:540px;margin:0 auto;min-width:auto}}
+    @media(max-width:520px){.mcr-body{padding:16px}.mcr-track-labels{grid-template-columns:1fr 1fr}.mcr-track-labels span:nth-child(3),.mcr-track-labels span:nth-child(4){display:none}.mcr-lead-row{flex-wrap:wrap}}
   </style>
   <script type="application/ld+json">
   {"@context":"https://schema.org","@type":"ProfessionalService","name":"Samuel — Practical AI Systems Powered by Custom Agents","description":"Practical AI systems powered by custom agents for Wood River Valley businesses.","url":"https://samuel-t.vercel.app/","telephone":"+12083666111","email":"wpbfls@gmail.com","areaServed":["Hailey","Ketchum","Sun Valley","Bellevue","Wood River Valley"],"founder":{"@type":"Person","name":"Samuel"}}
@@ -53,15 +82,36 @@
         <ul class="trust" aria-label="Operating principles"><li>Local setup in Hailey</li><li>Custom agents, not generic chatbots</li><li>Human approval where it matters</li></ul>
         <div class="trusted" aria-label="Best fit industries"><small>Built for owner-run local teams</small><div><span>Contractors</span><span>Clinics</span><span>Hospitality</span><span>Retail</span><span>Professional services</span></div></div>
       </div>
-      <aside class="agent-card simple-agent-card" aria-label="Simple custom agent path">
-        <div class="simple-card-head"><span>Simple agent path</span><strong>One clear loop</strong></div>
-        <div class="simple-rail" aria-hidden="true"><span></span><i></i><span></span><i></i><span></span></div>
-        <div class="simple-steps">
-          <div><small>01 · Signal</small><strong>A lead, invoice, review, or task comes in.</strong></div>
-          <div><small>02 · Agent work</small><strong>The agent researches, drafts, sorts, and prepares the next move.</strong></div>
-          <div><small>03 · Human approval</small><strong>You get the clean brief and approve what happens next.</strong></div>
+      <aside class="mcr-card" aria-label="Missed Call Rescue demo">
+        <div class="mcr-head" aria-hidden="true">
+          <span class="mcr-dot red"></span><span class="mcr-dot amber"></span><span class="mcr-dot sage"></span>
+          <strong>Missed Call Rescue</strong>
         </div>
-        <div class="simple-result"><span>Result</span><p>Quote-ready brief · reply draft · task created · weak point flagged</p></div>
+        <div class="mcr-body">
+          <div class="mcr-lead">
+            <span class="mcr-label">Incoming lead</span>
+            <div class="mcr-lead-row"><h3>Missed call at 6:42 PM</h3><span class="mcr-badge">Owner review</span></div>
+          </div>
+          <div class="mcr-track" aria-hidden="true">
+            <div class="mcr-track-line"><span class="mcr-pip on"></span><span class="mcr-pip on"></span><span class="mcr-pip"></span><span class="mcr-pip"></span></div>
+            <div class="mcr-track-labels">
+              <span>Customer gets a fast text-back</span>
+              <span>AI asks for the missing details</span>
+              <span>Job summary lands in your inbox</span>
+              <span>You approve the reply</span>
+            </div>
+          </div>
+          <div class="mcr-draft">
+            <span class="mcr-label">Draft reply</span>
+            <p>“Thanks for reaching out. I can help. Can you send one photo, the job location, and whether this is urgent or flexible?”</p>
+          </div>
+          <div class="mcr-status">
+            <div class="mcr-bar-row"><span>Lead saved</span><span>Before morning</span></div>
+            <div class="mcr-bar green"><span style="width:78%"></span></div>
+            <div class="mcr-bar-row"><span>Risk level</span><span>Human approval</span></div>
+            <div class="mcr-bar orange"><span style="width:34%"></span></div>
+          </div>
+        </div>
       </aside>
     </section>
 

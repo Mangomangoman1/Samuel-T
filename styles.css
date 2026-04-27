@@ -32,8 +32,8 @@
 
 :root {
   color-scheme: dark;
-  --bg: #3E4A56;
-  --bg-deep: #3E4A56;
+  --bg: #27231d;
+  --bg-deep: #1f1c17;
   --panel: #74879A;
   --panel-strong: #74879A;
   --paper: #DEE6EE;
@@ -73,7 +73,7 @@ body {
   background:
     linear-gradient(90deg, rgba(222, 230, 238, 0.025) 1px, transparent 1px),
     linear-gradient(rgba(222, 230, 238, 0.018) 1px, transparent 1px),
-    linear-gradient(135deg, #3E4A56 0%, var(--bg) 44%, var(--bg-deep) 100%);
+    linear-gradient(135deg, #2b261f 0%, var(--bg) 44%, var(--bg-deep) 100%);
   background-size: 64px 64px, 64px 64px, auto;
   color: var(--paper);
   font-family: var(--font-body);

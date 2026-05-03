@@ -36,6 +36,11 @@
     <priority>0.8</priority>
   </url>
   <url>
+    <loc>https://www.actrix.me/ai-for-restaurants-cafes</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
     <loc>https://www.actrix.me/local-ai-starter-systems</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>

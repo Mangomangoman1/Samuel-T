@@ -61,20 +61,20 @@ DeepSeek is producing high-quality work at good pace. 7 commits in last 2 hours.
 
 ### Current Coverage
 - Core money pages: 6/6 DONE
-- Industry pages: 6/12 (contractors, wellness, restaurants, professional services, real estate, repair shops)
-- Regional pages: 1/9 (Boise)
-- Educational authority: 2/6 (what-ai-can-automate, ai-readiness-checklist)
-- Total pages in sitemap: 24
+- Industry pages: 8/12 (contractors, wellness, restaurants, professional services, real estate, repair shops, hospitality, education)
+- Regional pages: 4/9 (Boise, Idaho Falls, Twin Falls, Coeur d'Alene)
+- Educational authority: 3/6 (what-ai-can-automate, ai-readiness-checklist, ai-implementation-plan)
+- Total pages in sitemap: 30
 
 ### Phone number rule (READ THIS EVERY RUN)
 The phone number MUST be the unredacted digits `+12083666111` in ALL tel: and sms: href attributes. Never use any redacted form like `+120****6111`. Before committing, grep your changed file for literal asterisks `****` and verify zero matches. This is a zero-tolerance rule.
 
 ### Next targets — pick in this order:
-1. **Regional page: `/ai-services-idaho-falls`** — Idaho Falls is the 3rd largest metro in Idaho (~160K catchment). Targets "AI services Idaho Falls" queries. Use an Implementation Brief or dispatch board proof artifact with an Idaho Falls-specific scenario. Covers Idaho Falls, Ammon, Rigby, Blackfoot.
-2. **Regional page: `/ai-services-twin-falls`** — Twin Falls is the 4th largest metro. Covers Twin Falls, Jerome, Burley, Rupert, Kimberly. Remote/mail positioning.
-3. **Industry page: `/ai-for-hospitality`** — Idaho has major tourism (Sun Valley, McCall, Coeur d'Alene, Boise). Hotels, restaurants, guides, ski resorts. Use a booking/guest response proof artifact.
-4. **Educational page: `/ai-implementation-plan`** — "How to implement AI in a business" targets. Step-by-step implementation plan as proof artifact.
-5. **Regional page: `/ai-services-coeur-d-alene`** — Coeur d'Alene metro + Spokane spillover. Good summer tourism + growing remote-worker population.
+1. **Industry page: `/ai-for-nonprofits`** — Idaho has a significant nonprofit sector. Many small orgs need admin support, grant tracking, donor communication. Use a grant-brief or donor-engagement proof artifact.
+2. **Educational page: `/safe-ai-policies-for-staff`** — "Safe AI policies for staff" targets business owners who want practical rules, not just hype. Use a policy brief / compliance template as proof artifact.
+3. **Industry page: `/ai-for-retail`** — Idaho retail could use agents for customer inquiry responses, inventory communication, staff scheduling. Remaining industry gap.
+4. **Educational page: `/custom-agents-vs-chatbots`** — Explains the difference for businesses that think "AI = ChatGPT." Important educational funnel page.
+5. **Regional page: consider `/ai-services-pocatello`** or `/ai-services-rexburg` as next regional targets if demand data supports it.
 
 ### Quality reminders:
 - Every page needs a proof artifact, not just cards.

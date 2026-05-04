@@ -35,8 +35,8 @@
     @media(max-width:760px){.mobile-menu{display:block!important}.nav-shell{position:relative;overflow:visible!important}.mobile-menu-panel{z-index:80}
       .nav{top:8px!important}.nav-shell,.nav.is-constricted .nav-shell{width:calc(100% - 20px)!important;min-height:0;padding:6px 10px!important;gap:8px;border-radius:18px;overflow:hidden}.brand{gap:9px;min-width:0}.brand .mark{width:40px!important;height:40px!important;flex-basis:40px}.brand .mark img{width:40px!important;height:40px!important}.brand strong{font-size:.98rem}.brand small{display:none}.links{margin-left:auto;gap:0}.links a{display:none!important}.nav-center{display:none!important}.links .phone{display:inline-flex!important;padding:9px 10px;font-size:.86rem;white-space:nowrap;color:var(--paper);background:rgba(222,230,238,.08);border:1px solid rgba(222,230,238,.14);border-radius:12px}.links .cta{display:none!important}
       .wrap{width:calc(100% - 32px)!important;margin-inline:auto}.hero{padding:42px 0 34px!important;display:grid!important;grid-template-columns:1fr!important;gap:24px!important;align-items:start!important}.hero>*{min-width:0}h1{font-size:clamp(1.9rem,10.2vw,2.55rem)!important;line-height:1.05!important;letter-spacing:-.014em!important;max-width:13ch;text-wrap:balance;overflow-wrap:normal;word-break:normal}.lede{font-size:.98rem!important;line-height:1.5!important;max-width:34ch;margin-top:14px}.eyebrow{font-size:.7rem;letter-spacing:.1em;margin-bottom:14px}.eyebrow:before{width:24px}.hero-actions{display:grid!important;grid-template-columns:1fr!important;gap:8px!important}.btn{width:100%;justify-content:center;text-align:center;padding:12px 14px!important}.np-card{border-radius:18px!important}.np-card .nc-body{padding:16px!important}.np-card .nc-metrics{grid-template-columns:1fr 1fr;gap:8px}.np-card .nc-item{padding:10px 12px}.np-card .nc-item b{font-size:.8rem}.np-card .nc-item .nc-meta{font-size:.66rem}.np-card .nc-response{padding:12px}.np-card .nc-response .nc-r-msg{font-size:.76rem}
-      .section{padding:48px 0!important}.head{margin-bottom:18px}.pain-card,.step,.use-card{border-radius:18px!important;padding:18px!important}.pain-card h3{font-size:1.15rem}.step:before{font-size:1.8rem}.step h3{font-size:1.15rem}.use-card h3{font-size:1.1rem}.faq-wrap summary{padding:14px 16px;font-size:.98rem}.final-box{padding:28px 22px!important;text-align:left;grid-template-columns:1fr}.final-box p{max-width:100%}}
-    @media(min-width:761px) and (max-width:1020px){.links a[href="/how-it-works"]{display:none!important}.hero{grid-template-columns:1fr!important;gap:34px}.hero h1{max-width:12ch}.head{grid-template-columns:1fr!important}.pain-grid,.steps,.use-grid{grid-template-columns:1fr!important}}
+      .section{padding:48px 0!important}.head{margin-bottom:18px}.pain-card,.step,.use-card{border-radius:18px!important;padding:18px!important}.pain-card h3{font-size:1.15rem}.step:before{font-size:1.8rem}.step h3{font-size:1.15rem}.use-card h3{font-size:1.1rem}#where .use-grid{grid-template-columns:1fr 1fr!important}.faq-wrap summary{padding:14px 16px;font-size:.98rem}.final-box{padding:28px 22px!important;text-align:left;grid-template-columns:1fr}.final-box p{max-width:100%}}
+    @media(min-width:761px) and (max-width:1020px){.links a[href="/how-it-works"]{display:none!important}.hero{grid-template-columns:1fr!important;gap:34px}.hero h1{max-width:12ch}.head{grid-template-columns:1fr!important}.pain-grid,.steps,.use-grid{grid-template-columns:1fr!important}#where .use-grid{grid-template-columns:1fr 1fr!important}}
     @media(prefers-reduced-motion:reduce){*,*:before,*:after{animation-duration:0s!important;transition-duration:0s!important}}
   </style>
   <script type="application/ld+json">{
@@ -205,6 +205,12 @@
             <p>Board reports, volunteer scheduling, event inquiries, data entry, compliance documentation — the administrative work of running a nonprofit can consume 40% of a small team's week. That is time not spent on programs, relationships, or fundraising.</p>
           </div>
         </div>
+        <div style="margin-top:22px;display:flex;flex-wrap:wrap;gap:10px;align-items:center">
+          <span style="color:var(--muted);font-size:.78rem;font-weight:900;text-transform:uppercase;letter-spacing:.06em">Related:</span>
+          <a href="/idaho-ai-services" style="display:inline-flex;align-items:center;gap:6px;padding:8px 14px;border-radius:10px;border:1px solid rgba(222,230,238,.12);background:rgba(222,230,238,.04);color:var(--soft);font-size:.82rem;font-weight:800;transition:border-color .2s,background .2s">Idaho AI Hub →</a>
+          <a href="/what-ai-can-automate-for-small-business" style="display:inline-flex;align-items:center;gap:6px;padding:8px 14px;border-radius:10px;border:1px solid rgba(222,230,238,.12);background:rgba(222,230,238,.04);color:var(--soft);font-size:.82rem;font-weight:800;transition:border-color .2s,background .2s">What AI can automate →</a>
+          <a href="/ai-for-professional-services" style="display:inline-flex;align-items:center;gap:6px;padding:8px 14px;border-radius:10px;border:1px solid rgba(222,230,238,.12);background:rgba(222,230,238,.04);color:var(--soft);font-size:.82rem;font-weight:800;transition:border-color .2s,background .2s">AI for professional offices →</a>
+        </div>
       </div>
     </section>
 
@@ -261,6 +267,43 @@
             <h3>Administrative Support Agent</h3>
             <p>Drafts board reports from program metrics, donor summaries, and grant updates. Manages event inquiry responses. Handles routine compliance documentation. Your executive director and program staff get hours back each week for mission-critical work.</p>
           </div>
+        </div>
+        <div style="margin-top:22px;display:flex;flex-wrap:wrap;gap:10px;align-items:center">
+          <span style="color:var(--muted);font-size:.78rem;font-weight:900;text-transform:uppercase;letter-spacing:.06em">Explore:</span>
+          <a href="/ai-agents-for-business" style="display:inline-flex;align-items:center;gap:6px;padding:8px 14px;border-radius:10px;border:1px solid rgba(222,230,238,.12);background:rgba(222,230,238,.04);color:var(--soft);font-size:.82rem;font-weight:800;transition:border-color .2s,background .2s">How custom agents work →</a>
+          <a href="/ai-training-idaho" style="display:inline-flex;align-items:center;gap:6px;padding:8px 14px;border-radius:10px;border:1px solid rgba(222,230,238,.12);background:rgba(222,230,238,.04);color:var(--soft);font-size:.82rem;font-weight:800;transition:border-color .2s,background .2s">Staff AI training →</a>
+          <a href="/ai-support-idaho" style="display:inline-flex;align-items:center;gap:6px;padding:8px 14px;border-radius:10px;border:1px solid rgba(222,230,238,.12);background:rgba(222,230,238,.04);color:var(--soft);font-size:.82rem;font-weight:800;transition:border-color .2s,background .2s">Ongoing AI support →</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="where">
+      <div class="wrap">
+        <div class="head">
+          <h2>For Idaho <span>nonprofits</span> across the state</h2>
+          <p>Actrix works with mission-driven organizations throughout Idaho — from downtown Boise foundations to rural community groups in eastern Idaho. We build agents that understand your local context, donor base, and program geography.</p>
+        </div>
+        <div class="use-grid" style="grid-template-columns:repeat(4,1fr)">
+          <a href="/ai-services-boise" class="use-card" style="text-align:center;padding:20px 16px;cursor:pointer;transition:transform .18s ease,border-color .2s;display:block" onmouseenter="this.style.transform='translateY(-4px)'" onmouseleave="this.style.transform='translateY(0)'">
+            <div class="use-num" style="text-align:center">Boise</div>
+            <h3 style="font-size:1.1rem;margin-top:6px">Treasure Valley nonprofits</h3>
+            <p style="font-size:.84rem">Foundations, community orgs, and advocacy groups in Boise, Meridian, Nampa, and Caldwell.</p>
+          </a>
+          <a href="/ai-services-idaho-falls" class="use-card" style="text-align:center;padding:20px 16px;cursor:pointer;transition:transform .18s ease,border-color .2s;display:block" onmouseenter="this.style.transform='translateY(-4px)'" onmouseleave="this.style.transform='translateY(0)'">
+            <div class="use-num" style="text-align:center">Idaho Falls</div>
+            <h3 style="font-size:1.1rem;margin-top:6px">Eastern Idaho nonprofits</h3>
+            <p style="font-size:.84rem">Organizations in Idaho Falls, Ammon, Rigby, and Rexburg serving families and communities.</p>
+          </a>
+          <a href="/ai-services-twin-falls" class="use-card" style="text-align:center;padding:20px 16px;cursor:pointer;transition:transform .18s ease,border-color .2s;display:block" onmouseenter="this.style.transform='translateY(-4px)'" onmouseleave="this.style.transform='translateY(0)'">
+            <div class="use-num" style="text-align:center">Twin Falls</div>
+            <h3 style="font-size:1.1rem;margin-top:6px">Magic Valley nonprofits</h3>
+            <p style="font-size:.84rem">Community foundations, food banks, and service orgs in Twin Falls, Jerome, and Burley.</p>
+          </a>
+          <a href="/ai-services-pocatello" class="use-card" style="text-align:center;padding:20px 16px;cursor:pointer;transition:transform .18s ease,border-color .2s;display:block" onmouseenter="this.style.transform='translateY(-4px)'" onmouseleave="this.style.transform='translateY(0)'">
+            <div class="use-num" style="text-align:center">Pocatello</div>
+            <h3 style="font-size:1.1rem;margin-top:6px">Southeast Idaho nonprofits</h3>
+            <p style="font-size:.84rem">Organizations in Pocatello, Chubbuck, and the surrounding communities.</p>
+          </a>
         </div>
       </div>
     </section>
@@ -329,12 +372,36 @@
 
   <footer>
     <div class="footer-wrap">
-      <span>Actrix. Practical AI systems powered by custom agents.</span>
-      <div style="display:flex;gap:16px;flex-wrap:wrap">
-        <a href="/solutions">Solutions</a>
-        <a href="/how-it-works">How It Works</a>
-        <a href="/ai-support-idaho">Support</a>
-        <a href="tel:+12083666111">(208) 366-6111</a>
+      <div style="margin-bottom:20px">
+        <span style="display:block;color:var(--paper);font-weight:900;font-size:1.05rem;margin-bottom:6px">Actrix</span>
+        <span style="color:var(--muted);font-size:.82rem">Practical AI systems powered by custom agents. Built in Idaho, serving Idaho.</span>
+      </div>
+      <div style="display:flex;gap:32px;flex-wrap:wrap;margin-bottom:20px">
+        <div style="display:flex;flex-direction:column;gap:8px">
+          <span style="color:var(--soft);font-size:.7rem;font-weight:900;text-transform:uppercase;letter-spacing:.08em">Idaho AI Services</span>
+          <a href="/idaho-ai-services" style="color:var(--muted);font-size:.82rem">AI Services Hub</a>
+          <a href="/ai-support-idaho" style="color:var(--muted);font-size:.82rem">AI Support</a>
+          <a href="/ai-training-idaho" style="color:var(--muted);font-size:.82rem">AI Training</a>
+          <a href="/ai-agents-for-business" style="color:var(--muted);font-size:.82rem">Agents for Business</a>
+        </div>
+        <div style="display:flex;flex-direction:column;gap:8px">
+          <span style="color:var(--soft);font-size:.7rem;font-weight:900;text-transform:uppercase;letter-spacing:.08em">Idaho Regions</span>
+          <a href="/ai-services-boise" style="color:var(--muted);font-size:.82rem">Boise</a>
+          <a href="/ai-services-idaho-falls" style="color:var(--muted);font-size:.82rem">Idaho Falls</a>
+          <a href="/ai-services-twin-falls" style="color:var(--muted);font-size:.82rem">Twin Falls</a>
+          <a href="/ai-services-pocatello" style="color:var(--muted);font-size:.82rem">Pocatello</a>
+        </div>
+        <div style="display:flex;flex-direction:column;gap:8px">
+          <span style="color:var(--soft);font-size:.7rem;font-weight:900;text-transform:uppercase;letter-spacing:.08em">Learn</span>
+          <a href="/solutions" style="color:var(--muted);font-size:.82rem">Solutions</a>
+          <a href="/how-it-works" style="color:var(--muted);font-size:.82rem">How It Works</a>
+          <a href="/what-ai-can-automate-for-small-business" style="color:var(--muted);font-size:.82rem">What AI Can Automate</a>
+          <a href="/custom-agents-vs-chatbots" style="color:var(--muted);font-size:.82rem">Agents vs Chatbots</a>
+        </div>
+      </div>
+      <div style="display:flex;gap:16px;flex-wrap:wrap;align-items:center;padding-top:16px;border-top:1px solid rgba(222,230,238,.08)">
+        <a href="tel:+12083666111" style="color:var(--amber);font-weight:900">(208) 366-6111</a>
+        <a href="sms:+12083666111" style="color:var(--paper);font-weight:900;border:1px solid var(--line);padding:6px 14px;border-radius:8px;font-size:.82rem">Text Us</a>
       </div>
     </div>
   </footer>

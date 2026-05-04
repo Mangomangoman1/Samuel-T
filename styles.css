@@ -32,22 +32,24 @@
 
 :root {
   color-scheme: dark;
-  --bg: #27231d;
-  --bg-deep: #1f1c17;
-  --panel: #74879A;
-  --panel-strong: #74879A;
-  --paper: #DEE6EE;
-  --paper-muted: #B2C1CF;
-  --muted: #B2C1CF;
-  --copper: #E6D2C2;
-  --copper-bright: #E6D2C2;
-  --ember: #E6D2C2;
-  --sage: #B2C1CF;
-  --clay: #74879A;
-  --danger: #E6D2C2;
-  --line: rgba(222, 230, 238, 0.18);
-  --line-strong: rgba(222, 230, 238, 0.32);
-  --shadow: 0 18px 46px rgba(62, 74, 86, 0.34);
+  --bg: #242018;
+  --bg-deep: #191610;
+  --panel: #697d8f;
+  --panel-strong: #596b7b;
+  --paper: #e5edf3;
+  --paper-muted: #bfccd7;
+  --muted: #bfccd7;
+  --copper: #d9aa86;
+  --copper-bright: #f0c49f;
+  --ember: #eed1bc;
+  --sage: #a7bfab;
+  --sky: #bfd2e1;
+  --rose: #d7acb1;
+  --clay: #8a9aad;
+  --danger: #e7a59c;
+  --line: rgba(229, 237, 243, 0.16);
+  --line-strong: rgba(229, 237, 243, 0.28);
+  --shadow: 0 18px 46px rgba(34, 43, 51, 0.34);
   --radius-xl: 22px;
   --radius-lg: 16px;
   --radius-md: 11px;
@@ -56,6 +58,7 @@
   --font-display: "Marcellus", "Merom Sans", "Arial Narrow", system-ui, sans-serif;
   --font-body: Aptos, "Segoe UI", "Helvetica Neue", system-ui, -apple-system, sans-serif;
 }
+
 
 * {
   box-sizing: border-box;
@@ -71,10 +74,12 @@ body {
   min-width: 320px;
   overflow-x: hidden;
   background:
-    linear-gradient(90deg, rgba(222, 230, 238, 0.025) 1px, transparent 1px),
-    linear-gradient(rgba(222, 230, 238, 0.018) 1px, transparent 1px),
-    linear-gradient(135deg, #2b261f 0%, var(--bg) 44%, var(--bg-deep) 100%);
-  background-size: 64px 64px, 64px 64px, auto;
+    radial-gradient(circle at 18% 8%, rgba(167, 191, 171, 0.08), transparent 28%),
+    radial-gradient(circle at 82% 14%, rgba(191, 210, 225, 0.07), transparent 26%),
+    linear-gradient(90deg, rgba(229, 237, 243, 0.025) 1px, transparent 1px),
+    linear-gradient(rgba(229, 237, 243, 0.018) 1px, transparent 1px),
+    linear-gradient(135deg, #2a241c 0%, var(--bg) 44%, var(--bg-deep) 100%);
+  background-size: 100% 100%, 100% 100%, 64px 64px, 64px 64px, auto;
   color: var(--paper);
   font-family: var(--font-body);
   line-height: 1.6;
@@ -101,7 +106,7 @@ body::after {
   inset: 0 0 auto auto;
   width: 38vw;
   height: 100vh;
-  background: linear-gradient(90deg, transparent, rgba(230, 210, 194, 0.045));
+  background: linear-gradient(90deg, transparent, rgba(240, 196, 159, 0.05));
   pointer-events: none;
   z-index: -1;
 }
@@ -730,11 +735,36 @@ button {
   position: relative;
 }
 
+.section:nth-of-type(4n + 1) {
+  background:
+    linear-gradient(180deg, rgba(191, 210, 225, 0.04), transparent 22%),
+    linear-gradient(180deg, rgba(255, 255, 255, 0.01), transparent 54%);
+}
+
+.section:nth-of-type(4n + 2) {
+  background:
+    linear-gradient(180deg, rgba(167, 191, 171, 0.04), transparent 22%),
+    linear-gradient(180deg, rgba(255, 255, 255, 0.01), transparent 54%);
+}
+
+.section:nth-of-type(4n + 3) {
+  background:
+    linear-gradient(180deg, rgba(215, 172, 177, 0.035), transparent 22%),
+    linear-gradient(180deg, rgba(255, 255, 255, 0.01), transparent 54%);
+}
+
+.section:nth-of-type(4n + 4) {
+  background:
+    linear-gradient(180deg, rgba(240, 196, 159, 0.04), transparent 22%),
+    linear-gradient(180deg, rgba(255, 255, 255, 0.01), transparent 54%);
+}
+
 .intro-band {
   padding: 74px 0;
-  border-top: 1px solid rgba(222, 230, 238, 0.09);
-  border-bottom: 1px solid rgba(222, 230, 238, 0.09);
-  background: rgba(222, 230, 238, 0.035);
+  border-top: 1px solid rgba(191, 210, 225, 0.10);
+  border-bottom: 1px solid rgba(167, 191, 171, 0.10);
+  background:
+    linear-gradient(90deg, rgba(191, 210, 225, 0.05), rgba(167, 191, 171, 0.02) 42%, rgba(215, 172, 177, 0.04));
 }
 
 .intro-grid,
@@ -831,12 +861,13 @@ button {
 .tool-board,
 .safety-table,
 .faq-list details {
-  border: 1px solid rgba(222, 230, 238, 0.13);
+  border: 1px solid rgba(229, 237, 243, 0.13);
   background:
-    linear-gradient(180deg, rgba(222, 230, 238, 0.052), transparent 34%),
-    rgba(62, 74, 86, 0.86);
+    linear-gradient(180deg, rgba(191, 210, 225, 0.06), transparent 34%),
+    linear-gradient(180deg, rgba(167, 191, 171, 0.03), transparent 72%),
+    rgba(58, 69, 80, 0.88);
   border-radius: var(--radius-lg);
-  box-shadow: 0 12px 30px rgba(62, 74, 86, 0.22);
+  box-shadow: 0 12px 30px rgba(34, 43, 51, 0.22);
 }
 
 .system-card {
@@ -853,8 +884,8 @@ button {
   width: 120px;
   height: 120px;
   border-radius: 999px;
-  border: 1px solid rgba(230, 210, 194, 0.18);
-  background: radial-gradient(circle, rgba(230, 210, 194, 0.12), transparent 64%);
+  border: 1px solid rgba(215, 172, 177, 0.18);
+  background: radial-gradient(circle, rgba(215, 172, 177, 0.12), transparent 64%);
 }
 
 .system-card h3,

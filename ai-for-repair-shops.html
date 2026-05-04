@@ -1,0 +1,401 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>AI for Repair Shops | Auto, Phone &amp; Equipment Shops | Actrix</title>
+  <meta name="description" content="Custom AI agents for repair shops across Idaho. Automate intake, dispatch, status updates, follow-up, and customer communication. Works for auto shops, phone repair, equipment repair, and any service shop that fixes things.">
+  <meta name="robots" content="index,follow">
+  <meta name="theme-color" content="#3E4A56">
+  <link rel="canonical" href="https://www.actrix.me/ai-for-repair-shops">
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+  <meta property="og:type" content="article">
+  <meta property="og:title" content="AI for Repair Shops | Auto, Phone &amp; Equipment Shops | Actrix">
+  <meta property="og:description" content="Custom AI agents for repair shops across Idaho. Automate intake, dispatch, status updates, follow-up, and customer communication. Works for auto shops, phone repair, and equipment repair.">
+  <meta property="og:url" content="https://www.actrix.me/ai-for-repair-shops">
+  <meta property="og:image" content="https://www.actrix.me/og-card.png">
+  <meta name="twitter:card" content="summary_large_image">
+  <style>
+    @font-face{font-family:"Merom Sans";src:url('/assets/fonts/MeromSans-Regular.ttf') format('truetype');font-weight:400;font-display:swap}@font-face{font-family:"Merom Sans";src:url('/assets/fonts/MeromSans-SemiBold.ttf') format('truetype');font-weight:700;font-display:swap}@font-face{font-family:"Merom Sans";src:url('/assets/fonts/MeromSans-Bold.ttf') format('truetype');font-weight:850;font-display:swap}@font-face{font-family:Marcellus;src:url('/assets/fonts/Marcellus-Regular.ttf') format('truetype');font-weight:400;font-display:swap}
+    :root{--bg:#27231d;--bg2:#1f1c17;--panel:#74879A;--panel2:#3E4A56;--paper:#DEE6EE;--muted:#B2C1CF;--soft:#8FA1B2;--line:rgba(222,230,238,.18);--line2:rgba(222,230,238,.32);--amber:#E6D2C2;--font-title:"Marcellus","Merom Sans","Arial Narrow",system-ui,sans-serif;--font-body:Aptos,"Segoe UI","Helvetica Neue",system-ui,sans-serif;--container:1180px}*{box-sizing:border-box}html{scroll-behavior:smooth;background:var(--bg)}body{margin:0;min-width:320px;overflow-x:hidden;background:linear-gradient(90deg,rgba(222,230,238,.025) 1px,transparent 1px),linear-gradient(rgba(222,230,238,.018) 1px,transparent 1px),radial-gradient(circle at 80% 6%,rgba(230,210,194,.16),transparent 34rem),radial-gradient(circle at 20% 22%,rgba(222,230,238,.06),transparent 28rem),linear-gradient(135deg,#2b261f,var(--bg) 45%,var(--bg2));background-size:64px 64px,64px 64px,auto,auto,auto;color:var(--paper);font-family:var(--font-body);line-height:1.58}a{color:inherit;text-decoration:none}:focus-visible{outline:2px solid var(--amber);outline-offset:4px}.skip{position:fixed;left:12px;top:12px;z-index:99;transform:translateY(-140%);background:var(--amber);color:var(--bg2);padding:10px 12px;border-radius:10px;font-weight:900}.skip:focus{transform:translateY(0)}
+    .nav{position:sticky;top:14px;z-index:20;padding:0;background:transparent;backdrop-filter:none;border-bottom:0;pointer-events:none}.nav-shell{--nav-wide:1240px;--nav-tight:910px;position:relative;width:min(var(--nav-wide),calc(100% - 28px));margin:auto;display:flex;align-items:center;justify-content:space-between;gap:14px;border:1px solid var(--line);border-radius:16px;background:rgba(62,74,86,.72);padding:10px 10px 10px 14px;box-shadow:0 10px 28px rgba(62,74,86,.22);transform-origin:50% 50%;transition:width .44s cubic-bezier(.2,1.16,.34,1),border-color .28s ease,background .28s ease,box-shadow .28s ease;will-change:width;pointer-events:auto;overflow:hidden}.nav.is-constricted .nav-shell{width:min(var(--nav-tight),calc(100% - 44px));border-color:rgba(230,210,194,.34);background:rgba(62,74,86,.64);box-shadow:0 18px 46px rgba(62,74,86,.32),inset 0 1px 0 rgba(222,230,238,.08)}.nav.nav-jelly-in .nav-shell{animation:navJellyIn .42s cubic-bezier(.2,1.18,.34,1) both}.nav.nav-jelly-out .nav-shell{animation:navJellyOut .38s cubic-bezier(.2,1.08,.34,1) both}@keyframes navJellyIn{0%{transform:scaleX(1)}42%{transform:scaleX(.982)}68%{transform:scaleX(1.006)}100%{transform:scaleX(1)}}@keyframes navJellyOut{0%{transform:scaleX(1)}44%{transform:scaleX(1.01)}78%{transform:scaleX(.996)}100%{transform:scaleX(1)}}.brand{display:flex;align-items:center;gap:10px;min-width:0}.mark{width:60px;height:60px;display:grid;place-items:center;flex:0 0 60px;margin:-8px 0;border:0;background:transparent;box-shadow:none;border-radius:0;overflow:visible;padding:0}.mark:before,.mark:after{display:none!important}.mark img{width:60px!important;height:60px!important;object-fit:contain;display:block}.brand strong{display:block;font-weight:850;letter-spacing:.02em;font-size:1rem}.brand small{display:block;color:var(--muted);font-size:.74rem;line-height:1.1;white-space:nowrap}.links{display:flex;align-items:center;gap:4px;min-width:0;flex:1;justify-content:flex-end}.nav-center{position:absolute;left:50%;top:50%;transform:translate(-50%,-50%);display:flex;gap:5px}.nav-center a{color:var(--muted);padding:8px 11px;border-radius:999px;font-size:.88rem;transition:color .15s ease,background .15s ease}.nav-center a:hover{color:var(--paper);background:rgba(222,230,238,.07)}.phone{color:var(--amber)!important;border:1px solid rgba(230,210,194,.24);padding:10px 12px;border-radius:999px;font-size:.9rem;font-weight:800;transition:color .15s ease,background .15s ease,border-color .15s ease}.phone:hover{border-color:var(--amber)}.cta{color:var(--bg2)!important;background:var(--amber);padding:10px 18px;border-radius:999px;font-weight:950;font-size:.9rem;white-space:nowrap;box-shadow:0 14px 30px rgba(230,210,194,.22);transition:transform .18s ease,box-shadow .18s ease}.cta:hover{transform:translateY(-1px);box-shadow:0 18px 38px rgba(230,210,194,.28)}
+    .mobile-menu{display:none;pointer-events:auto;position:relative;z-index:55}.mobile-menu summary{list-style:none;cursor:pointer;display:block}.mobile-menu summary::-webkit-details-marker{display:none}.mobile-menu summary span{display:inline-flex;align-items:center;gap:6px;padding:10px 11px;border-radius:12px;border:1px solid rgba(222,230,238,.16);background:rgba(222,230,238,.08);color:var(--paper);font-weight:900;font-size:.86rem}.mobile-menu summary span:after{content:"";width:7px;height:7px;border-right:2px solid currentColor;border-bottom:2px solid currentColor;transform:rotate(45deg) translateY(-2px)}.mobile-menu[open] summary span:after{transform:rotate(225deg) translate(-1px,-1px)}.mobile-menu-panel{position:absolute;right:10px;top:calc(100% + 8px);width:min(290px,calc(100vw - 32px));display:grid;gap:6px;padding:10px;border:1px solid var(--line);border-radius:18px;background:rgba(39,35,29,.96);box-shadow:0 22px 60px rgba(31,28,23,.42);backdrop-filter:blur(18px)}.mobile-menu-panel a{display:flex;justify-content:space-between;align-items:center;padding:12px 13px;border-radius:12px;color:var(--paper);font-weight:900}.mobile-menu-panel a:not(.mobile-cta){background:rgba(222,230,238,.055);border:1px solid rgba(222,230,238,.08)}.mobile-menu-panel a:not(.mobile-cta):after{content:"→";color:var(--amber)}.mobile-menu-panel .mobile-cta{background:var(--amber);color:#252019;justify-content:center}
+    .wrap{width:min(var(--container),calc(100% - 40px));margin:auto}.hero{padding:82px 0 58px;display:grid;grid-template-columns:minmax(0,.95fr) minmax(340px,.72fr);gap:46px;align-items:end}.hero>*{min-width:0}.eyebrow{display:inline-flex;align-items:center;gap:10px;margin:0 0 18px;color:var(--amber);text-transform:uppercase;letter-spacing:.12em;font-size:.76rem;font-weight:950}.eyebrow:before{content:"";width:34px;height:1px;background:var(--amber)}h1,h2,h3{font-family:var(--font-title);margin:0;letter-spacing:-.025em;line-height:1;font-weight:400}h1{font-size:clamp(2.6rem,5.8vw,5.4rem);max-width:860px}h1 span{color:var(--amber)}.lede{max-width:720px;margin:20px 0 0;color:var(--muted);font-size:clamp(1.05rem,2vw,1.25rem)}.hero-actions{display:flex;gap:12px;flex-wrap:wrap;margin-top:28px}.btn{display:inline-flex;align-items:center;justify-content:center;padding:13px 22px;border-radius:999px;font-weight:950;font-size:.92rem;white-space:nowrap;border:1px solid transparent;cursor:pointer;transition:transform .18s ease}.btn:hover{transform:scale(1.04)}.btn.primary{background:var(--amber);color:#1f1c17;box-shadow:0 12px 32px rgba(230,210,194,.22)}.btn.secondary{border-color:var(--line);background:rgba(222,230,238,.06);color:var(--paper)}
+    /* Dispatch Board — hero proof artifact for repair shops */
+    .dispatch-card{border:1px solid var(--line);border-radius:20px;background:rgba(62,74,86,.78);overflow:hidden;box-shadow:0 18px 48px rgba(62,74,86,.24)}.dispatch-card .dc-header{display:flex;align-items:center;gap:10px;padding:14px 18px;border-bottom:1px solid var(--line);background:rgba(222,230,238,.04)}.dispatch-card .dc-dots{display:flex;gap:6px}.dispatch-card .dc-dot{width:9px;height:9px;border-radius:50%}.dispatch-card .dc-dot.r{background:#f87171}.dispatch-card .dc-dot.y{background:#fbbf24}.dispatch-card .dc-dot.g{background:#6ee7b7}.dispatch-card .dc-label{color:var(--muted);font-size:.82rem;font-weight:800;letter-spacing:.04em;text-transform:uppercase}.dispatch-card .dc-body{padding:20px 22px}.dispatch-card .dc-ticket{border:1px solid rgba(222,230,238,.1);border-radius:14px;background:rgba(62,74,86,.5);padding:14px;margin-bottom:12px}.dispatch-card .dc-ticket:last-child{margin-bottom:0}.dispatch-card .dc-ticket-head{display:flex;justify-content:space-between;align-items:center;gap:8px;margin-bottom:10px}.dispatch-card .dc-ticket-id{color:var(--amber);font-weight:900;font-size:.7rem;letter-spacing:.06em;text-transform:uppercase}.dispatch-card .dc-ticket-status{display:inline-block;border-radius:999px;padding:5px 9px;font-size:.65rem;font-weight:950;text-transform:uppercase;letter-spacing:.06em;white-space:nowrap}.dispatch-card .dc-ticket-status.intake{background:rgba(178,193,207,.12);border:1px solid rgba(178,193,207,.2);color:var(--muted)}.dispatch-card .dc-ticket-status.diag{background:rgba(251,191,36,.1);border:1px solid rgba(251,191,36,.22);color:#fbbf24}.dispatch-card .dc-ticket-status.ready{background:rgba(110,231,183,.1);border:1px solid rgba(110,231,183,.22);color:#6ee7b7}.dispatch-card .dc-ticket-status.approval{background:rgba(230,210,194,.1);border:1px solid rgba(230,210,194,.25);color:var(--amber)}.dispatch-card .dc-ticket-body{display:grid;grid-template-columns:auto 1fr auto;gap:8px;align-items:center}.dispatch-card .dc-ticket-device{width:36px;height:36px;border-radius:8px;background:rgba(178,193,207,.12);border:1px solid rgba(222,230,238,.1);display:grid;place-items:center;font-size:1rem;flex-shrink:0}.dispatch-card .dc-ticket-info strong{display:block;color:var(--paper);font-size:.9rem;margin-bottom:1px}.dispatch-card .dc-ticket-info span{display:block;color:var(--muted);font-size:.75rem}.dispatch-card .dc-ticket-time{color:var(--muted);font-size:.7rem}.dispatch-card .dc-ticket-action{display:flex;align-items:center;gap:8px;margin-top:8px;padding-top:8px;border-top:1px solid rgba(222,230,238,.06)}.dispatch-card .dc-ticket-action span{color:var(--muted);font-size:.82rem;line-height:1.35;flex:1}.dispatch-card .dc-ticket-action .dc-act-badge{font-size:.65rem;color:var(--amber);font-weight:950;white-space:nowrap}
+    .section{padding:72px 0;border-top:1px solid rgba(222,230,238,.09)}.head{display:grid;grid-template-columns:minmax(0,.95fr) minmax(280px,.58fr);gap:38px;align-items:end;margin-bottom:34px}.head h2{font-size:clamp(2.25rem,4.3vw,4.55rem)}.head p{color:var(--muted);margin:0;font-size:1.03rem}h3{font-size:1.7rem}.pain-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}.pain-card{border:1px solid var(--line);border-radius:18px;background:rgba(62,74,86,.82);padding:24px}.pain-card .pc-icon{width:38px;height:38px;border-radius:10px;background:rgba(230,210,194,.12);border:1px solid rgba(230,210,194,.22);display:grid;place-items:center;font-size:1.2rem;margin-bottom:12px}.pain-card h3{font-size:1.3rem;margin-top:0}.pain-card p{color:var(--muted);margin:10px 0 0;line-height:1.5}.shop-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:14px}.shop-card{border:1px solid var(--line);border-radius:18px;background:linear-gradient(180deg,rgba(222,230,238,.055),transparent 34%),rgba(62,74,86,.82);padding:24px}.shop-card .sc-label{color:var(--amber);font-size:.75rem;font-weight:950;letter-spacing:.12em;text-transform:uppercase;margin-bottom:10px}.shop-card h3{font-size:1.35rem;margin-bottom:10px}.shop-card p{color:var(--muted);margin:0 0 12px;line-height:1.5}.shop-card ul{padding:0;margin:0;list-style:none;display:grid;gap:7px}.shop-card li{color:var(--muted);font-size:.88rem;padding-left:14px;position:relative}.shop-card li:before{content:"";position:absolute;left:0;top:7px;width:5px;height:5px;background:var(--amber);border-radius:50%}.steps{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}.step{border:1px solid var(--line);border-radius:18px;background:rgba(62,74,86,.82);padding:24px;position:relative;overflow:hidden}.step:before{content:attr(data-num);position:absolute;top:-8px;right:16px;font-family:var(--font-title);font-size:4.1rem;color:rgba(230,210,194,.08);font-weight:400;line-height:1;pointer-events:none}.step h3{font-size:1.35rem;margin-bottom:10px}.step p{color:var(--muted);margin:0 0 12px;line-height:1.5}.step-detail{color:var(--amber);font-size:.78rem;font-weight:800;letter-spacing:.04em}
+    .faq-wrap details{border:1px solid var(--line);border-radius:16px;margin-bottom:8px;background:rgba(62,74,86,.6);overflow:hidden;transition:border-color .22s ease}.faq-wrap details[open]{border-color:rgba(230,210,194,.24)}.faq-wrap summary{padding:18px 20px;font-weight:800;font-size:1.02rem;cursor:pointer;display:flex;justify-content:space-between;align-items:center;gap:12px}.faq-wrap summary:after{content:"+";font-size:1.4rem;color:var(--amber);font-weight:300;transition:transform .22s ease}.faq-wrap details[open] summary:after{content:"−"}.faq-wrap details[open] summary{border-bottom:1px solid var(--line)}.faq-wrap .faq-answer{padding:18px 20px;color:var(--muted);line-height:1.55}.faq-wrap .faq-answer p{margin:0}.final{padding:72px 0;border-top:1px solid rgba(222,230,238,.09)}.final-box{border:1px solid var(--line);border-radius:22px;background:linear-gradient(180deg,rgba(62,74,86,.82),rgba(62,74,86,.62));padding:48px 54px;display:grid;grid-template-columns:1.2fr 1fr;gap:38px;align-items:center;box-shadow:0 18px 48px rgba(62,74,86,.24)}.final-box h2{font-size:clamp(2.1rem,4vw,3.3rem)}.final-box p{color:var(--muted);margin:16px 0 0;max-width:480px;line-height:1.55}.final-box .btn-wrap{display:flex;flex-wrap:wrap;gap:10px;margin-top:22px}.footer-wrap{border-top:1px solid rgba(222,230,238,.09);padding:30px 0;display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:14px;color:var(--muted);font-size:.88rem;width:min(var(--container),calc(100% - 40px));margin:auto}.footer-wrap span{color:var(--paper);font-weight:850;letter-spacing:.01em}.footer-wrap a{color:var(--amber);font-weight:850}
+    .region-strip{display:flex;flex-wrap:wrap;gap:7px;margin-top:24px}.region-strip span{border:1px solid var(--line);border-radius:8px;padding:7px 9px;font-size:.78rem;color:var(--muted);background:rgba(222,230,238,.045)}
+    @media(max-width:980px){.links a[href="/solutions"]{display:none}.nav-shell{--nav-tight:760px}}
+    @media(max-width:920px){.wrap{width:min(100% - 32px,var(--container))!important}.hero{grid-template-columns:1fr;gap:34px}.hero h1{max-width:12ch}.head{grid-template-columns:1fr;gap:14px}.pain-grid,.steps,.shop-grid{grid-template-columns:1fr}.head h2{font-size:clamp(2rem,10.5vw,2.75rem)}}
+    @media(max-width:760px){.mobile-menu{display:block!important}.nav-shell{position:relative;overflow:visible!important}.mobile-menu-panel{z-index:80}
+      .nav{top:8px!important}.nav-shell,.nav.is-constricted .nav-shell{width:calc(100% - 20px)!important;min-height:0;padding:6px 10px!important;gap:8px;border-radius:18px;overflow:hidden}.brand{gap:9px;min-width:0}.brand .mark{width:40px!important;height:40px!important;flex-basis:40px}.brand .mark img{width:40px!important;height:40px!important}.brand strong{font-size:.98rem}.brand small{display:none}.links{margin-left:auto;gap:0}.links a{display:none!important}.nav-center{display:none!important}.links .phone{display:inline-flex!important;padding:9px 10px;font-size:.86rem;white-space:nowrap;color:var(--paper);background:rgba(222,230,238,.08);border:1px solid rgba(222,230,238,.14);border-radius:12px}.links .cta{display:none!important}
+      .wrap{width:calc(100% - 32px)!important;margin-inline:auto}.hero{padding:42px 0 34px!important;display:grid!important;grid-template-columns:1fr!important;gap:24px!important;align-items:start!important}.hero>*{min-width:0}h1{font-size:clamp(1.9rem,10.2vw,2.55rem)!important;line-height:1.05!important;letter-spacing:-.014em!important;max-width:13ch;text-wrap:balance;overflow-wrap:normal;word-break:normal}.lede{font-size:.98rem!important;line-height:1.5!important;max-width:34ch;margin-top:14px}.eyebrow{font-size:.7rem;letter-spacing:.1em;margin-bottom:14px}.eyebrow:before{width:24px}.hero-actions{display:grid!important;grid-template-columns:1fr!important;gap:8px!important}.btn{width:100%;justify-content:center;text-align:center;padding:12px 14px!important}
+      .dispatch-card{border-radius:18px!important}.dispatch-card .dc-body{padding:16px!important}.dispatch-card .dc-ticket{padding:12px!important}.dispatch-card .dc-ticket-body{grid-template-columns:1fr;gap:4px}.dispatch-card .dc-ticket-device{width:28px;height:28px;font-size:.8rem}.dispatch-card .dc-ticket-info strong{font-size:.84rem}.dispatch-card .dc-ticket-info span{font-size:.72rem}.dispatch-card .dc-ticket-time{font-size:.66rem}.dispatch-card .dc-ticket-action{flex-wrap:wrap}.dispatch-card .dc-ticket-action span{font-size:.76rem}
+      .section{padding:48px 0!important}.head{margin-bottom:18px}.pain-card,.step,.shop-card{border-radius:18px!important;padding:18px!important}.pain-card h3{font-size:1.15rem}.shop-card h3{font-size:1.15rem}.step:before{font-size:1.8rem}.step h3{font-size:1.15rem}.faq-wrap summary{padding:14px 16px;font-size:.98rem}.final{padding:54px 0!important}.final-box{padding:28px 22px!important;text-align:left;grid-template-columns:1fr}.final-box p{max-width:100%}.region-strip{gap:5px}.region-strip span{font-size:.74rem;padding:5px 7px}}
+    @media(min-width:761px) and (max-width:1020px){.links a[href="/how-it-works"]{display:none!important}.hero{grid-template-columns:1fr!important;gap:34px}.hero h1{max-width:12ch}.head{grid-template-columns:1fr!important}.pain-grid,.steps,.shop-grid{grid-template-columns:1fr!important}}
+    @media(prefers-reduced-motion:reduce){*,*:before,*:after{animation-duration:0s!important;transition-duration:0s!important}}
+  </style>
+  <script type="application/ld+json">{
+    "@context":"https://schema.org",
+    "@graph":[
+      {
+        "@type":"WebPage",
+        "name":"AI for Repair Shops | Auto, Phone & Equipment Shops | Actrix",
+        "description":"Custom AI agents for repair shops across Idaho. Automate intake, dispatch, status updates, follow-up, and customer communication. Works for auto shops, phone repair, equipment repair, and any service shop that fixes things.",
+        "url":"https://www.actrix.me/ai-for-repair-shops",
+        "isPartOf":{"@type":"WebSite","name":"Actrix","url":"https://www.actrix.me/"},
+        "about":{"@type":"Thing","name":"AI automation for repair shops","description":"Custom AI agents that handle intake, dispatch, status updates, customer communication, and follow-up for auto shops, phone repair, equipment repair, and service shops in Idaho."},
+        "audience":{"@type":"Audience","audienceType":"Auto repair shop owner, Phone repair shop owner, Equipment repair shop, Small engine repair, Service shop manager, Repair shop technician, Fleet maintenance, Independent mechanic"}
+      },
+      {
+        "@type":"Service",
+        "name":"AI Agents for Repair Shops",
+        "provider":{"@type":"ProfessionalService","name":"Actrix","url":"https://www.actrix.me/"},
+        "areaServed":[{"@type":"State","name":"Idaho"}],
+        "description":"Custom AI agents that handle every stage of the repair shop workflow: customer intake and drop-off scheduling, diagnostic communication, status updates, part-ordering notifications, approval requests, and automated follow-up sequences.",
+        "audience":{"@type":"Audience","audienceType":"Auto shop, Phone repair shop, Equipment repair business, Independent mechanic, Repair service center"}
+      }
+    ]
+  }</script>
+</head>
+<body>
+  <a class="skip" href="#main">Skip to content</a>
+
+  <header class="nav">
+    <div class="nav-shell">
+      <a class="brand" href="/" aria-label="Actrix home">
+        <span class="mark" aria-hidden="true"><img src="/assets/actrix-icon.png" alt="" width="68" height="68" decoding="async"></span>
+        <span><strong>Actrix</strong><small>Practical AI systems</small></span>
+      </a>
+      <nav class="links" aria-label="Primary navigation">
+        <span class="nav-center"><a href="/how-it-works">How it works</a><a href="/solutions">Solutions</a></span>
+        <a class="phone" href="tel:+12083666111">(208) 366-6111</a>
+        <a class="cta" href="sms:+12083666111?&body=Hi%20Actrix%2C%20I%20run%20a%20repair%20shop%20and%20want%20a%2015-minute%20AI%20walkthrough.">Book walkthrough</a>
+      </nav>
+      <details class="mobile-menu">
+        <summary><span>Menu</span></summary>
+        <div class="mobile-menu-panel">
+          <a href="/">Home</a>
+          <a href="/how-it-works">How it works</a>
+          <a href="/solutions">Solutions</a>
+          <a href="/missed-call-rescue">Missed Call Rescue</a>
+          <a href="/idaho-ai-services">AI Services Hub</a>
+          <a href="/ai-for-repair-shops">For Repair Shops</a>
+          <a href="/ai-for-contractors">For Contractors</a>
+          <a href="/ai-for-professional-services">For Professional Services</a>
+          <a href="/ai-for-wellness-health">For Wellness &amp; Health</a>
+          <a href="/ai-for-restaurants-cafes">For Restaurants &amp; Cafes</a>
+          <a class="mobile-cta" href="sms:+12083666111?&body=Hi%20Actrix%2C%20I%20run%20a%20repair%20shop%20and%20want%20a%2015-minute%20AI%20walkthrough.">Book walkthrough</a>
+        </div>
+      </details>
+    </div>
+  </header>
+
+  <main id="main">
+    <!-- Hero -->
+    <section class="wrap hero">
+      <div>
+        <p class="eyebrow">For repair shops</p>
+        <h1>Every drop-off, every status call, every follow-up <span>managed by an agent.</span></h1>
+        <p class="lede">Your shop phone rings while you are elbows-deep in a transmission. A customer wants to know if their phone is ready. Another wants to drop off a laptop. Three missed calls, one morning — and every one of them is time you do not have. A custom AI agent handles intake, status checks, approvals, and follow-up so you can focus on the work on your bench.</p>
+        <div class="hero-actions">
+          <a class="btn primary" href="sms:+12083666111?&body=Hi%20Actrix%2C%20I%20run%20a%20repair%20shop%20and%20want%20a%2015-minute%20AI%20walkthrough.">Book a 15-minute walkthrough</a>
+          <a class="btn secondary" href="#how">How it works</a>
+        </div>
+        <div style="display:flex;gap:14px;flex-wrap:wrap;margin-top:16px;color:var(--muted);font-size:.88rem;font-weight:800"><span>Serves Idaho statewide</span></div>
+      </div>
+      <aside class="dispatch-card" aria-label="Dispatch Board — Today&rsquo;s Repair Tickets">
+        <div class="dc-header" aria-hidden="true">
+          <div class="dc-dots"><span class="dc-dot r"></span><span class="dc-dot y"></span><span class="dc-dot g"></span></div>
+          <span class="dc-label">Dispatch Board &mdash; Today&rsquo;s Tickets</span>
+        </div>
+        <div class="dc-body">
+          <div class="dc-ticket">
+            <div class="dc-ticket-head">
+              <span class="dc-ticket-id">Ticket #1047</span>
+              <span class="dc-ticket-status intake">Intake</span>
+            </div>
+            <div class="dc-ticket-body">
+              <div class="dc-ticket-device" aria-hidden="true">&#128663;</div>
+              <div class="dc-ticket-info">
+                <strong>2019 Ford F-150 &mdash; Check engine light</strong>
+                <span>Dropped off 8:42 AM by Mark T. &bull; Hailey</span>
+              </div>
+              <span class="dc-ticket-time">11 min ago</span>
+            </div>
+            <div class="dc-ticket-action">
+              <span>AI sent welcome text. Diagnostic checklist captured. Customer approved estimate range.</span>
+              <span class="dc-act-badge">Ready for diag</span>
+            </div>
+          </div>
+          <div class="dc-ticket">
+            <div class="dc-ticket-head">
+              <span class="dc-ticket-id">Ticket #1046</span>
+              <span class="dc-ticket-status diag">In diag</span>
+            </div>
+            <div class="dc-ticket-body">
+              <div class="dc-ticket-device" aria-hidden="true">&#128241;</div>
+              <div class="dc-ticket-info">
+                <strong>iPhone 15 Pro &mdash; No power, won&rsquo;t charge</strong>
+                <span>Received 9:15 AM from Sarah K. &bull; Bellevue</span>
+              </div>
+              <span class="dc-ticket-time">1.5 hr ago</span>
+            </div>
+            <div class="dc-ticket-action">
+              <span>Diag found swollen battery. Part on order. AI texted Sarah with ETA. Customer approved repair.</span>
+              <span class="dc-act-badge">Part ordered</span>
+            </div>
+          </div>
+          <div class="dc-ticket">
+            <div class="dc-ticket-head">
+              <span class="dc-ticket-id">Ticket #1043</span>
+              <span class="dc-ticket-status ready">Ready</span>
+            </div>
+            <div class="dc-ticket-body">
+              <div class="dc-ticket-device" aria-hidden="true">&#128187;</div>
+              <div class="dc-ticket-info">
+                <strong>MacBook Air M2 &mdash; Screen replacement</strong>
+                <span>Dropped off yesterday by Jason R. &bull; Ketchum</span>
+              </div>
+              <span class="dc-ticket-time">Done 9:30 AM</span>
+            </div>
+            <div class="dc-ticket-action">
+              <span>Unit tested and ready. AI sent pickup reminder. Customer replied: coming at 4 PM.</span>
+              <span class="dc-act-badge">Pickup pending</span>
+            </div>
+          </div>
+        </div>
+      </aside>
+    </section>
+
+    <!-- Pain points -->
+    <section class="wrap section">
+      <div class="head">
+        <div>
+          <p class="eyebrow">The problem</p>
+          <h2>Every interruption costs you <span>billable time and customer trust.</span></h2>
+        </div>
+        <p>Running a repair shop means juggling the work on your bench and the people waiting for answers. When the phone rings every twenty minutes for a status update, you are not fixing anything. But ignoring those calls costs you repeat business.</p>
+      </div>
+      <div class="pain-grid">
+        <article class="pain-card">
+          <div class="pc-icon">&#128222;</div>
+          <h3>Status calls interrupt the work</h3>
+          <p>&ldquo;Is my phone ready yet?&rdquo; &ldquo;Did you find out what is wrong with my truck?&rdquo; Every status call costs you ten minutes of focus. On a busy day, that is an hour of labor lost to phone tag — and the customer is no happier for having called twice.</p>
+        </article>
+        <article class="pain-card">
+          <div class="pc-icon">&#128230;</div>
+          <h3>Intake is slow and inconsistent</h3>
+          <p>A walk-in drops off a device. You grab a sticky note and scribble the issue. Half the time, the problem description is wrong or missing by the time it reaches the bench. No standardized intake means missed details, wrong estimates, and angry customers.</p>
+        </article>
+        <article class="pain-card">
+          <div class="pc-icon">&#128203;</div>
+          <h3>Follow-up slips through the cracks</h3>
+          <p>The part came in. The repair is done. But you are buried in the next job, so the customer sits waiting. A week later they leave a one-star review saying you never called them back. The work was good — but the communication was not.</p>
+        </article>
+      </div>
+    </section>
+
+    <!-- How it works for repair shops -->
+    <section class="wrap section" id="how">
+      <div class="head">
+        <div>
+          <p class="eyebrow">How it works</p>
+          <h2>From drop-off to pick-up, <span>the agent handles the conversation.</span></h2>
+        </div>
+        <p>The agent works through text messages and a simple approval link. No app to install, no dashboard to check, no training for your team. It picks up the calls you miss, talks to customers for you, and hands you the information you actually need.</p>
+      </div>
+      <div class="steps">
+        <div class="step" data-num="01">
+          <h3>Intake captured automatically</h3>
+          <p>A customer calls or walks in. The agent collects the device details, problem description, contact info, and preferred pickup time. It standardizes every intake so your bench gets the same level of detail on every job — no more sticky notes.</p>
+          <span class="step-detail">Complete intake brief in minutes</span>
+        </div>
+        <div class="step" data-num="02">
+          <h3>Status updates, no phone tag</h3>
+          <p>When you update a job status in your system, the agent texts the customer automatically: &ldquo;Your iPhone is in diagnostic. We found a battery issue. Estimated cost: $89. Would you like us to proceed?&rdquo; The customer replies yes or no, and the job moves forward.</p>
+          <span class="step-detail">Customers stay informed without calling</span>
+        </div>
+        <div class="step" data-num="03">
+          <h3>Approvals and follow-up handled</h3>
+          <p>The agent sends repair estimates for your review, asks the customer to approve pricing, sends pickup reminders when the job is done, and follows up three days later to make sure everything is working. Every conversation happens by text — logged and traceable.</p>
+          <span class="step-detail">Owner approval before anything goes out</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- By shop type -->
+    <section class="wrap section">
+      <div class="head">
+        <div>
+          <p class="eyebrow">By shop type</p>
+          <h2>Built for how your shop actually <span>works.</span></h2>
+        </div>
+        <p>Whether you fix cars, phones, computers, small engines, or heavy equipment, the agent adapts to your workflow. Here is what that looks like for three common repair shop models.</p>
+      </div>
+      <div class="shop-grid">
+        <article class="shop-card">
+          <div class="sc-label">&#128663; Auto &amp; Truck Repair</div>
+          <h3>Drop-off scheduling + diag communication</h3>
+          <p>The agent handles appointment requests, captures vehicle details and symptoms, sends diagnostic updates, gets approval on estimates, and notifies the customer when the work is done. No more playing phone tag about a check-engine light.</p>
+          <ul>
+            <li>Drop-off scheduling with symptom checklist</li>
+            <li>Diagnostic status updates by text</li>
+            <li>Estimate approval via simple yes/no reply</li>
+            <li>Completion notification and pickup reminders</li>
+          </ul>
+        </article>
+        <article class="shop-card">
+          <div class="sc-label">&#128241; Phone &amp; Electronics Repair</div>
+          <h3>Quick intake + part-order communication</h3>
+          <p>The agent captures device model, issue description, and drop-off instructions. When a part needs ordering, it texts the customer with the price and ETA. The customer approves before the part ships. No more waiting for a callback to say &ldquo;yes, go ahead.&rdquo;</p>
+          <ul>
+            <li>Device-specific intake questions for faster diag</li>
+            <li>Part-ordering approval by text</li>
+            <li>Repair progress check-ins without manual texting</li>
+            <li>Post-repair satisfaction follow-up</li>
+          </ul>
+        </article>
+        <article class="shop-card" style="grid-column:1/-1;max-width:800px;margin:auto;width:100%">
+          <div class="sc-label">&#9881; Equipment &amp; Small Engine Repair</div>
+          <h3>Seasonal scheduling + bulk job tracking</h3>
+          <p>Landscapers drop off six trimmers at once. A contractor brings in a generator. The agent tracks each item separately, communicates per-unit status, and coordinates pickup windows for the full batch. No more digging through voicemails to figure out which machine is done.</p>
+          <ul>
+            <li>Multi-item job intake and tracking</li>
+            <li>Seasonal service reminders for repeat customers</li>
+            <li>Per-unit status communication</li>
+            <li>Bulk pickup coordination with time windows</li>
+          </ul>
+        </article>
+      </div>
+    </section>
+
+    <!-- Offer -->
+    <section class="wrap section">
+      <div class="head">
+        <div>
+          <p class="eyebrow">Start here</p>
+          <h2>Pick the starter that fits your <span>shop.</span></h2>
+        </div>
+        <p>Every system is custom-built to your shop, your ticket volume, and your workflow. These starting points give you a working agent in days, not weeks. From there, we expand as your business grows.</p>
+      </div>
+      <div style="display:grid;grid-template-columns:repeat(2,1fr);gap:14px">
+        <article style="border:1px solid var(--line);border-radius:18px;background:rgba(62,74,86,.82);padding:24px">
+          <span style="color:var(--amber);font-size:.78rem;font-weight:950;letter-spacing:.12em;text-transform:uppercase">Intake &amp; Status Agent</span>
+          <h3 style="font-size:1.45rem;margin-top:14px;font-family:var(--font-title)">$750&ndash;$1,500</h3>
+          <p style="color:var(--muted);margin:10px 0 0;line-height:1.5">The agent captures every intake, sends automatic status updates to customers, handles &ldquo;is it ready yet?&rdquo; texts so your phone stops ringing, and sends pickup reminders when work is complete. Works with one shop location.</p>
+          <ul style="list-style:none;padding:0;margin:18px 0 0;display:grid;gap:8px;color:var(--muted)">
+            <li style="font-size:.88rem">&#10003; Standardized customer intake</li>
+            <li style="font-size:.88rem">&#10003; Automatic status updates by text</li>
+            <li style="font-size:.88rem">&#10003; Owner approval before any response</li>
+            <li style="font-size:.88rem">&#10003; Pickup reminders and follow-up</li>
+          </ul>
+          <a class="btn primary" href="sms:+12083666111?&body=Hi%20Actrix%2C%20I%20run%20a%20repair%20shop%20and%20want%20the%20Intake%20%26%20Status%20Agent." style="margin-top:16px;display:inline-flex">Start with this</a>
+        </article>
+        <article style="border:1px solid rgba(230,210,194,.3);border-radius:18px;background:linear-gradient(180deg,rgba(222,230,238,.055),transparent 34%),rgba(62,74,86,.82);padding:24px;box-shadow:0 0 0 1px rgba(230,210,194,.12)">
+          <span style="color:var(--amber);font-size:.78rem;font-weight:950;letter-spacing:.12em;text-transform:uppercase">Full Dispatch System</span>
+          <h3 style="font-size:1.45rem;margin-top:14px;font-family:var(--font-title)">$1,500&ndash;$3,000</h3>
+          <p style="color:var(--muted);margin:10px 0 0;line-height:1.5">Everything in the Intake &amp; Status Agent, plus multi-device job tracking, part-order approval workflows, appointment scheduling, estimate approval, seasonal service reminders, and a monthly shop performance brief.</p>
+          <ul style="list-style:none;padding:0;margin:18px 0 0;display:grid;gap:8px;color:var(--muted)">
+            <li style="font-size:.88rem">&#10003; All Intake &amp; Status Agent features</li>
+            <li style="font-size:.88rem">&#10003; Multi-device job tracking</li>
+            <li style="font-size:.88rem">&#10003; Part-order approval by text</li>
+            <li style="font-size:.88rem">&#10003; Estimate approval workflow</li>
+            <li style="font-size:.88rem">&#10003; Appointment scheduling</li>
+            <li style="font-size:.88rem">&#10003; Seasonal service reminders</li>
+            <li style="font-size:.88rem">&#10003; Monthly shop performance brief</li>
+          </ul>
+          <a class="btn primary" href="sms:+12083666111?&body=Hi%20Actrix%2C%20I%20run%20a%20repair%20shop%20and%20want%20the%20Full%20Dispatch%20System." style="margin-top:16px;display:inline-flex">Start with this</a>
+        </article>
+      </div>
+    </section>
+
+    <!-- FAQ -->
+    <section class="wrap section" id="faq">
+      <div class="head" style="margin-bottom:24px">
+        <div>
+          <p class="eyebrow">FAQ</p>
+          <h2>Straight answers for <span>shop owners.</span></h2>
+        </div>
+      </div>
+      <div class="faq-wrap">
+        <details open>
+          <summary>Does the agent answer phone calls or just send texts?</summary>
+          <div class="faq-answer"><p>It texts the caller back immediately with a friendly introduction and starts a conversation. It does not use a robot voice to answer calls. The goal is fast, warm communication with clean information — not an automated phone tree your customers will hate.</p></div>
+        </details>
+        <details>
+          <summary>Can the agent give customers an estimate over text?</summary>
+          <div class="faq-answer"><p>The agent does not generate estimates on its own — you set the pricing. When a diagnostic is complete, the agent sends the repair cost you provide and asks the customer to approve or decline by reply. You stay in control of pricing; the agent just delivers the message and captures the decision.</p></div>
+        </details>
+        <details>
+          <summary>How do status updates work? Does the agent know when a repair is done?</summary>
+          <div class="faq-answer"><p>You update the job status in your system (or text a keyword), and the agent notifies the customer. No extra work for you — the same update you would normally track becomes an automatic customer text. Status updates include: received, in diagnostic, awaiting parts, repair in progress, ready for pickup.</p></div>
+        </details>
+        <details>
+          <summary>What if a customer has a complex technical question?</summary>
+          <div class="faq-answer"><p>The agent handles common questions (hours, drop-off process, pricing range, turnaround time, warranty info). For specific technical questions about a repair, it says &ldquo;Let me get our technician to answer this — they will follow up shortly&rdquo; and routes it to you as a priority message.</p></div>
+        </details>
+        <details>
+          <summary>How does part-order approval work?</summary>
+          <div class="faq-answer"><p>When a part needs ordering, the agent texts the customer: &ldquo;We found the issue. The replacement part costs $X and will arrive in Y days. Would you like us to order it?&rdquo; The customer replies Yes or No. If Yes, the part is ordered and the agent texts an updated ETA. No back-and-forth phone calls required.</p></div>
+        </details>
+        <details>
+          <summary>Do I need to install software or learn a new system?</summary>
+          <div class="faq-answer"><p>No. Everything works through text messages and a simple review link. If you can send a text, you can use the system. No app to install, no login to remember, no staff training. Your existing phone and job management are all you need.</p></div>
+        </details>
+        <details>
+          <summary>Can this work with my existing shop management software?</summary>
+          <div class="faq-answer"><p>Usually yes. The agent can integrate with common shop management tools, POS systems, and job tracking software. We map the integration during setup so new jobs and status updates flow between the agent and the systems you already use.</p></div>
+        </details>
+        <details>
+          <summary>How fast can I get this running?</summary>
+          <div class="faq-answer"><p>Most repair shops are live within one week of the first conversation. The setup call takes about 45 minutes. We build your scripts and intake questions, test with real customer scenarios, and launch with a soft go-live before full deployment.</p></div>
+        </details>
+      </div>
+    </section>
+
+    <!-- Final CTA -->
+    <section class="wrap final">
+      <div class="final-box">
+        <h2>Text us your <span>shop workflow.</span> We will show you what an agent can do.</h2>
+        <p>Describe how your shop handles intake, status checks, and follow-up now. We will map a 15-minute walkthrough showing exactly how a custom agent would change your communication workflow — and your bottom line.</p>
+        <div class="btn-wrap">
+          <a class="btn primary" href="sms:+12083666111?&body=Hi%20Actrix%2C%20I%20run%20a%20repair%20shop.%20My%20biggest%20communication%20bottleneck%20is%3A%20">Text (208) 366-6111</a>
+        </div>
+        <p style="font-size:.85rem;color:var(--muted);margin:12px 0 0">Or call <a href="tel:+12083666111" style="font-weight:900;color:var(--paper)">(208) 366-6111</a></p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer-wrap">
+    <span>Actrix. Practical AI systems powered by custom agents.</span>
+    <span><a href="/how-it-works">How it works</a> &middot; <a href="/solutions">Solutions</a> &middot; <a href="/ai-for-repair-shops">For Repair Shops</a> &middot; <a href="/ai-for-contractors">For Contractors</a> &middot; <a href="/ai-for-professional-services">For Professional Services</a> &middot; <a href="/ai-for-wellness-health">For Wellness &amp; Health</a> &middot; <a href="/ai-for-restaurants-cafes">For Restaurants &amp; Cafes</a> &middot; <a href="tel:+12083666111">(208) 366-6111</a></span>
+  </footer>
+
+  <script>
+    (function(){
+      var nav=document.querySelector('.nav');
+      if(!nav)return;
+      var threshold=12,ticking=false,isConstricted=false,cleanupTimer=null;
+      function pulse(mode){
+        window.clearTimeout(cleanupTimer);
+        nav.classList.remove('nav-jelly-in','nav-jelly-out','nav-jelly-pulse');
+        void nav.offsetWidth;
+        nav.classList.add(mode,'nav-jelly-pulse');
+        cleanupTimer=window.setTimeout(function(){nav.classList.remove('nav-jelly-in','nav-jelly-out','nav-jelly-pulse');},520);
+      }
+      function setState(next){
+        if(next===isConstricted)return;
+        isConstricted=next;
+        nav.classList.toggle('is-constricted',next);
+        pulse(next?'nav-jelly-in':'nav-jelly-out');
+      }
+      function update(){setState(window.scrollY>threshold);ticking=false;}
+      function onScroll(){if(ticking)return;ticking=true;requestAnimationFrame(update);}
+      window.addEventListener('scroll',onScroll,{passive:true});
+      update();
+    })();
+  </script>
+</body>
+</html>

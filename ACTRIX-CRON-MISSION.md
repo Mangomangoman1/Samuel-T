@@ -54,27 +54,33 @@ Actrix is no longer framed as a small Wood River Valley side project. It is an I
 ## Current Strategic Foundation
 Homepage now points to statewide Idaho AI positioning and links to /idaho-ai-services as the hub. Future runs should expand outward from that hub rather than returning to narrow Wood River Valley-only framing.
 
-## Manager Directive — 2026-05-04 06:30
+## Manager Directive — 2026-05-04 12:00
 
-### Manager Review — On Track ✅
-DeepSeek is producing high-quality work at good pace. 7 commits in last 2 hours. All recent pages have proper SEO payloads, proof artifacts, honest regional positioning, and correct phone numbers (bytes verified). No intervention needed. Direction is solid.
+### Manager Review — On Track with One Fix Applied ✅
+DeepSeek shipped nonprofits page (commit 1c40a84) and education page (commit 5e4744c). Both are high quality with proof artifacts, schema, and correct phones. Manager found and fixed one issue: `ai-implementation-plan.html` had 7 redacted phone numbers (literal asterisks in bytes, confirmed via hex). Hub page also patched to link 9 industry pages instead of 3.
 
 ### Current Coverage
-- Core money pages: 6/6 DONE
-- Industry pages: 8/12 (contractors, wellness, restaurants, professional services, real estate, repair shops, hospitality, education)
+- Core money pages: 7/7 DONE
+- Industry pages: 9/12 (contractors, wellness, restaurants, professional services, real estate, repair shops, hospitality, education, nonprofits)
 - Regional pages: 4/9 (Boise, Idaho Falls, Twin Falls, Coeur d'Alene)
 - Educational authority: 3/6 (what-ai-can-automate, ai-readiness-checklist, ai-implementation-plan)
-- Total pages in sitemap: 30
+- Total pages in sitemap: 31
 
-### Phone number rule (READ THIS EVERY RUN)
-The phone number MUST be the unredacted digits `+12083666111` in ALL tel: and sms: href attributes. Never use any redacted form like `+120****6111`. Before committing, grep your changed file for literal asterisks `****` and verify zero matches. This is a zero-tolerance rule.
+### Phone number rule (READ THIS EVERY RUN — ZERO TOLERANCE)
+The phone number MUST be the unredacted digits `+12083666111` in ALL tel: and sms: href attributes. Never use any redacted form. Before committing, do a BYTE-LEVEL check:
+```python
+content = open('your-page.html','rb').read()
+assert b'120****' not in content, "REDACTED PHONE FOUND"
+assert b'12083666111' in content, "REAL PHONE MISSING"
+```
+Do NOT rely on grep/terminal output — it can mask real asterisks as `****` even when the file has the correct digits, and vice versa. Use Python byte inspection. This is a zero-tolerance rule.
 
 ### Next targets — pick in this order:
-1. **Industry page: `/ai-for-nonprofits`** — Idaho has a significant nonprofit sector. Many small orgs need admin support, grant tracking, donor communication. Use a grant-brief or donor-engagement proof artifact.
-2. **Educational page: `/safe-ai-policies-for-staff`** — "Safe AI policies for staff" targets business owners who want practical rules, not just hype. Use a policy brief / compliance template as proof artifact.
-3. **Industry page: `/ai-for-retail`** — Idaho retail could use agents for customer inquiry responses, inventory communication, staff scheduling. Remaining industry gap.
-4. **Educational page: `/custom-agents-vs-chatbots`** — Explains the difference for businesses that think "AI = ChatGPT." Important educational funnel page.
-5. **Regional page: consider `/ai-services-pocatello`** or `/ai-services-rexburg` as next regional targets if demand data supports it.
+1. **Educational page: `/safe-ai-policies-for-staff`** — "Safe AI policies for staff" targets business owners who want practical rules, not just hype. Use a policy brief / compliance template as proof artifact.
+2. **Industry page: `/ai-for-retail`** — Idaho retail: customer inquiry responses, inventory communication, staff scheduling. Remaining industry gap.
+3. **Educational page: `/custom-agents-vs-chatbots`** — Explains the difference for businesses that think "AI = ChatGPT." Important educational funnel page.
+4. **Regional page: `/ai-services-pocatello`** — Pocatello is a real Idaho city with enough catchment for a standalone page.
+5. **Regional page: `/ai-services-rexburg`** — College town (BYU-Idaho), high device/automation need.
 
 ### Quality reminders:
 - Every page needs a proof artifact, not just cards.
@@ -83,4 +89,5 @@ The phone number MUST be the unredacted digits `+12083666111` in ALL tel: and sm
 - Check the sitemap before building to avoid collisions.
 - Regional pages must use honest positioning — no fake local storefronts.
 - Proof artifacts should show local/city-specific scenarios where possible.
-- Make sure internal links from the hub page (/idaho-ai-services) point to each new regional page as they are built.
+- Make sure internal links from the hub page (/idaho-ai-services) point to each new page as they are built.
+- After building any new page, add a link to it from the hub page's relevant section (Business types card for industry pages, regional markets for regional pages).

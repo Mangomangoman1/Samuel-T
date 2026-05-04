@@ -116,7 +116,23 @@
   .hero{width:calc(100% - 32px)!important;margin-inline:auto;padding:42px 0 34px!important;display:grid!important;grid-template-columns:1fr!important;gap:24px!important;align-items:start!important}.hero>*,.section>*,.footer>*{min-width:0}.hero h1{font-size:clamp(1.9rem,10.2vw,2.55rem)!important;line-height:1.05!important;letter-spacing:-.014em!important;max-width:13ch;text-wrap:balance;overflow-wrap:normal;word-break:normal}.hero .lede{font-size:.98rem!important;line-height:1.5!important;max-width:34ch;margin-top:14px}.eyebrow{font-size:.7rem;letter-spacing:.1em;margin-bottom:14px}.eyebrow:before{width:24px}.hero-actions{display:grid!important;grid-template-columns:1fr!important;gap:8px!important}.btn{width:100%;justify-content:center;text-align:center;padding:12px 14px!important}.mcr-card{width:100%;max-width:100%;min-width:0;margin-top:4px}.mcr-body{padding:16px!important}.mcr-title{font-size:1rem}.mcr-draft p{font-size:.9rem;line-height:1.5}.mcr-meta,.mcr-status,.mcr-bars{gap:8px}.mcr-track-labels{font-size:.7rem}
   .section{width:calc(100% - 32px)!important;margin-inline:auto;padding:48px 0!important}.head{display:grid!important;grid-template-columns:1fr!important;gap:14px!important;margin-bottom:20px}.head h2,.faq h2{font-size:clamp(2rem,10.5vw,2.75rem)!important;line-height:1.02!important;text-wrap:balance}.head p{font-size:1rem!important}.system,.owner-note,.faq-item{border-radius:18px!important;padding:18px!important}.systems-grid,.trust-grid,.pricing-grid,.faq-grid{grid-template-columns:1fr!important}.footer{width:calc(100% - 32px)!important;margin-inline:auto;display:grid!important;grid-template-columns:1fr!important;gap:12px!important;text-align:left}.footer a{overflow-wrap:anywhere}
 }
-@media(min-width:761px) and (max-width:1020px){.links a[href="#starter-systems"],.links a[href="/solutions"]{display:none!important}.hero{grid-template-columns:1fr!important;gap:34px}.hero h1{max-width:12ch}.mcr-card{max-width:680px}.head,.systems-grid,.pricing-grid,.faq-grid{grid-template-columns:1fr!important}}
+@media(min-width:761px) and (max-width:1020px){.links a[href="#starter-systems"],.links a[href="/solutions"]{display:none!important}.hero{grid-template-columns:1fr!important;gap:28px!important;padding-top:58px!important;padding-bottom:46px!important}.hero h1{max-width:13ch}.mcr-card{max-width:640px}.mcr-body{padding:20px}.head,.systems-grid,.pricing-grid,.faq-grid{grid-template-columns:1fr!important}}
+
+
+    /* Official-site hardening pass — character-preserving polish */
+    .hero{min-height:auto;padding-top:72px;padding-bottom:58px;align-items:start}
+    .hero h1{font-size:clamp(3.15rem,5.35vw,5.35rem);line-height:.96;max-width:740px}
+    .hero .lede{font-size:clamp(1.05rem,1.55vw,1.2rem);line-height:1.56;max-width:660px;color:#c4d1db}
+    .btn{display:inline-flex;align-items:center;justify-content:center;border-radius:12px;border:1px solid var(--line2);padding:13px 16px;font-weight:950;box-shadow:inset 0 1px 0 rgba(222,230,238,.08);transition:transform .18s ease,border-color .18s ease,background .18s ease}.btn:hover{transform:translateY(-1px)}
+    .btn-primary{background:linear-gradient(180deg,var(--amber),#d89f60);border-color:rgba(227,191,109,.72);color:#221d17}.btn-secondary{background:rgba(222,230,238,.07);color:var(--paper)}
+    .proof-link{margin-top:10px;font-size:.86rem;color:var(--muted);grid-column:1/-1}.proof-link a{color:var(--amber);font-weight:900;text-decoration:underline;text-underline-offset:3px;text-decoration-thickness:1px}
+    .trusted{margin-top:24px;border-left:1px solid rgba(227,191,109,.32);padding-left:14px;color:var(--muted)}.trusted small{display:block;text-transform:uppercase;letter-spacing:.1em;font-size:.68rem;font-weight:950;color:var(--soft);margin-bottom:8px}.trusted div{display:flex;flex-wrap:wrap;gap:7px}.trusted span{border:1px solid rgba(222,230,238,.12);background:rgba(222,230,238,.05);border-radius:999px;padding:6px 9px;font-size:.82rem;font-weight:850;color:var(--paper)}
+    .mcr-card{border-radius:18px;box-shadow:0 24px 70px rgba(31,28,23,.46),inset 0 1px 0 rgba(222,230,238,.08);animation:none;background:linear-gradient(180deg,rgba(62,74,86,.96),rgba(43,38,31,.98))}.mcr-card:after{opacity:.42;animation:none}.mcr-track-line:after{animation:mcrRunner 6.2s ease-in-out infinite}.mcr-draft:after{animation:none;opacity:.24;left:70%}.mcr-badge{animation:none}.mcr-bar span{animation:mcrBarIn .9s cubic-bezier(.2,.8,.2,1) both}
+    .section{padding:66px 0}.head{margin-bottom:24px}.head p{color:#c4d1db}.system{position:relative;overflow:hidden;min-height:100%;box-shadow:0 14px 38px rgba(31,28,23,.24),inset 0 1px 0 rgba(222,230,238,.05)}.system:after{content:"";position:absolute;left:22px;right:22px;top:0;height:2px;background:linear-gradient(90deg,transparent,rgba(227,191,109,.55),transparent);opacity:.55}.system.feature{min-height:0;border-color:rgba(227,191,109,.34)}
+    .loop-board{box-shadow:0 20px 58px rgba(31,28,23,.38),inset 0 1px 0 rgba(222,230,238,.06)}.loop-signal{background:rgba(31,28,23,.28)}.loop-signal .sig-icon{font-size:.95rem}.loop-approval{background:linear-gradient(90deg,rgba(227,191,109,.1),rgba(169,205,175,.055));border-color:rgba(227,191,109,.3)}
+    .closeout{border-top-color:rgba(227,191,109,.18)}.closeout-card{border:1px solid rgba(227,191,109,.28);border-radius:24px;background:linear-gradient(135deg,rgba(62,74,86,.86),rgba(31,28,23,.94));padding:34px;box-shadow:0 26px 72px rgba(31,28,23,.42),inset 0 1px 0 rgba(222,230,238,.07)}.closeout-card h2{font-size:clamp(2.35rem,4.4vw,4.6rem);max-width:900px}.closeout-card p:not(.eyebrow){color:var(--muted);max-width:710px;font-size:1.05rem}
+    .faq{grid-template-columns:minmax(0,.62fr) minmax(0,1fr)}.faq details{box-shadow:inset 0 1px 0 rgba(222,230,238,.05)}
+    @media(max-width:760px){.hero{padding-top:34px!important;padding-bottom:26px!important;gap:16px!important}.hero h1{font-size:clamp(2.05rem,9.4vw,2.58rem)!important;line-height:1.01!important;max-width:12.8ch!important}.hero .lede{max-width:34ch!important;margin-top:11px!important;font-size:.96rem!important;line-height:1.47!important}.actions{display:grid!important;grid-template-columns:1fr!important;gap:8px!important;margin-top:18px!important}.contact-line{margin-top:11px;font-size:.88rem}.mcr-card{margin-top:0}.mcr-head{padding:11px 14px}.mcr-body{padding:13px!important}.mcr-lead{padding:13px 13px;margin-bottom:12px}.mcr-lead h3{font-size:1.16rem}.mcr-track{margin-bottom:12px}.mcr-track-labels{display:none!important}.mcr-draft{padding:12px 13px;margin-bottom:12px}.mcr-draft p{font-size:.87rem!important;line-height:1.42!important}.mcr-status{padding:11px;gap:8px}.mcr-bar-row{font-size:.7rem}.proof-link{margin-top:-8px}.section{padding:42px 0!important}.head h2,.faq h2,.closeout-card h2{font-size:clamp(1.9rem,9.5vw,2.55rem)!important;line-height:1.04!important}.systems-grid{gap:12px!important}.system{padding:17px!important}.system h3{font-size:1.34rem}.loop-board{padding:14px!important;border-radius:20px}.loop-stage{padding:14px!important}.loop-signal{padding:9px 10px}.loop-approval{text-align:left!important;align-items:flex-start!important}.loop-approval .ap-icon{display:none}.closeout-card{padding:20px;border-radius:20px}.faq{grid-template-columns:1fr!important;gap:20px}.faq details{padding:14px}.footer{padding-bottom:34px}.trusted,.trust{display:none!important}}
 
   </style>
   <script type="application/ld+json">
@@ -128,67 +144,67 @@
   <header class="nav">
     <div class="nav-shell">
       <a class="brand" href="/" aria-label="Actrix home"><span class="mark" aria-hidden="true"><img src="/assets/actrix-icon.png" alt="" width="68" height="68" decoding="async"></span><span><strong>Actrix</strong><small>Idaho AI implementation</small></span></a>
-      <nav class="links" aria-label="Primary navigation"><span class="nav-center"><a href="/idaho-ai-services">Idaho AI</a><a href="/solutions">Solutions</a></span><a class="phone" href="tel:+12083666111">(208) 366-6111</a><a class="cta nav-cta" href="sms:+12083666111?&body=Hi%20Actrix%2C%20I%20want%20a%2015-minute%20AI%20walkthrough%20for%20my%20business.">Book walkthrough</a></nav><details class="mobile-menu"><summary><span>Menu</span></summary><div class="mobile-menu-panel"><a href="/">Home</a><a href="/idaho-ai-services">Idaho AI Services</a><a href="/how-it-works">How it works</a><a href="/solutions">Solutions</a><a href="/missed-call-rescue">Missed Call Rescue</a><a href="/ai-for-real-estate">For Real Estate</a><a href="/ai-for-contractors">For Contractors</a><a href="/ai-for-professional-services">For Professional Services</a><a href="/ai-for-wellness-health">For Wellness &amp; Health</a>
-          <a href="/ai-for-restaurants-cafes">For Restaurants &amp; Cafes</a><a href="/ai-support-idaho">AI Support</a><a href="/ai-automation-idaho">AI Automation</a><a href="/business-automation-idaho">Business Automation</a><a href="/ai-agents-for-business">AI Agents</a><a href="/idaho-ai-consulting">AI Consulting</a><a href="/ai-training-idaho">AI Training</a><a href="/#faq">FAQ</a><a class="mobile-cta" href="sms:+12083666111?&body=Hi%20Actrix%2C%20I%20want%20a%2015-minute%20AI%20walkthrough%20for%20my%20business.">Book walkthrough</a></div></details>
+      <nav class="links" aria-label="Primary navigation"><span class="nav-center"><a href="/idaho-ai-services">Idaho AI</a><a href="/solutions">Solutions</a></span><a class="phone" href="tel:+12083666111">(208) 366-6111</a><a class="cta nav-cta" href="sms:+12083666111?&body=Hi%20Actrix%2C%20I%20want%20a%2015-minute%20AI%20walkthrough%20for%20my%20business.">Text bottleneck</a></nav><details class="mobile-menu"><summary><span>Menu</span></summary><div class="mobile-menu-panel"><a href="/">Home</a><a href="/idaho-ai-services">Idaho AI Services</a><a href="/how-it-works">How it works</a><a href="/solutions">Solutions</a><a href="/missed-call-rescue">Missed Call Rescue</a><a href="/ai-for-real-estate">For Real Estate</a><a href="/ai-for-contractors">For Contractors</a><a href="/ai-for-professional-services">For Professional Services</a><a href="/ai-for-wellness-health">For Wellness &amp; Health</a>
+          <a href="/ai-for-restaurants-cafes">For Restaurants &amp; Cafes</a><a href="/ai-support-idaho">AI Support</a><a href="/ai-automation-idaho">AI Automation</a><a href="/business-automation-idaho">Business Automation</a><a href="/ai-agents-for-business">AI Agents</a><a href="/idaho-ai-consulting">AI Consulting</a><a href="/ai-training-idaho">AI Training</a><a href="/#faq">FAQ</a><a class="mobile-cta" href="sms:+12083666111?&body=Hi%20Actrix%2C%20I%20want%20a%2015-minute%20AI%20walkthrough%20for%20my%20business.">Text bottleneck</a></div></details>
     </div>
   </header>
 
   <main id="main">
     <section class="hero" aria-labelledby="hero-title">
       <div>
-        <p class="eyebrow">Idaho AI implementation · automation · training</p>
-        <h1 id="hero-title">The AI implementation firm for <span>Idaho businesses.</span></h1>
-        <p class="lede">Actrix builds the AI layer Idaho businesses actually need: agent systems, workflow automation, AI installation, staff education, lead rescue, quote intake, reporting, and human-approved operations. <a href="/idaho-ai-services" style="color:var(--amber);font-weight:800;text-decoration:underline;text-underline-offset:3px;text-decoration-thickness:1px">See Idaho AI services</a> — the statewide hub.</p>
-        <div class="actions"><a class="btn btn-primary" href="sms:+12083666111?&body=Hi%20Actrix%2C%20I%20want%20an%20Idaho%20AI%20systems%20walkthrough%20for%20my%20business.">Book an Idaho AI walkthrough</a><a class="btn btn-secondary" href="/idaho-ai-services">Explore Idaho AI services</a></div>
+        <p class="eyebrow">Idaho AI systems · built and installed</p>
+        <h1 id="hero-title">AI systems that catch the work your team keeps missing.</h1>
+        <p class="lede">Actrix installs practical AI agents for Idaho businesses: missed-call rescue, quote intake, follow-up, reporting, staff training, and owner-approved workflows. Built in Idaho, tuned around the tools you already use.</p>
+        <div class="actions"><a class="btn btn-primary" href="sms:+12083666111?&body=Hi%20Actrix%2C%20I%20want%20an%20Idaho%20AI%20systems%20walkthrough%20for%20my%20business.">Text a business bottleneck</a><a class="btn btn-secondary" href="/idaho-ai-services">View statewide AI services</a></div>
         <div class="contact-line"><a href="tel:+12083666111">(208) 366-6111</a><span>/</span><a href="mailto:wpbflsf@gmail.com">wpbflsf@gmail.com</a></div>
-        <ul class="trust" aria-label="Operating principles"><li>Based in Idaho</li><li>Implementation, not AI hype</li><li>Human approval where risk matters</li></ul>
-          <div class="trusted" aria-label="Best fit industries"><small>Built for Idaho businesses ready to use AI for real work</small><div><span><a href="/ai-for-contractors" style="color:inherit;text-decoration:underline;text-underline-offset:3px;text-decoration-thickness:1px;text-decoration-color:var(--amber)">Contractors</a></span><span><a href="/ai-for-wellness-health" style="color:inherit;text-decoration:underline;text-underline-offset:3px;text-decoration-thickness:1px;text-decoration-color:var(--amber)">Wellness &amp; Health</a></span><span><a href="/ai-for-restaurants-cafes" style="color:inherit;text-decoration:underline;text-underline-offset:3px;text-decoration-thickness:1px;text-decoration-color:var(--amber)">Restaurants &amp; Cafes</a></span><span>Retail</span><span><a href="/ai-for-professional-services" style="color:inherit;text-decoration:underline;text-underline-offset:3px;text-decoration-thickness:1px;text-decoration-color:var(--amber)">Professional services</a></span><span><a href="/ai-for-repair-shops" style="color:inherit;text-decoration:underline;text-underline-offset:3px;text-decoration-thickness:1px;text-decoration-color:var(--amber)">Repair shops</a></span><span>Statewide support</span></div></div>
+        <ul class="trust" aria-label="Operating principles"><li>Idaho-based implementation</li><li>Human approval at risk points</li><li>Starter systems before big retainers</li></ul>
+          <div class="trusted" aria-label="Best fit industries"><small>Best fit: owner-run businesses with repeatable leaks</small><div><span><a href="/ai-for-contractors" style="color:inherit;text-decoration:underline;text-underline-offset:3px;text-decoration-thickness:1px;text-decoration-color:var(--amber)">Contractors</a></span><span><a href="/ai-for-wellness-health" style="color:inherit;text-decoration:underline;text-underline-offset:3px;text-decoration-thickness:1px;text-decoration-color:var(--amber)">Wellness</a></span><span><a href="/ai-for-restaurants-cafes" style="color:inherit;text-decoration:underline;text-underline-offset:3px;text-decoration-thickness:1px;text-decoration-color:var(--amber)">Restaurants</a></span><span>Retail</span><span><a href="/ai-for-professional-services" style="color:inherit;text-decoration:underline;text-underline-offset:3px;text-decoration-thickness:1px;text-decoration-color:var(--amber)">Professional services</a></span><span><a href="/ai-for-repair-shops" style="color:inherit;text-decoration:underline;text-underline-offset:3px;text-decoration-thickness:1px;text-decoration-color:var(--amber)">Repair shops</a></span></div></div>
       </div>
       <aside class="mcr-card" aria-label="Missed Call Rescue demo">
         <div class="mcr-head" aria-hidden="true">
           <span class="mcr-dot red"></span><span class="mcr-dot amber"></span><span class="mcr-dot sage"></span>
-          <strong>Missed Call Rescue</strong>
+          <strong>Live workflow brief</strong>
         </div>
         <div class="mcr-body">
           <div class="mcr-lead">
-            <span class="mcr-label">Incoming lead</span>
-            <div class="mcr-lead-row"><h3>Missed call at 6:42 PM</h3><span class="mcr-badge">Owner review</span></div>
+            <span class="mcr-label">Field test: missed lead</span>
+            <div class="mcr-lead-row"><h3>Missed call → quote-ready brief</h3><span class="mcr-badge">Owner review</span></div>
           </div>
           <div class="mcr-track" aria-hidden="true">
             <div class="mcr-track-line"><span class="mcr-pip on"></span><span class="mcr-pip on"></span><span class="mcr-pip"></span><span class="mcr-pip"></span></div>
             <div class="mcr-track-labels">
-              <span>Customer gets a fast text-back</span>
-              <span>AI asks for the missing details</span>
-              <span>Job summary lands in your inbox</span>
-              <span>You approve the reply</span>
+              <span>Text-back sent in under a minute</span>
+              <span>Photos, location, urgency collected</span>
+              <span>Clean brief prepared for owner</span>
+              <span>Human approves before send</span>
             </div>
           </div>
           <div class="mcr-draft">
             <span class="mcr-label">Draft reply</span>
-            <p>“Thanks for reaching out. I can help. Can you send one photo, the job location, and whether this is urgent or flexible?”</p>
+            <p>“Hailey lead — missed at 6:42 PM. Customer needs a quote, one photo requested, job location pending, urgency unknown. Draft reply ready for owner approval.”</p>
           </div>
           <div class="mcr-status">
-            <div class="mcr-bar-row"><span>Lead saved</span><span>Before morning</span></div>
+            <div class="mcr-bar-row"><span>Response speed</span><span>Before competitor callback</span></div>
             <div class="mcr-bar green"><span style="width:78%"></span></div>
-            <div class="mcr-bar-row"><span>Risk level</span><span>Human approval</span></div>
+            <div class="mcr-bar-row"><span>Reputation risk</span><span>Human approval</span></div>
             <div class="mcr-bar orange"><span style="width:34%"></span></div>
           </div>
         </div>
       </aside>
-      <p style="margin-top:6px;font-size:.82rem;color:var(--muted);grid-column:1/-1"><a href="/missed-call-rescue" style="color:var(--amber);font-weight:800;text-decoration:underline;text-underline-offset:3px;text-decoration-thickness:1px">See the full Missed Call Rescue page →</a></p>
+      <p class="proof-link"><a href="/missed-call-rescue">See the full Missed Call Rescue workflow →</a></p>
     </section>
 
     <section class="section" id="idaho-ai" aria-labelledby="idaho-ai-title">
-      <div class="head"><div><p class="eyebrow">Statewide AI firm</p><h2 id="idaho-ai-title">AI support, installation, and education for every serious Idaho business.</h2></div><p>This is the new center of gravity for Actrix: not a small-town tech page, but the Idaho resource for businesses trying to adopt AI without wasting money on generic software, empty strategy calls, or unsafe automation.</p></div>
+      <div class="head"><div><p class="eyebrow">Official service lines</p><h2 id="idaho-ai-title">Implementation first. Consulting only when it leads to a working system.</h2></div><p>Actrix is built for Idaho owners who want AI installed into real operations, not another abstract strategy deck. Start with one leak, ship one useful workflow, then expand from proof.</p></div>
       <div class="systems-grid">
-        <article class="system"><span class="num">AI SUPPORT</span><h3>Fix the messy AI setup you already have.</h3><p>ChatGPT accounts, scattered prompts, half-built automations, Zapier tangles, CRM confusion, inbox chaos, document workflows, and staff using AI inconsistently.</p><a class="system-link" href="/idaho-ai-services#ai-support">Idaho AI support →</a></article>
-        <article class="system"><span class="num">AI INSTALLATION</span><h3>Install agents that do a real job.</h3><p>Missed-call rescue, quote intake, lead follow-up, customer triage, review response drafts, reporting briefs, internal search, and owner approval queues.</p><a class="system-link" href="/idaho-ai-services#ai-installation">AI installation services →</a></article>
-        <article class="system"><span class="num">AI EDUCATION</span><h3>Train owners and teams to use AI safely.</h3><p>Plain-English training for Idaho teams: what AI can handle, what needs human review, how to write usable prompts, and how to avoid expensive automation mistakes.</p><a class="system-link" href="/idaho-ai-services#ai-education">AI training for businesses →</a></article>
+        <article class="system"><span class="num">AI SUPPORT</span><h3>Clean up the AI setup already drifting in the business.</h3><p>Audit ChatGPT use, prompt libraries, Zapier tangles, CRM confusion, inbox chaos, document workflows, and staff habits. Turn scattered use into one safer operating pattern.</p><a class="system-link" href="/idaho-ai-services#ai-support">Idaho AI support →</a></article>
+        <article class="system"><span class="num">AI INSTALLATION</span><h3>Install one narrow agent where work is leaking.</h3><p>Missed-call rescue, quote intake, lead follow-up, customer triage, review response drafts, reporting briefs, internal search, and owner approval queues.</p><a class="system-link" href="/idaho-ai-services#ai-installation">AI installation services →</a></article>
+        <article class="system"><span class="num">AI TRAINING</span><h3>Teach the team what AI can and cannot touch.</h3><p>Plain-English training for Idaho teams: approved uses, risk boundaries, prompt habits, review points, and how to avoid expensive automation mistakes.</p><a class="system-link" href="/idaho-ai-services#ai-education">AI training for businesses →</a></article>
       </div>
     </section>
 
     <section class="section" id="agent-flow" aria-labelledby="flow-title">
-      <div class="head"><div><p class="eyebrow">What an agent can do next</p><h2 id="flow-title">A custom agent is not just a receptionist. It is a work loop.</h2></div><p>Reception is the obvious first use. The bigger value is an agent that observes the business, decides what should happen next, does the safe parts, and packages the rest for a person.</p></div>
+      <div class="head"><div><p class="eyebrow">Installed work loop</p><h2 id="flow-title">A custom agent should create a decision-ready brief, not more tabs.</h2></div><p>The strongest systems watch one messy channel, ask for missing details, summarize the useful signal, and hand the risky decision back to a person.</p></div>
       <div class="loop-board" aria-label="Agent workflow pipeline">
         <div class="loop-pipeline">
           <div class="loop-stage sense">
@@ -216,7 +232,7 @@
             </div>
             <div class="loop-signal">
               <div class="sig-icon">💡</div>
-              <div class="sig-text"><strong>Explore strategy</strong><span>New offers, seasonal campaigns, pricing tests</span></div>
+              <div class="sig-text"><strong>Spot the next move</strong><span>Follow-up gaps, pricing clues, review opportunities</span></div>
             </div>
           </div>
           <div class="loop-connector">
@@ -228,7 +244,7 @@
             <h3>Act</h3>
             <div class="loop-signal">
               <div class="sig-icon">✍️</div>
-              <div class="sig-text"><strong>Draft and organize</strong><span>Replies, quote briefs, task lists, reports</span></div>
+              <div class="sig-text"><strong>Prepare the work</strong><span>Reply drafts, quote briefs, task lists, owner reports</span></div>
             </div>
             <div class="loop-signal">
               <div class="sig-icon">✅</div>
@@ -245,11 +261,20 @@
     </section>
 
     <section class="section" id="starter-systems" aria-labelledby="systems-title">
-      <div class="head"><div><p class="eyebrow">First revenue systems</p><h2 id="systems-title">Start with the business leaks AI can actually close.</h2></div><p>The statewide SEO strategy starts with problems businesses already search for: missed calls, vague quote requests, slow follow-up, staff training, and AI tools that need to be installed correctly.</p></div>
+      <div class="head"><div><p class="eyebrow">Starter systems</p><h2 id="systems-title">Start with one business leak that can be proven fast.</h2></div><p>These are narrow enough to ship, useful enough to notice, and safe enough to keep a human in the loop where reputation or money is involved.</p></div>
       <div class="systems-grid">
-        <article class="system feature"><span class="num">01</span><h3>Missed Call Rescue</h3><p>When nobody answers, the customer gets a fast text-back, the right questions get asked, and the lead turns into a clean owner-ready summary.</p><ul><li>After-hours text-back</li><li>Photo/detail collection</li><li>Owner approval before sending</li></ul><a class="system-link" href="/missed-call-rescue">See the full page →</a></article>
+        <article class="system feature"><span class="num">01</span><h3>Missed Call Rescue</h3><p>When nobody answers, the customer gets a fast text-back, the right questions get asked, and the lead turns into a clean owner-ready summary.</p><ul><li>After-hours text-back</li><li>Photo/detail collection</li><li>Owner approval before sending</li></ul><a class="system-link" href="/missed-call-rescue">See the workflow →</a></article>
         <article class="system"><span class="num">02</span><h3>AI Quote Intake</h3><p>Turns “how much?” into job type, urgency, location, photos, constraints, budget clues, and a quote-ready note.</p><a class="system-link" href="/solutions#solutions">How this expands →</a></article>
         <article class="system"><span class="num">03</span><h3>Owner Insight Agent</h3><p>Looks across messages, leads, tasks, reviews, and simple books to surface weak points and possible next moves.</p><a class="system-link" href="/solutions#insight">See insight workflows →</a></article>
+      </div>
+    </section>
+
+    <section class="section closeout" id="walkthrough" aria-labelledby="walkthrough-title">
+      <div class="closeout-card">
+        <p class="eyebrow">Next step</p>
+        <h2 id="walkthrough-title">Send the messy workflow. Actrix will map the first useful system.</h2>
+        <p>Do not polish it first. Text the missed-call problem, quote bottleneck, staff question, spreadsheet mess, or repeated admin task. The walkthrough starts from the real leak.</p>
+        <div class="actions"><a class="btn btn-primary" href="sms:+12083666111?&body=Hi%20Actrix%2C%20the%20messy%20workflow%20I%20want%20to%20map%20is%3A%20">Text the messy workflow</a><a class="btn btn-secondary" href="/ai-readiness-checklist">Check AI readiness</a></div>
       </div>
     </section>
 
@@ -260,7 +285,7 @@
         <details><summary>Do I need to know exactly what agent I want?</summary><p>No. Bring one bottleneck: missed calls, messy quotes, bookkeeping cleanup, review gaps, repeated admin, or “I know we’re leaking time somewhere.” We map from there.</p></details>
         <details><summary>Can agents manage sensitive work like books or customer records?</summary><p>They can help organize, summarize, reconcile, and flag issues, but the system should be designed with approval points for anything sensitive, financial, legal, medical, or reputation-risky.</p></details>
         <details><summary>What kind of business is this for?</summary><p>Owner-run service businesses, contractors, wellness clinics, salons, hospitality, retail, professional services, and local teams that rely on fast follow-up and clean handoffs.</p></details>
-        <details><summary>What should I text first?</summary><p>Text: "I want an AI walkthrough. The bottleneck is ___." If you do not know the bottleneck, text what feels messy or repetitive and I'll help narrow it.</p></details>
+        <details><summary>What should I text first?</summary><p>Text: "I want an AI walkthrough. The bottleneck is ___." If you do not know the bottleneck, text what feels messy or repetitive. A real example is better than a polished pitch.</p></details>
         <details><summary>What can AI actually automate in my business?</summary><p>More than you might think. Lead handling, customer service, operations, marketing, bookkeeping — any repeatable workflow where AI can do the prep work and you stay in control of decisions. <a href="/what-ai-can-automate-for-small-business" style="color:var(--amber);text-decoration:underline">See the full breakdown →</a></p></details>
       </div>
     </section>

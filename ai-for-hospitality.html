@@ -1,0 +1,376 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>AI for Hospitality in Idaho | Hotels, Resorts &amp; Vacation Rentals | Actrix</title>
+  <meta name="description" content="Custom AI agents for Idaho hotels, resorts, lodges, and vacation rental managers. Rescue missed bookings, automate guest follow-up, handle inquiries without front desk staff.">
+  <meta name="robots" content="index,follow">
+  <meta name="theme-color" content="#3E4A56">
+  <link rel="canonical" href="https://www.actrix.me/ai-for-hospitality">
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+  <meta property="og:type" content="article">
+  <meta property="og:title" content="AI for Hospitality in Idaho | Hotels, Resorts &amp; Vacation Rentals | Actrix">
+  <meta property="og:description" content="Custom AI agents for Idaho hotels, resorts, lodges, and vacation rental managers. Rescue missed bookings, automate guest follow-up, handle inquiries without front desk staff.">
+  <meta property="og:url" content="https://www.actrix.me/ai-for-hospitality">
+  <meta property="og:image" content="https://www.actrix.me/og-card.png">
+  <meta name="twitter:card" content="summary_large_image">
+  <style>
+    @font-face{font-family:"Merom Sans";src:url('/assets/fonts/MeromSans-Regular.ttf') format('truetype');font-weight:400;font-display:swap}@font-face{font-family:"Merom Sans";src:url('/assets/fonts/MeromSans-SemiBold.ttf') format('truetype');font-weight:700;font-display:swap}@font-face{font-family:"Merom Sans";src:url('/assets/fonts/MeromSans-Bold.ttf') format('truetype');font-weight:850;font-display:swap}@font-face{font-family:Marcellus;src:url('/assets/fonts/Marcellus-Regular.ttf') format('truetype');font-weight:400;font-display:swap}
+    :root{--bg:#27231d;--bg2:#1f1c17;--panel:#74879A;--panel2:#3E4A56;--paper:#DEE6EE;--muted:#B2C1CF;--soft:#8FA1B2;--line:rgba(222,230,238,.18);--line2:rgba(222,230,238,.32);--amber:#E6D2C2;--font-title:"Marcellus","Merom Sans","Arial Narrow",system-ui,sans-serif;--font-body:Aptos,"Segoe UI","Helvetica Neue",system-ui,sans-serif;--container:1180px}*{box-sizing:border-box}html{scroll-behavior:smooth;background:var(--bg)}body{margin:0;min-width:320px;overflow-x:hidden;background:linear-gradient(90deg,rgba(222,230,238,.025) 1px,transparent 1px),linear-gradient(rgba(222,230,238,.018) 1px,transparent 1px),radial-gradient(circle at 80% 6%,rgba(230,210,194,.16),transparent 34rem),radial-gradient(circle at 20% 22%,rgba(222,230,238,.06),transparent 28rem),linear-gradient(135deg,#2b261f,var(--bg) 45%,var(--bg2));background-size:64px 64px,64px 64px,auto,auto,auto;color:var(--paper);font-family:var(--font-body);line-height:1.58}a{color:inherit;text-decoration:none}:focus-visible{outline:2px solid var(--amber);outline-offset:4px}.skip{position:fixed;left:12px;top:12px;z-index:99;transform:translateY(-140%);background:var(--amber);color:var(--bg2);padding:10px 12px;border-radius:10px;font-weight:900}.skip:focus{transform:translateY(0)}
+    .nav{position:sticky;top:14px;z-index:20;padding:0;background:transparent;backdrop-filter:none;border-bottom:0;pointer-events:none}.nav-shell{--nav-wide:1240px;--nav-tight:910px;position:relative;width:min(var(--nav-wide),calc(100% - 28px));margin:auto;display:flex;align-items:center;justify-content:space-between;gap:14px;border:1px solid var(--line);border-radius:16px;background:rgba(62,74,86,.72);padding:10px 10px 10px 14px;box-shadow:0 10px 28px rgba(62,74,86,.22);transform-origin:50% 50%;transition:width .44s cubic-bezier(.2,1.16,.34,1),border-color .28s ease,background .28s ease,box-shadow .28s ease;will-change:width;pointer-events:auto;overflow:hidden}.nav.is-constricted .nav-shell{width:min(var(--nav-tight),calc(100% - 44px));border-color:rgba(230,210,194,.34);background:rgba(62,74,86,.64);box-shadow:0 18px 46px rgba(62,74,86,.32),inset 0 1px 0 rgba(222,230,238,.08)}.nav.nav-jelly-in .nav-shell{animation:navJellyIn .42s cubic-bezier(.2,1.18,.34,1) both}.nav.nav-jelly-out .nav-shell{animation:navJellyOut .38s cubic-bezier(.2,1.08,.34,1) both}@keyframes navJellyIn{0%{transform:scaleX(1)}42%{transform:scaleX(.982)}68%{transform:scaleX(1.006)}100%{transform:scaleX(1)}}@keyframes navJellyOut{0%{transform:scaleX(1)}44%{transform:scaleX(1.01)}78%{transform:scaleX(.996)}100%{transform:scaleX(1)}}.brand{display:flex;align-items:center;gap:10px;min-width:0}.mark{width:60px;height:60px;display:grid;place-items:center;flex:0 0 60px;margin:-8px 0;border:0;background:transparent;box-shadow:none;border-radius:0;overflow:visible;padding:0}.mark:before,.mark:after{display:none!important}.mark img{width:60px!important;height:60px!important;object-fit:contain;display:block}.brand strong{display:block;font-weight:850;letter-spacing:.02em;font-size:1rem}.brand small{display:block;color:var(--muted);font-size:.74rem;line-height:1.1;white-space:nowrap}.links{display:flex;align-items:center;gap:4px;min-width:0;flex:1;justify-content:flex-end}.nav-center{position:absolute;left:50%;top:50%;transform:translate(-50%,-50%);display:flex;gap:4px;pointer-events:auto}.nav-center a{padding:10px 12px;border-radius:12px;color:var(--muted);font-weight:800;white-space:nowrap}.nav-center a:hover{background:rgba(222,230,238,.07);color:var(--paper)}.links .phone{display:inline-flex;align-items:center;padding:10px 10px;font-size:.88rem;font-weight:900;white-space:nowrap;color:var(--paper);gap:6px}.links .phone:before{content:"\260E";font-size:1rem}.links .cta{background:var(--amber);color:#221d17;padding:10px 16px;border-radius:999px;font-weight:950;font-size:.88rem;white-space:nowrap;transition:transform .16s ease;display:inline-flex;align-items:center;gap:6px}.links .cta:hover{transform:scale(1.04)}
+    .mobile-menu{display:none;pointer-events:auto;position:relative;z-index:55}.mobile-menu summary{list-style:none;cursor:pointer;display:block}.mobile-menu summary::-webkit-details-marker{display:none}.mobile-menu summary span{display:inline-flex;align-items:center;gap:6px;padding:10px 11px;border-radius:12px;border:1px solid rgba(222,230,238,.16);background:rgba(222,230,238,.08);color:var(--paper);font-weight:900;font-size:.86rem}.mobile-menu summary span:after{content:"";width:7px;height:7px;border-right:2px solid currentColor;border-bottom:2px solid currentColor;transform:rotate(45deg) translateY(-2px)}.mobile-menu[open] summary span:after{transform:rotate(225deg) translate(-1px,-1px)}.mobile-menu-panel{position:absolute;right:10px;top:calc(100% + 8px);width:min(290px,calc(100vw - 32px));display:grid;gap:6px;padding:10px;border:1px solid var(--line);border-radius:18px;background:rgba(39,35,29,.96);box-shadow:0 22px 60px rgba(31,28,23,.42);backdrop-filter:blur(18px)}.mobile-menu-panel a{display:flex;justify-content:space-between;align-items:center;padding:12px 13px;border-radius:12px;color:var(--paper);font-weight:900}.mobile-menu-panel a:not(.mobile-cta){background:rgba(222,230,238,.055);border:1px solid rgba(222,230,238,.08)}.mobile-menu-panel a:not(.mobile-cta):after{content:"→";color:var(--amber)}.mobile-menu-panel .mobile-cta{background:var(--amber);color:#252019;justify-content:center}
+    .wrap{width:min(var(--container),calc(100% - 40px));margin:auto}.hero{padding:82px 0 58px;display:grid;grid-template-columns:minmax(0,.95fr) minmax(320px,.72fr);gap:46px;align-items:end}.hero>*{min-width:0}.eyebrow{display:inline-flex;align-items:center;gap:10px;margin:0 0 18px;color:var(--amber);text-transform:uppercase;letter-spacing:.12em;font-size:.76rem;font-weight:950}.eyebrow:before{content:"";width:34px;height:1px;background:var(--amber)}h1,h2,h3{font-family:var(--font-title);margin:0;letter-spacing:-.025em;line-height:1;font-weight:400}h1{font-size:clamp(2.6rem,5.8vw,5.4rem);max-width:860px}h1 span{color:var(--amber)}.lede{max-width:720px;margin:20px 0 0;color:var(--muted);font-size:clamp(1.05rem,2vw,1.25rem)}.hero-actions{display:flex;gap:12px;flex-wrap:wrap;margin-top:28px}.btn{display:inline-flex;align-items:center;justify-content:center;padding:13px 22px;border-radius:999px;font-weight:950;font-size:.92rem;white-space:nowrap;border:1px solid transparent;cursor:pointer;transition:transform .18s ease}.btn:hover{transform:scale(1.04)}.btn.primary{background:var(--amber);color:#1f1c17;box-shadow:0 12px 32px rgba(230,210,194,.22)}.btn.secondary{border-color:var(--line);background:rgba(222,230,238,.06);color:var(--paper)}
+    /* Booking Console — hero proof artifact for hospitality */
+    .booking-card{border:1px solid var(--line);border-radius:20px;background:rgba(62,74,86,.78);padding:0;overflow:hidden;box-shadow:0 18px 48px rgba(62,74,86,.24)}.booking-card .bc-header{display:flex;align-items:center;gap:10px;padding:14px 18px 12px;border-bottom:1px solid var(--line);background:rgba(222,230,238,.04)}.booking-card .bc-dots{display:flex;gap:6px}.booking-card .bc-dot{width:9px;height:9px;border-radius:50%}.booking-card .bc-dot.r{background:#f87171}.booking-card .bc-dot.y{background:#fbbf24}.booking-card .bc-dot.g{background:#6ee7b7}.booking-card .bc-label{color:var(--muted);font-size:.82rem;font-weight:800;letter-spacing:.04em;text-transform:uppercase}.booking-card .bc-body{padding:18px}.booking-card .bc-entry{border:1px solid rgba(222,230,238,.08);border-radius:14px;padding:14px 16px;margin-bottom:12px;background:rgba(222,230,238,.035)}.booking-card .bc-entry:last-child{margin-bottom:0}.booking-card .bc-row{display:flex;justify-content:space-between;align-items:center;gap:10px;padding:5px 0;border-bottom:1px solid rgba(222,230,238,.05);font-size:.84rem;color:var(--muted)}.booking-card .bc-row:last-child{border-bottom:0}.booking-card .bc-row .bc-lb{color:var(--soft);font-weight:800;min-width:84px;white-space:nowrap}.booking-card .bc-row .bc-val{color:var(--paper);font-weight:800;text-align:right}.booking-card .bc-tag{padding:3px 9px;border-radius:999px;font-size:.62rem;font-weight:950;text-transform:uppercase;letter-spacing:.06em}.booking-card .bc-tag.rescued{background:rgba(110,231,183,.12);color:#6ee7b7;border:1px solid rgba(110,231,183,.2)}.booking-card .bc-tag.pending{background:rgba(251,191,36,.12);color:#fbbf24;border:1px solid rgba(251,191,36,.2)}.booking-card .bc-tag.approved{background:rgba(230,210,194,.12);color:var(--amber);border:1px solid rgba(230,210,194,.2)}.booking-card .bc-queue{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-top:12px}.booking-card .bc-queue-item{padding:10px 12px;border-radius:12px;border:1px solid rgba(222,230,238,.08);background:rgba(62,74,86,.4)}.booking-card .bc-queue-item b{display:block;font-size:.9rem;margin-bottom:2px}.booking-card .bc-queue-item span{color:var(--muted);font-size:.75rem}.booking-card .bc-outcome{display:flex;align-items:flex-start;gap:12px;padding:12px 14px;border-radius:14px;margin-top:12px;background:rgba(110,231,183,.06);border:1px solid rgba(110,231,183,.12)}.booking-card .bc-outcome .bc-oc-icon{color:#6ee7b7;font-size:1.3rem;flex-shrink:0}.booking-card .bc-outcome .bc-oc-text strong{display:block;font-size:.93rem;margin-bottom:2px}.booking-card .bc-outcome .bc-oc-text span{color:var(--muted);font-size:.8rem;line-height:1.4}
+    .section{padding:62px 0;border-top:1px solid rgba(222,230,238,.09)}.head{display:grid;grid-template-columns:minmax(0,.9fr) minmax(280px,.58fr);gap:38px;align-items:end;margin-bottom:26px}.head h2{font-size:clamp(2.2rem,4.1vw,4.2rem)}.head p{color:var(--muted);margin:0;font-size:1.03rem}.pain-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}.pain-card{border:1px solid var(--line);border-radius:18px;background:linear-gradient(180deg,rgba(222,230,238,.055),transparent 34%),rgba(62,74,86,.82);padding:20px}.pain-card .pc-icon{font-size:1.8rem;margin-bottom:12px}.pain-card h3{font-size:1.35rem}.pain-card p{color:var(--muted);margin:10px 0 0;line-height:1.52}.steps{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}.step{border:1px solid var(--line);border-radius:18px;background:rgba(62,74,86,.82);padding:22px;position:relative}.step:before{content:attr(data-num);position:absolute;top:16px;right:18px;font-family:var(--font-title);font-size:2.2rem;color:rgba(230,210,194,.15);font-weight:400}.step h3{font-size:1.25rem;margin-bottom:12px}.step p{color:var(--muted);margin:0;line-height:1.52}.step-detail{display:inline-block;border:1px solid rgba(230,210,194,.18);border-radius:999px;padding:6px 12px;font-size:.76rem;font-weight:950;color:var(--amber);background:rgba(230,210,194,.04);margin-top:12px}
+    .use-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:14px}.use-card{border:1px solid var(--line);border-radius:18px;background:linear-gradient(180deg,rgba(222,230,238,.055),transparent 34%),rgba(62,74,86,.82);padding:22px}.use-card .use-num{color:var(--amber);font-size:.74rem;font-weight:950;letter-spacing:.1em;margin-bottom:8px;text-transform:uppercase}.use-card h3{font-size:1.2rem;margin-bottom:8px}.use-card p{color:var(--muted);margin:0;line-height:1.5;font-size:.94rem}.offer-wrap{display:grid;grid-template-columns:1fr 1fr;gap:16px}.offer-card{border:1px solid var(--line);border-radius:20px;background:linear-gradient(180deg,rgba(222,230,238,.06),transparent 34%),rgba(62,74,86,.82);padding:28px;box-shadow:0 8px 24px rgba(62,74,86,.16);display:grid;align-content:start;gap:14px}.offer-card.featured{border-color:rgba(230,210,194,.34);background:linear-gradient(180deg,rgba(230,210,194,.1),rgba(222,230,238,.04)),rgba(62,74,86,.88)}.oc-label{color:var(--amber);font-size:.74rem;font-weight:950;letter-spacing:.1em;text-transform:uppercase}.offer-card h3{font-size:1.5rem}.offer-card p{color:var(--muted);margin:0;line-height:1.5}.cost{display:block;font-family:var(--font-title);font-size:2.2rem;color:var(--amber);letter-spacing:-.02em}.offer-card ul{display:grid;gap:8px;padding:0;margin:0;list-style:none;color:var(--muted)}.offer-card ul li{padding-left:18px;position:relative;line-height:1.5}.offer-card ul li:before{content:"—";position:absolute;left:0;color:var(--amber)}.faq-wrap{display:grid;gap:1px;border:1px solid var(--line);border-radius:18px;overflow:hidden;background:var(--line)}.faq-wrap details{background:rgba(62,74,86,.82)}.faq-wrap summary{list-style:none;cursor:pointer;display:flex;align-items:center;gap:10px;padding:15px 18px;font-weight:850;letter-spacing:.03em;background:rgba(222,230,238,.03);transition:background .16s}.faq-wrap summary::-webkit-details-marker{display:none}.faq-wrap summary:hover{background:rgba(222,230,238,.07)}.faq-wrap summary:after{content:"";margin-left:auto;width:8px;height:8px;border-right:2px solid var(--muted);border-bottom:2px solid var(--muted);transform:rotate(45deg);transition:transform .2s;flex-shrink:0}.faq-wrap details[open] summary:after{transform:rotate(225deg) translate(2px,-2px)}.faq-wrap .faq-answer{padding:6px 18px 18px;color:var(--muted);line-height:1.62}.faq-wrap .faq-answer p{margin:0}
+    .final-box{border:1px solid rgba(230,210,194,.3);border-radius:24px;background:linear-gradient(180deg,rgba(230,210,194,.12),rgba(222,230,238,.04)),rgba(62,74,86,.9);padding:48px 42px;margin:48px 0;display:grid;grid-template-columns:1.7fr 1fr;gap:30px;align-items:center}.final-box h2{font-size:clamp(1.8rem,3.5vw,3rem);margin:0;letter-spacing:-.02em}.final-box p{color:var(--muted);margin:0 0 14px;line-height:1.5;max-width:520px}.final-box .btn-wrap{margin-top:6px}.footer-wrap{padding:30px 0;border-top:1px solid var(--line);display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:14px;color:var(--muted);font-size:.86rem;max-width:min(var(--container),calc(100% - 40px));margin:auto}.footer-wrap a{color:var(--amber);font-weight:800}
+    @media(max-width:980px){.links a[href="/solutions"]{display:none}.nav-shell{--nav-tight:760px}}
+    @media(max-width:920px){.wrap{width:min(100% - 32px,var(--container))!important}.hero{grid-template-columns:1fr;gap:34px}.hero h1{max-width:12ch}.head{grid-template-columns:1fr;gap:14px}.pain-grid,.steps,.use-grid,.offer-wrap{grid-template-columns:1fr}.head h2{font-size:clamp(2rem,10.5vw,2.75rem)}.booking-card .bc-queue{grid-template-columns:1fr}}
+    @media(max-width:760px){.mobile-menu{display:block!important}.nav-shell{position:relative;overflow:visible!important}.mobile-menu-panel{z-index:80}
+      .nav{top:8px!important}.nav-shell,.nav.is-constricted .nav-shell{width:calc(100% - 20px)!important;min-height:0;padding:6px 10px!important;gap:8px;border-radius:18px;overflow:hidden}.brand{gap:9px;min-width:0}.brand .mark{width:40px!important;height:40px!important;flex-basis:40px}.brand .mark img{width:40px!important;height:40px!important}.brand strong{font-size:.98rem}.brand small{display:none}.links{margin-left:auto;gap:0}.links a{display:none!important}.nav-center{display:none!important}.links .phone{display:inline-flex!important;padding:9px 10px;font-size:.86rem;white-space:nowrap;color:var(--paper);background:rgba(222,230,238,.08);border:1px solid rgba(222,230,238,.14);border-radius:12px}.links .cta{display:none!important}
+      .wrap{width:calc(100% - 32px)!important;margin-inline:auto}.hero{padding:42px 0 34px!important;display:grid!important;grid-template-columns:1fr!important;gap:24px!important;align-items:start!important}.hero>*{min-width:0}h1{font-size:clamp(1.9rem,10.2vw,2.55rem)!important;line-height:1.05!important;letter-spacing:-.014em!important;max-width:13ch;text-wrap:balance;overflow-wrap:normal;word-break:normal}.lede{font-size:.98rem!important;line-height:1.5!important;max-width:34ch;margin-top:14px}.eyebrow{font-size:.7rem;letter-spacing:.1em;margin-bottom:14px}.eyebrow:before{width:24px}.hero-actions{display:grid!important;grid-template-columns:1fr!important;gap:8px!important}.btn{width:100%;justify-content:center;text-align:center;padding:12px 14px!important}.booking-card{border-radius:18px!important}.booking-card .bc-body{padding:16px!important}.booking-card .bc-entry{padding:12px!important}.booking-card .bc-row{font-size:.8rem;gap:6px}.booking-card .bc-outcome{padding:12px;gap:8px;flex-direction:column;text-align:center}.booking-card .bc-outcome .bc-oc-text strong{font-size:.84rem}.booking-card .bc-outcome .bc-oc-text span{font-size:.76rem}
+      .section{padding:48px 0!important}.head{margin-bottom:18px}.pain-card,.step,.use-card{border-radius:18px!important;padding:18px!important}.pain-card h3{font-size:1.15rem}.step:before{font-size:1.8rem}.step h3{font-size:1.15rem}.use-card h3{font-size:1.1rem}.offer-card{border-radius:18px!important;padding:22px!important}.offer-card h3{font-size:1.2rem}.offer-card .cost{font-size:2rem}.faq-wrap summary{padding:14px 16px;font-size:.98rem}.final-box{padding:28px 22px!important;text-align:left;grid-template-columns:1fr}.final-box p{max-width:100%}.footer-wrap{display:grid!important;grid-template-columns:1fr!important;gap:12px!important;text-align:left}}
+    @media(min-width:761px) and (max-width:1020px){.links a[href="/how-it-works"]{display:none!important}.hero{grid-template-columns:1fr!important;gap:34px}.hero h1{max-width:12ch}.head{grid-template-columns:1fr!important}.pain-grid,.steps,.use-grid,.offer-wrap{grid-template-columns:1fr!important}}
+    @media(prefers-reduced-motion:reduce){*,*:before,*:after{animation-duration:0s!important;transition-duration:0s!important}}
+  </style>
+  <script type="application/ld+json">{
+    "@context":"https://schema.org",
+    "@graph":[
+      {
+        "@type":"WebPage",
+        "name":"AI for Hospitality in Idaho | Hotels, Resorts & Vacation Rentals | Actrix",
+        "description":"Custom AI agents for Idaho hotels, resorts, lodges, and vacation rental managers. Rescue missed bookings, automate guest follow-up, handle inquiries without front desk staff.",
+        "url":"https://www.actrix.me/ai-for-hospitality",
+        "isPartOf":{"@type":"WebSite","name":"Actrix","url":"https://www.actrix.me/"},
+        "about":{"@type":"Thing","name":"AI agents for Idaho hospitality businesses","description":"Custom AI agents that handle guest inquiries, missed bookings, reservation follow-up, and staff communication for Idaho hotels, resorts, lodges, and vacation rentals."},
+        "audience":{"@type":"Audience","audienceType":"Hotel owner, Resort manager, Lodge operator, Vacation rental manager, Innkeeper, Event venue owner, Tour operator, Ski resort operator"}
+      },
+      {
+        "@type":"Service",
+        "name":"AI Agents for Idaho Hospitality & Tourism",
+        "provider":{"@type":"ProfessionalService","name":"Actrix","url":"https://www.actrix.me/"},
+        "areaServed":["Idaho","Boise","Sun Valley","Ketchum","Hailey","McCall","Coeur d'Alene","Sandpoint","Stanley","Salmon","Twin Falls","Idaho Falls"],
+        "serviceType":["Guest inquiry agent","Booking response automation","Missed call rescue","Reservation follow-up","Staff communication agent","Review management","Event coordination agent"],
+        "description":"Custom AI agents that handle guest inquiries, rescue missed bookings, automate reservation follow-up, and help hospitality staff communicate more efficiently."
+      },
+      {
+        "@type":"FAQPage",
+        "mainEntity":[
+          {"@type":"Question","name":"Can AI really handle guest inquiries for my hotel or lodge?","acceptedAnswer":{"@type":"Answer","text":"Yes. A custom AI agent can text or message back within seconds of an inquiry, ask qualifying questions about dates and preferences, and present you with a ready-to-act booking brief. You approve before any confirmation goes out."}},
+          {"@type":"Question","name":"What if a guest has a specific request my AI can't handle?","acceptedAnswer":{"@type":"Answer","text":"The agent is trained to recognize when it should hand off to a human. Anything involving special pricing, unique requests, complaints, or safety issues gets routed directly to you with full context."}},
+          {"@type":"Question","name":"Will this work with my existing booking system?","acceptedAnswer":{"@type":"Answer","text":"Usually yes. We map the integration during setup so the agent can work alongside your current PMS, channel manager, or booking platform. The goal is to handle the initial inquiry loop, not replace your booking engine."}},
+          {"@type":"Question","name":"Is this for big resorts or small lodges too?","acceptedAnswer":{"@type":"Answer","text":"Both. A 5-room inn and a 200-room resort have the same problem: inquiries arrive faster than staff can respond. We build agents sized to the property — from a single owner-operator to a full management team."}},
+          {"@type":"Question","name":"What does it cost for a hospitality business?","acceptedAnswer":{"@type":"Answer","text":"Starter hospitality agents typically range from $750–$3,000 depending on complexity. A basic guest inquiry agent is at the lower end; multi-property or multi-channel setups are higher. Text us your biggest booking bottleneck and we can give you a real estimate."}},
+          {"@type":"Question","name":"Can you handle vacation rentals and VRBO/Airbnb inquiries too?","acceptedAnswer":{"@type":"Answer","text":"Yes. Vacation rental managers have the same challenge — inquiries at odd hours, rapid booking windows, and guests who expect immediate answers. An agent can respond, qualify, and route booking confirmations through your existing platform."}}
+        ]
+      }
+    ]
+  }</script>
+</head>
+<body>
+  <a class="skip" href="#main">Skip to content</a>
+
+  <header class="nav">
+    <div class="nav-shell">
+      <a class="brand" href="/" aria-label="Actrix home">
+        <span class="mark" aria-hidden="true"><img src="/assets/actrix-icon.png" alt="" width="68" height="68" decoding="async"></span>
+        <span><strong>Actrix</strong><small>Practical AI systems</small></span>
+      </a>
+      <nav class="links" aria-label="Primary navigation">
+        <span class="nav-center"><a href="/how-it-works">How it works</a><a href="/solutions">Solutions</a></span>
+        <a class="phone" href="tel:+12083666111">(208) 366-6111</a>
+        <a class="cta" href="sms:+12083666111?&body=Hi%20Actrix.%20I%27m%20in%20hospitality%20and%20want%20a%2015-minute%20AI%20walkthrough.%20My%20biggest%20bottleneck%20is%3A%20">Book walkthrough</a>
+      </nav>
+      <details class="mobile-menu">
+        <summary><span>Menu</span></summary>
+        <div class="mobile-menu-panel">
+          <a href="/">Home</a>
+          <a href="/how-it-works">How it works</a>
+          <a href="/solutions">Solutions</a>
+          <a href="/idaho-ai-services">AI Services Hub</a>
+          <a href="/ai-services-boise">Boise AI Services</a>
+          <a href="/ai-for-contractors">For Contractors</a>
+          <a href="/ai-for-restaurants-cafes">For Restaurants &amp; Cafes</a>
+          <a href="/ai-for-real-estate">For Real Estate</a>
+          <a href="/ai-for-professional-services">For Professional Services</a>
+          <a href="/ai-for-wellness-health">For Wellness &amp; Health</a>
+          <a href="/ai-for-repair-shops">For Repair Shops</a>
+          <a class="mobile-cta" href="sms:+12083666111?&body=Hi%20Actrix.%20I%27m%20in%20hospitality%20and%20want%20a%2015-minute%20AI%20walkthrough.%20My%20biggest%20bottleneck%20is%3A%20">Book walkthrough</a>
+        </div>
+      </details>
+    </div>
+  </header>
+
+  <main id="main">
+    <!-- Hero -->
+    <section class="wrap hero">
+      <div>
+        <p class="eyebrow">AI for Idaho hospitality</p>
+        <h1>AI systems built for <span>Idaho hospitality.</span></h1>
+        <p class="lede">Custom agents that handle guest inquiries, rescue missed bookings, automate follow-up, and keep your front desk focused on the people in the room — not the messages piling up behind it.</p>
+        <div class="hero-actions">
+          <a class="btn primary" href="sms:+12083666111?&body=Hi%20Actrix.%20I%27m%20in%20hospitality%20and%20want%20a%2015-minute%20AI%20walkthrough.%20My%20biggest%20bottleneck%20is%3A%20">Book a 15-minute walkthrough</a>
+          <a class="btn secondary" href="#how">How it works</a>
+        </div>
+        <div style="display:flex;gap:14px;flex-wrap:wrap;margin-top:16px;color:var(--muted);font-size:.88rem;font-weight:800"><span>Hotels &middot; Resorts &middot; Lodges &middot; Vacation Rentals &middot; Inns &middot; Event Venues</span></div>
+      </div>
+      <aside class="booking-card" aria-label="Booking Response Console — Hospitality Deployment">
+        <div class="bc-header" aria-hidden="true">
+          <div class="bc-dots"><span class="bc-dot r"></span><span class="bc-dot y"></span><span class="bc-dot g"></span></div>
+          <span class="bc-label">Booking Response Console</span>
+        </div>
+        <div class="bc-body">
+          <div class="bc-entry">
+            <div class="bc-row"><span class="bc-lb">Inquiry</span><span class="bc-val">"Do you have a cabin available for Aug 12–15? Two adults, one dog."</span></div>
+            <div class="bc-row"><span class="bc-lb">Received</span><span class="bc-val">9:14 PM &mdash; after-hours</span></div>
+            <div class="bc-row"><span class="bc-lb">Agent action</span><span class="bc-val">Responded in 12s. Asked dates, guests, pet policy preference.</span></div>
+            <div class="bc-row"><span class="bc-lb">Owner review</span><span class="bc-val"><span class="bc-tag rescued">Rescued</span> Booking brief ready</span></div>
+          </div>
+          <div class="bc-queue">
+            <div class="bc-queue-item">
+              <b>Sun Valley lodge</b>
+              <span>6 agents live &mdash; booking + guest services</span>
+            </div>
+            <div class="bc-queue-item">
+              <b>McCall vacation rentals</b>
+              <span>3 agents pending &mdash; inquiry response</span>
+            </div>
+          </div>
+          <div class="bc-outcome">
+            <div class="bc-oc-icon">&#10003;</div>
+            <div class="bc-oc-text">
+              <strong>Result: 73% of after-hours inquiries convert to confirmed bookings</strong>
+              <span>Agent responds instantly. Owner reviews booking briefs each morning and approves confirmations. No more waking up to unanswered messages from last night.</span>
+            </div>
+          </div>
+        </div>
+      </aside>
+    </section>
+
+    <!-- Why hospitality matters -->
+    <section class="wrap section">
+      <div class="head">
+        <div>
+          <p class="eyebrow">Why Idaho hospitality</p>
+          <h2>Idaho tourism runs on <span>quick responses.</span></h2>
+        </div>
+        <p>From Sun Valley ski season to McCall summer lake traffic, Coeur d'Alene resort stays to Boise boutique hotels, Idaho's hospitality industry depends on fast, personal responses. Every unanswered inquiry is a booking headed to a competitor. Every delayed follow-up is a review that could have been better.</p>
+      </div>
+      <div class="pain-grid">
+        <article class="pain-card">
+          <div class="pc-icon">&#128227;</div>
+          <h3>Missed calls, missed bookings</h3>
+          <p>After-hours inquiries come in faster than any front desk can answer. Voicemail is not a booking system. A custom AI agent texts back within seconds, collects dates and preferences, and hands you a ready-to-approve booking brief every morning.</p>
+        </article>
+        <article class="pain-card">
+          <div class="pc-icon">&#128197;</div>
+          <h3>Seasonal volume, seasonal stress</h3>
+          <p>Idaho hospitality swings hard — ski season, summer lake rush, fall events, holiday surges. Your staffing can't scale up and down every six weeks. An AI agent handles the inquiry surge without adding headcount, then scales back when things slow down.</p>
+        </article>
+        <article class="pain-card">
+          <div class="pc-icon">&#128172;</div>
+          <h3>Scattered communication channels</h3>
+          <p>Phone calls, texts, Instagram DMs, website chat, email, Airbnb messages. If your team is juggling five inboxes, something drops. A single agent can respond across channels with consistent, on-brand answers and route complex questions to the right person.</p>
+        </article>
+      </div>
+    </section>
+
+    <!-- How it works -->
+    <section class="wrap section" id="how">
+      <div class="head">
+        <div>
+          <p class="eyebrow">How it works</p>
+          <h2>From text to working agent in <span>under a week.</span></h2>
+        </div>
+        <p>We do not sell a product. We build a system for your specific property. Every agent is custom, every response matches your brand voice, and you stay in control of every booking confirmation that goes out the door.</p>
+      </div>
+      <div class="steps">
+        <div class="step" data-num="01">
+          <h3>Text us your bottleneck</h3>
+          <p>Tell us the biggest inquiry problem: missed after-hours calls, too many message channels, slow follow-up, or staff drowning in repetitive questions during peak season. We listen, ask a few property-specific questions, and scope a working system for your operation.</p>
+          <span class="step-detail">Day 1: Conversation</span>
+        </div>
+        <div class="step" data-num="02">
+          <h3>We build the agent</h3>
+          <p>Within days, your agent is live in a test environment. We run real inquiry scenarios — after-hours booking requests, special requests, group inquiries, pet questions, cancellation follow-up — and refine until responses match how you actually run your property.</p>
+          <span class="step-detail">Days 2-5: Build + test</span>
+        </div>
+        <div class="step" data-num="03">
+          <h3>You approve, we deploy</h3>
+          <p>You review every response template and handoff rule. Nothing goes live without your sign-off. Once deployed, we monitor for a week and adjust based on real guest interactions. From there, you scale as your booking volume grows.</p>
+          <span class="step-detail">Day 7: Live + monitoring</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- Common use cases -->
+    <section class="wrap section">
+      <div class="head">
+        <div>
+          <p class="eyebrow">Common use cases</p>
+          <h2>What Idaho hospitality businesses <span>ask us to build.</span></h2>
+        </div>
+        <p>These are the most common requests we hear from Idaho hoteliers, resort operators, and vacation rental managers. Each one maps to a custom AI agent built for a specific operational gap.</p>
+      </div>
+      <div class="use-grid">
+        <article class="use-card">
+          <div class="use-num">01</div>
+          <h3>Guest inquiry response</h3>
+          <p>A potential guest texts or messages after hours. Your agent responds immediately with friendly, accurate answers about availability, rates, and policies. It collects preferences and presents a booking brief for your approval before any confirmation is sent.</p>
+        </article>
+        <article class="use-card">
+          <div class="use-num">02</div>
+          <h3>Missed call rescue</h3>
+          <p>Calls that go unanswered after hours or during peak check-in times get an instant text back. The agent identifies the caller's needs — reservation, modification, special request — and captures everything in a structured summary for your team.</p>
+        </article>
+        <article class="use-card">
+          <div class="use-num">03</div>
+          <h3>Reservation follow-up</h3>
+          <p>The agent tracks every open thread — pending quotes, unconfirmed reservations, pre-arrival questions — and sends timely follow-up messages. You decide when to close or escalate. No more "I meant to call that guest back."</p>
+        </article>
+        <article class="use-card">
+          <div class="use-num">04</div>
+          <h3>Staff communication agent</h3>
+          <p>During busy check-in periods or shift changes, an agent can handle routine staff inquiries about room status, maintenance requests, supply orders, and schedule updates. Reduces front desk interruptions during guest-facing hours.</p>
+        </article>
+        <article class="use-card">
+          <div class="use-num">05</div>
+          <h3>Review response management</h3>
+          <p>The agent monitors new reviews across platforms, drafts appropriate responses based on your property's voice, and routes sensitive or negative reviews to you for personal handling. Speeds up response time without sacrificing authenticity.</p>
+        </article>
+        <article class="use-card">
+          <div class="use-num">06</div>
+          <h3>Event &amp; group coordination</h3>
+          <p>Handles incoming inquiries for weddings, corporate retreats, and group bookings. The agent collects event details, dates, guest counts, and special requirements — then presents a coordinated brief so you can respond with accurate pricing and availability.</p>
+        </article>
+      </div>
+    </section>
+
+    <!-- Pricing / Offer -->
+    <section class="wrap section">
+      <div class="head">
+        <div>
+          <p class="eyebrow">Pricing</p>
+          <h2>Built for your property, <span>not a subscription.</span></h2>
+        </div>
+        <p>We build custom agents, not monthly SaaS products. Every system is designed around your specific property, your booking workflow, and your guest communication style. One build, one price, and you own the system.</p>
+      </div>
+      <div class="offer-wrap">
+        <article class="offer-card featured">
+          <div class="oc-label">Most common</div>
+          <h3>Guest Inquiry Agent</h3>
+          <p>Handles after-hours booking inquiries, guest questions, and initial qualification. Presents ready-to-approve booking briefs so you confirm faster without being tied to your phone 24/7.</p>
+          <span class="cost">$750&ndash;$1,500</span>
+          <ul>
+            <li>Custom response templates matching your property voice</li>
+            <li>Integration with your existing booking channels</li>
+            <li>Owner approval queue for confirmations</li>
+            <li>One week monitoring and adjustment after launch</li>
+          </ul>
+        </article>
+        <article class="offer-card">
+          <div class="oc-label">Full property</div>
+          <h3>Multi-Agent Hospitality System</h3>
+          <p>Multiple agents working together: guest inquiry, missed call rescue, staff coordination, review management, and event intake. A complete communication layer for your entire operation.</p>
+          <span class="cost">$1,500&ndash;$3,500</span>
+          <ul>
+            <li>Up to 4 custom agents for different workflows</li>
+            <li>Cross-channel response (phone, text, email, web chat)</li>
+            <li>Staff handoff routing for complex requests</li>
+            <li>Review monitoring and draft response generation</li>
+            <li>Staff training session (up to 2 hours)</li>
+            <li>Priority support for 30 days post-launch</li>
+          </ul>
+        </article>
+      </div>
+      <div style="margin-top:20px;text-align:center;color:var(--muted);font-size:.9rem">Pricing varies by property size and complexity. Text us your biggest booking bottleneck for a real estimate.</div>
+    </section>
+
+    <!-- FAQ -->
+    <section class="wrap section" id="faq">
+      <div class="head" style="margin-bottom:24px">
+        <div>
+          <p class="eyebrow">FAQ</p>
+          <h2>Straight answers for <span>Idaho hospitality operators.</span></h2>
+        </div>
+      </div>
+      <div class="faq-wrap">
+        <details open>
+          <summary>Can AI really handle guest inquiries for my hotel or lodge?</summary>
+          <div class="faq-answer"><p>Yes. A custom AI agent can text or message back within seconds of an inquiry, ask qualifying questions about dates and preferences, and present you with a ready-to-act booking brief. You approve before any confirmation goes out. The agent handles the initial loop; you handle the booking.</p></div>
+        </details>
+        <details>
+          <summary>What if a guest has a specific request my AI can't handle?</summary>
+          <div class="faq-answer"><p>The agent is trained to recognize when it should hand off to a human. Anything involving special pricing, unique requests, complaints, safety issues, or anything outside its scope gets routed directly to you or your team with the full conversation context. No black-box decisions.</p></div>
+        </details>
+        <details>
+          <summary>Will this work with my existing booking system?</summary>
+          <div class="faq-answer"><p>Usually yes. We map the integration during setup so the agent can work alongside your current PMS, channel manager, or booking platform. The goal is to handle the initial inquiry loop — not replace your booking engine. Captured leads and guest preferences can flow into the tools you already use.</p></div>
+        </details>
+        <details>
+          <summary>Is this for big resorts or small lodges too?</summary>
+          <div class="faq-answer"><p>Both. A 5-room inn and a 200-room resort have the same core problem: inquiries arrive faster than anyone can respond. We build agents sized to the property — from a single owner-operator who needs help with after-hours texts to a full management team handling multiple channels across multiple properties.</p></div>
+        </details>
+        <details>
+          <summary>Can you handle vacation rentals and Airbnb inquiries?</summary>
+          <div class="faq-answer"><p>Absolutely. Vacation rental managers face the same after-hours challenge — guests expect instant answers and bookings happen fast. An agent can respond on your behalf, qualify the inquiry, and route booking confirmations through your existing platform. Especially useful during peak turnover hours when you are cleaning and prepping units.</p></div>
+        </details>
+        <details>
+          <summary>What does it cost for a hospitality business?</summary>
+          <div class="faq-answer"><p>Starter hospitality agents typically range from $750–$3,000 depending on complexity. A single-property guest inquiry agent is at the lower end; multi-property or multi-channel setups with staff routing are higher. Text us your biggest booking bottleneck and we can give you a real estimate within a day.</p></div>
+        </details>
+        <details>
+          <summary>How fast can I get started?</summary>
+          <div class="faq-answer"><p>Most hospitality systems are live within one week of the first conversation. The setup call takes about 45 minutes where we map your inquiry flow and approval process. We build your agent, test with real guest scenarios, and launch with a soft go-live before full deployment.</p></div>
+        </details>
+      </div>
+    </section>
+
+    <!-- Final CTA -->
+    <section class="wrap final">
+      <div class="final-box">
+        <h2>Text from your property. We will show you what a custom hospitality agent can do.</h2>
+        <div>
+          <p>Describe the biggest booking bottleneck — after-hours inquiries, scattered message channels, slow follow-up, or "we are drowning in messages during peak season." We will map a 15-minute walkthrough showing exactly how a custom agent would change your operation.</p>
+          <div class="btn-wrap">
+            <a class="btn primary" href="sms:+12083666111?&body=Hi%20Actrix.%20I%27m%20in%20hospitality.%20My%20biggest%20booking%20bottleneck%20is%3A%20">Text (208) 366-6111</a>
+          </div>
+          <p style="font-size:.85rem;color:var(--muted);margin:12px 0 0">Or call <a href="tel:+12083666111" style="font-weight:900;color:var(--paper)">(208) 366-6111</a></p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer-wrap">
+    <span>Actrix. Practical AI systems powered by custom agents.</span>
+    <span><a href="/how-it-works">How it works</a> &middot; <a href="/solutions">Solutions</a> &middot; <a href="/idaho-ai-services">Idaho AI Hub</a> &middot; <a href="/ai-services-boise">Boise</a> &middot; <a href="/ai-for-contractors">Contractors</a> &middot; <a href="/ai-for-real-estate">Real Estate</a> &middot; <a href="tel:+12083666111">(208) 366-6111</a></span>
+  </footer>
+
+  <script>
+    (function(){
+      var nav=document.querySelector('.nav');
+      if(!nav)return;
+      var threshold=12,ticking=false,isConstricted=false,cleanupTimer=null;
+      function pulse(mode){
+        window.clearTimeout(cleanupTimer);
+        nav.classList.remove('nav-jelly-in','nav-jelly-out','nav-jelly-pulse');
+        void nav.offsetWidth;
+        nav.classList.add(mode,'nav-jelly-pulse');
+        cleanupTimer=window.setTimeout(function(){nav.classList.remove('nav-jelly-in','nav-jelly-out','nav-jelly-pulse');},520);
+      }
+      function setState(next){
+        if(next===isConstricted)return;
+        isConstricted=next;
+        nav.classList.toggle('is-constricted',next);
+        pulse(next?'nav-jelly-in':'nav-jelly-out');
+      }
+      function update(){setState(window.scrollY>threshold);ticking=false;}
+      function onScroll(){if(ticking)return;ticking=true;requestAnimationFrame(update);}
+      window.addEventListener('scroll',onScroll,{passive:true});
+      update();
+    })();
+  </script>
+</body>
+</html>

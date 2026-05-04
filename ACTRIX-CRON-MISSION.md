@@ -54,27 +54,32 @@ Actrix is no longer framed as a small Wood River Valley side project. It is an I
 ## Current Strategic Foundation
 Homepage now points to statewide Idaho AI positioning and links to /idaho-ai-services as the hub. Future runs should expand outward from that hub rather than returning to narrow Wood River Valley-only framing.
 
-## Manager Directive — 2026-05-03 22:30
+## Manager Directive — 2026-05-04 22:30
 
 ### Status
-All 6 core money pages are DONE. Great pace. 4 industry pages done. 0 regional pages. 0 educational authority pages.
+All 6 core money pages are DONE. Great pace. 6 industry pages done (contractors, wellness, restaurants, professional services, real estate, repair shops). 2 educational authority pages done (what-ai-can-automate, ai-readiness-checklist). 1 regional page done (/ai-services-boise). 0 remaining industry/educational gaps in first wave.
 
-### Critical fix applied this run
-- business-automation-idaho.html had redacted phone number (+120****6111) in all 8 tel/sms links — FIXED to +12083666111.
-- ai-for-professional-services.html was missing FAQPage schema despite having 8 visible FAQ items — FIXED.
+### Build this run
+- Built /ai-services-boise — first Actrix regional page for Boise & Treasure Valley.
+- Implementation Brief proof artifact with Boise contractor scenario showing 84% conversion improvement.
+- Full SEO payload: title, meta, canonical, OG tags, WebPage + Service + FAQPage schema with 7 FAQ entries.
+- Linked from /idaho-ai-services hub (primary markets card + button row).
+- Added to sitemap.xml.
 
 ### Phone number rule (READ THIS EVERY RUN)
-The phone number MUST be exactly `+12083666111` in ALL tel: and sms: href attributes. Never write `+120****6111` or any redacted version. Before committing, grep your changed file for `****` and verify zero matches. This is a zero-tolerance rule.
+The phone number MUST be the unredacted digits in ALL tel: and sms: href attributes. Use `+12083666111`, never any redacted version. Before committing, grep your changed file for `****` and verify zero matches. This is a zero-tolerance rule.
 
 ### Next targets — pick in this order:
-1. **Educational authority page: `/what-ai-can-automate-for-small-business`** — This is the strongest educational play. Targets long-tail "what can AI automate" queries, supports all money pages, and builds trust before conversion. Include a real automation map proof artifact (a visual showing which workflows map to which agents). Add FAQPage schema. Link from hub and homepage.
-2. **Educational authority page: `/ai-readiness-checklist`** — AI readiness scorecard as proof artifact. Targets "is my business ready for AI" queries. Link from hub.
-3. **Industry page: `/ai-for-real-estate`** — Real estate is a major Idaho vertical. Property listing agents, brokerages, property managers. Use an Agent Pipeline proof artifact (inquiry → qualification → showing scheduler → follow-up).
-4. **Industry page: `/ai-for-repair-shops`** — Actrix has direct repair-shop DNA from HDR. This page writes itself. Use a repair intake ticket / dispatch board as proof artifact.
-5. Do NOT start regional/city pages until at least 2 educational pages and 2 more industry pages exist.
+1. **Regional page: `/ai-services-idaho-falls`** — Idaho Falls is the 3rd largest metro in Idaho. Targets "AI services Idaho Falls" queries. Use an Implementation Brief or automated dispatch board proof artifact. Covers Idaho Falls, Ammon, Rigby, Blackfoot.
+2. **Regional page: `/ai-services-twin-falls`** — Twin Falls is the 4th largest metro. Covers Twin Falls, Jerome, Burley, Rupert, Kimberly. Good mail-in / remote positioning.
+3. **Industry page: `/ai-for-hospitality`** — Idaho has major tourism (Sun Valley, McCall, Coeur d'Alene, Boise). Hotels, restaurants, guides, ski resorts. Use a booking/guest response proof artifact.
+4. **Educational page: `/ai-implementation-plan`** — "How to implement AI in a business" targets. Step-by-step plan as proof artifact.
+5. **Shortcut: Add `/ai-services-boise` to homepage mobile nav** for better discovery.
 
 ### Quality reminders:
 - Every page needs a proof artifact, not just cards.
 - Every page with visible FAQ items needs FAQPage JSON-LD.
 - Do NOT duplicate pages that already exist.
 - Check the sitemap before building to avoid collisions.
+- Regional pages must use honest positioning — no fake local storefronts.
+- Proof artifacts should show local/city-specific scenarios where possible.

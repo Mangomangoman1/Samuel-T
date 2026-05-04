@@ -53,3 +53,28 @@ Actrix is no longer framed as a small Wood River Valley side project. It is an I
 
 ## Current Strategic Foundation
 Homepage now points to statewide Idaho AI positioning and links to /idaho-ai-services as the hub. Future runs should expand outward from that hub rather than returning to narrow Wood River Valley-only framing.
+
+## Manager Directive — 2026-05-03 22:30
+
+### Status
+All 6 core money pages are DONE. Great pace. 4 industry pages done. 0 regional pages. 0 educational authority pages.
+
+### Critical fix applied this run
+- business-automation-idaho.html had redacted phone number (+120****6111) in all 8 tel/sms links — FIXED to +12083666111.
+- ai-for-professional-services.html was missing FAQPage schema despite having 8 visible FAQ items — FIXED.
+
+### Phone number rule (READ THIS EVERY RUN)
+The phone number MUST be exactly `+12083666111` in ALL tel: and sms: href attributes. Never write `+120****6111` or any redacted version. Before committing, grep your changed file for `****` and verify zero matches. This is a zero-tolerance rule.
+
+### Next targets — pick in this order:
+1. **Educational authority page: `/what-ai-can-automate-for-small-business`** — This is the strongest educational play. Targets long-tail "what can AI automate" queries, supports all money pages, and builds trust before conversion. Include a real automation map proof artifact (a visual showing which workflows map to which agents). Add FAQPage schema. Link from hub and homepage.
+2. **Educational authority page: `/ai-readiness-checklist`** — AI readiness scorecard as proof artifact. Targets "is my business ready for AI" queries. Link from hub.
+3. **Industry page: `/ai-for-real-estate`** — Real estate is a major Idaho vertical. Property listing agents, brokerages, property managers. Use an Agent Pipeline proof artifact (inquiry → qualification → showing scheduler → follow-up).
+4. **Industry page: `/ai-for-repair-shops`** — Actrix has direct repair-shop DNA from HDR. This page writes itself. Use a repair intake ticket / dispatch board as proof artifact.
+5. Do NOT start regional/city pages until at least 2 educational pages and 2 more industry pages exist.
+
+### Quality reminders:
+- Every page needs a proof artifact, not just cards.
+- Every page with visible FAQ items needs FAQPage JSON-LD.
+- Do NOT duplicate pages that already exist.
+- Check the sitemap before building to avoid collisions.

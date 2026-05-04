@@ -1,0 +1,455 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Custom AI Agents vs Chatbots | What's the Difference for Business? | Actrix</title>
+  <meta name="description" content="Idaho businesses often think AI means ChatGPT. Custom agents do more: they monitor, act, seek approval, and produce real business output — not just chat replies. Learn the difference between chatbots and custom AI agents and when each makes sense for your business.">
+  <meta name="robots" content="index,follow">
+  <meta name="theme-color" content="#3E4A56">
+  <link rel="canonical" href="https://www.actrix.me/custom-agents-vs-chatbots">
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Custom AI Agents vs Chatbots | What's the Difference for Business? | Actrix">
+  <meta property="og:description" content="Chatbots answer questions. Custom agents do work — monitoring, acting, seeking approval, producing real output. Learn the difference with real Idaho business examples.">
+  <meta property="og:url" content="https://www.actrix.me/custom-agents-vs-chatbots">
+  <meta property="og:image" content="https://www.actrix.me/og-card.png">
+  <meta name="twitter:card" content="summary_large_image">
+  <style>
+    @font-face{font-family:"Merom Sans";src:url('/assets/fonts/MeromSans-Regular.ttf') format('truetype');font-weight:400;font-display:swap}@font-face{font-family:"Merom Sans";src:url('/assets/fonts/MeromSans-SemiBold.ttf') format('truetype');font-weight:700;font-display:swap}@font-face{font-family:"Merom Sans";src:url('/assets/fonts/MeromSans-Bold.ttf') format('truetype');font-weight:850;font-display:swap}@font-face{font-family:Marcellus;src:url('/assets/fonts/Marcellus-Regular.ttf') format('truetype');font-weight:400;font-display:swap}
+    :root{--bg:#27231d;--bg2:#1f1c17;--panel:#74879A;--panel2:#3E4A56;--paper:#DEE6EE;--muted:#B2C1CF;--soft:#8FA1B2;--line:rgba(222,230,238,.18);--line2:rgba(222,230,238,.32);--amber:#E6D2C2;--sage:#a9cdaf;--sky:#9ebfda;--copper:#d79a73;--rose:#dca0b4;--alert:#E8A87C;--font-title:"Marcellus","Merom Sans","Arial Narrow",system-ui,sans-serif;--font-body:Aptos,"Segoe UI","Helvetica Neue",system-ui,sans-serif;--container:1180px}*{box-sizing:border-box}html{scroll-behavior:smooth;background:var(--bg)}body{margin:0;min-width:320px;overflow-x:hidden;background:linear-gradient(90deg,rgba(222,230,238,.025) 1px,transparent 1px),linear-gradient(rgba(222,230,238,.018) 1px,transparent 1px),radial-gradient(circle at 80% 6%,rgba(230,210,194,.16),transparent 34rem),radial-gradient(circle at 20% 22%,rgba(222,230,238,.06),transparent 28rem),linear-gradient(135deg,#2b261f,var(--bg) 45%,var(--bg2));background-size:64px 64px,64px 64px,auto,auto,auto;color:var(--paper);font-family:var(--font-body);line-height:1.58}a{color:inherit;text-decoration:none}:focus-visible{outline:2px solid var(--amber);outline-offset:4px}.skip{position:fixed;left:12px;top:12px;z-index:99;transform:translateY(-140%);background:var(--amber);color:var(--bg2);padding:10px 12px;border-radius:10px;font-weight:900}.skip:focus{transform:translateY(0)}
+    .nav{position:sticky;top:14px;z-index:20;padding:0;background:transparent;backdrop-filter:none;border-bottom:0;pointer-events:none}.nav-shell{--nav-wide:1240px;--nav-tight:910px;position:relative;width:min(var(--nav-wide),calc(100% - 28px));margin:auto;display:flex;align-items:center;justify-content:space-between;gap:14px;border:1px solid var(--line);border-radius:16px;background:rgba(62,74,86,.72);padding:10px 10px 10px 14px;box-shadow:0 10px 28px rgba(62,74,86,.22);transform-origin:50% 50%;transition:width .44s cubic-bezier(.2,1.16,.34,1),border-color .28s ease,background .28s ease,box-shadow .28s ease;will-change:width;pointer-events:auto;overflow:hidden}.nav.is-constricted .nav-shell{width:min(var(--nav-tight),calc(100% - 44px));border-color:rgba(230,210,194,.34);background:rgba(62,74,86,.64);box-shadow:0 18px 46px rgba(62,74,86,.32),inset 0 1px 0 rgba(222,230,238,.08)}.nav.nav-jelly-in .nav-shell{animation:navJellyIn .42s cubic-bezier(.2,1.18,.34,1) both}.nav.nav-jelly-out .nav-shell{animation:navJellyOut .38s cubic-bezier(.2,1.08,.34,1) both}@keyframes navJellyIn{0%{transform:scaleX(1)}42%{transform:scaleX(.982)}68%{transform:scaleX(1.006)}100%{transform:scaleX(1)}}@keyframes navJellyOut{0%{transform:scaleX(1)}44%{transform:scaleX(1.01)}78%{transform:scaleX(.996)}100%{transform:scaleX(1)}}.brand{display:flex;align-items:center;gap:10px;min-width:0}.mark{width:60px;height:60px;display:grid;place-items:center;flex:0 0 60px;margin:-8px 0;border:0;background:transparent;box-shadow:none;border-radius:0;overflow:visible;padding:0}.mark:before,.mark:after{display:none!important}.mark img{width:60px!important;height:60px!important;object-fit:contain;display:block}.brand strong{display:block;font-weight:850;letter-spacing:.02em;font-size:1rem}.brand small{display:block;color:var(--muted);font-size:.74rem;line-height:1.1;white-space:nowrap}.links{display:flex;align-items:center;gap:4px;min-width:0;flex:1;justify-content:flex-end}.nav-center{position:absolute;left:50%;top:50%;transform:translate(-50%,-50%);display:flex;gap:5px}.nav-center a{color:var(--paper);font-weight:800;font-size:.92rem;padding:6px 12px;border-radius:10px;background:transparent;transition:all .22s ease}.nav-center a:hover{background:rgba(222,230,238,.06);color:var(--amber)}.links .phone{font-weight:800;font-size:.9rem;padding:7px 13px;border-radius:10px;color:var(--paper);background:rgba(222,230,238,.06);border:1px solid rgba(222,230,238,.14);transition:all .2s ease}.links .phone:hover{background:rgba(222,230,238,.12);border-color:var(--muted)}.links .cta{font-weight:950;font-size:.9rem;padding:9px 16px;border-radius:12px;background:var(--amber);color:#221d17;transition:all .22s ease}.links .cta:hover{background:#d4bcac;box-shadow:0 0 18px rgba(230,210,194,.22)}.mobile-menu{display:none;margin-left:auto}.mobile-menu summary{list-style:none;cursor:pointer;padding:8px 12px;border:1px solid var(--line);border-radius:10px;font-weight:800;font-size:.86rem;color:var(--paper);background:rgba(222,238,238,.06)}.mobile-menu summary::marker,.mobile-menu summary::-webkit-details-marker{display:none}.mobile-menu summary:after{content:"▾";margin-left:6px;font-size:.7rem;color:var(--muted)}.mobile-menu-panel{position:absolute;top:calc(100% + 8px);right:0;width:260px;background:rgba(39,35,29,.98);border:1px solid var(--line);border-radius:16px;padding:12px;display:flex;flex-direction:column;gap:6px;z-index:80;box-shadow:0 26px 54px rgba(0,0,0,.48);backdrop-filter:blur(18px)}.mobile-menu-panel a{display:block;padding:10px 14px;border-radius:10px;font-weight:800;font-size:.92rem;color:var(--paper);transition:background .18s ease}.mobile-menu-panel a:hover{background:rgba(222,230,238,.06)}.mobile-menu-panel a.phone{border:1px solid var(--line);margin-top:6px;text-align:center;color:var(--amber)}
+    .wrap{width:min(var(--container),calc(100% - 40px));margin:auto}
+    h1,h2,h3{font-family:var(--font-title);margin:0;font-weight:400;letter-spacing:-.025em;line-height:1}
+    .eyebrow{display:inline-flex;align-items:center;gap:10px;margin:0 0 18px;color:var(--amber);text-transform:uppercase;letter-spacing:.12em;font-size:.76rem;font-weight:950}.eyebrow:before{content:"";width:34px;height:1px;background:var(--amber);box-shadow:0 0 14px rgba(230,210,194,.6)}
+    .btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;padding:14px 24px;border-radius:14px;font-weight:950;font-size:1rem;letter-spacing:.02em;transition:all .22s ease}.btn.primary{background:var(--amber);color:#221d17;border:1px solid transparent}.btn.primary:hover{background:#d4bcac;box-shadow:0 0 22px rgba(230,210,194,.22)}.btn.secondary{border:1px solid var(--line2);background:rgba(222,230,238,.06);color:var(--paper)}.btn.secondary:hover{background:rgba(222,230,238,.12);border-color:var(--muted)}
+
+    /* Hero */
+    .hero{padding:82px 0 60px;display:grid;grid-template-columns:minmax(0,.95fr) minmax(400px,1fr);gap:42px;align-items:center;min-height:680px}.hero h1{font-size:clamp(2.9rem,5.6vw,5.4rem);max-width:780px}.hero h1 span{color:var(--amber)}.lede{max-width:640px;margin:22px 0 0;color:var(--muted);font-size:clamp(1.02rem,1.8vw,1.2rem);line-height:1.5}.hero-actions{display:flex;flex-wrap:wrap;gap:12px;margin-top:26px}.hero-trust{display:flex;flex-wrap:wrap;gap:10px;margin-top:16px;color:var(--muted);font-weight:800;font-size:.88rem}
+
+    /* Split-Panel Comparison Console — hero proof artifact */
+    .spc{border:1px solid rgba(222,230,238,.20);border-radius:22px;background:linear-gradient(180deg,rgba(66,56,44,.99),rgba(62,74,86,.98) 48%,rgba(28,24,20,.99));box-shadow:0 34px 90px rgba(62,74,86,.48),inset 0 1px 0 rgba(222,230,238,.08);overflow:hidden;position:relative;animation:spcFloat 7s ease-in-out infinite}
+    .spc:before{content:"";position:absolute;inset:0;background-image:linear-gradient(90deg,rgba(222,230,238,.055) 1px,transparent 1px),linear-gradient(rgba(222,230,238,.04) 1px,transparent 1px);background-size:30px 30px;mask-image:linear-gradient(180deg,rgba(0,0,0,.78),transparent 74%);pointer-events:none}
+    .spc-head{display:flex;align-items:center;gap:8px;padding:17px 21px;border-bottom:1px solid rgba(222,230,238,.12);color:var(--muted);font-size:.9rem;position:relative;z-index:1;background:linear-gradient(90deg,rgba(62,74,86,.38),transparent)}.spc-dot{width:10px;height:10px;border-radius:50%;box-shadow:0 0 18px currentColor;display:inline-block}.spc-dot.r{background:#f87171;color:#f87171}.spc-dot.y{background:#fbbf24;color:#fbbf24}.spc-dot.g{background:#6ee7b7;color:#6ee7b7}.spc-head strong{margin-left:5px;color:var(--paper);font-size:.95rem;letter-spacing:.01em}
+    .spc-body{padding:20px 24px 18px;position:relative;z-index:1}
+    .spc-split{display:grid;grid-template-columns:1fr 1fr;gap:0;position:relative}.spc-split:before{content:"";position:absolute;left:50%;top:0;bottom:0;width:1px;background:linear-gradient(180deg,transparent,rgba(222,230,238,.14) 20%,rgba(222,230,238,.14) 80%,transparent);z-index:1}
+    .spc-panel{padding:14px 16px}.spc-panel:first-child{padding-right:6px}.spc-panel:last-child{padding-left:6px}
+    .spc-label{display:inline-flex;align-items:center;gap:7px;margin-bottom:12px;font-size:.68rem;text-transform:uppercase;letter-spacing:.1em;font-weight:950;padding:5px 10px;border-radius:6px}.spc-label.bot{background:rgba(248,113,113,.08);border:1px solid rgba(248,113,113,.16);color:#f87171}.spc-label.agent{background:rgba(110,231,183,.08);border:1px solid rgba(110,231,183,.16);color:#6ee7b7}
+    .spc-thread{display:flex;flex-direction:column;gap:8px}
+    .spc-msg{padding:10px 13px;border-radius:10px;font-size:.78rem;line-height:1.45}.spc-msg.user{background:rgba(222,230,238,.08);border:1px solid rgba(222,230,238,.1);color:var(--muted);align-self:flex-start;margin-right:18px}.spc-msg.reply{background:rgba(62,74,86,.6);border:1px solid rgba(222,230,238,.08);color:var(--paper);align-self:flex-end;margin-left:18px;font-style:italic}.spc-msg.reply .spc-time{display:block;font-size:.62rem;color:var(--muted);font-style:normal;margin-top:4px;letter-spacing:.04em}
+    .spc-action{display:flex;align-items:center;gap:8px;padding:8px 12px;border-radius:8px;background:rgba(110,231,183,.04);border:1px solid rgba(110,231,183,.10);font-size:.76rem;color:var(--sage);margin-top:2px}.spc-action:before{content:"●";color:#6ee7b7;font-size:.38rem;animation:spcPulse 1.6s ease-in-out infinite}
+    .spc-action .spc-time{font-size:.62rem;color:var(--muted);margin-left:auto;letter-spacing:.04em}
+    .spc-approve{display:flex;align-items:center;gap:6px;padding:6px 18px;border:1px solid rgba(230,210,194,.28);border-radius:999px;background:rgba(230,210,194,.06);color:var(--amber);font-size:.72rem;font-weight:950;letter-spacing:.04em;margin-top:6px;align-self:flex-end}.spc-footer{display:flex;justify-content:space-between;align-items:center;margin-top:14px;padding-top:12px;border-top:1px solid rgba(222,230,238,.08);font-size:.7rem;color:var(--muted)}.spc-footer .spc-status{color:var(--sage);font-weight:800}.spc-footer .spc-delay{color:var(--alert);font-weight:800}
+    .spc-verdict{text-align:center;margin-top:14px;padding:10px;background:rgba(230,210,194,.05);border-radius:10px;font-size:.74rem;color:var(--amber);font-weight:800;letter-spacing:.02em;border:1px solid rgba(230,210,194,.10)}
+    @keyframes spcFloat{0%,100%{transform:translateY(0)}50%{transform:translateY(-5px)}}
+    @keyframes spcPulse{0%,100%{opacity:1}50%{opacity:.3}}
+
+    /* Section base */
+    .section{padding:72px 0;border-top:1px solid rgba(222,230,238,.09)}.section:nth-of-type(odd):not(.hero){background:linear-gradient(180deg,rgba(158,191,218,.03),transparent 68%)}.section:nth-of-type(even):not(.hero){background:linear-gradient(180deg,rgba(169,205,175,.025),transparent 68%)}.head{display:grid;grid-template-columns:minmax(0,.95fr) minmax(280px,.58fr);gap:38px;align-items:end;margin-bottom:34px}.head h2{font-size:clamp(2.25rem,4.3vw,4.55rem)}.head p{color:var(--muted);margin:0;font-size:1.03rem}
+    h3{font-size:1.6rem;margin-bottom:12px}.grid-3{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}.grid-2{display:grid;grid-template-columns:1fr 1fr;gap:14px}.card{border:1px solid var(--line);border-radius:18px;background:linear-gradient(180deg,rgba(222,230,238,.055),transparent 34%),rgba(62,74,86,.82);padding:24px;position:relative}.card .num{color:var(--amber);font-size:.78rem;font-weight:950;letter-spacing:.12em}.card h3{font-size:1.35rem;margin-top:14px;margin-bottom:0}.card p{color:var(--muted);margin:10px 0 0;line-height:1.5}.card .tag{display:inline-block;margin-top:12px;padding:7px 10px;border-radius:8px;background:rgba(230,210,194,.08);border:1px solid rgba(230,210,194,.22);color:var(--amber);font-size:.78rem;font-weight:800}
+
+    /* When-each-wins comparison rows */
+    .compare-table{display:grid;gap:10px}.compare-row{border:1px solid var(--line);border-radius:16px;background:rgba(62,74,86,.62);display:grid;grid-template-columns:1fr 1fr 1fr;gap:6px;overflow:hidden}.compare-row .cr-label{font-weight:950;font-size:.92rem;padding:18px 20px;display:flex;align-items:center;color:var(--paper)}.compare-row .cr-bot,.compare-row .cr-agent{padding:18px 20px;font-size:.86rem;line-height:1.45;color:var(--muted);display:flex;align-items:center;gap:8px}.compare-row .cr-bot:before{content:"⚡";font-size:.8rem;flex-shrink:0}.compare-row .cr-agent:before{content:"⚙";font-size:.8rem;flex-shrink:0}.compare-row.winner .cr-bot{border-left:3px solid #f87171;background:rgba(248,113,113,.03)}.compare-row.winner .cr-agent{border-left:3px solid #6ee7b7;background:rgba(110,231,183,.04);color:var(--paper);font-weight:800}
+
+    /* Idaho examples */
+    .examples{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}.ex-card{border:1px solid var(--line);border-radius:18px;background:linear-gradient(180deg,rgba(222,230,238,.045),transparent 28%),rgba(62,74,86,.76);padding:24px;position:relative;overflow:hidden}.ex-card .ex-icon{margin-bottom:14px;width:40px;height:40px;border-radius:10px;background:rgba(230,210,194,.1);border:1px solid rgba(230,210,194,.18);display:grid;place-items:center;font-size:1.2rem}.ex-card .ex-scenario{display:flex;flex-wrap:wrap;gap:5px;margin-bottom:14px}.ex-card .ex-scenario span{border:1px solid var(--line);border-radius:6px;padding:4px 8px;font-size:.68rem;color:var(--muted);background:rgba(222,230,238,.03);text-transform:uppercase;letter-spacing:.05em;font-weight:800}.ex-card h3{font-size:1.25rem;margin-bottom:10px}.ex-card p{color:var(--muted);margin:0;line-height:1.5;font-size:.93rem}.ex-card .ex-outcome{display:block;margin-top:12px;color:var(--sage);font-size:.82rem;font-weight:800}
+
+    /* FAQ */
+    .faq-wrap details{border:1px solid var(--line);border-radius:16px;margin-bottom:8px;background:rgba(62,74,86,.6);overflow:hidden;transition:border-color .22s ease}.faq-wrap details[open]{border-color:rgba(230,210,194,.24)}.faq-wrap summary{padding:18px 20px;font-weight:800;font-size:1.02rem;cursor:pointer;display:flex;justify-content:space-between;align-items:center;gap:12px}.faq-wrap summary:after{content:"+";font-size:1.4rem;color:var(--amber);font-weight:300;transition:transform .22s ease}.faq-wrap details[open] summary:after{content:"−"}.faq-wrap details[open] summary{border-bottom:1px solid var(--line)}.faq-wrap .faq-answer{padding:18px 20px;color:var(--muted);line-height:1.55}.faq-wrap .faq-answer p{margin:0}
+
+    /* Final CTA */
+    .final{padding:72px 0;border-top:1px solid rgba(222,230,238,.09)}.final-box{border:1px solid var(--line);border-radius:22px;background:linear-gradient(180deg,rgba(62,74,86,.82),rgba(62,74,86,.62));padding:48px 54px;display:grid;grid-template-columns:1.2fr 1fr;gap:38px;align-items:center;box-shadow:0 18px 48px rgba(62,74,86,.24)}.final-box h2{font-size:clamp(2.1rem,4vw,3.3rem)}.final-box p{color:var(--muted);margin:16px 0 0;max-width:480px;line-height:1.55}.final-box .btn-wrap{display:flex;flex-wrap:wrap;gap:10px;margin-top:22px}
+
+    /* Related pages strip */
+    .related-strip{display:flex;flex-wrap:wrap;gap:7px;margin-top:24px}.related-strip a{border:1px solid var(--line);border-radius:8px;padding:7px 12px;font-size:.78rem;color:var(--muted);background:rgba(222,230,238,.045);transition:all .18s ease}.related-strip a:hover{background:rgba(230,210,194,.08);border-color:rgba(230,210,194,.24);color:var(--amber)}
+
+    .footer{border-top:1px solid rgba(222,230,238,.09);padding:34px 0;display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:14px;color:var(--muted);font-size:.88rem}.footer span{color:var(--paper);font-weight:850;letter-spacing:.01em}.footer a{color:var(--amber);font-weight:850}
+
+    /* Responsive */
+    @media(max-width:980px){.nav-center a[href="/how-it-works"]{display:none}}
+    @media(max-width:920px){.hero{grid-template-columns:1fr;gap:34px}.hero h1{max-width:12ch}.head{grid-template-columns:1fr;gap:14px}.grid-3,.grid-2,.examples{grid-template-columns:1fr}.head h2{font-size:clamp(2rem,10.5vw,2.75rem)}.compare-table{font-size:.85rem}}
+    @media(max-width:760px){.mobile-menu{display:block!important}.nav-shell{position:relative;overflow:visible!important}.mobile-menu-panel{z-index:80}
+      .nav{top:8px!important}.nav-shell,.nav.is-constricted .nav-shell{width:calc(100% - 20px)!important;min-height:0;padding:6px 10px!important;gap:8px;border-radius:18px;overflow:hidden}.brand{gap:9px;min-width:0}.brand .mark{width:40px!important;height:40px!important;flex-basis:40px}.brand .mark img{width:40px!important;height:40px!important}.brand strong{font-size:.98rem}.brand small{display:none}.links{margin-left:auto;gap:0}.links a{display:none!important}.nav-center{display:none!important}.links .phone{display:inline-flex!important;padding:9px 10px;font-size:.86rem;white-space:nowrap;color:var(--paper);background:rgba(222,230,238,.08);border:1px solid rgba(222,230,238,.14);border-radius:12px}.links .cta{display:none!important}
+      .wrap{width:calc(100% - 32px)!important;margin-inline:auto}.hero{padding:42px 0 34px!important;display:grid!important;grid-template-columns:1fr!important;gap:24px!important;align-items:start!important}.hero>*{min-width:0}h1{font-size:clamp(1.9rem,10.2vw,2.55rem)!important;line-height:1.05!important;letter-spacing:-.014em!important;max-width:13ch;text-wrap:balance;overflow-wrap:normal;word-break:normal}.lede{font-size:.98rem!important;line-height:1.5!important;max-width:34ch;margin-top:14px}.eyebrow{font-size:.7rem;letter-spacing:.1em;margin-bottom:14px}.eyebrow:before{width:24px}.hero-actions{display:grid!important;grid-template-columns:1fr!important;gap:8px!important}.btn{width:100%;justify-content:center;text-align:center;padding:12px 14px!important}
+      .spc{border-radius:18px!important;width:100%;max-width:100%;min-width:0;margin-top:4px}.spc-body{padding:14px!important}.spc-split{grid-template-columns:1fr;gap:0}.spc-split:before{display:none}.spc-panel:first-child,.spc-panel:last-child{padding:10px 8px}.spc-msg{font-size:.74rem}.spc-label{font-size:.64rem}
+      .section{padding:48px 0!important}.head{margin-bottom:18px}.card,.ex-card{border-radius:18px!important;padding:18px!important}.card h3{font-size:1.2rem}.compare-row{grid-template-columns:1fr;gap:0}.compare-row .cr-label{padding:12px 14px;border-bottom:1px solid var(--line)}.compare-row .cr-bot,.compare-row .cr-agent{padding:12px 14px}.compare-row .cr-bot:before,.compare-row .cr-agent:before{display:none}.compare-row.winner .cr-bot{border-left:0;border-top:2px solid #f87171}.compare-row.winner .cr-agent{border-left:0;border-top:2px solid #6ee7b7}.faq-wrap summary{padding:14px 16px;font-size:.98rem}.final{padding:54px 0!important}.final-box{padding:28px 22px!important;text-align:left;grid-template-columns:1fr}.final-box p{max-width:100%}.related-strip{gap:5px}.related-strip a{font-size:.74rem;padding:5px 8px}}
+    @media(min-width:761px) and (max-width:1020px){.nav-center a[href="/how-it-works"]{display:none!important}.hero{grid-template-columns:1fr!important;gap:34px}.hero h1{max-width:12ch}.head{grid-template-columns:1fr!important}.grid-3,.grid-2,.examples{grid-template-columns:1fr!important}}
+    @media(prefers-reduced-motion:reduce){*,*:before,*:after{animation-duration:0s!important;transition-duration:0s!important}}
+  </style>
+  <script type="application/ld+json">{
+    "@context":"https://schema.org",
+    "@graph":[
+      {
+        "@type":"WebPage",
+        "name":"Custom AI Agents vs Chatbots | What's the Difference for Business? | Actrix",
+        "description":"Idaho businesses often think AI means ChatGPT. Custom agents do more: they monitor, act, seek approval, and produce real business output — not just chat replies. Learn the difference between chatbots and custom AI agents and when each makes sense for your business.",
+        "url":"https://www.actrix.me/custom-agents-vs-chatbots",
+        "isPartOf":{"@type":"WebSite","name":"Actrix","url":"https://www.actrix.me/"},
+        "about":{"@type":"Thing","name":"Custom AI agents vs chatbots comparison for small business","description":"Educational comparison explaining the difference between conversational AI chatbots (like ChatGPT) and custom AI agents that monitor, act, seek approval, and produce real business output. Covers when each makes sense for small businesses."},
+        "audience":{"@type":"Audience","audienceType":"Small business owner, Operator, Office manager, Contractor, Restaurant owner, Healthcare provider, Retailer, Professional service firm, Idaho business owner"}
+      },
+      {
+        "@type":"Service",
+        "name":"Custom AI Agent Development for Idaho Small Businesses",
+        "provider":{"@type":"ProfessionalService","name":"Actrix","url":"https://www.actrix.me/","telephone":"+12083666111"},
+        "areaServed":["Idaho","Boise","Meridian","Nampa","Idaho Falls","Twin Falls","Pocatello","Rexburg","Moscow","Coeur d'Alene","Hailey","Ketchum","Sun Valley"],
+        "serviceType":["Custom AI agent development","AI agent installation","AI automation","business workflow automation","AI implementation","AI consulting","AI support","AI training"]
+      },
+      {
+        "@type":"FAQPage",
+        "mainEntity":[
+          {"@type":"Question","name":"What is the difference between a chatbot and a custom AI agent?","acceptedAnswer":{"@type":"Answer","text":"A chatbot answers questions when you ask. A custom AI agent continuously monitors your business — it watches for missed calls, incoming leads, customer reviews, quote requests — and acts on them automatically. A chatbot is reactive and one-shot. An agent is proactive and continuous. The best way to understand the difference: a chatbot tells you about a missed call if you ask. An agent already drafted the reply, queued it for your approval, and logged the interaction before you even knew there was a call."}},
+          {"@type":"Question","name":"Is ChatGPT the same as an AI agent?","acceptedAnswer":{"@type":"Answer","text":"No. ChatGPT is a conversational AI — you type a prompt, it generates a response, the interaction ends. A custom AI agent is a persistent worker with a specific job: it watches your business channels (phone, email, review sites, booking platforms), uses context about your business to make decisions, produces real outputs (draft replies, quote summaries, reports), and seeks human approval before taking final action. ChatGPT is a tool you use. An agent is a worker you employ."}},
+          {"@type":"Question","name":"Can a chatbot replace a custom agent for my business?","acceptedAnswer":{"@type":"Answer","text":"For some tasks, yes. If you need occasional research, draft writing, or quick answers to ad-hoc questions, a chatbot is enough. But if you need continuous monitoring — catching every missed call, structuring every incoming lead, responding to every review, generating reports weekly — a chatbot cannot do that because it only works when you are actively using it. An agent works even when no one is watching."}},
+          {"@type":"Question","name":"Do I need both chatbots and custom agents?","acceptedAnswer":{"@type":"Answer","text":"Many businesses use both. Staff might use ChatGPT or a chatbot for one-off research, drafting, or brainstorming. Custom agents run in the background handling the repetitive operational work — lead capture, quote intake, review monitoring, appointment follow-up, report generation. They serve different purposes and do not replace each other. Actrix can help you decide which makes sense for your specific workflows."}},
+          {"@type":"Question","name":"How much does a custom AI agent cost compared to a chatbot subscription?","acceptedAnswer":{"@type":"Answer","text":"Chatbot subscriptions like ChatGPT Plus or Claude Pro typically cost $20–$30 per user per month. Custom AI agents require setup, configuration, and integration work, so they have a higher upfront cost but then run at low ongoing cost. The real comparison is not subscription price — it is whether the agent saves more than it costs. A custom agent that catches missed calls, structures quotes, and follows up with leads can pay for itself in the first week. Actrix provides honest upfront pricing before any work begins."}},
+          {"@type":"Question","name":"Do custom AI agents require technical staff to manage?","acceptedAnswer":{"@type":"Answer","text":"No. Actrix builds, installs, and maintains the agents. You interact with them through the channels you already use — SMS, email, or a simple dashboard. When an agent needs your approval on something, it sends you a message. You reply yes or no. No coding, no technical staff, no daily management required. Actrix handles the technical side. You handle the human decisions."}},
+          {"@type":"Question","name":"Can a custom agent use ChatGPT or other AI tools?","acceptedAnswer":{"@type":"Answer","text":"Yes. Custom agents often use multiple AI models underneath — including ChatGPT, Claude, and specialized models — choosing the right tool for each specific task. The agent is the coordinator that knows your business rules, your approval preferences, and your workflows. It picks the right AI for each job, combines the outputs, and presents you with a finished decision-ready result. The agent is the worker; the AI models are the tools it uses."}},
+          {"@type":"Question","name":"What happens if a custom agent makes a mistake?","acceptedAnswer":{"@type":"Answer","text":"Actrix agents are designed with human approval checkpoints. The agent never takes final action — sending a customer message, issuing a quote, posting a review reply — without human sign-off. If the agent drafts something that is not right, you reject it and the agent learns the pattern. Every agent also logs its actions so you can review what it did and when. The safety model is: agents prepare, humans approve. Mistakes get caught before they reach a customer."}},
+          {"@type":"Question","name":"How do I know if my business needs a custom agent or just a chatbot?","acceptedAnswer":{"@type":"Answer","text":"Text Actrix what your business does and where the bottlenecks are. We will tell you honestly whether a chatbot subscription would handle it or whether a custom agent would deliver more value. The short rule: if the work is repeatable and happens even when you are not watching (missed calls, incoming leads, reviews, follow-ups, reports), you probably want an agent. If the work is ad-hoc research, drafting, or brainstorming, a chatbot is likely enough. Actrix will not sell you an agent if a chatbot would do the job."}}
+        ]
+      }
+    ]
+  }</script>
+</head>
+<body>
+  <a class="skip" href="#main">Skip to content</a>
+
+  <header class="nav">
+    <div class="nav-shell">
+      <a class="brand" href="/" aria-label="Actrix home">
+        <span class="mark" aria-hidden="true"><img src="/assets/actrix-icon.png" alt="" width="68" height="68" decoding="async"></span>
+        <span><strong>Actrix</strong><small>Practical AI systems</small></span>
+      </a>
+      <nav class="links" aria-label="Primary navigation">
+        <span class="nav-center"><a href="/idaho-ai-services">Idaho AI</a><a href="/solutions">Solutions</a></span>
+        <a class="phone" href="tel:+12083666111">(208) 366-6111</a>
+        <a class="cta" href="sms:+12083666111?&body=Hi%20Actrix%2C%20I%20want%20to%20understand%20if%20I%20need%20a%20chatbot%20or%20a%20custom%20agent.%20Here%20is%20what%20I%20do%3A">Talk to Actrix</a>
+      </nav>
+      <details class="mobile-menu">
+        <summary><span>Menu</span></summary>
+        <div class="mobile-menu-panel">
+          <a href="/idaho-ai-services">Idaho AI services</a>
+          <a href="/solutions">Solutions</a>
+          <a href="/how-it-works">How it works</a>
+          <a href="/custom-agents-vs-chatbots">Agents vs chatbots</a>
+          <a href="/ai-readiness-checklist">AI readiness checklist</a>
+          <a class="phone" href="tel:+12083666111">(208) 366-6111</a>
+          <a class="phone" href="sms:+12083666111?&body=Hi%20Actrix%2C%20I%20want%20to%20understand%20custom%20agents.%20Here%20is%20what%20I%20do%3A">Text Actrix</a>
+        </div>
+      </details>
+    </div>
+  </header>
+
+  <main id="main">
+    <!-- Hero -->
+    <section class="wrap hero">
+      <div>
+        <p class="eyebrow">Agents vs chatbots</p>
+        <h1>A chatbot answers you. An agent <span>works for you.</span></h1>
+        <p class="lede">Idaho business owners use ChatGPT every day. It helps. But a chatbot only works when you are watching. A custom AI agent works continuously — catching missed calls, structuring leads, drafting replies, seeking your approval — even when you are busy running the business.</p>
+        <div class="hero-actions">
+          <a class="btn primary" href="sms:+12083666111?&body=Hi%20Actrix%2C%20I%20want%20to%20know%20if%20I%20need%20a%20chatbot%20or%20a%20custom%20agent.%20Here%20is%20what%20I%20do%3A">Text Actrix — chatbot or agent?</a>
+          <a class="btn secondary" href="/how-it-works">How agents work →</a>
+        </div>
+        <div class="hero-trust">
+          <span>Honest assessment in one conversation</span>
+          <span>•</span>
+          <span>No up-sell if a chatbot is enough</span>
+        </div>
+      </div>
+
+      <!-- Split-Panel Comparison Console -->
+      <div class="spc">
+        <div class="spc-head">
+          <span class="spc-dot r"></span><span class="spc-dot y"></span><span class="spc-dot g"></span>
+          <strong>Comparison Console</strong> <span style="font-size:.74rem;color:var(--soft)">— same business event, two outcomes</span>
+        </div>
+        <div class="spc-body">
+          <div class="spc-split">
+            <div class="spc-panel">
+              <span class="spc-label bot">Chatbot: ChatGPT</span>
+              <div class="spc-thread">
+                <div class="spc-msg user">I run a small HVAC company in Boise. Is it worth using AI?</div>
+                <div class="spc-msg reply">AI can absolutely help an HVAC business — it can draft customer emails, help with scheduling ideas, suggest marketing copy, and answer common questions about your services.<span class="spc-time">One reply. End of interaction.</span></div>
+              </div>
+            </div>
+            <div class="spc-panel">
+              <span class="spc-label agent">Agent: Custom AI worker</span>
+              <div class="spc-thread">
+                <div class="spc-action"><span class="spc-time">[09:14]</span> Watched: missed call from (208) 555-0192</div>
+                <div class="spc-action"><span class="spc-time">[09:14]</span> Listened to voicemail, identified: furnace repair, urgency high</div>
+                <div class="spc-action"><span class="spc-time">[09:15]</span> Drafted SMS reply with pricing range + availability</div>
+                <div class="spc-action"><span class="spc-time">[09:15]</span> Queued for owner approval</div>
+                <div class="spc-approve">⏳ Awaiting your approval</div>
+                <div class="spc-action"><span class="spc-time">[10:08]</span> Lead captured. Follow-up scheduled tomorrow 9 AM.</div>
+              </div>
+            </div>
+          </div>
+          <div class="spc-verdict">Same business. Same moment. One gave an answer. The other caught a lead.</div>
+          <div class="spc-footer">
+            <span class="spc-status">● Agent running — 3 leads today</span>
+            <span class="spc-delay">Chatbot offline until next prompt</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- What a Chatbot Is Good At -->
+    <section class="wrap section" id="chatbot">
+      <div class="head">
+        <h2>Chatbots: fast answers, <span style="color:var(--amber)">one at a time.</span></h2>
+        <p>ChatGPT, Claude, and similar tools are conversational AI. You type a prompt, you get a response. The interaction ends. They are useful — but they only work when you are actively using them.</p>
+      </div>
+      <div class="grid-3">
+        <div class="card">
+          <p class="num">01</p>
+          <h3>Research and learning</h3>
+          <p>Quick answers to business questions. "What is the best way to respond to a negative review?" "Compare these two software tools." Perfect for on-demand knowledge.</p>
+          <span class="tag">Chatbots win here</span>
+        </div>
+        <div class="card">
+          <p class="num">02</p>
+          <h3>Drafting and brainstorming</h3>
+          <p>Write a marketing email draft. Brainstorm 10 names for a new service. Outline a staff training plan. Chatbots are strong creative partners when you are in the room.</p>
+          <span class="tag">Chatbots win here</span>
+        </div>
+        <div class="card">
+          <p class="num">03</p>
+          <h3>Ad-hoc problem solving</h3>
+          <p>"How do I calculate markup on this job?" "Help me understand this regulation." One-off questions with one-off answers. Fast surface help for the curious business owner.</p>
+          <span class="tag">Chatbots win here</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- What Custom Agents Actually Do -->
+    <section class="wrap section" id="agent">
+      <div class="head">
+        <h2>Agents: continuous work, <span style="color:var(--amber)">human approval.</span></h2>
+        <p>A custom agent is not a chat window. It is a persistent worker with a specific job. It watches your business channels, acts on what it finds, and asks for your approval before anything final goes out. It works even when you are not looking.</p>
+      </div>
+      <div class="grid-3">
+        <div class="card">
+          <p class="num">01</p>
+          <h3>Watches continuously</h3>
+          <p>Monitors your phone, email, review sites, booking platforms — 24 hours a day. You do not need to tell it to check. It already checked. It already found the thing you would have missed.</p>
+          <span class="tag">No chatbot can do this</span>
+        </div>
+        <div class="card">
+          <p class="num">02</p>
+          <h3>Acts with context</h3>
+          <p>Knows your pricing, your availability, your service area, your preferred tone, your customer history. It does not give generic answers — it drafts specific, business-aware responses.</p>
+          <span class="tag">No chatbot can do this</span>
+        </div>
+        <div class="card">
+          <p class="num">03</p>
+          <h3>Seeks human approval</h3>
+          <p>Never sends a message, issues a quote, or posts a reply without your sign-off. The agent prepares. You approve. This is the safety model that makes agents practical for real businesses.</p>
+          <span class="tag">No chatbot can do this</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- The Real Difference -->
+    <section class="wrap section" id="difference">
+      <div class="head">
+        <h2>Same business event. <span style="color:var(--amber)">Radically different results.</span></h2>
+        <p>Every business has moments that happen when nobody is watching. A chatbot cannot help with those. An agent was built for them.</p>
+      </div>
+      <div class="compare-table">
+        <div class="compare-row winner">
+          <div class="cr-label">Missed call at 7:42 PM</div>
+          <div class="cr-bot">You open ChatGPT the next morning, describe the situation, and ask it to draft a reply. You send it. Hours lost.</div>
+          <div class="cr-agent">Agent detected the missed call instantly. Drafted a reply by 7:43 PM. You approved it at 8:15 PM. Lead captured same evening.</div>
+        </div>
+        <div class="compare-row winner">
+          <div class="cr-label">New Google review posted</div>
+          <div class="cr-bot">You find the review three days later. You type "draft a polite reply to this review" into ChatGPT. It helps. But the reviewer waited three days.</div>
+          <div class="cr-agent">Agent detected the review within minutes. Flagged it for owner review. Drafted a reply specific to the review content. You approved it the same day.</div>
+        </div>
+        <div class="compare-row winner">
+          <div class="cr-label">Quote request comes in by email</div>
+          <div class="cr-bot">You read the email. You open ChatGPT. You paste the details and ask for a quote draft. You format it and send it. This takes 20 minutes.</div>
+          <div class="cr-agent">Agent parsed the request. Pulled pricing from your catalog. Drafted a quote with photos and turnaround. Sent to you for approval. Two minutes of your time.</div>
+        </div>
+        <div class="compare-row winner">
+          <div class="cr-label">5 invoices overdue, 3 days each</div>
+          <div class="cr-bot">You notice during monthly bookkeeping. You draft follow-ups one at a time. Some clients already forgot. Cash flow took the hit.</div>
+          <div class="cr-agent">Agent flagged all 5 on day 1. Drafted polite follow-ups. You approved and sent them. Cash kept moving. Nobody felt chased.</div>
+        </div>
+        <div class="compare-row winner">
+          <div class="cr-label">Staff member asks about AI policy</div>
+          <div class="cr-bot">You type "write an AI usage policy for my staff" into ChatGPT. It generates a 10-page legal document nobody will read. It does not know your business.</div>
+          <div class="cr-agent">Agent already has your policy loaded. It answers the staff member's specific question instantly, citing the right rule. If the question is new, it flags it for you.</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Idaho Business Examples -->
+    <section class="wrap section" id="examples">
+      <div class="head">
+        <h2>Three Idaho businesses. <span style="color:var(--amber)">One agent.</span></h2>
+        <p>These are not hypotheticals. These are the patterns Actrix builds for real Idaho businesses — contractors, restaurants, and clinics.</p>
+      </div>
+      <div class="examples">
+        <div class="ex-card">
+          <div class="ex-icon">🔧</div>
+          <div class="ex-scenario">
+            <span>Boise</span><span>HVAC</span><span>6 techs</span>
+          </div>
+          <h3>Mountain West Mechanical</h3>
+          <p>Missed 4–6 calls every evening during peak season. Each missed call was a $400–$2,400 job. Chatbot could not help — nobody was there to type the prompt.</p>
+          <span class="ex-outcome">Agent now catches every after-hours call. Drafts replies with pricing ranges. Owner approves in under 2 minutes. Zero missed leads.</span>
+        </div>
+        <div class="ex-card">
+          <div class="ex-icon">🍽</div>
+          <div class="ex-scenario">
+            <span>Ketchum</span><span>Restaurant</span><span>22 staff</span>
+          </div>
+          <h3>The Sawtooth Grill</h3>
+          <p>Reviews came in at random times. Staff schedule changes caused confusion. Reservation cancellations created empty tables. ChatGPT could draft replies but could not monitor.</p>
+          <span class="ex-outcome">Agent monitors reviews, flags cancellations, drafts schedule-change notifications. Owner reviews the daily brief in 5 minutes each morning.</span>
+        </div>
+        <div class="ex-card">
+          <div class="ex-icon">🏥</div>
+          <div class="ex-scenario">
+            <span>Idaho Falls</span><span>PT Clinic</span><span>4 therapists</span>
+          </div>
+          <h3>Snake River Physical Therapy</h3>
+          <p>Intake forms came in at all hours. Insurance verification questions repeated daily. ChatGPT could answer questions but only if someone typed each one in.</p>
+          <span class="ex-outcome">Agent processes intake forms immediately. Answers common insurance questions from your policy docs. Flags only the exceptions for human review.</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- Where Chatbots Are Enough -->
+    <section class="wrap section" id="when-chatbot">
+      <div class="head">
+        <h2>When a chatbot is <span style="color:var(--amber)">all you need.</span></h2>
+        <p>Actrix will not sell you an agent if a $20/month chatbot subscription would do the job. Here is the honest guide.</p>
+      </div>
+      <div class="grid-2">
+        <div class="card">
+          <p class="num">✓</p>
+          <h3>A chatbot is enough when…</h3>
+          <p>You need occasional research, drafting, or brainstorming. You are the one using it, and you are happy to type prompts when you need answers. The work is ad-hoc, not continuous. Nobody is losing money while you sleep.</p>
+          <span class="tag">Stick with ChatGPT</span>
+        </div>
+        <div class="card">
+          <p class="num">✓</p>
+          <h3>You need an agent when…</h3>
+          <p>Business events happen when nobody is watching — missed calls, incoming leads, reviews, bookings, follow-ups. The same questions come in repeatedly. You are losing money or reputation during gaps. You want someone to do the watching, drafting, and preparing — not just answer when asked.</p>
+          <span class="tag">Talk to Actrix</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQ -->
+    <section class="wrap section" id="faq">
+      <div class="head">
+        <h2>Questions Idaho businesses <span style="color:var(--amber)">actually ask.</span></h2>
+        <p>Straight answers. No jargon. No pressure.</p>
+      </div>
+      <div class="faq-wrap">
+        <details>
+          <summary>What is the difference between a chatbot and a custom AI agent?</summary>
+          <div class="faq-answer"><p>A chatbot answers questions when you ask. A custom AI agent continuously monitors your business — it watches for missed calls, incoming leads, customer reviews, quote requests — and acts on them automatically. A chatbot is reactive and one-shot. An agent is proactive and continuous.</p></div>
+        </details>
+        <details>
+          <summary>Is ChatGPT the same as an AI agent?</summary>
+          <div class="faq-answer"><p>No. ChatGPT is a conversational AI — you type a prompt, it generates a response, the interaction ends. A custom AI agent is a persistent worker with a specific job: it watches your business channels, uses context about your business to make decisions, produces real outputs, and seeks human approval before taking final action. ChatGPT is a tool you use. An agent is a worker you employ.</p></div>
+        </details>
+        <details>
+          <summary>Can a chatbot replace a custom agent for my business?</summary>
+          <div class="faq-answer"><p>For some tasks, yes. If you need occasional research, draft writing, or quick answers to ad-hoc questions, a chatbot is enough. But if you need continuous monitoring — catching every missed call, structuring every incoming lead, responding to every review — a chatbot cannot do that because it only works when you are actively using it. An agent works even when no one is watching.</p></div>
+        </details>
+        <details>
+          <summary>Do I need both chatbots and custom agents?</summary>
+          <div class="faq-answer"><p>Many businesses use both. Staff might use ChatGPT for one-off research, drafting, or brainstorming. Custom agents run in the background handling the repetitive operational work. They serve different purposes and do not replace each other. Actrix can help you decide which makes sense for your specific workflows.</p></div>
+        </details>
+        <details>
+          <summary>How much does a custom AI agent cost compared to a chatbot subscription?</summary>
+          <div class="faq-answer"><p>Chatbot subscriptions like ChatGPT Plus or Claude Pro typically cost $20–$30 per user per month. Custom AI agents require setup, configuration, and integration work, so they have a higher upfront cost but then run at low ongoing cost. The real comparison is not subscription price — it is whether the agent saves more than it costs. A custom agent that catches missed calls, structures quotes, and follows up with leads can pay for itself in the first week. Actrix provides honest upfront pricing before any work begins.</p></div>
+        </details>
+        <details>
+          <summary>Do custom AI agents require technical staff to manage?</summary>
+          <div class="faq-answer"><p>No. Actrix builds, installs, and maintains the agents. You interact with them through the channels you already use — SMS, email, or a simple dashboard. When an agent needs your approval on something, it sends you a message. You reply yes or no. No coding, no technical staff, no daily management required.</p></div>
+        </details>
+        <details>
+          <summary>Can a custom agent use ChatGPT or other AI tools?</summary>
+          <div class="faq-answer"><p>Yes. Custom agents often use multiple AI models underneath — including ChatGPT, Claude, and specialized models — choosing the right tool for each specific task. The agent is the coordinator that knows your business rules, your approval preferences, and your workflows. It picks the right AI for each job, combines the outputs, and presents you with a finished decision-ready result.</p></div>
+        </details>
+        <details>
+          <summary>What happens if a custom agent makes a mistake?</summary>
+          <div class="faq-answer"><p>Actrix agents are designed with human approval checkpoints. The agent never takes final action without human sign-off. If the agent drafts something that is not right, you reject it and the agent learns the pattern. Every agent also logs its actions so you can review what it did and when. The safety model is: agents prepare, humans approve. Mistakes get caught before they reach a customer.</p></div>
+        </details>
+        <details>
+          <summary>How do I know if my business needs a custom agent or just a chatbot?</summary>
+          <div class="faq-answer"><p>Text Actrix what your business does and where the bottlenecks are. We will tell you honestly whether a chatbot subscription would handle it or whether a custom agent would deliver more value. The short rule: if the work is repeatable and happens even when you are not watching (missed calls, incoming leads, reviews, follow-ups), you probably want an agent. If the work is ad-hoc research, drafting, or brainstorming, a chatbot is likely enough. Actrix will not sell you an agent if a chatbot would do the job.</p></div>
+        </details>
+      </div>
+    </section>
+
+    <!-- Final CTA -->
+    <section class="wrap final">
+      <div class="final-box">
+        <div>
+          <h2>Chatbot or agent? <span style="color:var(--amber)">Get an honest answer.</span></h2>
+          <p>Text Actrix what your Idaho business does and where the bottlenecks are. You will get a straight recommendation — not a sales pitch. If a chatbot subscription would handle it, we will tell you. If a custom agent would deliver more, we will explain exactly why and what it would take.</p>
+          <div class="btn-wrap">
+            <a class="btn primary" href="sms:+12083666111?&body=Hi%20Actrix%2C%20here%20is%20what%20I%20do%20and%20what%20takes%20the%20most%20time%3A">Text Actrix your situation</a>
+            <a class="btn secondary" href="tel:+12083666111">Call (208) 366-6111</a>
+          </div>
+        </div>
+        <div style="text-align:right">
+          <p style="color:var(--muted);font-size:.86rem;margin:0">Also see:</p>
+          <div class="related-strip" style="justify-content:flex-end">
+            <a href="/how-it-works">How agents work</a>
+            <a href="/ai-agents-for-business">AI agents for business</a>
+            <a href="/ai-readiness-checklist">AI readiness checklist</a>
+            <a href="/safe-ai-policies-for-staff">Safe AI policies</a>
+            <a href="/ai-training-idaho">Staff AI training</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="wrap footer">
+    <span>Actrix. Practical AI systems powered by custom agents.</span>
+    <a href="tel:+12083666111">(208) 366-6111</a>
+  </footer>
+
+  <script>
+    (function(){
+      var nav=document.querySelector('.nav');
+      if(!nav)return;
+      var shell=nav.querySelector('.nav-shell');
+      var ticking=false;
+      var threshold=14;
+      var constricted=false;
+      var raf=null;
+      function update(){
+        var y=window.scrollY||window.pageYOffset;
+        var should=y>threshold;
+        if(should&&!constricted){
+          constricted=true;
+          nav.classList.add('is-constricted');
+          nav.classList.remove('nav-jelly-out');nav.classList.add('nav-jelly-in');
+          setTimeout(function(){nav.classList.remove('nav-jelly-in')},440);
+        }else if(!should&&constricted){
+          constricted=false;
+          nav.classList.remove('is-constricted');
+          nav.classList.remove('nav-jelly-in');nav.classList.add('nav-jelly-out');
+          setTimeout(function(){nav.classList.remove('nav-jelly-out')},400);
+        }
+        ticking=false;
+      }
+      window.addEventListener('scroll',function(){
+        if(!ticking){ticking=true;requestAnimationFrame(update);}
+      },{passive:true});
+    })();
+  </script>
+</body>
+</html>

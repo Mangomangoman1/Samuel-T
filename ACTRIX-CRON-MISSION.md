@@ -54,20 +54,36 @@ Actrix is no longer framed as a small Wood River Valley side project. It is an I
 ## Current Strategic Foundation
 Homepage now points to statewide Idaho AI positioning and links to /idaho-ai-services as the hub. Future runs should expand outward from that hub rather than returning to narrow Wood River Valley-only framing.
 
-## Manager Directive — 2026-05-04 14:00
+### Manager Directive — 2026-05-04 16:20
 
 ### Manager Review — On Track ✅
-DeepSeek had an excellent run: shipped 4 new pages (safe-ai-policies-for-staff, ai-for-retail, custom-agents-vs-chatbots, ai-services-pocatello) plus a substantive palette unification pass across 36 files. All new pages have clean phones, proper titles/canonicals/OG, FAQPage schema, proof artifacts, and hub page links. Manager fixed one issue: duplicate sitemap entry for Pocatello.
+DeepSeek had another strong run: shipped 4 new pages (manufacturing AI, Wood River Valley, Moscow, Meridian/Nampa) plus cross-linked the mobile menus and footers on the 4 earliest regional pages to reference all 9 regions. All new pages have clean phones, proper titles/canonicals/OG, FAQPage schema, proof artifacts, and hub page links.
 
-### Palette unification note
-The big styles.css commit (47ef5bf) is APPROVED. It introduced real color differentiation (sage, sky, rose, distinct copper/ember/danger) which is a genuine improvement. The 8 subsequent micro-tweaks are harmless but borderline noise — 9 commits for color adjustments is excessive. Future runs should batch color tweaks into fewer commits.
+**Manager fix applied:** Manufacturing page title was scoped to "Pocatello, ID" when it should be a statewide industry page. Fixed title, meta description, and OG tags to reference Idaho statewide instead of Pocatello-only.
 
-### Current Coverage
+### ALL PAGE CATEGORIES ARE NOW COMPLETE ✅🎉
 - Core money pages: 7/7 DONE ✅
-- Industry pages: 10/10 DONE ✅
-- Regional pages: 5/9 (Boise, Idaho Falls, Twin Falls, Coeur d'Alene, Pocatello)
+- Industry pages: 11/11 DONE ✅ (including manufacturing)
+- Regional pages: 9/9 DONE ✅ (Boise, Idaho Falls, Twin Falls, Coeur d'Alene, Pocatello, Rexburg, Meridian/Nampa, Moscow, Wood River Valley)
 - Educational authority: 5/5 DONE ✅
-- Total pages in sitemap: 35 (34 unique, after removing Pocatello duplicate)
+- Total pages in sitemap: 40 (no duplicates, no orphans)
+
+### CRITICAL DIRECTION CHANGE — QUALITY AND DEPTH PHASE ONLY
+The build phase is OVER. There are no more pages to create unless Samuel explicitly requests one. All future runs should focus exclusively on:
+
+1. **Deepen thin pages.** Read every page and identify sections that are generic or shallow. Add real Idaho business scenarios, concrete automation examples, and industry-specific proof.
+2. **Strengthen internal linking.** Check that industry pages link to relevant regional pages and vice versa. Add contextual body links, not just nav/footer links.
+3. **Proof artifact quality pass.** Verify every page's proof artifact is specific and meaningful — not just a rehash of the same dispatch-card template with city names swapped.
+4. **Title/meta optimization.** Some pages may have titles that are too similar. Differentiate them where the SERP opportunity warrants it.
+5. **Mobile quality audit.** Check a few pages at 375px for overflow, cramped CTAs, or broken layouts.
+6. **Cross-page consistency.** Verify phone digits, schema validity, and consistent footer/nav across all pages.
+7. **Homepage hub authority.** Make sure /idaho-ai-services remains the strongest hub page with links to every sub-page.
+
+### DO NOT:
+- Create new pages unless Samuel explicitly asks for one.
+- Clone or duplicate existing page structures into new URLs.
+- Make cosmetic-only changes that don't improve conversion, SEO, or usefulness.
+- Spend runs on palette tweaks unless there is a real visual inconsistency to fix.
 
 ### Phone number rule (READ THIS EVERY RUN — ZERO TOLERANCE)
 The phone number MUST be the unredacted digits `+12083666111` in ALL tel: and sms: href attributes. Never use any redacted form. Before committing, do a BYTE-LEVEL check:
@@ -78,19 +94,10 @@ assert b'12083666111' in content, "REAL PHONE MISSING"
 ```
 Do NOT rely on grep/terminal output — it can mask real asterisks as `****` even when the file has the correct digits, and vice versa. Use Python byte inspection. This is a zero-tolerance rule.
 
-### Next targets — pick in this order:
-1. **Regional page: `/ai-services-rexburg`** — College town (BYU-Idaho), high automation need, distinct from Pocatello. Rexburg + Madison County catchment is meaningful.
-2. **Regional page: `/ai-services-meridian-nampa`** — Boise metro western suburbs, huge population, distinct enough from Boise page to warrant separate targeting. Cover Meridian, Nampa, Caldwell, Eagle, Kuna.
-3. **Regional page: `/ai-services-moscow`** — University of Idaho town, Latah County, Palouse region. Student/research/family demographic.
-4. **Regional page: `/ai-services-wood-river-valley`** — Hailey, Ketchum, Sun Valley, Bellevue. Home market. Should feel authoritative and honest about local roots.
-5. **Quality pass on earliest regional pages** — Go back and review Boise, Idaho Falls, Twin Falls, Coeur d'Alene pages for: (a) palette consistency with new color tokens, (b) hub page crosslinks, (c) any thin content sections that need deepening.
-
-### Important direction change:
-All core money pages, all industry pages, and all educational authority pages are DONE. The remaining work is:
-- 4 regional pages (Rexburg, Meridian/Nampa, Moscow, Wood River Valley)
-- Quality passes on existing pages (palette consistency, deepening thin sections, verifying internal links)
-
-Do NOT build any more industry or educational pages unless Samuel explicitly requests one. Focus on regional coverage and quality.
+### Recommended next run focus:
+1. **Read 3–4 pages deeply** and identify the weakest sections (thin content, generic proof artifacts, missing local specificity).
+2. **Pick the weakest page** and do a substantive depth pass — add real Idaho business scenarios, strengthen the proof artifact, deepen FAQ answers.
+3. **One page per run.** Quality over quantity from here.
 
 ### Quality reminders:
 - Every page needs a proof artifact, not just cards.
@@ -98,6 +105,7 @@ Do NOT build any more industry or educational pages unless Samuel explicitly req
 - Do NOT duplicate pages that already exist — check filesystem and sitemap first.
 - Regional pages must use honest positioning — no fake local storefronts.
 - Proof artifacts should show local/city-specific scenarios where possible.
-- Make sure internal links from the hub page (/idaho-ai-services) point to each new page.
-- Batch color/style changes into fewer commits. Do not make 8 separate "slightly deepen rose accent" commits in one session.
-- After building any new page, verify it has exactly ONE sitemap entry (no duplicates).
+- Make sure internal links from the hub page (/idaho-ai-services) point to each page.
+- Batch color/style changes into fewer commits.
+- After any edit, verify the page still has exactly ONE sitemap entry (no duplicates).
+- Do NOT build new pages. Only deepen, fix, and strengthen existing ones.

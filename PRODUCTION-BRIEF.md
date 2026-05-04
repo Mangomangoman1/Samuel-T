@@ -75,7 +75,7 @@
 **Scope:** 5 HTML files
 
 ### 9. Email is a personal Gmail
-**Problem:** `wpbfls@gmail.com` visible in hero and schema. Unprofessional for a business.
+**Problem:** `wpbflsf@gmail.com` visible in hero and schema. Unprofessional for a business.
 **Fix:** Use a professional address (e.g., `sam@actrix.ai`, `hello@actrixidaho.com`) or remove the email entirely and rely on phone/SMS only.
 **Scope:** 5 HTML files + schema
 

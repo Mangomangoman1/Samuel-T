@@ -119,7 +119,7 @@ function updateBriefPreview() {
   if (mailLink) {
     const subject = encodeURIComponent('AI systems fit check');
     const body = encodeURIComponent(message);
-    mailLink.href = `mailto:wpbfls@gmail.com?subject=${subject}&body=${body}`;
+    mailLink.href = `mailto:wpbflsf@gmail.com?subject=${subject}&body=${body}`;
   }
 }
 

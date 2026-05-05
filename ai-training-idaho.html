@@ -24,13 +24,14 @@
     .section{padding:72px 0;border-top:1px solid rgba(222,230,238,.09)}.section:nth-of-type(odd):not(.hero){background:linear-gradient(180deg,rgba(158,191,218,.03),transparent 68%)}.section:nth-of-type(even):not(.hero){background:linear-gradient(180deg,rgba(169,205,175,.025),transparent 68%)}.head{display:grid;grid-template-columns:minmax(0,.95fr) minmax(280px,.58fr);gap:38px;align-items:end;margin-bottom:34px}.head h2{font-size:clamp(2.25rem,4.3vw,4.55rem)}.head p{color:var(--muted);margin:0;font-size:1.03rem}h3{font-size:1.7rem}.grid-3{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}.grid-2{display:grid;grid-template-columns:1fr 1fr;gap:14px}.card{border:1px solid var(--line);border-radius:18px;background:linear-gradient(180deg,rgba(222,230,238,.055),transparent 34%),rgba(62,74,86,.82);padding:24px}.card .num{color:var(--amber);font-size:.78rem;font-weight:950;letter-spacing:.12em}.card h3{font-size:1.45rem;margin-top:14px}.card p{color:var(--muted);margin:10px 0 0;line-height:1.5}.card .tag{display:inline-block;margin-top:12px;padding:7px 10px;border-radius:8px;background:rgba(230,210,194,.08);border:1px solid rgba(230,210,194,.22);color:var(--amber);font-size:.78rem;font-weight:800}.steps{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}.step{border:1px solid var(--line);border-radius:18px;background:rgba(62,74,86,.82);padding:24px;position:relative;overflow:hidden}.step:before{content:attr(data-num);position:absolute;top:-8px;right:16px;font-family:var(--font-title);font-size:4.1rem;color:rgba(230,210,194,.08);font-weight:400;line-height:1;pointer-events:none}.step h3{font-size:1.3rem;margin-bottom:8px}.step p{color:var(--muted);margin:0;line-height:1.5}.step .step-detail{display:block;color:var(--amber);font-size:.8rem;font-weight:800;margin-top:10px}.who-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}.who-item{border:1px solid var(--line);border-radius:18px;padding:24px;background:rgba(62,74,86,.82)}.who-item h3{font-size:1.35rem;margin-bottom:10px}.who-item p{color:var(--muted);margin:0;line-height:1.5}.who-item .who-use{display:block;color:var(--amber);font-size:.78rem;font-weight:800;margin-top:10px}
     .faq-wrap details{border:1px solid var(--line);border-radius:16px;margin-bottom:8px;background:rgba(62,74,86,.6);overflow:hidden;transition:border-color .22s ease}.faq-wrap details[open]{border-color:rgba(230,210,194,.24)}.faq-wrap summary{padding:18px 20px;font-weight:800;font-size:1.02rem;cursor:pointer;display:flex;justify-content:space-between;align-items:center;gap:12px}.faq-wrap summary:after{content:"+";font-size:1.4rem;color:var(--amber);font-weight:300;transition:transform .22s ease}.faq-wrap details[open] summary:after{content:"\2212"}.faq-wrap details[open] summary{border-bottom:1px solid var(--line)}.faq-wrap .faq-answer{padding:18px 20px;color:var(--muted);line-height:1.55}.faq-wrap .faq-answer p{margin:0}.final{padding:72px 0;border-top:1px solid rgba(222,230,238,.09)}.final-box{border:1px solid var(--line);border-radius:22px;background:linear-gradient(180deg,rgba(62,74,86,.82),rgba(62,74,86,.62));padding:48px 54px;display:grid;grid-template-columns:1.2fr 1fr;gap:38px;align-items:center;box-shadow:0 18px 48px rgba(62,74,86,.24)}.final-box h2{font-size:clamp(2.1rem,4vw,3.3rem)}.final-box p{color:var(--muted);margin:16px 0 0;max-width:480px;line-height:1.55}.final-box .btn-wrap{display:flex;flex-wrap:wrap;gap:10px;margin-top:22px}.footer{border-top:1px solid rgba(222,230,238,.09);padding:34px 0;display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:14px;color:var(--muted);font-size:.88rem}.footer span{color:var(--paper);font-weight:850;letter-spacing:.01em}.footer a{color:var(--amber);font-weight:850}
     .region-strip{display:flex;flex-wrap:wrap;gap:7px;margin-top:24px}.region-strip span{border:1px solid var(--line);border-radius:8px;padding:7px 9px;font-size:.78rem;color:var(--muted);background:rgba(222,230,238,.045)}
+    .use-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:14px}.use-card{border:1px solid var(--line);border-radius:18px;background:linear-gradient(180deg,rgba(222,230,238,.055),transparent 34%),rgba(62,74,86,.82);padding:20px 16px;text-align:center;cursor:pointer;display:block;transition:transform .18s ease,border-color .2s;color:inherit;text-decoration:none}.use-card:hover{transform:translateY(-4px);border-color:rgba(230,210,194,.28)}.use-card .use-num{color:var(--amber);font-size:.75rem;font-weight:950;letter-spacing:.12em;text-transform:uppercase;text-align:center;margin-bottom:6px}.use-card h3{font-size:1.1rem;margin-top:6px}.use-card p{color:var(--muted);margin:6px 0 0;line-height:1.45;font-size:.84rem}
     @media(max-width:980px){.links a[href="/solutions"]{display:none}.nav-shell{--nav-tight:760px}}
     @media(max-width:920px){.wrap{width:min(100% - 32px,var(--container))!important}.hero{grid-template-columns:1fr;gap:34px}.hero h1{max-width:12ch}.head{grid-template-columns:1fr;gap:14px}.grid-3,.grid-2,.steps,.who-grid{grid-template-columns:1fr}.head h2{font-size:clamp(2rem,10.5vw,2.75rem)}}
     @media(max-width:760px){.mobile-menu{display:block!important}.nav-shell{position:relative;overflow:visible!important}.mobile-menu-panel{z-index:80}
       .nav{top:8px!important}.nav-shell,.nav.is-constricted .nav-shell{width:calc(100% - 20px)!important;min-height:0;padding:6px 10px!important;gap:8px;border-radius:18px;overflow:hidden}.brand{gap:9px;min-width:0}.brand .mark{width:40px!important;height:40px!important;flex-basis:40px}.brand .mark img{width:40px!important;height:40px!important}.brand strong{font-size:.98rem}.brand small{display:none}.links{margin-left:auto;gap:0}.links a{display:none!important}.nav-center{display:none!important}.links .phone{display:inline-flex!important;padding:9px 10px;font-size:.86rem;white-space:nowrap;color:var(--paper);background:rgba(222,230,238,.08);border:1px solid rgba(222,230,238,.14);border-radius:12px}.links .cta{display:none!important}
       .wrap{width:calc(100% - 32px)!important;margin-inline:auto}.hero{padding:42px 0 34px!important;display:grid!important;grid-template-columns:1fr!important;gap:24px!important;align-items:start!important}.hero>*{min-width:0}h1{font-size:clamp(1.9rem,10.2vw,2.55rem)!important;line-height:1.05!important;letter-spacing:-.014em!important;max-width:13ch;text-wrap:balance;overflow-wrap:normal;word-break:normal}.lede{font-size:.98rem!important;line-height:1.5!important;max-width:34ch;margin-top:14px}.eyebrow{font-size:.7rem;letter-spacing:.1em;margin-bottom:14px}.eyebrow:before{width:24px}.hero-actions{display:grid!important;grid-template-columns:1fr!important;gap:8px!important}.btn{width:100%;justify-content:center;text-align:center;padding:12px 14px!important}.train-card{border-radius:18px!important}.train-card .tc-body{padding:16px!important}.train-module{grid-template-columns:1fr;gap:6px;padding:12px}.train-module .tm-num{width:24px;height:24px;font-size:.7rem}.train-module h4{font-size:.9rem}.train-module p{font-size:.78rem}
-      .section{padding:48px 0!important}.head{margin-bottom:18px}.card,.step,.who-item{border-radius:18px!important;padding:18px!important}.step:before{font-size:1.8rem}.step h3{font-size:1.15rem}.card h3{font-size:1.2rem}.who-item h3{font-size:1.15rem}.faq-wrap summary{padding:14px 16px;font-size:.98rem}.final{padding:54px 0!important}.final-box{padding:28px 22px!important;text-align:left;grid-template-columns:1fr}.final-box p{max-width:100%}.region-strip{gap:5px}.region-strip span{font-size:.74rem;padding:5px 7px}}
-    @media(min-width:761px) and (max-width:1020px){.links a[href="/how-it-works"]{display:none!important}.hero{grid-template-columns:1fr!important;gap:34px}.hero h1{max-width:12ch}.head{grid-template-columns:1fr!important}.grid-3,.grid-2,.steps,.who-grid{grid-template-columns:1fr!important}}
+      .section{padding:48px 0!important}.head{margin-bottom:18px}.card,.step,.who-item{border-radius:18px!important;padding:18px!important}.step:before{font-size:1.8rem}.step h3{font-size:1.15rem}.card h3{font-size:1.2rem}.who-item h3{font-size:1.15rem}#where .use-grid{grid-template-columns:1fr 1fr!important}.faq-wrap summary{padding:14px 16px;font-size:.98rem}.final{padding:54px 0!important}.final-box{padding:28px 22px!important;text-align:left;grid-template-columns:1fr}.final-box p{max-width:100%}.region-strip{gap:5px}.region-strip span{font-size:.74rem;padding:5px 7px}footer .wrap>div{grid-template-columns:1fr!important}}
+    @media(min-width:761px) and (max-width:1020px){.links a[href="/how-it-works"]{display:none!important}.hero{grid-template-columns:1fr!important;gap:34px}.hero h1{max-width:12ch}.head{grid-template-columns:1fr!important}.grid-3,.grid-2,.steps,.who-grid{grid-template-columns:1fr!important}#where .use-grid{grid-template-columns:1fr 1fr!important}}
     @media(prefers-reduced-motion:reduce){*,*:before,*:after{animation-duration:0s!important;transition-duration:0s!important}}
   </style>
   <script type="application/ld+json">{
@@ -186,6 +187,14 @@
           <span class="tag">Custom to your operations</span>
         </article>
       </div>
+      <div style="margin-top:22px;display:flex;flex-wrap:wrap;gap:10px;align-items:center">
+        <span style="color:var(--muted);font-size:.78rem;font-weight:900;text-transform:uppercase;letter-spacing:.06em">Related:</span>
+        <a href="/idaho-ai-consulting" style="display:inline-flex;align-items:center;gap:6px;padding:8px 14px;border-radius:10px;border:1px solid var(--line);background:rgba(222,230,238,.04);color:var(--soft);font-size:.82rem;font-weight:800">AI consulting →</a>
+        <a href="/ai-automation-idaho" style="display:inline-flex;align-items:center;gap:6px;padding:8px 14px;border-radius:10px;border:1px solid var(--line);background:rgba(222,230,238,.04);color:var(--soft);font-size:.82rem;font-weight:800">AI automation →</a>
+        <a href="/ai-agents-for-business" style="display:inline-flex;align-items:center;gap:6px;padding:8px 14px;border-radius:10px;border:1px solid var(--line);background:rgba(222,230,238,.04);color:var(--soft);font-size:.82rem;font-weight:800">AI agents for business →</a>
+        <a href="/business-automation-idaho" style="display:inline-flex;align-items:center;gap:6px;padding:8px 14px;border-radius:10px;border:1px solid var(--line);background:rgba(222,230,238,.04);color:var(--soft);font-size:.82rem;font-weight:800">Business automation →</a>
+        <a href="/how-it-works" style="display:inline-flex;align-items:center;gap:6px;padding:8px 14px;border-radius:10px;border:1px solid var(--line);background:rgba(222,230,238,.04);color:var(--soft);font-size:.82rem;font-weight:800">How AI agents work →</a>
+      </div>
     </section>
 
     <!-- Curriculum -->
@@ -223,6 +232,14 @@
           <span class="tag">Builds confidence and skepticism in equal measure</span>
         </article>
       </div>
+      <div style="margin-top:22px;display:flex;flex-wrap:wrap;gap:10px;align-items:center">
+        <span style="color:var(--muted);font-size:.78rem;font-weight:900;text-transform:uppercase;letter-spacing:.06em">Explore:</span>
+        <a href="/what-ai-can-automate-for-small-business" style="display:inline-flex;align-items:center;gap:6px;padding:8px 14px;border-radius:10px;border:1px solid var(--line);background:rgba(222,230,238,.04);color:var(--soft);font-size:.82rem;font-weight:800">What AI can automate →</a>
+        <a href="/ai-readiness-checklist" style="display:inline-flex;align-items:center;gap:6px;padding:8px 14px;border-radius:10px;border:1px solid var(--line);background:rgba(222,230,238,.04);color:var(--soft);font-size:.82rem;font-weight:800">AI readiness checklist →</a>
+        <a href="/safe-ai-policies-for-staff" style="display:inline-flex;align-items:center;gap:6px;padding:8px 14px;border-radius:10px;border:1px solid var(--line);background:rgba(222,230,238,.04);color:var(--soft);font-size:.82rem;font-weight:800">Safe AI policies →</a>
+        <a href="/ai-implementation-plan" style="display:inline-flex;align-items:center;gap:6px;padding:8px 14px;border-radius:10px;border:1px solid var(--line);background:rgba(222,230,238,.04);color:var(--soft);font-size:.82rem;font-weight:800">Implementation plan →</a>
+        <a href="/custom-agents-vs-chatbots" style="display:inline-flex;align-items:center;gap:6px;padding:8px 14px;border-radius:10px;border:1px solid var(--line);background:rgba(222,230,238,.04);color:var(--soft);font-size:.82rem;font-weight:800">Custom agents vs chatbots →</a>
+      </div>
     </section>
 
     <!-- How training works -->
@@ -251,6 +268,14 @@
           <span class="step-detail">Follow-up session included in engagement</span>
         </div>
       </div>
+      <div style="margin-top:22px;display:flex;flex-wrap:wrap;gap:10px;align-items:center">
+        <span style="color:var(--muted);font-size:.78rem;font-weight:900;text-transform:uppercase;letter-spacing:.06em">Related solutions:</span>
+        <a href="/missed-call-rescue" style="display:inline-flex;align-items:center;gap:6px;padding:8px 14px;border-radius:10px;border:1px solid var(--line);background:rgba(222,230,238,.04);color:var(--soft);font-size:.82rem;font-weight:800">Missed call rescue →</a>
+        <a href="/ai-quote-intake" style="display:inline-flex;align-items:center;gap:6px;padding:8px 14px;border-radius:10px;border:1px solid var(--line);background:rgba(222,230,238,.04);color:var(--soft);font-size:.82rem;font-weight:800">Quote intake →</a>
+        <a href="/solutions" style="display:inline-flex;align-items:center;gap:6px;padding:8px 14px;border-radius:10px;border:1px solid var(--line);background:rgba(222,230,238,.04);color:var(--soft);font-size:.82rem;font-weight:800">All solutions →</a>
+        <a href="/ai-support-idaho" style="display:inline-flex;align-items:center;gap:6px;padding:8px 14px;border-radius:10px;border:1px solid var(--line);background:rgba(222,230,238,.04);color:var(--soft);font-size:.82rem;font-weight:800">AI support &amp; cleanup →</a>
+        <a href="/idaho-ai-services" style="display:inline-flex;align-items:center;gap:6px;padding:8px 14px;border-radius:10px;border:1px solid var(--line);background:rgba(222,230,238,.04);color:var(--soft);font-size:.82rem;font-weight:800">All Idaho AI services →</a>
+      </div>
     </section>
 
     <!-- Who needs this -->
@@ -278,6 +303,68 @@
           <p>You know AI could help but have no idea where to start. Actrix begins with literacy — what AI can and cannot do — then builds from there. Your staff learn the basics in plain language, then practice with tools in a safe environment before applying them to real work.</p>
           <span class="who-use">Common for established small businesses</span>
         </article>
+      </div>
+      <div style="margin-top:22px;display:flex;flex-wrap:wrap;gap:10px;align-items:center">
+        <span style="color:var(--muted);font-size:.78rem;font-weight:900;text-transform:uppercase;letter-spacing:.06em">By industry:</span>
+        <a href="/ai-for-contractors" style="display:inline-flex;align-items:center;gap:6px;padding:8px 14px;border-radius:10px;border:1px solid var(--line);background:rgba(222,230,238,.04);color:var(--soft);font-size:.82rem;font-weight:800">AI for contractors →</a>
+        <a href="/ai-for-professional-services" style="display:inline-flex;align-items:center;gap:6px;padding:8px 14px;border-radius:10px;border:1px solid var(--line);background:rgba(222,230,238,.04);color:var(--soft);font-size:.82rem;font-weight:800">Professional services →</a>
+        <a href="/ai-for-wellness-health" style="display:inline-flex;align-items:center;gap:6px;padding:8px 14px;border-radius:10px;border:1px solid var(--line);background:rgba(222,230,238,.04);color:var(--soft);font-size:.82rem;font-weight:800">Wellness &amp; health →</a>
+        <a href="/ai-for-restaurants-cafes" style="display:inline-flex;align-items:center;gap:6px;padding:8px 14px;border-radius:10px;border:1px solid var(--line);background:rgba(222,230,238,.04);color:var(--soft);font-size:.82rem;font-weight:800">Restaurants &amp; cafes →</a>
+        <a href="/ai-for-retail" style="display:inline-flex;align-items:center;gap:6px;padding:8px 14px;border-radius:10px;border:1px solid var(--line);background:rgba(222,230,238,.04);color:var(--soft);font-size:.82rem;font-weight:800">Retail →</a>
+        <a href="/ai-for-hospitality" style="display:inline-flex;align-items:center;gap:6px;padding:8px 14px;border-radius:10px;border:1px solid var(--line);background:rgba(222,230,238,.04);color:var(--soft);font-size:.82rem;font-weight:800">Hospitality →</a>
+      </div>
+    </section>
+
+    <!-- Where we work -->
+    <section class="wrap section" id="where">
+      <div class="head">
+        <div>
+          <p class="eyebrow">Where we work</p>
+          <h2>AI training for Idaho <span>teams</span> across the state.</h2>
+        </div>
+        <p>Actrix trains business teams throughout Idaho — from downtown Boise offices to manufacturing floors in Idaho Falls, restaurant groups in Coeur d'Alene, and healthcare clinics in Twin Falls. Remote training works for any team with an internet connection. On-site training can be arranged for larger groups at reasonable travel distance.</p>
+      </div>
+      <div class="use-grid">
+        <a href="/ai-services-boise" class="use-card">
+          <div class="use-num">Boise</div>
+          <h3>Treasure Valley teams</h3>
+          <p>Boise, Meridian, Nampa, Caldwell, Eagle. Professional services, tech, healthcare, retail, and construction.</p>
+        </a>
+        <a href="/ai-services-idaho-falls" class="use-card">
+          <div class="use-num">Idaho Falls</div>
+          <h3>Eastern Idaho teams</h3>
+          <p>Idaho Falls, Ammon, Rigby, Rexburg. Manufacturing, agriculture, medical, and service businesses.</p>
+        </a>
+        <a href="/ai-services-twin-falls" class="use-card">
+          <div class="use-num">Twin Falls</div>
+          <h3>Magic Valley teams</h3>
+          <p>Twin Falls, Jerome, Burley. Agriculture, food processing, healthcare, and retail operations.</p>
+        </a>
+        <a href="/ai-services-coeur-dalene" class="use-card">
+          <div class="use-num">Coeur d'Alene</div>
+          <h3>North Idaho teams</h3>
+          <p>Coeur d'Alene, Post Falls, Sandpoint. Hospitality, tourism, real estate, and service businesses.</p>
+        </a>
+        <a href="/ai-services-pocatello" class="use-card">
+          <div class="use-num">Pocatello</div>
+          <h3>Southeast Idaho teams</h3>
+          <p>Pocatello, Chubbuck. Education, healthcare, manufacturing, and government operations.</p>
+        </a>
+        <a href="/ai-services-moscow" class="use-card">
+          <div class="use-num">Moscow</div>
+          <h3>Palouse region teams</h3>
+          <p>Moscow, Lewiston, Pullman area. University, agriculture, professional services, and small business.</p>
+        </a>
+        <a href="/ai-services-rexburg" class="use-card">
+          <div class="use-num">Rexburg</div>
+          <h3>Upper Valley teams</h3>
+          <p>Rexburg, St. Anthony. Education, retail, service businesses, and growing tech operations.</p>
+        </a>
+        <a href="/ai-services-wood-river-valley" class="use-card">
+          <div class="use-num">Wood River Valley</div>
+          <h3>Central Idaho teams</h3>
+          <p>Hailey, Ketchum, Sun Valley, Bellevue. Hospitality, construction, wellness, and professional services.</p>
+        </a>
       </div>
     </section>
 
@@ -358,9 +445,29 @@
     </section>
   </main>
 
-  <footer class="wrap footer">
-    <span>Actrix. Practical AI systems powered by custom agents.</span>
-    <a href="tel:+12083666111">(208) 366-6111</a>
+  <footer class="wrap section" style="padding:28px 0">
+    <div style="display:grid;grid-template-columns:1fr 1fr 1fr;gap:28px;align-items:start">
+      <div>
+        <span style="display:block;margin-bottom:8px;color:var(--paper);font-weight:850">Actrix. Practical AI systems powered by custom agents.</span>
+        <a href="tel:+12083666111" style="color:var(--amber);font-weight:900">(208) 366-6111</a>
+      </div>
+      <div style="display:flex;flex-direction:column;gap:6px">
+        <strong style="color:var(--paper);font-size:.78rem;text-transform:uppercase;letter-spacing:.08em">AI Services</strong>
+        <a href="/idaho-ai-services" style="color:var(--muted);font-size:.82rem">Idaho AI services</a>
+        <a href="/idaho-ai-consulting" style="color:var(--muted);font-size:.82rem">AI consulting</a>
+        <a href="/ai-automation-idaho" style="color:var(--muted);font-size:.82rem">AI automation</a>
+        <a href="/ai-training-idaho" style="color:var(--muted);font-size:.82rem">AI training for staff</a>
+        <a href="/ai-support-idaho" style="color:var(--muted);font-size:.82rem">AI support &amp; cleanup</a>
+      </div>
+      <div style="display:flex;flex-direction:column;gap:6px">
+        <strong style="color:var(--paper);font-size:.78rem;text-transform:uppercase;letter-spacing:.08em">Learn &amp; Connect</strong>
+        <a href="/how-it-works" style="color:var(--muted);font-size:.82rem">How it works</a>
+        <a href="/solutions" style="color:var(--muted);font-size:.82rem">Solutions</a>
+        <a href="/what-ai-can-automate-for-small-business" style="color:var(--muted);font-size:.82rem">What AI can automate</a>
+        <a href="/ai-readiness-checklist" style="color:var(--muted);font-size:.82rem">AI readiness checklist</a>
+        <a href="/safe-ai-policies-for-staff" style="color:var(--muted);font-size:.82rem">Safe AI policies</a>
+      </div>
+    </div>
   </footer>
 
   <script>

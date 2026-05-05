@@ -70,6 +70,15 @@ body:before{content:"";position:fixed;inset:0;pointer-events:none;z-index:-1;opa
 .mobile-menu:not([open]) .mobile-menu-panel{display:none!important}@media(max-width:760px){.mobile-menu[open] .mobile-menu-panel{left:16px!important;right:auto!important;width:calc(100vw - 32px)!important}}
 /* End Cobb IA pass */
 
+/* Cobb region pass: regional where-we-work grid */
+.use-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:14px}
+.use-card .use-num{color:var(--amber);font-size:.72rem;font-weight:950;letter-spacing:.12em;margin-bottom:8px;text-transform:uppercase;display:block}
+.use-card h3{font-size:1.25rem;margin-bottom:8px}
+.use-card p{color:var(--muted);margin:0;line-height:1.5;font-size:.92rem}
+@media(max-width:920px){#where .use-grid{grid-template-columns:1fr 1fr!important}}
+@media(max-width:760px){#where .use-grid{grid-template-columns:1fr!important}.use-card{padding:18px!important}}
+/* End Cobb region pass */
+
   </style>
   <script type="application/ld+json">{
     "@context":"https://schema.org",
@@ -328,18 +337,25 @@ body:before{content:"";position:fixed;inset:0;pointer-events:none;z-index:-1;opa
         <article class="def-card">
           <h3>Repair &amp; service shops</h3>
           <p>Device drop-off questions, diagnostic status inquiries, follow-up on parts arrival, return-pickup coordination. An agent collects device model, issue description, and contact info before you call the customer back.</p>
-          <span class="offer-tag" style="display:inline-block;margin-top:14px">Device shops, auto, equipment repair</span>
+          <a href="/ai-for-repair-shops" style="display:inline-block;margin-top:14px;padding:7px 10px;border-radius:8px;background:rgba(230,210,194,.08);border:1px solid rgba(230,210,194,.22);color:var(--amber);font-size:.78rem;font-weight:800">See repair shop agents →</a>
         </article>
         <article class="def-card">
           <h3>Professional services</h3>
           <p>Real estate agents, accountants, lawyers, consultants — anyone whose phone rings with inquiry calls during client meetings. An agent captures caller context and prepares a response brief for the return call.</p>
-          <span class="offer-tag" style="display:inline-block;margin-top:14px">Law, accounting, real estate, consulting</span>
+          <a href="/ai-for-professional-services" style="display:inline-block;margin-top:14px;padding:7px 10px;border-radius:8px;background:rgba(230,210,194,.08);border:1px solid rgba(230,210,194,.22);color:var(--amber);font-size:.78rem;font-weight:800">See professional service agents →</a>
         </article>
         <article class="def-card">
           <h3>Retail &amp; property services</h3>
           <p>Property managers handling maintenance requests, retailers managing special order inquiries, service providers coordinating estimates across multiple locations. One agent handles the intake loop across all channels.</p>
-          <span class="offer-tag" style="display:inline-block;margin-top:14px">Property management, retail, hospitality</span>
+          <a href="/ai-for-retail" style="display:inline-block;margin-top:14px;padding:7px 10px;border-radius:8px;background:rgba(230,210,194,.08);border:1px solid rgba(230,210,194,.22);color:var(--amber);font-size:.78rem;font-weight:800">See retail AI agents →</a>
         </article>
+      </div>
+      <div style="margin-top:22px;display:flex;flex-wrap:wrap;gap:10px;align-items:center">
+        <span style="color:var(--muted);font-size:.78rem;font-weight:900;text-transform:uppercase;letter-spacing:.06em">Explore:</span>
+        <a href="/ai-for-hospitality" style="display:inline-flex;align-items:center;gap:6px;padding:8px 14px;border-radius:10px;border:1px solid var(--line);background:rgba(222,230,238,.04);color:var(--soft);font-size:.82rem;font-weight:800">AI for hospitality →</a>
+        <a href="/ai-for-manufacturing" style="display:inline-flex;align-items:center;gap:6px;padding:8px 14px;border-radius:10px;border:1px solid var(--line);background:rgba(222,230,238,.04);color:var(--soft);font-size:.82rem;font-weight:800">AI for manufacturing →</a>
+        <a href="/ai-for-education" style="display:inline-flex;align-items:center;gap:6px;padding:8px 14px;border-radius:10px;border:1px solid var(--line);background:rgba(222,230,238,.04);color:var(--soft);font-size:.82rem;font-weight:800">AI for education →</a>
+        <a href="/ai-for-nonprofits" style="display:inline-flex;align-items:center;gap:6px;padding:8px 14px;border-radius:10px;border:1px solid var(--line);background:rgba(222,230,238,.04);color:var(--soft);font-size:.82rem;font-weight:800">AI for nonprofits →</a>
       </div>
     </section>
 
@@ -365,6 +381,13 @@ body:before{content:"";position:fixed;inset:0;pointer-events:none;z-index:-1;opa
           <h3>Starts working in days, not quarters</h3>
           <p>No implementation partner. No six-week onboarding. No training course for your staff. You text Actrix what you need. The agent is built, tested, and live within days. You adjust as you go.</p>
         </article>
+      </div>
+      <div style="margin-top:22px;display:flex;flex-wrap:wrap;gap:10px;align-items:center">
+        <span style="color:var(--muted);font-size:.78rem;font-weight:900;text-transform:uppercase;letter-spacing:.06em">Related:</span>
+        <a href="/how-it-works" style="display:inline-flex;align-items:center;gap:6px;padding:8px 14px;border-radius:10px;border:1px solid var(--line);background:rgba(222,230,238,.04);color:var(--soft);font-size:.82rem;font-weight:800">How AI agents work →</a>
+        <a href="/custom-agents-vs-chatbots" style="display:inline-flex;align-items:center;gap:6px;padding:8px 14px;border-radius:10px;border:1px solid var(--line);background:rgba(222,230,238,.04);color:var(--soft);font-size:.82rem;font-weight:800">Agents vs chatbots →</a>
+        <a href="/safe-ai-policies-for-staff" style="display:inline-flex;align-items:center;gap:6px;padding:8px 14px;border-radius:10px;border:1px solid var(--line);background:rgba(222,230,238,.04);color:var(--soft);font-size:.82rem;font-weight:800">Safe AI policies →</a>
+        <a href="/ai-implementation-plan" style="display:inline-flex;align-items:center;gap:6px;padding:8px 14px;border-radius:10px;border:1px solid var(--line);background:rgba(222,230,238,.04);color:var(--soft);font-size:.82rem;font-weight:800">AI implementation plan →</a>
       </div>
     </section>
 
@@ -411,10 +434,68 @@ body:before{content:"";position:fixed;inset:0;pointer-events:none;z-index:-1;opa
           <div class="faq-answer"><p>Yes. Actrix agents operate within defined boundaries you set. They do not share data between clients, make unauthorized calls, or send messages without approval rules you define. Customer phone numbers, messages, and business records stay within your system. You control what the agent can and cannot do.</p></div>
         </details>
       </div>
+      <div style="margin-top:22px;display:flex;flex-wrap:wrap;gap:10px;align-items:center">
+        <span style="color:var(--muted);font-size:.78rem;font-weight:900;text-transform:uppercase;letter-spacing:.06em">Related:</span>
+        <a href="/missed-call-rescue" style="display:inline-flex;align-items:center;gap:6px;padding:8px 14px;border-radius:10px;border:1px solid var(--line);background:rgba(222,230,238,.04);color:var(--soft);font-size:.82rem;font-weight:800">Missed Call Rescue agent →</a>
+        <a href="/ai-quote-intake" style="display:inline-flex;align-items:center;gap:6px;padding:8px 14px;border-radius:10px;border:1px solid var(--line);background:rgba(222,230,238,.04);color:var(--soft);font-size:.82rem;font-weight:800">AI Quote Intake agent →</a>
+        <a href="/local-ai-starter-systems" style="display:inline-flex;align-items:center;gap:6px;padding:8px 14px;border-radius:10px;border:1px solid var(--line);background:rgba(222,230,238,.04);color:var(--soft);font-size:.82rem;font-weight:800">Starter AI systems →</a>
+      </div>
+    </section>
+
+    <!-- Idaho regional coverage -->
+    <section class="wrap section" id="where">
+      <div class="head">
+        <div>
+          <p class="eyebrow">Where we work</p>
+          <h2>AI agents for Idaho <span>businesses</span> statewide.</h2>
+        </div>
+        <p>Actrix is based in Idaho and builds agents that work remotely — monitoring your phone line, text inbox, and business tools from anywhere. The agent does not need a physical office near you. It needs to understand your workflow, your region, and your customers.</p>
+      </div>
+      <div class="use-grid" style="grid-template-columns:repeat(4,1fr)">
+        <a href="/ai-services-boise" class="use-card" style="text-align:center;padding:20px 16px;cursor:pointer;transition:transform .18s ease,border-color .2s;display:block" onmouseenter="this.style.transform='translateY(-4px)'" onmouseleave="this.style.transform='translateY(0)'">
+          <span class="use-num">Boise</span>
+          <h3 style="font-size:1.1rem;margin-top:6px">Treasure Valley businesses</h3>
+          <p style="font-size:.84rem">Boise, Meridian, Nampa, Caldwell, Eagle, Kuna, and Star.</p>
+        </a>
+        <a href="/ai-services-idaho-falls" class="use-card" style="text-align:center;padding:20px 16px;cursor:pointer;transition:transform .18s ease,border-color .2s;display:block" onmouseenter="this.style.transform='translateY(-4px)'" onmouseleave="this.style.transform='translateY(0)'">
+          <span class="use-num">Idaho Falls</span>
+          <h3 style="font-size:1.1rem;margin-top:6px">Eastern Idaho businesses</h3>
+          <p style="font-size:.84rem">Idaho Falls, Ammon, Rigby, Rexburg, and Blackfoot.</p>
+        </a>
+        <a href="/ai-services-twin-falls" class="use-card" style="text-align:center;padding:20px 16px;cursor:pointer;transition:transform .18s ease,border-color .2s;display:block" onmouseenter="this.style.transform='translateY(-4px)'" onmouseleave="this.style.transform='translateY(0)'">
+          <span class="use-num">Twin Falls</span>
+          <h3 style="font-size:1.1rem;margin-top:6px">Magic Valley businesses</h3>
+          <p style="font-size:.84rem">Twin Falls, Jerome, Burley, Rupert, and Kimberly.</p>
+        </a>
+        <a href="/ai-services-pocatello" class="use-card" style="text-align:center;padding:20px 16px;cursor:pointer;transition:transform .18s ease,border-color .2s;display:block" onmouseenter="this.style.transform='translateY(-4px)'" onmouseleave="this.style.transform='translateY(0)'">
+          <span class="use-num">Pocatello</span>
+          <h3 style="font-size:1.1rem;margin-top:6px">Southeast Idaho businesses</h3>
+          <p style="font-size:.84rem">Pocatello, Chubbuck, and surrounding communities.</p>
+        </a>
+        <a href="/ai-services-rexburg" class="use-card" style="text-align:center;padding:20px 16px;cursor:pointer;transition:transform .18s ease,border-color .2s;display:block" onmouseenter="this.style.transform='translateY(-4px)'" onmouseleave="this.style.transform='translateY(0)'">
+          <span class="use-num">Rexburg</span>
+          <h3 style="font-size:1.1rem;margin-top:6px">Upper Valley businesses</h3>
+          <p style="font-size:.84rem">Rexburg, Sugar City, St. Anthony, and Madison County.</p>
+        </a>
+        <a href="/ai-services-moscow" class="use-card" style="text-align:center;padding:20px 16px;cursor:pointer;transition:transform .18s ease,border-color .2s;display:block" onmouseenter="this.style.transform='translateY(-4px)'" onmouseleave="this.style.transform='translateY(0)'">
+          <span class="use-num">Moscow</span>
+          <h3 style="font-size:1.1rem;margin-top:6px">Palouse region businesses</h3>
+          <p style="font-size:.84rem">Moscow, Pullman, Lewiston, and the university corridor.</p>
+        </a>
+        <a href="/ai-services-coeur-d-alene" class="use-card" style="text-align:center;padding:20px 16px;cursor:pointer;transition:transform .18s ease,border-color .2s;display:block" onmouseenter="this.style.transform='translateY(-4px)'" onmouseleave="this.style.transform='translateY(0)'">
+          <span class="use-num">Coeur d'Alene</span>
+          <h3 style="font-size:1.1rem;margin-top:6px">North Idaho businesses</h3>
+          <p style="font-size:.84rem">Coeur d'Alene, Post Falls, Hayden, and Sandpoint.</p>
+        </a>
+        <a href="/ai-services-wood-river-valley" class="use-card" style="text-align:center;padding:20px 16px;cursor:pointer;transition:transform .18s ease,border-color .2s;display:block" onmouseenter="this.style.transform='translateY(-4px)'" onmouseleave="this.style.transform='translateY(0)'">
+          <span class="use-num">Wood River Valley</span>
+          <h3 style="font-size:1.1rem;margin-top:6px">Central Idaho businesses</h3>
+          <p style="font-size:.84rem">Hailey, Ketchum, Sun Valley, Bellevue, and the Sawtooth region.</p>
+        </a>
+      </div>
     </section>
 
     <!-- Final CTA -->
-    <section class="wrap final">
       <div class="final-box">
         <div>
           <p class="eyebrow">Start with one agent</p>

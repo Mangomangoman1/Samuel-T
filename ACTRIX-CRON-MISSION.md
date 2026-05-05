@@ -54,30 +54,86 @@ Actrix is no longer framed as a small Wood River Valley side project. It is an I
 ## Current Strategic Foundation
 Homepage now points to statewide Idaho AI positioning and links to /idaho-ai-services as the hub. Future runs should expand outward from that hub rather than returning to narrow Wood River Valley-only framing.
 
-### Manager Directive — 2026-05-04 16:20
+### Manager Directive — 2026-05-04 18:30
 
 ### Manager Review — On Track ✅
-DeepSeek had another strong run: shipped 4 new pages (manufacturing AI, Wood River Valley, Moscow, Meridian/Nampa) plus cross-linked the mobile menus and footers on the 4 earliest regional pages to reference all 9 regions. All new pages have clean phones, proper titles/canonicals/OG, FAQPage schema, proof artifacts, and hub page links.
+DeepSeek is executing well in the quality/depth phase. Last 5 runs:
+1. **Hub page rebuilt** (0a70858): /idaho-ai-services expanded from 37-line stub to 482-line comprehensive hub with 36 body links, 6 service cards, 11 industry links, 9 regional links, FAQPage schema.
+2. **Homepage polished** (51ced84): Official-company hardening pass on index.html — 55 insertions, 30 deletions.
+3. **Nonprofits deepened** (6cba3f3): Added 10 contextual body links, Idaho regional section, richer footer.
+4. **Real estate fixed** (d0ff7ed): Repaired broken JSON-LD (double-escaped \\n from prior bad patch), added 8 FAQPage schema questions, added contextual body links.
+5. **Education deepened** (4857d1b): Added 8-card Idaho institution grid, 4 contextual link strips, rich footer, body links 0→18.
 
-**Manager fix applied:** Manufacturing page title was scoped to "Pocatello, ID" when it should be a statewide industry page. Fixed title, meta description, and OG tags to reference Idaho statewide instead of Pocatello-only.
+All 40 pages pass basic quality checks: no redacted phones, valid JSON-LD, one H1 each, titles/canonicals/OG present.
 
 ### ALL PAGE CATEGORIES ARE NOW COMPLETE ✅🎉
 - Core money pages: 7/7 DONE ✅
-- Industry pages: 11/11 DONE ✅ (including manufacturing)
-- Regional pages: 9/9 DONE ✅ (Boise, Idaho Falls, Twin Falls, Coeur d'Alene, Pocatello, Rexburg, Meridian/Nampa, Moscow, Wood River Valley)
+- Industry pages: 11/11 DONE ✅
+- Regional pages: 9/9 DONE ✅
 - Educational authority: 5/5 DONE ✅
 - Total pages in sitemap: 40 (no duplicates, no orphans)
 
-### CRITICAL DIRECTION CHANGE — QUALITY AND DEPTH PHASE ONLY
-The build phase is OVER. There are no more pages to create unless Samuel explicitly requests one. All future runs should focus exclusively on:
+### ⚡ PRIORITY: INTERNAL LINKING DEPTH GAP — 17 PAGES HAVE ZERO BODY LINKS
 
-1. **Deepen thin pages.** Read every page and identify sections that are generic or shallow. Add real Idaho business scenarios, concrete automation examples, and industry-specific proof.
-2. **Strengthen internal linking.** Check that industry pages link to relevant regional pages and vice versa. Add contextual body links, not just nav/footer links.
-3. **Proof artifact quality pass.** Verify every page's proof artifact is specific and meaningful — not just a rehash of the same dispatch-card template with city names swapped.
-4. **Title/meta optimization.** Some pages may have titles that are too similar. Differentiate them where the SERP opportunity warrants it.
-5. **Mobile quality audit.** Check a few pages at 375px for overflow, cramped CTAs, or broken layouts.
-6. **Cross-page consistency.** Verify phone digits, schema validity, and consistent footer/nav across all pages.
-7. **Homepage hub authority.** Make sure /idaho-ai-services remains the strongest hub page with links to every sub-page.
+Manager audit found 17 pages with ZERO contextual body links (only nav/footer). This is the single highest-impact action for SEO authority flow and visitor discovery.
+
+**Pages with 0 body links (prioritize in this order):**
+
+Tier 1 — Core money pages (highest SEO value):
+1. idaho-ai-consulting.html
+2. ai-automation-idaho.html
+3. ai-support-idaho.html
+4. ai-training-idaho.html
+5. ai-agents-for-business.html
+6. business-automation-idaho.html
+
+Tier 2 — High-value industry pages:
+7. ai-for-contractors.html
+8. ai-for-professional-services.html
+9. ai-for-restaurants-cafes.html
+10. ai-for-wellness-health.html
+11. ai-for-repair-shops.html
+12. ai-for-retail.html
+13. ai-for-hospitality.html
+
+Tier 3 — Solution/educational pages:
+14. missed-call-rescue.html
+15. ai-quote-intake.html
+16. what-ai-can-automate-for-small-business.html
+17. ai-readiness-checklist.html
+
+**Already-well-linked pages (DO NOT re-do):**
+- idaho-ai-services.html (36 body links) ✅
+- ai-for-education.html (18 body links) ✅
+- ai-for-nonprofits.html (10 body links) ✅
+- ai-for-real-estate.html (10 body links) ✅
+- index.html (10 body links) ✅
+
+### INSTRUCTIONS PER RUN:
+1. Pick ONE page from the zero-body-links list above (tier 1 first, then tier 2, then tier 3).
+2. Read the page content. Find 3–5 natural places to add contextual link strips:
+   - After the pain/problem section
+   - After the "how it works" / role section
+   - After the use-case cards
+   - After the FAQ section
+3. Add "Related:" or "Explore:" link rows using this exact pattern:
+   ```html
+   <div style="margin-top:22px;display:flex;flex-wrap:wrap;gap:10px;align-items:center">
+     <span style="color:var(--muted);font-size:.78rem;font-weight:900;text-transform:uppercase;letter-spacing:.06em">Related:</span>
+     <a href="/target-page" style="display:inline-flex;align-items:center;gap:6px;padding:8px 14px;border-radius:10px;border:1px solid var(--line);background:rgba(222,230,238,.04);color:var(--soft);font-size:.82rem;font-weight:800">Anchor text →</a>
+   </div>
+   ```
+4. Link to: hub page, related industry pages, relevant regional pages, related educational pages, and solution pages.
+5. If the page has a thin footer, upgrade to the 3-column rich footer pattern (see ai-for-education.html for reference).
+6. If there is a good opportunity to add a regional "where we work" section with linked cards, add one (see ai-for-nonprofits.html for reference).
+7. Update sitemap lastmod for the touched page.
+8. Run standard verification: one H1, no `[truncated]`, phone bytes clean via Python, JSON-LD parses, CSS braces balanced, `git diff --check` clean.
+
+### TARGET: 10+ contextual body links per page (up from 0).
+Each run should deep-link ONE page. Do not spread thin across multiple pages.
+
+### CRITICAL DIRECTION — QUALITY AND DEPTH PHASE ONLY
+The build phase is OVER. Do NOT create new pages.
 
 ### DO NOT:
 - Create new pages unless Samuel explicitly asks for one.
@@ -93,11 +149,6 @@ assert b'120****' not in content, "REDACTED PHONE FOUND"
 assert b'12083666111' in content, "REAL PHONE MISSING"
 ```
 Do NOT rely on grep/terminal output — it can mask real asterisks as `****` even when the file has the correct digits, and vice versa. Use Python byte inspection. This is a zero-tolerance rule.
-
-### Recommended next run focus:
-1. **Read 3–4 pages deeply** and identify the weakest sections (thin content, generic proof artifacts, missing local specificity).
-2. **Pick the weakest page** and do a substantive depth pass — add real Idaho business scenarios, strengthen the proof artifact, deepen FAQ answers.
-3. **One page per run.** Quality over quantity from here.
 
 ### Quality reminders:
 - Every page needs a proof artifact, not just cards.

@@ -28,7 +28,7 @@
     .steps{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}.step{border:1px solid var(--line);border-radius:18px;background:rgba(62,74,86,.82);padding:24px;position:relative;overflow:hidden}.step:before{content:attr(data-num);position:absolute;top:-8px;right:16px;font-family:var(--font-title);font-size:4.1rem;color:rgba(230,210,194,.08);font-weight:400;line-height:1;pointer-events:none}.step h3{font-size:1.3rem;margin-bottom:8px}.step p{color:var(--muted);margin:0;line-height:1.5}.step .step-detail{display:block;color:var(--amber);font-size:.8rem;font-weight:800;margin-top:10px}
     .faq-wrap details{border:1px solid var(--line);border-radius:16px;margin-bottom:8px;background:rgba(62,74,86,.6);overflow:hidden;transition:border-color .22s ease}.faq-wrap details[open]{border-color:rgba(230,210,194,.24)}.faq-wrap summary{padding:18px 20px;font-weight:800;font-size:1.02rem;cursor:pointer;display:flex;justify-content:space-between;align-items:center;gap:12px}.faq-wrap summary:after{content:"+";font-size:1.4rem;color:var(--amber);font-weight:300;transition:transform .22s ease}.faq-wrap details[open] summary:after{content:"−"}.faq-wrap details[open] summary{border-bottom:1px solid var(--line)}.faq-wrap .faq-answer{padding:18px 20px;color:var(--muted);line-height:1.55}.faq-wrap .faq-answer p{margin:0}
     .final{padding:72px 0;border-top:1px solid rgba(222,230,238,.09)}.final-box{border:1px solid var(--line);border-radius:22px;background:linear-gradient(180deg,rgba(62,74,86,.82),rgba(62,74,86,.62));padding:48px 54px;display:grid;grid-template-columns:1.2fr 1fr;gap:38px;align-items:center;box-shadow:0 18px 48px rgba(62,74,86,.24)}.final-box h2{font-size:clamp(2.1rem,4vw,3.3rem)}.final-box p{color:var(--muted);margin:16px 0 0;max-width:480px;line-height:1.55}.final-box .btn-wrap{display:flex;flex-wrap:wrap;gap:10px;margin-top:22px}.footer{border-top:1px solid rgba(222,230,238,.09);padding:34px 0;display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:14px;color:var(--muted);font-size:.88rem}.footer span{color:var(--paper);font-weight:850;letter-spacing:.01em}.footer a{color:var(--amber);font-weight:850}
-    .region-strip{display:flex;flex-wrap:wrap;gap:7px;margin-top:24px}.region-strip span{border:1px solid var(--line);border-radius:8px;padding:7px 9px;font-size:.78rem;color:var(--muted);background:rgba(222,230,238,.045)}
+    .region-strip{display:flex;flex-wrap:wrap;gap:7px;margin-top:24px}.region-strip span{border:1px solid var(--line);border-radius:8px;padding:7px 9px;font-size:.78rem;color:var(--muted);background:rgba(222,230,238,.045)}.use-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:14px}.use-card{border:1px solid var(--line);border-radius:18px;background:rgba(62,74,86,.5);padding:22px;transition:border-color .22s ease,background .22s ease;text-decoration:none;display:block;color:inherit}.use-card:hover{border-color:rgba(230,210,194,.28);background:rgba(62,74,86,.7)}.use-num{display:block;color:var(--amber);font-size:.72rem;font-weight:950;text-transform:uppercase;letter-spacing:.1em;margin-bottom:6px}.use-card h3{font-size:1.2rem;margin-bottom:6px}.use-card p{color:var(--muted);margin:0;font-size:.88rem;line-height:1.5}@media(max-width:920px){.use-grid{grid-template-columns:1fr 1fr!important}}@media(max-width:760px){.use-grid{grid-template-columns:1fr!important}.use-card{padding:16px!important}}
     @media(max-width:980px){.links a[href="/solutions"]{display:none}.nav-shell{--nav-tight:760px}}
     @media(max-width:920px){.wrap{width:min(100% - 32px,var(--container))!important}.hero{grid-template-columns:1fr;gap:34px}.hero h1{max-width:12ch}.head{grid-template-columns:1fr;gap:14px}.grid-3,.grid-2,.steps,.diff-grid{grid-template-columns:1fr}.head h2{font-size:clamp(2rem,10.5vw,2.75rem)}}
     @media(max-width:760px){.mobile-menu{display:block!important}.nav-shell{position:relative;overflow:visible!important}.mobile-menu-panel{z-index:80}
@@ -38,6 +38,7 @@
       .section{padding:48px 0!important}.head{margin-bottom:18px}.card,.step,.diff-col{border-radius:18px!important;padding:18px!important}.step:before{font-size:1.8rem}.step h3{font-size:1.15rem}.card h3{font-size:1.2rem}.faq-wrap summary{padding:14px 16px;font-size:.98rem}.final{padding:54px 0!important}.final-box{padding:28px 22px!important;text-align:left;grid-template-columns:1fr}.final-box p{max-width:100%}.region-strip{gap:5px}.region-strip span{font-size:.74rem;padding:5px 7px}}
     @media(min-width:761px) and (max-width:1020px){.links a[href="/how-it-works"],.links a[href="/solutions"]{display:none!important}.hero{grid-template-columns:1fr!important;gap:34px}.hero h1{max-width:12ch}.head{grid-template-columns:1fr!important}.grid-3,.steps,.diff-grid{grid-template-columns:1fr!important}}
     @media(prefers-reduced-motion:reduce){*,*:before,*:after{animation-duration:0s!important;transition-duration:0s!important}}
+    @media(max-width:760px){footer .wrap>div{grid-template-columns:1fr!important}}
   </style>
   <script type="application/ld+json">{
     "@context":"https://schema.org",
@@ -188,6 +189,13 @@
           </ul>
         </div>
       </div>
+      <div style="margin-top:22px;display:flex;flex-wrap:wrap;gap:10px;align-items:center">
+        <span style="color:var(--muted);font-size:.78rem;font-weight:900;text-transform:uppercase;letter-spacing:.06em">Related:</span>
+        <a href="/idaho-ai-services" style="display:inline-flex;align-items:center;gap:6px;padding:8px 14px;border-radius:10px;border:1px solid var(--line);background:rgba(222,230,238,.04);color:var(--soft);font-size:.82rem;font-weight:800">Idaho AI services →</a>
+        <a href="/ai-automation-idaho" style="display:inline-flex;align-items:center;gap:6px;padding:8px 14px;border-radius:10px;border:1px solid var(--line);background:rgba(222,230,238,.04);color:var(--soft);font-size:.82rem;font-weight:800">AI automation →</a>
+        <a href="/ai-agents-for-business" style="display:inline-flex;align-items:center;gap:6px;padding:8px 14px;border-radius:10px;border:1px solid var(--line);background:rgba(222,230,238,.04);color:var(--soft);font-size:.82rem;font-weight:800">AI agents for business →</a>
+        <a href="/idaho-ai-consulting" style="display:inline-flex;align-items:center;gap:6px;padding:8px 14px;border-radius:10px;border:1px solid var(--line);background:rgba(222,230,238,.04);color:var(--soft);font-size:.82rem;font-weight:800">AI consulting Idaho →</a>
+      </div>
     </section>
 
     <!-- Automation systems by function -->
@@ -233,6 +241,21 @@
           <p>Monitor new reviews across Google, Yelp, and social platforms. Draft contextual responses, flag urgent or negative reviews, and log response status for owner approval.</p>
           <span class="tag">Multi-platform monitoring</span>
         </article>
+      </div>
+      <div style="margin-top:22px;display:flex;flex-wrap:wrap;gap:10px;align-items:center">
+        <span style="color:var(--muted);font-size:.78rem;font-weight:900;text-transform:uppercase;letter-spacing:.06em">By industry:</span>
+        <a href="/ai-for-contractors" style="display:inline-flex;align-items:center;gap:6px;padding:8px 14px;border-radius:10px;border:1px solid var(--line);background:rgba(222,230,238,.04);color:var(--soft);font-size:.82rem;font-weight:800">Contractors →</a>
+        <a href="/ai-for-professional-services" style="display:inline-flex;align-items:center;gap:6px;padding:8px 14px;border-radius:10px;border:1px solid var(--line);background:rgba(222,230,238,.04);color:var(--soft);font-size:.82rem;font-weight:800">Professional services →</a>
+        <a href="/ai-for-wellness-health" style="display:inline-flex;align-items:center;gap:6px;padding:8px 14px;border-radius:10px;border:1px solid var(--line);background:rgba(222,230,238,.04);color:var(--soft);font-size:.82rem;font-weight:800">Wellness &amp; health →</a>
+        <a href="/ai-for-restaurants-cafes" style="display:inline-flex;align-items:center;gap:6px;padding:8px 14px;border-radius:10px;border:1px solid var(--line);background:rgba(222,230,238,.04);color:var(--soft);font-size:.82rem;font-weight:800">Restaurants &amp; cafes →</a>
+        <a href="/ai-for-repair-shops" style="display:inline-flex;align-items:center;gap:6px;padding:8px 14px;border-radius:10px;border:1px solid var(--line);background:rgba(222,230,238,.04);color:var(--soft);font-size:.82rem;font-weight:800">Repair shops →</a>
+        <a href="/ai-for-retail" style="display:inline-flex;align-items:center;gap:6px;padding:8px 14px;border-radius:10px;border:1px solid var(--line);background:rgba(222,230,238,.04);color:var(--soft);font-size:.82rem;font-weight:800">Retail →</a>
+      </div>
+      <div style="margin-top:14px;display:flex;flex-wrap:wrap;gap:10px;align-items:center">
+        <span style="color:var(--muted);font-size:.78rem;font-weight:900;text-transform:uppercase;letter-spacing:.06em">Solutions:</span>
+        <a href="/missed-call-rescue" style="display:inline-flex;align-items:center;gap:6px;padding:8px 14px;border-radius:10px;border:1px solid var(--line);background:rgba(222,230,238,.04);color:var(--soft);font-size:.82rem;font-weight:800">Missed call rescue →</a>
+        <a href="/ai-quote-intake" style="display:inline-flex;align-items:center;gap:6px;padding:8px 14px;border-radius:10px;border:1px solid var(--line);background:rgba(222,230,238,.04);color:var(--soft);font-size:.82rem;font-weight:800">AI quote intake →</a>
+        <a href="/local-ai-starter-systems" style="display:inline-flex;align-items:center;gap:6px;padding:8px 14px;border-radius:10px;border:1px solid var(--line);background:rgba(222,230,238,.04);color:var(--soft);font-size:.82rem;font-weight:800">Local AI starter systems →</a>
       </div>
     </section>
 
@@ -309,6 +332,13 @@
           <span class="step-detail">On your terms</span>
         </div>
       </div>
+      <div style="margin-top:22px;display:flex;flex-wrap:wrap;gap:10px;align-items:center">
+        <span style="color:var(--muted);font-size:.78rem;font-weight:900;text-transform:uppercase;letter-spacing:.06em">Explore:</span>
+        <a href="/how-it-works" style="display:inline-flex;align-items:center;gap:6px;padding:8px 14px;border-radius:10px;border:1px solid var(--line);background:rgba(222,230,238,.04);color:var(--soft);font-size:.82rem;font-weight:800">How it works →</a>
+        <a href="/ai-implementation-plan" style="display:inline-flex;align-items:center;gap:6px;padding:8px 14px;border-radius:10px;border:1px solid var(--line);background:rgba(222,230,238,.04);color:var(--soft);font-size:.82rem;font-weight:800">AI implementation plan →</a>
+        <a href="/what-ai-can-automate-for-small-business" style="display:inline-flex;align-items:center;gap:6px;padding:8px 14px;border-radius:10px;border:1px solid var(--line);background:rgba(222,230,238,.04);color:var(--soft);font-size:.82rem;font-weight:800">What AI can automate →</a>
+        <a href="/custom-agents-vs-chatbots" style="display:inline-flex;align-items:center;gap:6px;padding:8px 14px;border-radius:10px;border:1px solid var(--line);background:rgba(222,230,238,.04);color:var(--soft);font-size:.82rem;font-weight:800">Custom agents vs chatbots →</a>
+      </div>
     </section>
 
     <!-- FAQ -->
@@ -351,6 +381,65 @@
           <div class="faq-answer"><p>Yes. Actrix serves Idaho businesses statewide. Automation systems are installed remotely and maintained the same way. Whether you are in Boise, Idaho Falls, Coeur d'Alene, Twin Falls, or anywhere else in Idaho, the process is the same: map the workflow, build the automation, install it, and test it.</p></div>
         </details>
       </div>
+      <div style="margin-top:22px;display:flex;flex-wrap:wrap;gap:10px;align-items:center">
+        <span style="color:var(--muted);font-size:.78rem;font-weight:900;text-transform:uppercase;letter-spacing:.06em">Regions:</span>
+        <a href="/ai-services-boise" style="display:inline-flex;align-items:center;gap:6px;padding:8px 14px;border-radius:10px;border:1px solid var(--line);background:rgba(222,230,238,.04);color:var(--soft);font-size:.82rem;font-weight:800">Boise AI services →</a>
+        <a href="/ai-services-idaho-falls" style="display:inline-flex;align-items:center;gap:6px;padding:8px 14px;border-radius:10px;border:1px solid var(--line);background:rgba(222,230,238,.04);color:var(--soft);font-size:.82rem;font-weight:800">Idaho Falls AI →</a>
+        <a href="/ai-services-twin-falls" style="display:inline-flex;align-items:center;gap:6px;padding:8px 14px;border-radius:10px;border:1px solid var(--line);background:rgba(222,230,238,.04);color:var(--soft);font-size:.82rem;font-weight:800">Twin Falls AI →</a>
+        <a href="/ai-services-coeur-d-alene" style="display:inline-flex;align-items:center;gap:6px;padding:8px 14px;border-radius:10px;border:1px solid var(--line);background:rgba(222,230,238,.04);color:var(--soft);font-size:.82rem;font-weight:800">Coeur d'Alene AI →</a>
+        <a href="/ai-services-pocatello" style="display:inline-flex;align-items:center;gap:6px;padding:8px 14px;border-radius:10px;border:1px solid var(--line);background:rgba(222,230,238,.04);color:var(--soft);font-size:.82rem;font-weight:800">Pocatello AI →</a>
+        <a href="/ai-services-meridian-nampa" style="display:inline-flex;align-items:center;gap:6px;padding:8px 14px;border-radius:10px;border:1px solid var(--line);background:rgba(222,230,238,.04);color:var(--soft);font-size:.82rem;font-weight:800">Meridian/Nampa AI →</a>
+      </div>
+    </section>
+
+    <!-- Idaho regions Actrix serves -->
+    <section class="wrap section" id="where" aria-labelledby="where-title">
+      <div class="head">
+        <div><p class="eyebrow">Where we work</p><h2 id="where-title">Business automation for <span>Idaho companies</span> statewide.</h2></div>
+        <p>Actrix builds automation systems for businesses in every region of Idaho. The process is the same whether you are in downtown Boise, an Idaho Falls manufacturing floor, a Coeur d'Alene resort office, or a Twin Falls agricultural operation. Remote installation, human-approved workflows, no monthly subscription.</p>
+      </div>
+      <div class="use-grid">
+        <a href="/ai-services-boise" class="use-card">
+          <span class="use-num">Boise</span>
+          <h3>Treasure Valley</h3>
+          <p>Boise, Meridian, Nampa, Caldwell, Eagle. Professional services, tech, healthcare, retail, and construction. The largest concentration of Idaho businesses adopting automation.</p>
+        </a>
+        <a href="/ai-services-idaho-falls" class="use-card">
+          <span class="use-num">Idaho Falls</span>
+          <h3>Eastern Idaho</h3>
+          <p>Idaho Falls, Ammon, Rigby. Manufacturing, agriculture, medical, and service businesses. Strong demand for workflow automation across industrial and professional operations.</p>
+        </a>
+        <a href="/ai-services-twin-falls" class="use-card">
+          <span class="use-num">Twin Falls</span>
+          <h3>Magic Valley</h3>
+          <p>Twin Falls, Jerome, Burley. Agriculture, food processing, healthcare, and retail. Automation that handles the seasonal and operational complexity of the region.</p>
+        </a>
+        <a href="/ai-services-coeur-d-alene" class="use-card">
+          <span class="use-num">Coeur d'Alene</span>
+          <h3>North Idaho</h3>
+          <p>Coeur d'Alene, Post Falls, Sandpoint. Hospitality, tourism, real estate, and service businesses. Automation for booking, inquiry, and guest communication workflows.</p>
+        </a>
+        <a href="/ai-services-pocatello" class="use-card">
+          <span class="use-num">Pocatello</span>
+          <h3>Southeast Idaho</h3>
+          <p>Pocatello, Chubbuck. Education, healthcare, manufacturing, and government. Steady demand for process automation across institutional and industrial operations.</p>
+        </a>
+        <a href="/ai-services-meridian-nampa" class="use-card">
+          <span class="use-num">Meridian / Nampa</span>
+          <h3>West Treasure Valley</h3>
+          <p>Meridian, Nampa, Caldwell, Kuna, Star. Fast-growing business communities with increasing demand for automation that scales with growth.</p>
+        </a>
+        <a href="/ai-services-moscow" class="use-card">
+          <span class="use-num">Moscow</span>
+          <h3>Palouse Region</h3>
+          <p>Moscow, Lewiston, Pullman area. University, agriculture, professional services, and small business. Automation for academic-adjacent and rural professional operations.</p>
+        </a>
+        <a href="/ai-services-wood-river-valley" class="use-card">
+          <span class="use-num">Wood River Valley</span>
+          <h3>Central Idaho</h3>
+          <p>Hailey, Ketchum, Sun Valley, Bellevue. Hospitality, construction, wellness, and professional services. Actrix is based here — the automation is built and tested in the same region.</p>
+        </a>
+      </div>
     </section>
 
     <!-- Final CTA -->
@@ -378,9 +467,29 @@
 
   </main>
 
-  <footer class="wrap footer">
-    <span>Actrix. Practical AI systems powered by custom agents.</span>
-    <a href="tel:+12083666111">(208) 366-6111</a>
+  <footer class="wrap section" style="padding:28px 0">
+    <div style="display:grid;grid-template-columns:1fr 1fr 1fr;gap:28px;align-items:start">
+      <div>
+        <span style="display:block;margin-bottom:8px;color:var(--paper);font-weight:850">Actrix. Practical AI systems powered by custom agents.</span>
+        <a href="tel:+12083666111" style="color:var(--amber);font-weight:900">(208) 366-6111</a>
+      </div>
+      <div style="display:flex;flex-direction:column;gap:6px">
+        <strong style="color:var(--paper);font-size:.78rem;text-transform:uppercase;letter-spacing:.08em">AI Services</strong>
+        <a href="/idaho-ai-services" style="color:var(--muted);font-size:.82rem">Idaho AI services</a>
+        <a href="/idaho-ai-consulting" style="color:var(--muted);font-size:.82rem">AI consulting</a>
+        <a href="/ai-automation-idaho" style="color:var(--muted);font-size:.82rem">AI automation</a>
+        <a href="/ai-training-idaho" style="color:var(--muted);font-size:.82rem">AI training for staff</a>
+        <a href="/ai-support-idaho" style="color:var(--muted);font-size:.82rem">AI support &amp; cleanup</a>
+      </div>
+      <div style="display:flex;flex-direction:column;gap:6px">
+        <strong style="color:var(--paper);font-size:.78rem;text-transform:uppercase;letter-spacing:.08em">Learn &amp; Connect</strong>
+        <a href="/how-it-works" style="color:var(--muted);font-size:.82rem">How it works</a>
+        <a href="/solutions" style="color:var(--muted);font-size:.82rem">Solutions</a>
+        <a href="/what-ai-can-automate-for-small-business" style="color:var(--muted);font-size:.82rem">What AI can automate</a>
+        <a href="/ai-readiness-checklist" style="color:var(--muted);font-size:.82rem">AI readiness checklist</a>
+        <a href="/safe-ai-policies-for-staff" style="color:var(--muted);font-size:.82rem">Safe AI policies</a>
+      </div>
+    </div>
   </footer>
 
   <script>

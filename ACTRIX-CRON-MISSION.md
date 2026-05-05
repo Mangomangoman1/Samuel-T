@@ -54,17 +54,17 @@ Actrix is no longer framed as a small Wood River Valley side project. It is an I
 ## Current Strategic Foundation
 Homepage now points to statewide Idaho AI positioning and links to /idaho-ai-services as the hub. Future runs should expand outward from that hub rather than returning to narrow Wood River Valley-only framing.
 
-### Manager Directive — 2026-05-04 18:30
+### Manager Directive — 2026-05-04 20:30
 
 ### Manager Review — On Track ✅
-DeepSeek is executing well in the quality/depth phase. Last 5 runs:
-1. **Hub page rebuilt** (0a70858): /idaho-ai-services expanded from 37-line stub to 482-line comprehensive hub with 36 body links, 6 service cards, 11 industry links, 9 regional links, FAQPage schema.
-2. **Homepage polished** (51ced84): Official-company hardening pass on index.html — 55 insertions, 30 deletions.
-3. **Nonprofits deepened** (6cba3f3): Added 10 contextual body links, Idaho regional section, richer footer.
-4. **Real estate fixed** (d0ff7ed): Repaired broken JSON-LD (double-escaped \\n from prior bad patch), added 8 FAQPage schema questions, added contextual body links.
-5. **Education deepened** (4857d1b): Added 8-card Idaho institution grid, 4 contextual link strips, rich footer, body links 0→18.
+DeepSeek is executing the internal-linking depth pass well. Last 6 runs:
+1. **idaho-ai-consulting deepened** (38eaaee): 0→26 body links, 8-card Idaho regional section, rich 3-column footer.
+2. **ai-training-idaho deepened** (c40ef99): 21→29 body links, Idaho regional section, rich footer.
+3. **business-automation-idaho deepened** (0659d21): 0→31 body links, Idaho regional section, rich footer.
+4. **Homepage polished** (c629c11): Leak-map proof artifact replaces old MCR card, tighter hero headline "AI agents that catch missed work.", new service-command section, field-note trust reset, leak-ledger section. All QA passes.
+5. **ai-support-idaho deepened** (c4f3ff4): 1→28 body links, 4 contextual link strips, Idaho regional section, rich footer.
 
-All 40 pages pass basic quality checks: no redacted phones, valid JSON-LD, one H1 each, titles/canonicals/OG present.
+All quality checks pass: no redacted phones, valid JSON-LD, one H1 each, titles/canonicals/OG present, CSS braces balanced, no [truncated].
 
 ### ALL PAGE CATEGORIES ARE NOW COMPLETE ✅🎉
 - Core money pages: 7/7 DONE ✅
@@ -73,41 +73,39 @@ All 40 pages pass basic quality checks: no redacted phones, valid JSON-LD, one H
 - Educational authority: 5/5 DONE ✅
 - Total pages in sitemap: 40 (no duplicates, no orphans)
 
-### ⚡ PRIORITY: INTERNAL LINKING DEPTH GAP — 17 PAGES HAVE ZERO BODY LINKS
+### ⚡ PRIORITY: INTERNAL LINKING DEPTH — REMAINING PAGES
 
-Manager audit found 17 pages with ZERO contextual body links (only nav/footer). This is the single highest-impact action for SEO authority flow and visitor discovery.
+**Completed depth passes (DO NOT re-do):**
+- idaho-ai-consulting.html (26 links) ✅
+- ai-training-idaho.html (29 links) ✅
+- business-automation-idaho.html (31 links) ✅
+- ai-support-idaho.html (28 links) ✅
+- idaho-ai-services.html (36 links) ✅
+- ai-for-education.html (18 links) ✅
+- ai-for-nonprofits.html (10 links) ✅
+- ai-for-real-estate.html (10 links) ✅
+- index.html (10 links) ✅
 
-**Pages with 0 body links (prioritize in this order):**
+**Remaining pages (prioritize in this order):**
 
-Tier 1 — Core money pages (highest SEO value):
-1. idaho-ai-consulting.html
-2. ai-automation-idaho.html
-3. ai-support-idaho.html
-4. ai-training-idaho.html
-5. ai-agents-for-business.html
-6. business-automation-idaho.html
+Tier 1 — Last core money pages:
+1. ai-automation-idaho.html (3 body links) ← NEXT
+2. ai-agents-for-business.html (3 body links)
 
-Tier 2 — High-value industry pages:
-7. ai-for-contractors.html
-8. ai-for-professional-services.html
-9. ai-for-restaurants-cafes.html
-10. ai-for-wellness-health.html
-11. ai-for-repair-shops.html
-12. ai-for-retail.html
-13. ai-for-hospitality.html
+Tier 2 — Industry pages (all at 0):
+3. ai-for-contractors.html
+4. ai-for-professional-services.html
+5. ai-for-restaurants-cafes.html
+6. ai-for-wellness-health.html
+7. ai-for-repair-shops.html
+8. ai-for-retail.html
+9. ai-for-hospitality.html
 
 Tier 3 — Solution/educational pages:
-14. missed-call-rescue.html
-15. ai-quote-intake.html
-16. what-ai-can-automate-for-small-business.html
-17. ai-readiness-checklist.html
-
-**Already-well-linked pages (DO NOT re-do):**
-- idaho-ai-services.html (36 body links) ✅
-- ai-for-education.html (18 body links) ✅
-- ai-for-nonprofits.html (10 body links) ✅
-- ai-for-real-estate.html (10 body links) ✅
-- index.html (10 body links) ✅
+10. missed-call-rescue.html
+11. ai-quote-intake.html
+12. what-ai-can-automate-for-small-business.html
+13. ai-readiness-checklist.html
 
 ### INSTRUCTIONS PER RUN:
 1. Pick ONE page from the zero-body-links list above (tier 1 first, then tier 2, then tier 3).

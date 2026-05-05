@@ -54,61 +54,63 @@ Actrix is no longer framed as a small Wood River Valley side project. It is an I
 ## Current Strategic Foundation
 Homepage now points to statewide Idaho AI positioning and links to /idaho-ai-services as the hub. Future runs should expand outward from that hub rather than returning to narrow Wood River Valley-only framing.
 
-### Manager Directive — 2026-05-04 20:30
+### Manager Directive — 2026-05-04 22:30
 
 ### Manager Review — On Track ✅
-DeepSeek is executing the internal-linking depth pass well. Last 6 runs:
-1. **idaho-ai-consulting deepened** (38eaaee): 0→26 body links, 8-card Idaho regional section, rich 3-column footer.
-2. **ai-training-idaho deepened** (c40ef99): 21→29 body links, Idaho regional section, rich footer.
-3. **business-automation-idaho deepened** (0659d21): 0→31 body links, Idaho regional section, rich footer.
-4. **Homepage polished** (c629c11): Leak-map proof artifact replaces old MCR card, tighter hero headline "AI agents that catch missed work.", new service-command section, field-note trust reset, leak-ledger section. All QA passes.
-5. **ai-support-idaho deepened** (c4f3ff4): 1→28 body links, 4 contextual link strips, Idaho regional section, rich footer.
+DeepSeek continues executing internal-linking depth passes at high quality. Last 7 runs since last manager review:
+1. **ai-automation-idaho deepened** (2810e80): 3→38 body links, 6 contextual link strips, 8-card Idaho regional section, 3 industry spans converted to links.
+2. **Internal nav wiring** (855bc7f): Cross-linked navigation between pages.
+3. **ai-for-contractors deepened** (765a87a): 6→21 body links, 5 contextual link strips, FAQPage schema.
+4. **ai-agents-for-business deepened** (ed6c96e): 13→31 body links, 3 inert spans converted, 3 contextual link strips, Idaho regional section.
+5. **Site-map hero simplified** (7f75859): Removed meta "routing brief" artifact, made directory the product, customer-facing copy.
+6. **ai-for-wellness-health deepened** (37d8f81): 6→23 body links, 3 contextual link strips, 8-card Idaho regional section, FAQPage schema, statewide meta/hero update.
 
 All quality checks pass: no redacted phones, valid JSON-LD, one H1 each, titles/canonicals/OG present, CSS braces balanced, no [truncated].
-
-### ALL PAGE CATEGORIES ARE NOW COMPLETE ✅🎉
-- Core money pages: 7/7 DONE ✅
-- Industry pages: 11/11 DONE ✅
-- Regional pages: 9/9 DONE ✅
-- Educational authority: 5/5 DONE ✅
-- Total pages in sitemap: 40 (no duplicates, no orphans)
 
 ### ⚡ PRIORITY: INTERNAL LINKING DEPTH — REMAINING PAGES
 
 **Completed depth passes (DO NOT re-do):**
-- idaho-ai-consulting.html (26 links) ✅
-- ai-training-idaho.html (29 links) ✅
-- business-automation-idaho.html (31 links) ✅
-- ai-support-idaho.html (28 links) ✅
-- idaho-ai-services.html (36 links) ✅
-- ai-for-education.html (18 links) ✅
-- ai-for-nonprofits.html (10 links) ✅
-- ai-for-real-estate.html (10 links) ✅
-- index.html (10 links) ✅
+- idaho-ai-consulting.html (32 links) ✅
+- ai-training-idaho.html (35 links) ✅
+- business-automation-idaho.html (37 links) ✅
+- ai-support-idaho.html (34 links) ✅
+- idaho-ai-services.html (41 links) ✅
+- ai-automation-idaho.html (38 links) ✅
+- ai-agents-for-business.html (31 links) ✅
+- ai-for-education.html (24 links) ✅
+- ai-for-nonprofits.html (16 links) ✅
+- ai-for-real-estate.html (16 links) ✅
+- ai-for-contractors.html (21 links) ✅
+- ai-for-wellness-health.html (23 links) ✅
+- index.html (17 links) ✅
+- safe-ai-policies-for-staff.html (13 links) ✅
+- custom-agents-vs-chatbots.html (12 links) ✅
 
-**Remaining pages (prioritize in this order):**
+**Remaining pages — industry tier (all at 6 body links):**
+1. ai-for-professional-services.html ← NEXT
+2. ai-for-restaurants-cafes.html
+3. ai-for-repair-shops.html
+4. ai-for-retail.html
+5. ai-for-hospitality.html
 
-Tier 1 — Last core money pages:
-1. ai-automation-idaho.html (3 body links) ← NEXT
-2. ai-agents-for-business.html (3 body links)
+**Remaining pages — solution/educational tier (all at 6 body links):**
+6. missed-call-rescue.html
+7. ai-quote-intake.html
+8. what-ai-can-automate-for-small-business.html
+9. ai-readiness-checklist.html
 
-Tier 2 — Industry pages (all at 0):
-3. ai-for-contractors.html
-4. ai-for-professional-services.html
-5. ai-for-restaurants-cafes.html
-6. ai-for-wellness-health.html
-7. ai-for-repair-shops.html
-8. ai-for-retail.html
-9. ai-for-hospitality.html
-
-Tier 3 — Solution/educational pages:
-10. missed-call-rescue.html
-11. ai-quote-intake.html
-12. what-ai-can-automate-for-small-business.html
-13. ai-readiness-checklist.html
+**Remaining pages — other (6-9 body links, lower priority):**
+10. ai-for-manufacturing.html (9 links)
+11. ai-implementation-plan.html (7 links)
+12. local-ai-starter-systems.html (7 links)
+13. solutions.html (6 links)
+14. how-it-works.html (6 links)
+15. hermes-agent-automation.html (6 links)
+16. openclaw-ai-assistant.html (6 links)
+17. Regional pages: ai-services-boise through ai-services-wood-river-valley (all 9 links)
 
 ### INSTRUCTIONS PER RUN:
-1. Pick ONE page from the zero-body-links list above (tier 1 first, then tier 2, then tier 3).
+1. Pick ONE page from the remaining list above (industry tier first, then solution/educational, then other).
 2. Read the page content. Find 3–5 natural places to add contextual link strips:
    - After the pain/problem section
    - After the "how it works" / role section

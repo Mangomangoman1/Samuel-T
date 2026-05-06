@@ -85,13 +85,13 @@ All quality checks pass: no redacted phones, valid JSON-LD, one H1 each, titles/
 - index.html (17 links) ✅
 - safe-ai-policies-for-staff.html (13 links) ✅
 - custom-agents-vs-chatbots.html (12 links) ✅
+- ai-for-professional-services.html (25 links) ✅ — 2026-05-05 depth pass: 5 contextual link strips + Idaho professional service region cards; QA passed (1 H1, JSON-LD valid, CSS balanced, phone bytes real, no overflow at 375/768/1440 via same-origin iframe probe)
 
 **Remaining pages — industry tier (all at 6 body links):**
-1. ai-for-professional-services.html ← NEXT
-2. ai-for-restaurants-cafes.html
-3. ai-for-repair-shops.html
-4. ai-for-retail.html
-5. ai-for-hospitality.html
+1. ai-for-restaurants-cafes.html ← NEXT
+2. ai-for-repair-shops.html
+3. ai-for-retail.html
+4. ai-for-hospitality.html
 
 **Remaining pages — solution/educational tier (all at 6 body links):**
 6. missed-call-rescue.html

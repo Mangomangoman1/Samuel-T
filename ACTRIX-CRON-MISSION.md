@@ -89,12 +89,13 @@ All quality checks pass: no redacted phones, valid JSON-LD, one H1 each, titles/
 - ai-for-restaurants-cafes.html (25 links) ✅ — 2026-05-05 depth pass commit 4664b04: 5 contextual link strips + Idaho restaurant service-area cards + FAQPage schema + statewide meta refresh; QA passed (1 H1, JSON-LD valid, CSS balanced, phone bytes real, no overflow at 375/768/1440 via same-origin iframe probe)
 - ai-for-repair-shops.html (25 links) ✅ — 2026-05-05 depth pass commit c1a932d: 5 contextual link strips + Idaho repair-shop region cards + FAQPage schema; QA passed (1 H1, JSON-LD valid, CSS balanced, phone bytes real, no overflow at 375/768/1440 via same-origin iframe probe).
 - ai-for-retail.html (25 links) ✅ — 2026-05-05 depth pass commit 795d580: 5 contextual link strips + Idaho retail region cards + FAQPage schema synced to visible FAQs; QA passed (1 H1, JSON-LD valid, CSS balanced, phone bytes real, no overflow at 375/768/1440 via same-origin iframe probe).
+- ai-for-hospitality.html (25 links) ✅ — 2026-05-05 depth pass commit dd677cd: 5 contextual link strips + Idaho hospitality region cards + FAQPage schema synced to visible FAQs; QA passed (1 H1, JSON-LD valid, CSS balanced, phone bytes real, sitemap count 1, no overflow at 375/768/1440 via Playwright probe).
 
 **Remaining pages — industry tier:**
-1. ai-for-hospitality.html ← NEXT
+- Completed. Move to solution/educational tier next.
 
 **Remaining pages — solution/educational tier (all at 6 body links):**
-6. missed-call-rescue.html
+6. missed-call-rescue.html ← NEXT
 7. ai-quote-intake.html
 8. what-ai-can-automate-for-small-business.html
 9. ai-readiness-checklist.html

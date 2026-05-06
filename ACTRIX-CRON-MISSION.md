@@ -111,7 +111,9 @@ All quality checks pass: no redacted phones, valid JSON-LD, one H1 each, titles/
 14. how-it-works.html (22 links) ✅ — 2026-05-06 depth pass commit c7792b4: 4 contextual link strips + Idaho fit regional section + Twitter card metadata + FAQPage schema synced to visible FAQs; sitemap lastmod added; QA passed (1 H1, JSON-LD valid, CSS balanced, phone bytes real, sitemap count 1, no overflow at 375/768/1440 via same-origin iframe probe).
 15. hermes-agent-automation.html (22 links) ✅ — 2026-05-06 depth pass commit b237b97: 3 contextual link strips + Idaho fit linked card section + sitemap lastmod added; QA passed (1 H1, JSON-LD valid, CSS balanced, phone bytes real, sitemap count 1, no overflow at 375/768/1440 via Chrome CDP probe).
 16. openclaw-ai-assistant.html (19 links) ✅ — 2026-05-06 depth pass commit 116298c: 3 contextual link strips + Idaho fit regional card section; sitemap lastmod added; QA passed (1 H1, JSON-LD valid, CSS balanced, phone bytes real, sitemap count 1, no overflow at 375/768/1440 via Playwright probe).
-17. Regional pages: ai-services-boise through ai-services-wood-river-valley (all 9 links) ← NEXT
+17. Regional pages: ai-services-boise through ai-services-wood-river-valley (all 9 links)
+    - ai-services-boise.html (21 body links) ✅ — 2026-05-06 depth pass commit 13e347f: 4 contextual link strips after pain, process, request, and FAQ sections; FAQPage JSON-LD synced to visible FAQs; sitemap lastmod updated; QA passed (1 H1, JSON-LD valid, CSS balanced, phone bytes real, sitemap count 1, no overflow at 375/768/1440 via Playwright probe).
+    - ai-services-meridian-nampa.html ← NEXT
 
 ### INSTRUCTIONS PER RUN:
 1. Pick ONE page from the remaining list above (industry tier first, then solution/educational, then other).

@@ -88,10 +88,10 @@ All quality checks pass: no redacted phones, valid JSON-LD, one H1 each, titles/
 - ai-for-professional-services.html (25 links) ✅ — 2026-05-05 depth pass: 5 contextual link strips + Idaho professional service region cards; QA passed (1 H1, JSON-LD valid, CSS balanced, phone bytes real, no overflow at 375/768/1440 via same-origin iframe probe)
 - ai-for-restaurants-cafes.html (25 links) ✅ — 2026-05-05 depth pass commit 4664b04: 5 contextual link strips + Idaho restaurant service-area cards + FAQPage schema + statewide meta refresh; QA passed (1 H1, JSON-LD valid, CSS balanced, phone bytes real, no overflow at 375/768/1440 via same-origin iframe probe)
 - ai-for-repair-shops.html (25 links) ✅ — 2026-05-05 depth pass commit c1a932d: 5 contextual link strips + Idaho repair-shop region cards + FAQPage schema; QA passed (1 H1, JSON-LD valid, CSS balanced, phone bytes real, no overflow at 375/768/1440 via same-origin iframe probe).
+- ai-for-retail.html (25 links) ✅ — 2026-05-05 depth pass commit 795d580: 5 contextual link strips + Idaho retail region cards + FAQPage schema synced to visible FAQs; QA passed (1 H1, JSON-LD valid, CSS balanced, phone bytes real, no overflow at 375/768/1440 via same-origin iframe probe).
 
 **Remaining pages — industry tier:**
-1. ai-for-retail.html ← NEXT
-2. ai-for-hospitality.html
+1. ai-for-hospitality.html ← NEXT
 
 **Remaining pages — solution/educational tier (all at 6 body links):**
 6. missed-call-rescue.html

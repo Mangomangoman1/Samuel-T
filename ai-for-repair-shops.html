@@ -26,6 +26,7 @@
     .section{padding:72px 0;border-top:1px solid rgba(222,230,238,.09)}.section:nth-of-type(odd):not(.hero){background:linear-gradient(180deg,rgba(158,191,218,.03),transparent 68%)}.section:nth-of-type(even):not(.hero){background:linear-gradient(180deg,rgba(169,205,175,.025),transparent 68%)}.head{display:grid;grid-template-columns:minmax(0,.95fr) minmax(280px,.58fr);gap:38px;align-items:end;margin-bottom:34px}.head h2{font-size:clamp(2.25rem,4.3vw,4.55rem)}.head p{color:var(--muted);margin:0;font-size:1.03rem}h3{font-size:1.7rem}.pain-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}.pain-card{border:1px solid var(--line);border-radius:18px;background:rgba(62,74,86,.82);padding:24px}.pain-card .pc-icon{width:38px;height:38px;border-radius:10px;background:rgba(230,210,194,.12);border:1px solid rgba(230,210,194,.22);display:grid;place-items:center;font-size:1.2rem;margin-bottom:12px}.pain-card h3{font-size:1.3rem;margin-top:0}.pain-card p{color:var(--muted);margin:10px 0 0;line-height:1.5}.shop-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:14px}.shop-card{border:1px solid var(--line);border-radius:18px;background:linear-gradient(180deg,rgba(222,230,238,.055),transparent 34%),rgba(62,74,86,.82);padding:24px}.shop-card .sc-label{color:var(--amber);font-size:.75rem;font-weight:950;letter-spacing:.12em;text-transform:uppercase;margin-bottom:10px}.shop-card h3{font-size:1.35rem;margin-bottom:10px}.shop-card p{color:var(--muted);margin:0 0 12px;line-height:1.5}.shop-card ul{padding:0;margin:0;list-style:none;display:grid;gap:7px}.shop-card li{color:var(--muted);font-size:.88rem;padding-left:14px;position:relative}.shop-card li:before{content:"";position:absolute;left:0;top:7px;width:5px;height:5px;background:var(--amber);border-radius:50%}.steps{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}.step{border:1px solid var(--line);border-radius:18px;background:rgba(62,74,86,.82);padding:24px;position:relative;overflow:hidden}.step:before{content:attr(data-num);position:absolute;top:-8px;right:16px;font-family:var(--font-title);font-size:4.1rem;color:rgba(230,210,194,.08);font-weight:400;line-height:1;pointer-events:none}.step h3{font-size:1.35rem;margin-bottom:10px}.step p{color:var(--muted);margin:0 0 12px;line-height:1.5}.step-detail{color:var(--amber);font-size:.78rem;font-weight:800;letter-spacing:.04em}
     .faq-wrap details{border:1px solid var(--line);border-radius:16px;margin-bottom:8px;background:rgba(62,74,86,.6);overflow:hidden;transition:border-color .22s ease}.faq-wrap details[open]{border-color:rgba(230,210,194,.24)}.faq-wrap summary{padding:18px 20px;font-weight:800;font-size:1.02rem;cursor:pointer;display:flex;justify-content:space-between;align-items:center;gap:12px}.faq-wrap summary:after{content:"+";font-size:1.4rem;color:var(--amber);font-weight:300;transition:transform .22s ease}.faq-wrap details[open] summary:after{content:"−"}.faq-wrap details[open] summary{border-bottom:1px solid var(--line)}.faq-wrap .faq-answer{padding:18px 20px;color:var(--muted);line-height:1.55}.faq-wrap .faq-answer p{margin:0}.final{padding:72px 0;border-top:1px solid rgba(222,230,238,.09)}.final-box{border:1px solid var(--line);border-radius:22px;background:linear-gradient(180deg,rgba(62,74,86,.82),rgba(62,74,86,.62));padding:48px 54px;display:grid;grid-template-columns:1.2fr 1fr;gap:38px;align-items:center;box-shadow:0 18px 48px rgba(62,74,86,.24)}.final-box h2{font-size:clamp(2.1rem,4vw,3.3rem)}.final-box p{color:var(--muted);margin:16px 0 0;max-width:480px;line-height:1.55}.final-box .btn-wrap{display:flex;flex-wrap:wrap;gap:10px;margin-top:22px}.footer-wrap{border-top:1px solid rgba(222,230,238,.09);padding:30px 0;display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:14px;color:var(--muted);font-size:.88rem;width:min(var(--container),calc(100% - 40px));margin:auto}.footer-wrap span{color:var(--paper);font-weight:850;letter-spacing:.01em}.footer-wrap a{color:var(--amber);font-weight:850}
     .region-strip{display:flex;flex-wrap:wrap;gap:7px;margin-top:24px}.region-strip span{border:1px solid var(--line);border-radius:8px;padding:7px 9px;font-size:.78rem;color:var(--muted);background:rgba(222,230,238,.045)}
+    .use-grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:14px}.use-card{border:1px solid var(--line);border-radius:18px;background:linear-gradient(180deg,rgba(222,230,238,.05),transparent 36%),rgba(62,74,86,.64);padding:22px;transition:border-color .22s ease,background .22s ease,transform .22s ease;text-decoration:none;display:block;color:inherit}.use-card:hover{border-color:rgba(230,210,194,.3);background:rgba(62,74,86,.78);transform:translateY(-2px)}.use-num{display:block;color:var(--amber);font-size:.72rem;font-weight:950;text-transform:uppercase;letter-spacing:.1em;margin-bottom:6px}.use-card h3{font-size:1.16rem;margin-bottom:6px}.use-card p{color:var(--muted);margin:0;font-size:.88rem;line-height:1.5}
     @media(max-width:980px){.links a[href="/solutions"]{display:none}.nav-shell{--nav-tight:760px}}
     @media(max-width:920px){.wrap{width:min(100% - 32px,var(--container))!important}.hero{grid-template-columns:1fr;gap:34px}.hero h1{max-width:12ch}.head{grid-template-columns:1fr;gap:14px}.pain-grid,.steps,.shop-grid{grid-template-columns:1fr}.head h2{font-size:clamp(2rem,10.5vw,2.75rem)}}
     @media(max-width:760px){.mobile-menu{display:block!important}.nav-shell{position:relative;overflow:visible!important}.mobile-menu-panel{z-index:80}
@@ -73,27 +74,119 @@ body:before{content:"";position:fixed;inset:0;pointer-events:none;z-index:-1;opa
 
   </style>
   <script type="application/ld+json">{
-    "@context":"https://schema.org",
-    "@graph":[
-      {
-        "@type":"WebPage",
-        "name":"AI for Repair Shops | Auto, Phone & Equipment Shops | Actrix",
-        "description":"Custom AI agents for repair shops across Idaho. Automate intake, dispatch, status updates, follow-up, and customer communication. Works for auto shops, phone repair, equipment repair, and any service shop that fixes things.",
-        "url":"https://www.actrix.me/ai-for-repair-shops",
-        "isPartOf":{"@type":"WebSite","name":"Actrix","url":"https://www.actrix.me/"},
-        "about":{"@type":"Thing","name":"AI automation for repair shops","description":"Custom AI agents that handle intake, dispatch, status updates, customer communication, and follow-up for auto shops, phone repair, equipment repair, and service shops in Idaho."},
-        "audience":{"@type":"Audience","audienceType":"Auto repair shop owner, Phone repair shop owner, Equipment repair shop, Small engine repair, Service shop manager, Repair shop technician, Fleet maintenance, Independent mechanic"}
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "WebPage",
+      "name": "AI for Repair Shops | Auto, Phone & Equipment Shops | Actrix",
+      "description": "Custom AI agents for repair shops across Idaho. Automate intake, dispatch, status updates, follow-up, and customer communication. Works for auto shops, phone repair, equipment repair, and any service shop that fixes things.",
+      "url": "https://www.actrix.me/ai-for-repair-shops",
+      "isPartOf": {
+        "@type": "WebSite",
+        "name": "Actrix",
+        "url": "https://www.actrix.me/"
       },
-      {
-        "@type":"Service",
-        "name":"AI Agents for Repair Shops",
-        "provider":{"@type":"ProfessionalService","name":"Actrix","url":"https://www.actrix.me/"},
-        "areaServed":[{"@type":"State","name":"Idaho"}],
-        "description":"Custom AI agents that handle every stage of the repair shop workflow: customer intake and drop-off scheduling, diagnostic communication, status updates, part-ordering notifications, approval requests, and automated follow-up sequences.",
-        "audience":{"@type":"Audience","audienceType":"Auto shop, Phone repair shop, Equipment repair business, Independent mechanic, Repair service center"}
+      "about": {
+        "@type": "Thing",
+        "name": "AI automation for repair shops",
+        "description": "Custom AI agents that handle intake, dispatch, status updates, customer communication, and follow-up for auto shops, phone repair, equipment repair, and service shops in Idaho."
+      },
+      "audience": {
+        "@type": "Audience",
+        "audienceType": "Auto repair shop owner, Phone repair shop owner, Equipment repair shop, Small engine repair, Service shop manager, Repair shop technician, Fleet maintenance, Independent mechanic"
       }
-    ]
-  }</script>
+    },
+    {
+      "@type": "Service",
+      "name": "AI Agents for Repair Shops",
+      "provider": {
+        "@type": "ProfessionalService",
+        "name": "Actrix",
+        "url": "https://www.actrix.me/"
+      },
+      "areaServed": [
+        {
+          "@type": "State",
+          "name": "Idaho"
+        }
+      ],
+      "description": "Custom AI agents that handle every stage of the repair shop workflow: customer intake and drop-off scheduling, diagnostic communication, status updates, part-ordering notifications, approval requests, and automated follow-up sequences.",
+      "audience": {
+        "@type": "Audience",
+        "audienceType": "Auto shop, Phone repair shop, Equipment repair business, Independent mechanic, Repair service center"
+      }
+    },
+    {
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Does the agent answer phone calls or just send texts?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "It texts the caller back immediately with a friendly introduction and starts a conversation. It does not use a robot voice to answer calls. The goal is fast, warm communication with clean information — not an automated phone tree your customers will hate."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Can the agent give customers an estimate over text?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "The agent does not generate estimates on its own — you set the pricing. When a diagnostic is complete, the agent sends the repair cost you provide and asks the customer to approve or decline by reply. You stay in control of pricing; the agent just delivers the message and captures the decision."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How do status updates work? Does the agent know when a repair is done?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "You update the job status in your system (or text a keyword), and the agent notifies the customer. No extra work for you — the same update you would normally track becomes an automatic customer text. Status updates include: received, in diagnostic, awaiting parts, repair in progress, ready for pickup."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What if a customer has a complex technical question?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "The agent handles common questions (hours, drop-off process, pricing range, turnaround time, warranty info). For specific technical questions about a repair, it says “Let me get our technician to answer this — they will follow up shortly” and routes it to you as a priority message."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How does part-order approval work?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "When a part needs ordering, the agent texts the customer: “We found the issue. The replacement part costs $X and will arrive in Y days. Would you like us to order it?” The customer replies Yes or No. If Yes, the part is ordered and the agent texts an updated ETA. No back-and-forth phone calls required."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Do I need to install software or learn a new system?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "No. Everything works through text messages and a simple review link. If you can send a text, you can use the system. No app to install, no login to remember, no staff training. Your existing phone and job management are all you need."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Can this work with my existing shop management software?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Usually yes. The agent can integrate with common shop management tools, POS systems, and job tracking software. We map the integration during setup so new jobs and status updates flow between the agent and the systems you already use."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How fast can I get this running?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Most repair shops are live within one week of the first conversation. The setup call takes about 45 minutes. We build your scripts and intake questions, test with real customer scenarios, and launch with a soft go-live before full deployment."
+          }
+        }
+      ]
+    }
+  ]
+}</script>
 </head>
 <body>
   <a class="skip" href="#main">Skip to content</a>
@@ -208,6 +301,12 @@ body:before{content:"";position:fixed;inset:0;pointer-events:none;z-index:-1;opa
           <p>The part came in. The repair is done. But you are buried in the next job, so the customer sits waiting. A week later they leave a one-star review saying you never called them back. The work was good — but the communication was not.</p>
         </article>
       </div>
+      <div style="margin-top:22px;display:flex;flex-wrap:wrap;gap:10px;align-items:center">
+        <span style="color:var(--muted);font-size:.78rem;font-weight:900;text-transform:uppercase;letter-spacing:.06em">Related:</span>
+        <a href="/missed-call-rescue" style="display:inline-flex;align-items:center;gap:6px;padding:8px 14px;border-radius:10px;border:1px solid var(--line);background:rgba(222,230,238,.04);color:var(--soft);font-size:.82rem;font-weight:800">Missed-call rescue for busy shops →</a>
+        <a href="/ai-quote-intake" style="display:inline-flex;align-items:center;gap:6px;padding:8px 14px;border-radius:10px;border:1px solid var(--line);background:rgba(222,230,238,.04);color:var(--soft);font-size:.82rem;font-weight:800">Quote intake without sticky notes →</a>
+        <a href="/business-automation-idaho" style="display:inline-flex;align-items:center;gap:6px;padding:8px 14px;border-radius:10px;border:1px solid var(--line);background:rgba(222,230,238,.04);color:var(--soft);font-size:.82rem;font-weight:800">Idaho business automation →</a>
+      </div>
     </section>
 
     <!-- How it works for repair shops -->
@@ -235,6 +334,12 @@ body:before{content:"";position:fixed;inset:0;pointer-events:none;z-index:-1;opa
           <p>The agent sends repair estimates for your review, asks the customer to approve pricing, sends pickup reminders when the job is done, and follows up three days later to make sure everything is working. Every conversation happens by text — logged and traceable.</p>
           <span class="step-detail">Owner approval before anything goes out</span>
         </div>
+      </div>
+      <div style="margin-top:22px;display:flex;flex-wrap:wrap;gap:10px;align-items:center">
+        <span style="color:var(--muted);font-size:.78rem;font-weight:900;text-transform:uppercase;letter-spacing:.06em">Explore:</span>
+        <a href="/how-it-works" style="display:inline-flex;align-items:center;gap:6px;padding:8px 14px;border-radius:10px;border:1px solid var(--line);background:rgba(222,230,238,.04);color:var(--soft);font-size:.82rem;font-weight:800">How Actrix agents work →</a>
+        <a href="/ai-agents-for-business" style="display:inline-flex;align-items:center;gap:6px;padding:8px 14px;border-radius:10px;border:1px solid var(--line);background:rgba(222,230,238,.04);color:var(--soft);font-size:.82rem;font-weight:800">AI agents for Idaho businesses →</a>
+        <a href="/ai-implementation-plan" style="display:inline-flex;align-items:center;gap:6px;padding:8px 14px;border-radius:10px;border:1px solid var(--line);background:rgba(222,230,238,.04);color:var(--soft);font-size:.82rem;font-weight:800">Implementation plan →</a>
       </div>
     </section>
 
@@ -282,6 +387,12 @@ body:before{content:"";position:fixed;inset:0;pointer-events:none;z-index:-1;opa
           </ul>
         </article>
       </div>
+      <div style="margin-top:22px;display:flex;flex-wrap:wrap;gap:10px;align-items:center">
+        <span style="color:var(--muted);font-size:.78rem;font-weight:900;text-transform:uppercase;letter-spacing:.06em">Related:</span>
+        <a href="/ai-for-retail" style="display:inline-flex;align-items:center;gap:6px;padding:8px 14px;border-radius:10px;border:1px solid var(--line);background:rgba(222,230,238,.04);color:var(--soft);font-size:.82rem;font-weight:800">Retail counter workflows →</a>
+        <a href="/ai-for-contractors" style="display:inline-flex;align-items:center;gap:6px;padding:8px 14px;border-radius:10px;border:1px solid var(--line);background:rgba(222,230,238,.04);color:var(--soft);font-size:.82rem;font-weight:800">Contractor service calls →</a>
+        <a href="/ai-for-manufacturing" style="display:inline-flex;align-items:center;gap:6px;padding:8px 14px;border-radius:10px;border:1px solid var(--line);background:rgba(222,230,238,.04);color:var(--soft);font-size:.82rem;font-weight:800">Manufacturing support systems →</a>
+      </div>
     </section>
 
     <!-- Offer -->
@@ -321,6 +432,12 @@ body:before{content:"";position:fixed;inset:0;pointer-events:none;z-index:-1;opa
           </ul>
           <a class="btn primary" href="sms:+12083666111?&body=Hi%20Actrix%2C%20I%20run%20a%20repair%20shop%20and%20want%20the%20Full%20Dispatch%20System." style="margin-top:16px;display:inline-flex">Start with this</a>
         </article>
+      </div>
+      <div style="margin-top:22px;display:flex;flex-wrap:wrap;gap:10px;align-items:center">
+        <span style="color:var(--muted);font-size:.78rem;font-weight:900;text-transform:uppercase;letter-spacing:.06em">Plan:</span>
+        <a href="/local-ai-starter-systems" style="display:inline-flex;align-items:center;gap:6px;padding:8px 14px;border-radius:10px;border:1px solid var(--line);background:rgba(222,230,238,.04);color:var(--soft);font-size:.82rem;font-weight:800">Starter AI systems →</a>
+        <a href="/ai-readiness-checklist" style="display:inline-flex;align-items:center;gap:6px;padding:8px 14px;border-radius:10px;border:1px solid var(--line);background:rgba(222,230,238,.04);color:var(--soft);font-size:.82rem;font-weight:800">AI readiness checklist →</a>
+        <a href="/idaho-ai-services" style="display:inline-flex;align-items:center;gap:6px;padding:8px 14px;border-radius:10px;border:1px solid var(--line);background:rgba(222,230,238,.04);color:var(--soft);font-size:.82rem;font-weight:800">Idaho AI services hub →</a>
       </div>
     </section>
 
@@ -365,6 +482,29 @@ body:before{content:"";position:fixed;inset:0;pointer-events:none;z-index:-1;opa
           <summary>How fast can I get this running?</summary>
           <div class="faq-answer"><p>Most repair shops are live within one week of the first conversation. The setup call takes about 45 minutes. We build your scripts and intake questions, test with real customer scenarios, and launch with a soft go-live before full deployment.</p></div>
         </details>
+      </div>
+      <div style="margin-top:22px;display:flex;flex-wrap:wrap;gap:10px;align-items:center">
+        <span style="color:var(--muted);font-size:.78rem;font-weight:900;text-transform:uppercase;letter-spacing:.06em">Next:</span>
+        <a href="/safe-ai-policies-for-staff" style="display:inline-flex;align-items:center;gap:6px;padding:8px 14px;border-radius:10px;border:1px solid var(--line);background:rgba(222,230,238,.04);color:var(--soft);font-size:.82rem;font-weight:800">Safe staff AI rules →</a>
+        <a href="/custom-agents-vs-chatbots" style="display:inline-flex;align-items:center;gap:6px;padding:8px 14px;border-radius:10px;border:1px solid var(--line);background:rgba(222,230,238,.04);color:var(--soft);font-size:.82rem;font-weight:800">Agents vs chatbots →</a>
+        <a href="/ai-support-idaho" style="display:inline-flex;align-items:center;gap:6px;padding:8px 14px;border-radius:10px;border:1px solid var(--line);background:rgba(222,230,238,.04);color:var(--soft);font-size:.82rem;font-weight:800">AI support in Idaho →</a>
+      </div>
+    </section>
+
+
+    <section class="wrap section" id="where">
+      <div class="head">
+        <div>
+          <p class="eyebrow">Where repair shops use this</p>
+          <h2>Statewide repair workflows, <span>not fake local offices.</span></h2>
+        </div>
+        <p>Actrix builds and supports repair-shop agents remotely from Idaho. These regional pages explain how the same intake, approval, and status-update system fits different Idaho markets.</p>
+      </div>
+      <div class="use-grid">
+        <a class="use-card" href="/ai-services-boise"><span class="use-num">Boise area</span><h3>High-volume counter service</h3><p>For Boise, Meridian, Nampa, and Caldwell shops that need cleaner intake before the bench gets buried.</p></a>
+        <a class="use-card" href="/ai-services-idaho-falls"><span class="use-num">Idaho Falls</span><h3>Regional repair hub workflows</h3><p>Support phone, vehicle, equipment, and small-engine customers across a wider service area.</p></a>
+        <a class="use-card" href="/ai-services-twin-falls"><span class="use-num">Twin Falls</span><h3>Agriculture and equipment seasonality</h3><p>Coordinate multi-item jobs, part approvals, and pickup windows when the busy season hits.</p></a>
+        <a class="use-card" href="/ai-services-wood-river-valley"><span class="use-num">Wood River Valley</span><h3>Owner-run shop follow-up</h3><p>Keep Hailey, Ketchum, Bellevue, and Sun Valley customers updated without stopping the work.</p></a>
       </div>
     </section>
 

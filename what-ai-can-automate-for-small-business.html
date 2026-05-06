@@ -25,6 +25,8 @@
     .steps{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}.step{border:1px solid var(--line);border-radius:18px;background:rgba(62,74,86,.82);padding:24px;position:relative;overflow:hidden}.step:before{content:attr(data-num);position:absolute;top:-8px;right:16px;font-family:var(--font-title);font-size:4.1rem;color:rgba(230,210,194,.08);font-weight:400;line-height:1;pointer-events:none}.step h3{font-size:1.3rem;margin-bottom:8px}.step p{color:var(--muted);margin:0;line-height:1.5}.step .step-detail{display:block;color:var(--amber);font-size:.8rem;font-weight:800;margin-top:10px}
     .faq-wrap details{border:1px solid var(--line);border-radius:16px;margin-bottom:8px;background:rgba(62,74,86,.6);overflow:hidden;transition:border-color .22s ease}.faq-wrap details[open]{border-color:rgba(230,210,194,.24)}.faq-wrap summary{padding:18px 20px;font-weight:800;font-size:1.02rem;cursor:pointer;display:flex;justify-content:space-between;align-items:center;gap:12px}.faq-wrap summary:after{content:"+";font-size:1.4rem;color:var(--amber);font-weight:300;transition:transform .22s ease}.faq-wrap details[open] summary:after{content:"−"}.faq-wrap details[open] summary{border-bottom:1px solid var(--line)}.faq-wrap .faq-answer{padding:18px 20px;color:var(--muted);line-height:1.55}.faq-wrap .faq-answer p{margin:0}
     .final{padding:72px 0;border-top:1px solid rgba(222,230,238,.09)}.final-box{border:1px solid var(--line);border-radius:22px;background:linear-gradient(180deg,rgba(62,74,86,.82),rgba(62,74,86,.62));padding:48px 54px;display:grid;grid-template-columns:1.2fr 1fr;gap:38px;align-items:center;box-shadow:0 18px 48px rgba(62,74,86,.24)}.final-box h2{font-size:clamp(2.1rem,4vw,3.3rem)}.final-box p{color:var(--muted);margin:16px 0 0;max-width:480px;line-height:1.55}.final-box .btn-wrap{display:flex;flex-wrap:wrap;gap:10px;margin-top:22px}.footer{border-top:1px solid rgba(222,230,238,.09);padding:34px 0;display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:14px;color:var(--muted);font-size:.88rem}.footer span{color:var(--paper);font-weight:850;letter-spacing:.01em}.footer a{color:var(--amber);font-weight:850}.region-strip{display:flex;flex-wrap:wrap;gap:7px;margin-top:24px}.region-strip span{border:1px solid var(--line);border-radius:8px;padding:7px 9px;font-size:.78rem;color:var(--muted);background:rgba(222,230,238,.045)}
+    .use-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:14px}.use-card{border:1px solid var(--line);border-radius:18px;background:rgba(62,74,86,.5);padding:22px;transition:border-color .22s ease,background .22s ease,transform .22s ease;text-decoration:none;display:block;color:inherit}.use-card:hover{border-color:rgba(230,210,194,.28);background:rgba(62,74,86,.7);transform:translateY(-2px)}.use-num{display:block;color:var(--amber);font-size:.72rem;font-weight:950;text-transform:uppercase;letter-spacing:.1em;margin-bottom:6px}.use-card h3{font-size:1.2rem;margin-bottom:6px}.use-card p{color:var(--muted);margin:0;font-size:.88rem;line-height:1.5}@media(max-width:920px){#where .use-grid{grid-template-columns:1fr 1fr!important}}@media(max-width:760px){#where .use-grid{grid-template-columns:1fr!important}.use-card{padding:16px!important}}
+
     @media(max-width:980px){.links a[href="/solutions"]{display:none}.nav-shell{--nav-tight:760px}}
     @media(max-width:920px){.wrap{width:min(100% - 32px,var(--container))!important}.hero{grid-template-columns:1fr;gap:34px}.hero h1{max-width:12ch}.head{grid-template-columns:1fr;gap:14px}.grid-3,.grid-2,.steps,.diff-grid{grid-template-columns:1fr}.head h2{font-size:clamp(2rem,10.5vw,2.75rem)}}
     @media(max-width:760px){.mobile-menu{display:block!important}.nav-shell{position:relative;overflow:visible!important}.mobile-menu-panel{z-index:80}
@@ -227,6 +229,11 @@ body:before{content:"";position:fixed;inset:0;pointer-events:none;z-index:-1;opa
           <p>Route important activity to the right person automatically. New qualified lead → owner SMS. Quote approved → dispatch notification. Review posted → response drafted for approval. Daily brief compiled and delivered by text or email. Your team gets the information they need without checking a dashboard or attending a status meeting.</p>
           <span class="tag">Role-based routing</span>
         </article>
+
+      <div style="grid-column:1/-1;margin-top:22px;display:flex;flex-wrap:wrap;gap:10px;align-items:center">
+        <span style="color:var(--muted);font-size:.78rem;font-weight:900;text-transform:uppercase;letter-spacing:.06em">Related:</span>
+        <a href="/missed-call-rescue" style="display:inline-flex;align-items:center;gap:6px;padding:8px 14px;border-radius:10px;border:1px solid var(--line);background:rgba(222,230,238,.04);color:var(--soft);font-size:.82rem;font-weight:800">Rescue missed leads first →</a><a href="/ai-quote-intake" style="display:inline-flex;align-items:center;gap:6px;padding:8px 14px;border-radius:10px;border:1px solid var(--line);background:rgba(222,230,238,.04);color:var(--soft);font-size:.82rem;font-weight:800">Automate quote intake →</a><a href="/idaho-ai-services" style="display:inline-flex;align-items:center;gap:6px;padding:8px 14px;border-radius:10px;border:1px solid var(--line);background:rgba(222,230,238,.04);color:var(--soft);font-size:.82rem;font-weight:800">See Idaho AI services →</a><a href="/business-automation-idaho" style="display:inline-flex;align-items:center;gap:6px;padding:8px 14px;border-radius:10px;border:1px solid var(--line);background:rgba(222,230,238,.04);color:var(--soft);font-size:.82rem;font-weight:800">Business automation in Idaho →</a>
+      </div>
       </div>
     </section>
 
@@ -261,6 +268,11 @@ body:before{content:"";position:fixed;inset:0;pointer-events:none;z-index:-1;opa
             <li>Prepare meeting notes and summaries — human confirms accuracy</li>
           </ul>
         </div>
+
+      <div style="grid-column:1/-1;margin-top:22px;display:flex;flex-wrap:wrap;gap:10px;align-items:center">
+        <span style="color:var(--muted);font-size:.78rem;font-weight:900;text-transform:uppercase;letter-spacing:.06em">Explore:</span>
+        <a href="/safe-ai-policies-for-staff" style="display:inline-flex;align-items:center;gap:6px;padding:8px 14px;border-radius:10px;border:1px solid var(--line);background:rgba(222,230,238,.04);color:var(--soft);font-size:.82rem;font-weight:800">Safe AI staff policies →</a><a href="/custom-agents-vs-chatbots" style="display:inline-flex;align-items:center;gap:6px;padding:8px 14px;border-radius:10px;border:1px solid var(--line);background:rgba(222,230,238,.04);color:var(--soft);font-size:.82rem;font-weight:800">Agents vs chatbots →</a><a href="/ai-readiness-checklist" style="display:inline-flex;align-items:center;gap:6px;padding:8px 14px;border-radius:10px;border:1px solid var(--line);background:rgba(222,230,238,.04);color:var(--soft);font-size:.82rem;font-weight:800">Check AI readiness →</a>
+      </div>
       </div>
     </section>
 
@@ -301,6 +313,11 @@ body:before{content:"";position:fixed;inset:0;pointer-events:none;z-index:-1;opa
           <p>Actrix is an Idaho company building automation for Idaho businesses. No offshore development, no generic call center, no national franchise playbook. The person building your system understands the local business environment — because they work in it.</p>
           <span class="step-detail">Local, not remote generic</span>
         </div>
+
+      <div style="grid-column:1/-1;margin-top:22px;display:flex;flex-wrap:wrap;gap:10px;align-items:center">
+        <span style="color:var(--muted);font-size:.78rem;font-weight:900;text-transform:uppercase;letter-spacing:.06em">Related:</span>
+        <a href="/ai-automation-idaho" style="display:inline-flex;align-items:center;gap:6px;padding:8px 14px;border-radius:10px;border:1px solid var(--line);background:rgba(222,230,238,.04);color:var(--soft);font-size:.82rem;font-weight:800">Idaho AI automation →</a><a href="/ai-agents-for-business" style="display:inline-flex;align-items:center;gap:6px;padding:8px 14px;border-radius:10px;border:1px solid var(--line);background:rgba(222,230,238,.04);color:var(--soft);font-size:.82rem;font-weight:800">AI agents for business →</a><a href="/idaho-ai-consulting" style="display:inline-flex;align-items:center;gap:6px;padding:8px 14px;border-radius:10px;border:1px solid var(--line);background:rgba(222,230,238,.04);color:var(--soft);font-size:.82rem;font-weight:800">AI consulting →</a><a href="/local-ai-starter-systems" style="display:inline-flex;align-items:center;gap:6px;padding:8px 14px;border-radius:10px;border:1px solid var(--line);background:rgba(222,230,238,.04);color:var(--soft);font-size:.82rem;font-weight:800">Starter systems →</a>
+      </div>
       </div>
     </section>
 
@@ -336,6 +353,25 @@ body:before{content:"";position:fixed;inset:0;pointer-events:none;z-index:-1;opa
           <p>Once running, the automation requires minimal upkeep. Actrix offers ongoing support if you want to expand the system, adjust workflows, or add new automations. No monthly subscription — support is scoped per engagement.</p>
           <span class="step-detail">On your terms</span>
         </div>
+
+      <div style="grid-column:1/-1;margin-top:22px;display:flex;flex-wrap:wrap;gap:10px;align-items:center">
+        <span style="color:var(--muted);font-size:.78rem;font-weight:900;text-transform:uppercase;letter-spacing:.06em">Next:</span>
+        <a href="/ai-implementation-plan" style="display:inline-flex;align-items:center;gap:6px;padding:8px 14px;border-radius:10px;border:1px solid var(--line);background:rgba(222,230,238,.04);color:var(--soft);font-size:.82rem;font-weight:800">AI implementation plan →</a><a href="/how-it-works" style="display:inline-flex;align-items:center;gap:6px;padding:8px 14px;border-radius:10px;border:1px solid var(--line);background:rgba(222,230,238,.04);color:var(--soft);font-size:.82rem;font-weight:800">How Actrix works →</a><a href="/ai-training-idaho" style="display:inline-flex;align-items:center;gap:6px;padding:8px 14px;border-radius:10px;border:1px solid var(--line);background:rgba(222,230,238,.04);color:var(--soft);font-size:.82rem;font-weight:800">AI training for staff →</a>
+      </div>
+      </div>
+    </section>
+
+
+    <section class="wrap section" id="where" aria-labelledby="where-title">
+      <div class="head">
+        <div><p class="eyebrow">Where this helps in Idaho</p><h2 id="where-title">The first automation usually changes by region and business rhythm.</h2></div>
+        <p>Actrix installs systems remotely across Idaho. The useful starting point is not the city name alone — it is the repeatable leak: calls, quotes, follow-up, admin, or staff handoff.</p>
+      </div>
+      <div class="use-grid">
+        <a class="use-card" href="/ai-services-boise"><span class="use-num">Boise region</span><h3>Lead volume and quote speed</h3><p>Good fit for Boise, Meridian, Nampa, and Caldwell firms with too many inbound threads to manually chase.</p></a>
+        <a class="use-card" href="/ai-services-idaho-falls"><span class="use-num">Idaho Falls</span><h3>Office workflow cleanup</h3><p>Route calls, service requests, and staff updates into one owner-ready brief instead of scattered notes.</p></a>
+        <a class="use-card" href="/ai-services-twin-falls"><span class="use-num">Twin Falls</span><h3>Follow-up and scheduling</h3><p>Help service teams keep quotes, appointments, and customer updates moving without another dashboard.</p></a>
+        <a class="use-card" href="/ai-services-wood-river-valley"><span class="use-num">Wood River Valley</span><h3>Premium service expectations</h3><p>Keep fast replies and polished follow-up in place during busy tourist, construction, and seasonal cycles.</p></a>
       </div>
     </section>
 
@@ -386,6 +422,11 @@ body:before{content:"";position:fixed;inset:0;pointer-events:none;z-index:-1;opa
           <summary>Is AI automation available for Idaho businesses outside the Wood River Valley?</summary>
           <div class="faq-answer"><p>Yes. Actrix serves Idaho businesses statewide. Automation systems are installed remotely and maintained the same way. Whether you are in Boise, Meridian, Nampa, Idaho Falls, Twin Falls, Pocatello, Rexburg, Moscow, Coeur d'Alene, or anywhere else in Idaho, the process is the same: map the workflow, build the automation, install it, and test it. No on-site visit required for installation.</p></div>
         </details>
+
+      <div style="grid-column:1/-1;margin-top:22px;display:flex;flex-wrap:wrap;gap:10px;align-items:center">
+        <span style="color:var(--muted);font-size:.78rem;font-weight:900;text-transform:uppercase;letter-spacing:.06em">Related:</span>
+        <a href="/ai-services-boise" style="display:inline-flex;align-items:center;gap:6px;padding:8px 14px;border-radius:10px;border:1px solid var(--line);background:rgba(222,230,238,.04);color:var(--soft);font-size:.82rem;font-weight:800">Boise AI services →</a><a href="/ai-services-idaho-falls" style="display:inline-flex;align-items:center;gap:6px;padding:8px 14px;border-radius:10px;border:1px solid var(--line);background:rgba(222,230,238,.04);color:var(--soft);font-size:.82rem;font-weight:800">Idaho Falls AI services →</a><a href="/ai-services-twin-falls" style="display:inline-flex;align-items:center;gap:6px;padding:8px 14px;border-radius:10px;border:1px solid var(--line);background:rgba(222,230,238,.04);color:var(--soft);font-size:.82rem;font-weight:800">Twin Falls AI services →</a><a href="/ai-services-coeur-d-alene" style="display:inline-flex;align-items:center;gap:6px;padding:8px 14px;border-radius:10px;border:1px solid var(--line);background:rgba(222,230,238,.04);color:var(--soft);font-size:.82rem;font-weight:800">Coeur d’Alene AI services →</a>
+      </div>
       </div>
     </section>
 

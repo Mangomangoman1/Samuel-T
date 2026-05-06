@@ -113,7 +113,8 @@ All quality checks pass: no redacted phones, valid JSON-LD, one H1 each, titles/
 16. openclaw-ai-assistant.html (19 links) ✅ — 2026-05-06 depth pass commit 116298c: 3 contextual link strips + Idaho fit regional card section; sitemap lastmod added; QA passed (1 H1, JSON-LD valid, CSS balanced, phone bytes real, sitemap count 1, no overflow at 375/768/1440 via Playwright probe).
 17. Regional pages: ai-services-boise through ai-services-wood-river-valley (all 9 links)
     - ai-services-boise.html (21 body links) ✅ — 2026-05-06 depth pass commit 13e347f: 4 contextual link strips after pain, process, request, and FAQ sections; FAQPage JSON-LD synced to visible FAQs; sitemap lastmod updated; QA passed (1 H1, JSON-LD valid, CSS balanced, phone bytes real, sitemap count 1, no overflow at 375/768/1440 via Playwright probe).
-    - ai-services-meridian-nampa.html ← NEXT
+    - ai-services-meridian-nampa.html (25 body links) ✅ — 2026-05-06 depth pass commit 06206e1: 4 contextual link strips after pain, process, requests, and FAQ sections; FAQPage JSON-LD synced to visible FAQs; sitemap lastmod updated; QA passed (1 H1, JSON-LD valid, CSS balanced, phone bytes real, sitemap count 1, no overflow at 375/768/1440 via Chrome CDP probe).
+    - ai-services-idaho-falls.html ← NEXT
 
 ### INSTRUCTIONS PER RUN:
 1. Pick ONE page from the remaining list above (industry tier first, then solution/educational, then other).

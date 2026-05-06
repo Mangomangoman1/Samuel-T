@@ -91,7 +91,7 @@ All quality checks pass: no redacted phones, valid JSON-LD, one H1 each, titles/
 - ai-for-retail.html (25 links) ✅ — 2026-05-05 depth pass commit 795d580: 5 contextual link strips + Idaho retail region cards + FAQPage schema synced to visible FAQs; QA passed (1 H1, JSON-LD valid, CSS balanced, phone bytes real, no overflow at 375/768/1440 via same-origin iframe probe).
 - ai-for-hospitality.html (25 links) ✅ — 2026-05-05 depth pass commit dd677cd: 5 contextual link strips + Idaho hospitality region cards + FAQPage schema synced to visible FAQs; QA passed (1 H1, JSON-LD valid, CSS balanced, phone bytes real, sitemap count 1, no overflow at 375/768/1440 via Playwright probe).
 - missed-call-rescue.html (22 links) ✅ — 2026-05-05 depth pass commit 43d14a3: 5 contextual link strips across real cost, how-it-works, rescue log, industries, and pricing; sitemap lastmod added; QA passed (1 H1, JSON-LD valid, FAQPage present, CSS balanced, phone bytes real, sitemap count 1, no overflow at 375/768/1440 via same-origin iframe probe).
-- ai-quote-intake.html (28 links) ✅ — 2026-05-05 depth pass commit 13f6e81: 5 contextual link strips + Idaho service-area fit section + FAQPage schema synced to visible FAQs; QA passed (1 H1, JSON-LD valid, CSS balanced, phone bytes real, sitemap count 1, no overflow at 375/768/1440 via same-origin iframe probe).
+- ai-quote-intake.html (28 links) ✅ — 2026-05-05 depth pass commit e40d4d3: 5 contextual link strips + Idaho service-area fit section + FAQPage schema synced to visible FAQs; QA passed (1 H1, JSON-LD valid, CSS balanced, phone bytes real, sitemap count 1, no overflow at 375/768/1440 via same-origin iframe probe).
 
 **Remaining pages — industry tier:**
 - Completed. Move to solution/educational tier next.

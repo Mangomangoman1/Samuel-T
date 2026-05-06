@@ -108,8 +108,8 @@ All quality checks pass: no redacted phones, valid JSON-LD, one H1 each, titles/
 11. ai-implementation-plan.html (23 links) ✅
 12. local-ai-starter-systems.html (26 links) ✅ — 2026-05-06 depth pass commit 40e2923: 3 contextual link strips + Idaho starter-system regional fit section + FAQPage schema synced to visible FAQs + statewide meta refresh; QA passed (1 H1, JSON-LD valid, CSS balanced, phone bytes real, sitemap count 1, no overflow at 375/768/1440 via same-origin iframe probe).
 13. solutions.html (27 links) ✅ — 2026-05-06 depth pass commit 8786155: 3 contextual link strips + Idaho market-fit regional section; sitemap lastmod added; QA passed (1 H1, JSON-LD valid, CSS balanced, phone bytes real, sitemap count 1, no overflow at 375/768/1440 via same-origin iframe probe).
-14. how-it-works.html (6 links) ← NEXT
-15. hermes-agent-automation.html (6 links)
+14. how-it-works.html (22 links) ✅ — 2026-05-06 depth pass commit c7792b4: 4 contextual link strips + Idaho fit regional section + Twitter card metadata + FAQPage schema synced to visible FAQs; sitemap lastmod added; QA passed (1 H1, JSON-LD valid, CSS balanced, phone bytes real, sitemap count 1, no overflow at 375/768/1440 via same-origin iframe probe).
+15. hermes-agent-automation.html (6 links) ← NEXT
 16. openclaw-ai-assistant.html (6 links)
 17. Regional pages: ai-services-boise through ai-services-wood-river-valley (all 9 links)
 

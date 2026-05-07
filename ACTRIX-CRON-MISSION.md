@@ -117,7 +117,8 @@ All quality checks pass: no redacted phones, valid JSON-LD, one H1 each, titles/
     - ai-services-idaho-falls.html (21 body links) ✅ — 2026-05-06 depth pass commit 2d61217: 4 contextual link strips after regional growth, process, requests, and FAQ sections; FAQPage JSON-LD synced to visible FAQs; sitemap lastmod updated; QA passed (1 H1, JSON-LD valid, CSS balanced, phone bytes real, sitemap count 1, no overflow at 375/768/1440 via Chrome CDP probe).
     - ai-services-twin-falls.html (21 body links) ✅ — 2026-05-07 depth pass commit acabf73: 4 contextual link strips after Magic Valley growth, process, request, and FAQ sections; FAQPage JSON-LD synced to all 7 visible FAQs; sitemap lastmod updated; QA passed (1 H1, JSON-LD valid, CSS balanced, phone bytes real, sitemap count 1, no overflow at 375/768/1440 via same-origin iframe probe).
     - ai-services-pocatello.html (21 body links) ✅ — 2026-05-07 depth pass commit c53e645: 4 contextual link strips after Southeast Idaho pain, process, request, and FAQ sections; FAQPage JSON-LD synced to all 8 visible FAQs; sitemap lastmod updated; QA passed (1 H1, JSON-LD valid, CSS balanced, phone bytes real, sitemap count 1, no overflow at 375/768/1440 via Chrome CDP probe).
-    - ai-services-rexburg.html ← NEXT
+    - ai-services-rexburg.html (21 body links) ✅ — 2026-05-07 depth pass commit 1a7c534: 4 contextual link strips plus nearby Idaho routing after industry cards; FAQPage JSON-LD synced to all 8 visible FAQs; Twitter card metadata added; sitemap lastmod updated; QA passed (1 H1, JSON-LD valid, CSS balanced, phone bytes real, sitemap count 1, no overflow at 375/768/1440 via Chrome CDP probe).
+    - ai-services-moscow.html ← NEXT
 
 ### INSTRUCTIONS PER RUN:
 1. Pick ONE page from the remaining list above (industry tier first, then solution/educational, then other).

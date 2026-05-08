@@ -138,7 +138,7 @@ body:before{content:"";position:fixed;inset:0;pointer-events:none;z-index:-1;opa
           {"@type":"Question","name":"Is ChatGPT the same as an AI agent?","acceptedAnswer":{"@type":"Answer","text":"No. ChatGPT is a conversational AI — you type a prompt, it generates a response, the interaction ends. A custom AI agent is a persistent worker with a specific job: it watches your business channels (phone, email, review sites, booking platforms), uses context about your business to make decisions, produces real outputs (draft replies, quote summaries, reports), and seeks human approval before taking final action. ChatGPT is a tool you use. An agent is a worker you employ."}},
           {"@type":"Question","name":"Can a chatbot replace a custom agent for my business?","acceptedAnswer":{"@type":"Answer","text":"For some tasks, yes. If you need occasional research, draft writing, or quick answers to ad-hoc questions, a chatbot is enough. But if you need continuous monitoring — catching every missed call, structuring every incoming lead, responding to every review, generating reports weekly — a chatbot cannot do that because it only works when you are actively using it. An agent works even when no one is watching."}},
           {"@type":"Question","name":"Do I need both chatbots and custom agents?","acceptedAnswer":{"@type":"Answer","text":"Many businesses use both. Staff might use ChatGPT or a chatbot for one-off research, drafting, or brainstorming. Custom agents run in the background handling the repetitive operational work — lead capture, quote intake, review monitoring, appointment follow-up, report generation. They serve different purposes and do not replace each other. Actrix can help you decide which makes sense for your specific workflows."}},
-          {"@type":"Question","name":"How much does a custom AI agent cost compared to a chatbot subscription?","acceptedAnswer":{"@type":"Answer","text":"Chatbot subscriptions like ChatGPT Plus or Claude Pro typically cost $20–$30 per user per month. Custom AI agents require setup, configuration, and integration work, so they have a higher upfront cost but then run at low ongoing cost. The real comparison is not subscription price — it is whether the agent saves more than it costs. A custom agent that catches missed calls, structures quotes, and follows up with leads can pay for itself in the first week. Actrix provides honest upfront pricing before any work begins."}},
+          {"@type":"Question","name":"How much does a custom AI agent cost compared to a chatbot subscription?","acceptedAnswer":{"@type":"Answer","text":"Chatbot subscriptions like ChatGPT Plus or Claude Pro typically cost $20–$30 per user per month. Custom AI agents require setup, configuration, and integration work, so they have a higher upfront cost but then run at low ongoing cost. The real comparison is not subscription price — it is whether the agent saves more than it costs. A custom agent is easier to judge when it is tied to visible work: leads caught, quote briefs prepared, follow-ups drafted, and owner time saved. Actrix provides honest upfront pricing before any work begins."}},
           {"@type":"Question","name":"Do custom AI agents require technical staff to manage?","acceptedAnswer":{"@type":"Answer","text":"No. Actrix builds, installs, and maintains the agents. You interact with them through the channels you already use — SMS, email, or a simple dashboard. When an agent needs your approval on something, it sends you a message. You reply yes or no. No coding, no technical staff, no daily management required. Actrix handles the technical side. You handle the human decisions."}},
           {"@type":"Question","name":"Can a custom agent use ChatGPT or other AI tools?","acceptedAnswer":{"@type":"Answer","text":"Yes. Custom agents often use multiple AI models underneath — including ChatGPT, Claude, and specialized models — choosing the right tool for each specific task. The agent is the coordinator that knows your business rules, your approval preferences, and your workflows. It picks the right AI for each job, combines the outputs, and presents you with a finished decision-ready result. The agent is the worker; the AI models are the tools it uses."}},
           {"@type":"Question","name":"What happens if a custom agent makes a mistake?","acceptedAnswer":{"@type":"Answer","text":"Actrix agents are designed with human approval checkpoints. The agent never takes final action — sending a customer message, issuing a quote, posting a review reply — without human sign-off. If the agent drafts something that is not right, you reject it and the agent learns the pattern. Every agent also logs its actions so you can review what it did and when. The safety model is: agents prepare, humans approve. Mistakes get caught before they reach a customer."}},
@@ -224,6 +224,7 @@ body:before{content:"";position:fixed;inset:0;pointer-events:none;z-index:-1;opa
           <h3>Research and learning</h3>
           <p>Quick answers to business questions. "What is the best way to respond to a negative review?" "Compare these two software tools." Perfect for on-demand knowledge.</p>
           <span class="tag">Chatbots win here</span>
+          <div class="related-strip"><a href="/ai-training-idaho">Train staff to use AI safely</a><a href="/safe-ai-policies-for-staff">Write the staff policy</a></div>
         </div>
         <div class="card">
           <p class="num">02</p>
@@ -252,6 +253,7 @@ body:before{content:"";position:fixed;inset:0;pointer-events:none;z-index:-1;opa
           <h3>Watches continuously</h3>
           <p>Monitors your phone, email, review sites, booking platforms — 24 hours a day. You do not need to tell it to check. It already checked. It already found the thing you would have missed.</p>
           <span class="tag">No chatbot can do this</span>
+          <div class="related-strip"><a href="/missed-call-rescue">Missed-call rescue</a><a href="/ai-quote-intake">Quote intake agent</a></div>
         </div>
         <div class="card">
           <p class="num">02</p>
@@ -301,13 +303,14 @@ body:before{content:"";position:fixed;inset:0;pointer-events:none;z-index:-1;opa
           <div class="cr-agent">Agent already has your policy loaded. It answers the staff member's specific question instantly, citing the right rule. If the question is new, it flags it for you.</div>
         </div>
       </div>
+      <div class="related-strip"><a href="/ai-agents-for-business">See AI agents for business</a><a href="/business-automation-idaho">Compare business automation</a><a href="/ai-support-idaho">Get AI support in Idaho</a></div>
     </section>
 
     <!-- Idaho Business Examples -->
     <section class="wrap section" id="examples">
       <div class="head">
-        <h2>Three Idaho businesses. <span style="color:var(--amber)">One agent.</span></h2>
-        <p>These are not hypotheticals. These are the patterns Actrix builds for real Idaho businesses — contractors, restaurants, and clinics.</p>
+        <h2>Three Idaho business patterns. <span style="color:var(--amber)">One agent logic.</span></h2>
+        <p>These are representative operating patterns — not named client case studies. They show where an agent beats a chatbot without pretending Actrix has permission to publish private customer details.</p>
       </div>
       <div class="examples">
         <div class="ex-card">
@@ -315,29 +318,30 @@ body:before{content:"";position:fixed;inset:0;pointer-events:none;z-index:-1;opa
           <div class="ex-scenario">
             <span>Boise</span><span>HVAC</span><span>6 techs</span>
           </div>
-          <h3>Mountain West Mechanical</h3>
-          <p>Missed 4–6 calls every evening during peak season. Each missed call was a $400–$2,400 job. Chatbot could not help — nobody was there to type the prompt.</p>
-          <span class="ex-outcome">Agent now catches every after-hours call. Drafts replies with pricing ranges. Owner approves in under 2 minutes. Zero missed leads.</span>
+          <h3>Boise HVAC pattern</h3>
+          <p>A six-tech service company can miss calls every evening during peak season. A chatbot cannot help if nobody is there to type the prompt.</p>
+          <span class="ex-outcome">Agent pattern: catch the after-hours call, draft a pricing/availability reply, and queue the message for owner approval before the lead cools off.</span>
         </div>
         <div class="ex-card">
           <div class="ex-icon">🍽</div>
           <div class="ex-scenario">
             <span>Ketchum</span><span>Restaurant</span><span>22 staff</span>
           </div>
-          <h3>The Sawtooth Grill</h3>
-          <p>Reviews came in at random times. Staff schedule changes caused confusion. Reservation cancellations created empty tables. ChatGPT could draft replies but could not monitor.</p>
-          <span class="ex-outcome">Agent monitors reviews, flags cancellations, drafts schedule-change notifications. Owner reviews the daily brief in 5 minutes each morning.</span>
+          <h3>Ketchum restaurant pattern</h3>
+          <p>Reviews, schedule changes, and cancellations can arrive while the owner is on the floor. ChatGPT can draft replies, but it cannot monitor the stream.</p>
+          <span class="ex-outcome">Agent pattern: monitor reviews and cancellation signals, draft schedule-change notes, and turn the morning mess into an owner-ready brief.</span>
         </div>
         <div class="ex-card">
           <div class="ex-icon">🏥</div>
           <div class="ex-scenario">
             <span>Idaho Falls</span><span>PT Clinic</span><span>4 therapists</span>
           </div>
-          <h3>Snake River Physical Therapy</h3>
-          <p>Intake forms came in at all hours. Insurance verification questions repeated daily. ChatGPT could answer questions but only if someone typed each one in.</p>
-          <span class="ex-outcome">Agent processes intake forms immediately. Answers common insurance questions from your policy docs. Flags only the exceptions for human review.</span>
+          <h3>Idaho Falls clinic pattern</h3>
+          <p>Intake forms and repeated insurance questions can stack up outside office hours. ChatGPT helps only after staff copy the question in.</p>
+          <span class="ex-outcome">Agent pattern: read intake details, answer from approved policy docs, and flag only the exceptions for human review.</span>
         </div>
       </div>
+      <div class="related-strip"><a href="/ai-for-contractors">Contractor agent examples</a><a href="/ai-for-restaurants-cafes">Restaurant AI workflows</a><a href="/ai-for-wellness-health">Clinic and wellness AI</a><a href="/ai-services-boise">Boise AI services</a><a href="/ai-services-wood-river-valley">Wood River Valley AI services</a></div>
     </section>
 
     <!-- Where Chatbots Are Enough -->

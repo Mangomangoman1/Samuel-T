@@ -125,6 +125,12 @@ All quality checks pass: no redacted phones, valid JSON-LD, one H1 each, titles/
 ### Manager Directive — 2026-05-07 19:32
 All listed regional depth-pass targets are now complete. Next best target: run a sitewide quality sweep/body-link survey against the full sitemap to catch any pages not named in this mission file, plus any metadata/schema/internal-link drift introduced by the batch expansion. Do not create new pages unless the manager reopens build phase.
 
+### Quality Sweep Update — 2026-05-07 20:44
+- `custom-agents-vs-chatbots.html` refreshed after the full-site body-link/metadata sweep: distinct body links increased from 7 to 16, sitemap lastmod updated, and the page no longer implies unsourced named customer case studies.
+- Checks passed: one H1, title/meta/canonical/OG/Twitter present, JSON-LD parses with FAQPage, CSS braces balanced, no `[truncated]`, byte-level phone check clean, sitemap count exactly 1, and no overflow/protruders at 375/768/1440 via Chrome CDP.
+- Commit: e2f0215.
+- Next best target: `safe-ai-policies-for-staff.html` because the sweep still shows only 9 distinct contextual body links; if that proves strong on reread, fix the next metadata drift item (`solutions.html` missing Twitter card metadata) or validate whether the apparent FAQ-schema flags on non-FAQ pages are false positives.
+
 ### INSTRUCTIONS PER RUN:
 1. Pick ONE page from the remaining list above (industry tier first, then solution/educational, then other).
 2. Read the page content. Find 3–5 natural places to add contextual link strips:

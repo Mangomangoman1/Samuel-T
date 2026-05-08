@@ -120,7 +120,10 @@ All quality checks pass: no redacted phones, valid JSON-LD, one H1 each, titles/
     - ai-services-rexburg.html (21 body links) ✅ — 2026-05-07 depth pass commit 1a7c534: 4 contextual link strips plus nearby Idaho routing after industry cards; FAQPage JSON-LD synced to all 8 visible FAQs; Twitter card metadata added; sitemap lastmod updated; QA passed (1 H1, JSON-LD valid, CSS balanced, phone bytes real, sitemap count 1, no overflow at 375/768/1440 via Chrome CDP probe).
     - ai-services-moscow.html (21 body links) ✅ — 2026-05-07 depth pass commit 84cdb56: 4 contextual link strips after regional pain, process, requests, and FAQ sections; sitemap lastmod updated; QA passed (1 H1, JSON-LD valid, CSS balanced, phone bytes real, sitemap count 1, no overflow at 375/768/1440 via Playwright probe).
     - ai-services-coeur-d-alene.html (24 body links) ✅ — 2026-05-07 depth pass commit 0087bba: 5 contextual link strips after regional pain, process, requests, industry fit, and FAQ sections; FAQPage JSON-LD synced to all 8 visible FAQs; sitemap lastmod updated; QA passed (1 H1, JSON-LD valid, CSS balanced, phone bytes real, sitemap count 1, no overflow at 375/768/1440 via same-origin iframe probe).
-    - ai-services-wood-river-valley.html ← NEXT
+    - ai-services-wood-river-valley.html (23 body links) ✅ — 2026-05-07 depth pass commit a5536a7: 4 contextual link strips after seasonal-demand pain, how-it-works, common requests, and FAQ sections; context-route expanded to Moscow and Coeur d'Alene; FAQPage JSON-LD synced to all 8 visible FAQs; sitemap lastmod updated; QA passed (1 H1, JSON-LD valid, CSS balanced, phone bytes real, sitemap count 1, no overflow at 375/768/1440 via Chrome CDP probe).
+
+### Manager Directive — 2026-05-07 19:32
+All listed regional depth-pass targets are now complete. Next best target: run a sitewide quality sweep/body-link survey against the full sitemap to catch any pages not named in this mission file, plus any metadata/schema/internal-link drift introduced by the batch expansion. Do not create new pages unless the manager reopens build phase.
 
 ### INSTRUCTIONS PER RUN:
 1. Pick ONE page from the remaining list above (industry tier first, then solution/educational, then other).

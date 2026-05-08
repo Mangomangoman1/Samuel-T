@@ -128,7 +128,7 @@ All listed regional depth-pass targets are now complete. Next best target: run a
 ### Quality Sweep Update — 2026-05-07 20:44
 - `custom-agents-vs-chatbots.html` refreshed after the full-site body-link/metadata sweep: distinct body links increased from 7 to 16, sitemap lastmod updated, and the page no longer implies unsourced named customer case studies.
 - Checks passed: one H1, title/meta/canonical/OG/Twitter present, JSON-LD parses with FAQPage, CSS braces balanced, no `[truncated]`, byte-level phone check clean, sitemap count exactly 1, and no overflow/protruders at 375/768/1440 via Chrome CDP.
-- Commit: e2f0215.
+- Commit: 3a015dc page/content workset; final pushed HEAD may include the mission-note-only hash correction.
 - Next best target: `safe-ai-policies-for-staff.html` because the sweep still shows only 9 distinct contextual body links; if that proves strong on reread, fix the next metadata drift item (`solutions.html` missing Twitter card metadata) or validate whether the apparent FAQ-schema flags on non-FAQ pages are false positives.
 
 ### INSTRUCTIONS PER RUN:

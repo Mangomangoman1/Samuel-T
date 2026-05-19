@@ -2,67 +2,67 @@ const examples = {
   contractor: {
     label: 'Contractor system',
     risk: 'Approval required',
-    title: 'Estimate intake that turns vague jobs into quote-ready details.',
-    summary: 'A lead asks for a repair or remodel quote. The system replies quickly, asks for dimensions, photos, location, urgency, and rough budget, then drafts a clean estimate note for owner review.',
+    title: 'Estimate intake inside a contractor agent stack.',
+    summary: 'A lead asks for a repair or remodel quote. The system replies quickly, asks for dimensions, photos, location, urgency, and rough budget, then drafts a clean estimate note and updates the sales handoff for owner review.',
     steps: [
       'Lead comes in from text, email, or form.',
       'AI asks for missing photos, measurements, and timeline.',
       'Job details are summarized into a quote-ready brief.',
       'Owner approves the reply and sends next steps.'
     ],
-    output: '“Deck repair lead — Bellevue. Needs stair tread replacement, two photos received, flexible timeline, wants rough range before site visit.”'
+    output: '“Deck repair lead — Bellevue. Two photos received, flexible timeline, rough range requested. Flag: three similar stair jobs this month may need a packaged estimate path.”'
   },
   restaurant: {
     label: 'Restaurant system',
     risk: 'Staff handoff',
-    title: 'Event and catering inquiries routed before the dinner rush.',
-    summary: 'The system answers basic menu and private event questions, gathers date, headcount, dietary needs, budget range, and preferred contact method, then hands a clean inquiry to the manager.',
+    title: 'Event and catering inquiries routed into one operating brief.',
+    summary: 'The system answers approved menu and private event questions, gathers date, headcount, dietary needs, budget range, and preferred contact method, then hands a clean inquiry and demand pattern to the manager.',
     steps: [
       'Inquiry arrives from the website or email.',
       'AI collects date, party size, menu needs, and timing.',
       'Manager gets a clean summary instead of a messy thread.',
       'Follow-up draft is ready when service slows down.'
     ],
-    output: '“Private dinner inquiry — Ketchum. 22 guests, gluten-free options needed, Saturday evening, wants family-style menu ideas.”'
+    output: '“Private dinner inquiry — Ketchum. 22 guests, gluten-free options needed, Saturday evening. Pattern: Saturday private events are outpacing current follow-up speed.”'
   },
   property: {
     label: 'Property manager system',
     risk: 'Triage first',
-    title: 'Maintenance requests sorted before they become inbox chaos.',
-    summary: 'Tenant messages can be classified by urgency, missing information can be requested, photos can be collected, and the right vendor or internal task can be suggested.',
+    title: 'Maintenance requests sorted across messages, vendors, and reports.',
+    summary: 'Tenant messages can be classified by urgency, missing information can be requested, photos can be collected, and the right vendor or internal task can be suggested while recurring property issues are surfaced.',
     steps: [
       'Tenant reports a maintenance issue.',
       'AI asks location, photos, severity, and access details.',
       'Urgency is flagged without making unsafe decisions alone.',
       'Manager receives a vendor-ready maintenance brief.'
     ],
-    output: '“Unit 4B — leaking under kitchen sink. Photo received, water shutoff unknown, tenant home after 4 PM. Suggested priority: same-day review.”'
+    output: '“Unit 4B — leaking under kitchen sink. Photo received, shutoff unknown, tenant home after 4 PM. Pattern: third sink leak in this building in 45 days.”'
   },
   clinic: {
     label: 'Clinic / wellness system',
     risk: 'Privacy cautious',
     title: 'Admin help without pretending AI is a provider.',
-    summary: 'AI can route non-clinical questions, draft appointment follow-ups, organize intake paperwork, and answer visible policy questions while leaving medical or sensitive decisions to people.',
+    summary: 'AI can route non-clinical questions, draft appointment follow-ups, organize intake paperwork, and answer approved policy questions while leaving medical or sensitive decisions to people.',
     steps: [
       'Patient asks a non-urgent admin question.',
       'AI checks visible policies or approved scripts.',
       'Sensitive topics are routed to staff instead of answered.',
       'Staff gets a concise handoff and draft response.'
     ],
-    output: '“New client inquiry — wants availability, insurance/payment policy, and first-visit paperwork. Clinical advice not requested.”'
+    output: '“New client inquiry — wants availability, insurance/payment policy, and first-visit paperwork. Clinical advice not requested. Staff approval required before sending.”'
   },
   retail: {
     label: 'Retail / service system',
     risk: 'Inventory aware',
-    title: 'Product and service questions answered without burying the counter.',
-    summary: 'The system can answer common product questions, draft follow-up messages, summarize requests, and help staff find policies or product details faster.',
+    title: 'Product and service questions turned into staff-ready signals.',
+    summary: 'The system can answer common product questions, draft follow-up messages, summarize requests, help staff find policies faster, and show which product questions keep repeating.',
     steps: [
       'Customer asks about availability, service, or fit.',
       'AI checks approved info or asks for missing details.',
       'A helpful reply is drafted for staff review.',
       'Follow-up task is created if the customer needs a callback.'
     ],
-    output: '“Customer looking for winter boot sizing help. Needs women’s 8.5, waterproof, under stated budget, can come in Friday.”'
+    output: '“Customer looking for winter boot sizing help. Needs women’s 8.5, waterproof, under stated budget, can come Friday. Pattern: sizing questions rose after last campaign.”'
   }
 };
 

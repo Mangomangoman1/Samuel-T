@@ -1,0 +1,26 @@
+/* TEAM */
+
+Business: Actrix
+Operator: Samuel
+Location: Idaho, United States
+Site: https://www.actrix.me/
+Email: wpbflsf@gmail.com
+Phone: +1-208-366-6111
+
+/* SITE */
+
+Purpose: Technical AI implementation, custom AI agent stacks, workflow integration, operations intelligence, AI automation, support, and training for Idaho companies.
+Primary audience: Idaho businesses with company-specific workflows, scattered tools, legacy handoffs, repeated admin, missed leads, reporting gaps, staff AI questions, or operational weak spots.
+Service area: Idaho statewide, including Boise, Meridian, Nampa, Idaho Falls, Twin Falls, Pocatello, Rexburg, Moscow, Coeur d'Alene, Hailey, Ketchum, Sun Valley, and Bellevue.
+Canonical domain: https://www.actrix.me/
+Sitemap: https://www.actrix.me/sitemap.xml
+
+/* PRINCIPLES */
+
+No fake local offices.
+Technical implementation before hype.
+One useful workflow first when that is the right scope.
+Custom agent stacks for companies with more complex needs.
+Human approval for money, reputation, safety, sensitive customer data, and company policy.
+Agents should fit existing workflows before replacing them.
+Daily operating data should help the business see weak spots and practical next actions.

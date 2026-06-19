@@ -54,3 +54,15 @@ a, button, summary, [role="button"] { -webkit-tap-highlight-color: transparent; 
    Keeps the shrink animation. (Inline-page nav; styles.css nav flexes, unaffected.) */
 .nav.is-constricted .phone { display: none; }
 .nav.is-constricted .brand small { display: none; }
+
+/* 8. Tasteful scroll-reveal (progressive enhancement). enhance.js adds .reveal-on to <html>
+   ONLY when motion is permitted; then each section gets .in as it enters the viewport. With
+   no-JS or prefers-reduced-motion the class is never added, so everything stays visible.
+   The hero (first section) is excluded — it has its own on-load entrance. */
+html.reveal-on main > section:not(:first-child) {
+  opacity: 0;
+  transform: translateY(24px);
+  transition: opacity .7s ease, transform .7s cubic-bezier(.2, .7, .3, 1);
+  will-change: opacity, transform;
+}
+html.reveal-on main > section:not(:first-child).in { opacity: 1; transform: none; }

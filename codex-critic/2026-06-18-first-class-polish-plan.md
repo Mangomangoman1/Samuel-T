@@ -302,3 +302,58 @@ backlinks + GBP, which Samuel owns).
   email fix, and full polish are LIVE on origin (Vercel auto-deploy). 
 - REMAINING: the nav fix (polish.css) is the one uncommitted change — awaits Samuel's "commit and
   push" to ship it too. Site still certifies deploy-ready.
+
+### Iteration 16 — 2026-06-18  (NAV NORMALIZED SITEWIDE)
+- Samuel noticed a couple pages used a different nav. Root cause: 41 pages had the rich inline nav
+  (centered links, scroll-shrink, <details> mobile drawer, real-logo brand) while 9 pages used a
+  flat styles.css nav (.site-header/.nav-links flex, no shrink, nav-toggle mobile).
+- Normalized all 9 (about-actrix, ai-automation-pricing, ai-automation-roi-calculator,
+  ai-workflow-integration-idaho, custom-ai-agent-stack-idaho, idaho-ai-automation-buyers-guide,
+  operations-intelligence-ai-agents-idaho, case-studies, 404) to the inline nav.
+- Mechanism (proven safe): extracted the COMPLETE inline nav CSS (67 blocks incl 8 @media + 2
+  keyframes) + the gated scroll-shrink JS (var nav=querySelector('.nav'); if(!nav)return). Per page:
+  swap .site-header HTML → .nav markup (keeping that page's links + canonical drawer minus self),
+  inject nav CSS as inline <style> (after styles.css so it governs the .nav-shell/.brand overlap),
+  inject the JS at end of body. The 41 inline pages were untouched (they don't load styles.css/script.js).
+- Piloted on case-studies first, fully verified (desktop centered links, scroll-shrink constricts,
+  phone hides via the polish.css nav fix, mobile <details> drawer opens, 96/68px clearance), THEN
+  rolled out. Re-verified pricing (desktop+mobile drawer, 17-link drawer, no overflow) and the
+  interactive ROI calculator (no layout breakage). QA on all 9: phone, one H1, valid JSON-LD,
+  clean structure, no old email — ALL PASS. Sitewide: ZERO .site-header left → all 49 on one nav.
+- DEAD CODE (optional cleanup): styles.css still has the now-unused .site-header/.nav-links/
+  .nav-toggle rules (harmless; the inline nav CSS overrides). Can strip later.
+- Uncommitted now: 9 normalized pages + polish.css (nav fix). On top of pushed reconciliation.
+
+### Iteration 17–18 — 2026-06-18  (CREATIVE RE-ENGAGEMENT — back to design work)
+- Samuel corrected me for idling ("this is a creative job... lots that can be improved"). Saved as
+  memory [[dont-idle-on-creative-mandate]]. Reset the loop from idle re-cert → ACTIVE creative run
+  with a design backlog. Honest critique: site was clean but MONOTONE + static.
+- (iter 17) MOTION & LIFE: homepage hero entrance (@keyframes heroRise, staggered rise/fade on the
+  6 text elements + artifact) + live-pulse amber dot on the proof-artifact "DETECTED SIGNAL" label.
+  Sitewide scroll-reveal: enhance.js (IntersectionObserver, adds .reveal-on only when motion allowed;
+  safety-net reveals in-viewport sections after 1.8s so content is NEVER stuck hidden) + polish.css
+  rule #8 (sections below hero rise+fade on scroll). Linked enhance.js on all 50 pages. Graceful:
+  no-JS / reduced-motion → everything visible. Verified homepage + boise; zero overflow.
+- (iter 18) VISUAL RHYTHM: first tried subtle lighter bands (too faint) → switched to RECESSED WELLS
+  (rgba(13,11,8,.42) + soft inset edges) on alternating sections (field-note quote, leak-ledger,
+  faq). The philosophy pull-quote now reads as a distinct contemplative moment; page has cadence
+  instead of flat scroll. Verified desktop boundary + mobile (375, no overflow, band clamps to vw).
+- NEXT creative backlog: (2) two-tone amber+blue accent system, (3) elevate the CTA into a distinct
+  conversion moment, (4) more life in the proof artifacts, (5) typography depth.
+- All uncommitted-but-verified, clean for Samuel to batch-commit.
+
+### Iteration 19 — 2026-06-18  (two-tone accent system — amber + the logo blue)
+- Problem: the real logo is blue but the whole UI was amber — the blue read as a disconnected mark.
+  The site already had a cool->warm SEMANTIC (--sky for Sense/Watch, --amber for Think/Approve,
+  --sage for Act) but the cool blue (--sky #9ebfda) was too muted to connect to the vibrant logo.
+- Made the blue DELIBERATE + logo-connected (homepage, the two signature elements):
+  (a) hero proof artifact now flows cool->warm — the "Watch" lane (sensing/input) gets a blue tint
+      + blue index (rgba(94,155,240,.16) / #2f63ab); the "Approve" lane keeps amber. Reads as
+      blue-sensing -> amber-action.
+  (b) refined --sky #9ebfda -> #84b4f2 (clearer, logo-connected blue) so the agent-loop "Sense"
+      stage and the 5 cool-accent spots pop as an intentional counterpoint to amber.
+- Verified: hero artifact (Watch blue vs Approve amber reads), agent-loop (Sense=blue / Think=amber
+  / Act=green, harmonizes not clashes — distinct semantic roles). Color-only (no layout/overflow
+  risk). QA: phone, one H1, balanced braces, valid JSON-LD.
+- NEXT: extend the two-tone to inner-page proof artifacts; elevate the CTA (closeout) into a
+  distinct moment; more life in the artifacts; typography depth.

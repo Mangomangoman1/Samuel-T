@@ -16,7 +16,7 @@ Practical AI systems for Wood River Valley businesses:
 ## Contact
 
 - Phone/text: (208) 366-6111
-- Email: wpbflsf@gmail.com
+- Email: samuel@actrix.me
 
 ## Files
 

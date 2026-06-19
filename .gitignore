@@ -1,1 +1,8 @@
 commit-msg.txt
+.playwright-mcp/
+home-desktop.png
+home-hero-desktop.png
+home-mobile.png
+*-before.png
+*-after.png
+_qa-*.png

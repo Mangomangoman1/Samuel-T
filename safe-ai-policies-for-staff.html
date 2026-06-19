@@ -2,18 +2,25 @@
 <html lang="en">
 <head>
   <meta charset="utf-8">
+  <link rel="preload" href="/assets/fonts/Marcellus-Regular.ttf" as="font" type="font/ttf" crossorigin>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Safe AI Policies for Staff | Idaho Workplace Rules | Actrix</title>
   <meta name="description" content="Practical AI policies for Idaho small businesses: data privacy rules, approval checkpoints, safe automation boundaries, and staff-ready templates.">
   <meta name="robots" content="index,follow">
-  <meta name="theme-color" content="#242018">
+  <meta name="theme-color" content="#27231d">
   <link rel="canonical" href="https://www.actrix.me/safe-ai-policies-for-staff">
   <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+  <link rel="manifest" href="/site.webmanifest">
   <meta property="og:type" content="website">
   <meta property="og:title" content="Safe AI Policies for Staff | Idaho Workplace Rules | Actrix">
   <meta property="og:description" content="Practical AI policies for Idaho small businesses: data privacy rules, approval checkpoints, safe automation boundaries, and staff-ready templates.">
   <meta property="og:url" content="https://www.actrix.me/safe-ai-policies-for-staff">
   <meta property="og:image" content="https://www.actrix.me/og-card.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="Actrix: custom AI agent stacks for Idaho companies">
+  <meta name="twitter:image:alt" content="Actrix: custom AI agent stacks for Idaho companies">
   <meta name="twitter:card" content="summary_large_image">
   <style>
     @font-face{font-family:"Merom Sans";src:url('/assets/fonts/MeromSans-Regular.ttf') format('truetype');font-weight:400;font-display:swap}@font-face{font-family:"Merom Sans";src:url('/assets/fonts/MeromSans-SemiBold.ttf') format('truetype');font-weight:700;font-display:swap}@font-face{font-family:"Merom Sans";src:url('/assets/fonts/MeromSans-Bold.ttf') format('truetype');font-weight:850;font-display:swap}@font-face{font-family:Marcellus;src:url('/assets/fonts/Marcellus-Regular.ttf') format('truetype');font-weight:400;font-display:swap}
@@ -47,7 +54,7 @@
     .help{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}.help-item{border:1px solid var(--line);border-radius:18px;background:rgba(62,74,86,.76);padding:22px;position:relative}.help-item:before{content:attr(data-num);position:absolute;top:-8px;right:16px;font-family:var(--font-title);font-size:3.8rem;color:rgba(230,210,194,.07);font-weight:400;line-height:1;pointer-events:none}.help-item h3{font-size:1.2rem;margin-bottom:8px}.help-item p{color:var(--muted);margin:0;line-height:1.5;font-size:.95rem}
 
     /* Policy template preview */
-    .template-preview{border:1px solid var(--line);border-radius:18px;background:rgba(62,74,86,.7);overflow:hidden}.tpl-head{padding:20px 28px;border-bottom:1px solid var(--line);display:flex;justify-content:space-between;align-items:center;gap:14px}.tpl-head strong{font-family:var(--font-title);font-size:1.3rem;color:var(--paper)}.tpl-head .tpl-badge{font-size:.7rem;text-transform:uppercase;letter-spacing:.1em;font-weight:950;padding:6px 12px;border-radius:6px;background:rgba(110,231,183,.1);border:1px solid rgba(110,231,183,.2);color:#6ee7b7}.tpl-body{padding:28px;display:grid;grid-template-columns:repeat(3,1fr);gap:20px}.tpl-col{border-right:1px solid var(--line);padding-right:20px}.tpl-col:last-child{border-right:0;padding-right:0}.tpl-col h4{font-size:.72rem;text-transform:uppercase;letter-spacing:.12em;color:var(--amber);font-weight:950;margin:0 0 14px}.tpl-col ul{list-style:none;padding:0;margin:0;display:flex;flex-direction:column;gap:8px}.tpl-col li{color:var(--muted);font-size:.86rem;line-height:1.45;padding-left:16px;position:relative}.tpl-col li:before{content:"✓";position:absolute;left:0;color:var(--sage);font-weight:900;font-size:.75rem}
+    .template-preview{border:1px solid var(--line);border-radius:18px;background:rgba(62,74,86,.7);overflow:hidden}.tpl-head{padding:20px 28px;border-bottom:1px solid var(--line);display:flex;justify-content:space-between;align-items:center;gap:14px}.tpl-head strong{font-family:var(--font-title);font-size:1.3rem;color:var(--paper)}.tpl-head .tpl-badge{font-size:.7rem;text-transform:uppercase;letter-spacing:.1em;font-weight:950;padding:6px 12px;border-radius:6px;background:rgba(110,231,183,.1);border:1px solid rgba(110,231,183,.2);color:#6ee7b7}.tpl-body{padding:28px;display:grid;grid-template-columns:repeat(3,1fr);gap:20px}.tpl-col{border-right:1px solid var(--line);padding-right:20px}.tpl-col:last-child{border-right:0;padding-right:0}.tpl-col .mock-head,.tpl-col h4{font-size:.72rem;text-transform:uppercase;letter-spacing:.12em;color:var(--amber);font-weight:950;margin:0 0 14px}.tpl-col ul{list-style:none;padding:0;margin:0;display:flex;flex-direction:column;gap:8px}.tpl-col li{color:var(--muted);font-size:.86rem;line-height:1.45;padding-left:16px;position:relative}.tpl-col li:before{content:"✓";position:absolute;left:0;color:var(--sage);font-weight:900;font-size:.75rem}
 
     /* FAQ */
     .faq-wrap details{border:1px solid var(--line);border-radius:16px;margin-bottom:8px;background:rgba(62,74,86,.6);overflow:hidden;transition:border-color .22s ease}.faq-wrap details[open]{border-color:rgba(230,210,194,.24)}.faq-wrap summary{padding:18px 20px;font-weight:800;font-size:1.02rem;cursor:pointer;display:flex;justify-content:space-between;align-items:center;gap:12px}.faq-wrap summary:after{content:"+";font-size:1.4rem;color:var(--amber);font-weight:300;transition:transform .22s ease}.faq-wrap details[open] summary:after{content:"−"}.faq-wrap details[open] summary{border-bottom:1px solid var(--line)}.faq-wrap .faq-answer{padding:18px 20px;color:var(--muted);line-height:1.55}.faq-wrap .faq-answer p{margin:0}
@@ -141,6 +148,7 @@ body:before{content:"";position:fixed;inset:0;pointer-events:none;z-index:-1;opa
       }
     ]
   }</script>
+  <link rel="stylesheet" href="/polish.css">
 </head>
 <body>
   <a class="skip" href="#main">Skip to content</a>
@@ -148,7 +156,7 @@ body:before{content:"";position:fixed;inset:0;pointer-events:none;z-index:-1;opa
   <header class="nav">
     <div class="nav-shell">
       <a class="brand" href="/" aria-label="Actrix home"><span class="mark" aria-hidden="true"><img src="/assets/actrix-icon.png" alt="" width="68" height="68" decoding="async"></span><span><strong>Actrix</strong><small>Idaho AI implementation</small></span></a>
-      <nav class="links" aria-label="Primary navigation"><span class="nav-center"><a href="/how-it-works">How it works</a><a href="/ai-readiness-checklist">AI readiness checklist</a><a href="/site-map">Site map</a></span><a class="phone" href="tel:+12083666111">(208) 366-6111</a><a class="cta nav-cta" href="sms:+12083666111?&body=Hi%20Actrix%2C%20the%20business%20leak%20I%20want%20to%20map%20is%3A%20">Text the workflow</a></nav><details class="mobile-menu"><summary><span>Menu</span></summary><div class="mobile-menu-panel"><a href="/">Home</a><a href="/idaho-ai-services">Idaho AI Services</a><a href="/custom-ai-agent-stack-idaho">Agent stacks</a><a href="/ai-workflow-integration-idaho">Workflow integration</a><a href="/how-it-works">How it works</a><a href="/solutions">Solutions</a><a href="/site-map">Full site map</a><a href="/missed-call-rescue">Missed Call Rescue</a><a href="/ai-quote-intake">Quote Intake</a><a href="/local-ai-starter-systems">Starter Systems</a><a href="/ai-for-contractors">For Contractors</a><a href="/ai-for-real-estate">For Real Estate</a><a href="/ai-for-professional-services">For Professional Services</a><a href="/ai-for-wellness-health">For Wellness &amp; Health</a><a href="/ai-for-restaurants-cafes">For Restaurants &amp; Cafes</a><a href="/business-automation-idaho">Business Automation</a><a href="/what-ai-can-automate-for-small-business">What AI can automate</a><a href="/#faq">FAQ</a><a class="mobile-cta" href="sms:+12083666111?&body=Hi%20Actrix%2C%20the%20business%20leak%20I%20want%20to%20map%20is%3A%20">Text the workflow</a></div></details>
+      <nav class="links" aria-label="Primary navigation"><span class="nav-center"><a href="/idaho-ai-services">AI services</a><a href="/how-it-works">How it works</a><a href="/ai-automation-pricing">Pricing</a><a href="/ai-training-idaho">AI training</a><a href="/solutions">Solutions</a></span><a class="phone" href="tel:+12083666111">(208) 366-6111</a><a class="cta nav-cta" href="sms:+12083666111?&body=Hi%20Actrix%2C%20the%20business%20leak%20I%20want%20to%20map%20is%3A%20">Text the workflow</a></nav><details class="mobile-menu"><summary><span>Menu</span></summary><div class="mobile-menu-panel"><a href="/">Home</a><a href="/idaho-ai-services">AI services</a><a href="/how-it-works">How it works</a><a href="/ai-automation-pricing">Pricing</a><a href="/solutions">Solutions</a><a href="/custom-ai-agent-stack-idaho">Agent stacks</a><a href="/ai-workflow-integration-idaho">Workflow</a><a href="/operations-intelligence-ai-agents-idaho">Ops intelligence</a><a href="/business-automation-idaho">Business automation</a><a href="/missed-call-rescue">Missed-call rescue</a><a href="/ai-quote-intake">Quote intake</a><a href="/local-ai-starter-systems">Starter systems</a><a href="/idaho-ai-automation-buyers-guide">Buyer's guide</a><a href="/ai-automation-roi-calculator">ROI calculator</a><a href="/about-actrix">About</a><a href="/case-studies">Case studies</a><a href="/site-map">Site map</a><a class="mobile-cta" href="sms:+12083666111?&body=Hi%20Actrix%2C%20the%20business%20leak%20I%20want%20to%20map%20is%3A%20">Text the workflow</a></div></details>
     </div>
   </header>
 
@@ -299,7 +307,7 @@ body:before{content:"";position:fixed;inset:0;pointer-events:none;z-index:-1;opa
         </div>
         <div class="tpl-body">
           <div class="tpl-col">
-            <h4>Always do</h4>
+            <div class="mock-head">Always do</div>
             <ul>
               <li>Use approved AI tools only</li>
               <li>Anonymize customer examples</li>
@@ -311,7 +319,7 @@ body:before{content:"";position:fixed;inset:0;pointer-events:none;z-index:-1;opa
             </ul>
           </div>
           <div class="tpl-col">
-            <h4>Never do</h4>
+            <div class="mock-head">Never do</div>
             <ul>
               <li>Paste customer PII into prompts</li>
               <li>Auto-send AI output to customers</li>
@@ -323,7 +331,7 @@ body:before{content:"";position:fixed;inset:0;pointer-events:none;z-index:-1;opa
             </ul>
           </div>
           <div class="tpl-col">
-            <h4>Ask a human first</h4>
+            <div class="mock-head">Ask a human first</div>
             <ul>
               <li>Pricing changes or quotes</li>
               <li>Customer complaints or disputes</li>

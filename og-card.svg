@@ -1,4 +1,4 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630" role="img" aria-label="AI Systems for Wood River Valley Businesses by Samuel">
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630" role="img" aria-label="Actrix — Idaho AI Implementation Firm">
   <defs>
     <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
       <stop offset="0" stop-color="#372d23"/>
@@ -24,10 +24,10 @@
   <path d="M92 520 C260 440 382 478 530 350 C685 216 820 260 970 146 C1055 82 1115 74 1160 48" fill="none" stroke="#f0b762" stroke-width="6" stroke-linecap="round" stroke-dasharray="18 22" opacity="0.86"/>
   <g transform="translate(78 92)">
     <rect x="0" y="0" width="1044" height="446" rx="38" fill="#2c251d" opacity="0.76" stroke="#efe3cc" stroke-opacity="0.14"/>
-    <text x="54" y="92" fill="#f0b762" font-family="Aptos, Segoe UI, sans-serif" font-size="23" font-weight="800" letter-spacing="4">WOOD RIVER VALLEY AI SYSTEMS</text>
-    <text x="54" y="190" fill="#efe3cc" font-family="Georgia, Times New Roman, serif" font-size="76" font-weight="700">Put AI to work</text>
-    <text x="54" y="270" fill="#efe3cc" font-family="Georgia, Times New Roman, serif" font-size="76" font-weight="700">where business repeats.</text>
-    <text x="58" y="340" fill="#cdbf9f" font-family="Aptos, Segoe UI, sans-serif" font-size="30">Custom agents · automated replies · quote workflows · practical integrations</text>
-    <text x="58" y="392" fill="#f3d08a" font-family="Aptos, Segoe UI, sans-serif" font-size="28" font-weight="800">Samuel · (208) 366-6111 · wpbflsf@gmail.com</text>
+    <text x="54" y="92" fill="#f0b762" font-family="Aptos, Segoe UI, sans-serif" font-size="23" font-weight="800" letter-spacing="4">IDAHO AI IMPLEMENTATION FIRM</text>
+    <text x="54" y="190" fill="#efe3cc" font-family="Georgia, Times New Roman, serif" font-size="76" font-weight="700">Custom AI agent stacks</text>
+    <text x="54" y="270" fill="#efe3cc" font-family="Georgia, Times New Roman, serif" font-size="76" font-weight="700">for Idaho companies.</text>
+    <text x="58" y="340" fill="#cdbf9f" font-family="Aptos, Segoe UI, sans-serif" font-size="30">Custom agents · workflow automation · support · training</text>
+    <text x="58" y="392" fill="#f3d08a" font-family="Aptos, Segoe UI, sans-serif" font-size="28" font-weight="800">Actrix · (208) 366-6111 · samuel@actrix.me</text>
   </g>
 </svg>

@@ -4,7 +4,7 @@ Business: Actrix
 Operator: Samuel
 Location: Idaho, United States
 Site: https://www.actrix.me/
-Email: wpbflsf@gmail.com
+Email: samuel@actrix.me
 Phone: +1-208-366-6111
 
 /* SITE */

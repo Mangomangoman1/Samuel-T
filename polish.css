@@ -1,0 +1,46 @@
+/* ============================================================
+   Actrix polish layer — sitewide craft refinements.
+   Loaded last on every page. ADDITIVE ONLY: adds detail that
+   isn't set elsewhere; never overrides layout or component color.
+   Tokens fall back gracefully on pages that don't define them.
+   ============================================================ */
+
+/* 1. Crisper text on the dark palette (lighter, sharper glyphs). */
+html {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* 2. Branded text selection — amber wash, dark ink. */
+::selection {
+  background: rgba(227, 191, 109, 0.85);
+  color: #221d17;
+  text-shadow: none;
+}
+
+/* 3. On-brand scrollbar: subtle by default, amber on hover. */
+* { scrollbar-width: thin; scrollbar-color: rgba(222, 230, 238, 0.22) transparent; }
+::-webkit-scrollbar { width: 11px; height: 11px; }
+::-webkit-scrollbar-track { background: transparent; }
+::-webkit-scrollbar-thumb {
+  background: rgba(222, 230, 238, 0.18);
+  background-clip: content-box;
+  border: 3px solid transparent;
+  border-radius: 999px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(227, 191, 109, 0.55);
+  background-clip: content-box;
+}
+
+/* 4. Typographic finish: balanced headings, no orphaned body lines. */
+h1, h2, h3, h4 { text-wrap: balance; }
+p, li, figcaption, blockquote { text-wrap: pretty; }
+
+/* 5. Sticky-nav-aware anchor jumps (so #faq etc. don't hide under the bar).
+   :where() keeps specificity at 0 so it never fights page rules. */
+:where([id]) { scroll-margin-top: 96px; }
+
+/* 6. Predictable media + iOS tap behaviour. */
+img, svg, video { max-width: 100%; height: auto; }
+a, button, summary, [role="button"] { -webkit-tap-highlight-color: transparent; }

@@ -451,7 +451,7 @@ function siteFooter() {
       <div><strong>Actrix</strong><p>Custom AI agent stack implementation for Idaho companies.</p></div>
       <div><strong>Implement</strong><a href="/custom-ai-agent-stack-idaho">Agent stacks</a><a href="/ai-workflow-integration-idaho">Workflow integration</a><a href="/operations-intelligence-ai-agents-idaho">Operations intelligence</a><a href="/idaho-ai-services">Idaho AI services</a></div>
       <div><strong>Trust</strong><a href="/about-actrix">About</a><a href="/ai-automation-pricing">Pricing</a><a href="/case-studies">Proof patterns</a><a href="/idaho-ai-automation-buyers-guide">Buyer's guide</a><a href="/ai-automation-roi-calculator">ROI calculator</a></div>
-      <div><strong>Contact</strong><a href="tel:+12083666111">(208) 366-6111</a><a href="mailto:wpbflsf@gmail.com">wpbflsf@gmail.com</a></div>
+      <div><strong>Contact</strong><a href="tel:+12083666111">(208) 366-6111</a><a href="mailto:samuel@actrix.me">samuel@actrix.me</a></div>
     </div>
     <div class="container footer-bottom"><span>&copy; <span data-year></span> Actrix</span><a href="/site-map">Full site map</a></div>
   </footer>`;
@@ -694,7 +694,7 @@ function updateHomepageSchema() {
           "Actrix is an Idaho technical AI implementation firm building custom AI agent stacks, workflow integrations, operational intelligence agents, AI automation, staff training, and owner-approved systems for businesses across Idaho.",
         url: `${domain}/`,
         telephone: "+12083666111",
-        email: "wpbflsf@gmail.com",
+        email: "samuel@actrix.me",
         logo: `${domain}/favicon.svg`,
         image: `${domain}/og-card.png`,
         priceRange: "Starter agents, installed workflows, and custom agent stacks are scoped by workflow complexity and integration depth.",
@@ -949,7 +949,7 @@ function updateEntityFiles() {
 Actrix is a statewide Idaho technical AI implementation firm for companies that need custom AI agent stacks, workflow integration, operations intelligence, AI automation, AI support, staff training, and human-approved systems.
 
 Primary site: https://www.actrix.me/
-Contact: wpbflsf@gmail.com
+Contact: samuel@actrix.me
 Phone: +1-208-366-6111
 Service area: Idaho, including Boise, Meridian, Nampa, Idaho Falls, Twin Falls, Pocatello, Rexburg, Moscow, Coeur d'Alene, Hailey, Ketchum, Sun Valley, Bellevue, and nearby communities.
 
@@ -986,7 +986,7 @@ Business: Actrix
 Operator: Samuel
 Location: Idaho, United States
 Site: https://www.actrix.me/
-Email: wpbflsf@gmail.com
+Email: samuel@actrix.me
 Phone: +1-208-366-6111
 
 /* SITE */

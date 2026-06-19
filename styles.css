@@ -32,15 +32,17 @@
 
 :root {
   color-scheme: dark;
-  --bg: #242018;
-  --bg-deep: #191610;
+  --bg: #27231d;
+  --bg-deep: #1f1c17;
   --panel: #697d8f;
   --panel-strong: #596b7b;
-  --paper: #e5edf3;
-  --paper-muted: #bfccd7;
-  --muted: #bfccd7;
-  --copper: #d9aa86;
+  --paper: #DEE6EE;
+  --paper-muted: #B2C1CF;
+  --muted: #B2C1CF;
+  --copper: #d79a73;
   --copper-bright: #f0c49f;
+  --amber: #e3bf6d;
+  --amber-deep: #d89f60;
   --ember: #eed1bc;
   --sage: #a7bfab;
   --sky: #bfd2e1;
@@ -275,7 +277,7 @@ button {
 }
 
 .nav-links .nav-phone {
-  color: var(--ember);
+  color: var(--amber);
   border: 1px solid rgba(230, 210, 194, 0.24);
   margin-left: 4px;
 }
@@ -381,7 +383,7 @@ button {
   flex-wrap: wrap;
   gap: 9px;
   margin: 0 0 16px;
-  color: var(--copper-bright);
+  color: var(--amber);
   text-transform: uppercase;
   font-weight: 850;
   letter-spacing: 0.12em;
@@ -421,7 +423,7 @@ button {
   border-radius: 10px;
   border: 1px solid rgba(230, 210, 194, 0.38);
   background: rgba(62, 74, 86, 0.52);
-  color: var(--ember);
+  color: var(--amber);
   font-size: 0.9rem;
   font-weight: 900;
   box-shadow: none;
@@ -460,9 +462,10 @@ button {
 }
 
 .btn-primary {
-  color: var(--bg-deep);
-  background: linear-gradient(135deg, var(--ember), var(--copper-bright));
-  box-shadow: 0 12px 24px rgba(230, 210, 194, 0.20);
+  color: #221d17;
+  background: linear-gradient(180deg, var(--amber), var(--amber-deep));
+  border-color: rgba(227, 191, 109, 0.72);
+  box-shadow: 0 12px 24px rgba(227, 191, 109, 0.20);
 }
 
 .btn-secondary {
@@ -487,7 +490,7 @@ button {
 }
 
 .hero-contact-line a:first-child {
-  color: var(--ember);
+  color: var(--amber);
 }
 
 .trust-strip {
@@ -587,7 +590,7 @@ button {
 .proof-stat span,
 .tool-board span {
   display: block;
-  color: var(--copper-bright);
+  color: var(--amber);
   text-transform: uppercase;
   letter-spacing: 0.1em;
   font-size: 0.7rem;
@@ -605,7 +608,7 @@ button {
 .ticket-status {
   flex: 0 0 auto;
   border: 1px solid rgba(230, 210, 194, 0.35);
-  color: var(--ember);
+  color: var(--amber);
   border-radius: 8px;
   padding: 7px 10px;
   font-size: 0.72rem;
@@ -671,7 +674,7 @@ button {
 
 .rail-step.active span {
   background: rgba(230, 210, 194, 0.18);
-  color: var(--ember);
+  color: var(--amber);
   border-color: rgba(230, 210, 194, 0.45);
 }
 
@@ -927,7 +930,7 @@ button {
 }
 
 .card-number {
-  color: var(--copper-bright);
+  color: var(--amber);
   font-weight: 950;
   font-size: 0.78rem;
   letter-spacing: 0.12em;
@@ -1014,7 +1017,7 @@ button {
   justify-content: space-between;
   align-items: center;
   gap: 20px;
-  color: var(--copper-bright);
+  color: var(--amber);
   text-transform: uppercase;
   letter-spacing: 0.1em;
   font-size: 0.72rem;
@@ -1055,7 +1058,7 @@ button {
   height: 34px;
   border-radius: 12px;
   background: rgba(230, 210, 194, 0.17);
-  color: var(--ember);
+  color: var(--amber);
   font-weight: 950;
 }
 
@@ -1163,7 +1166,7 @@ button {
   width: 44px;
   height: 44px;
   border-radius: 999px;
-  color: var(--ember);
+  color: var(--amber);
   background: var(--panel-strong);
   border: 1px solid rgba(230, 210, 194, 0.3);
   font-weight: 950;
@@ -1193,7 +1196,7 @@ button {
 .offer-card a {
   display: inline-flex;
   margin-top: 16px;
-  color: var(--ember);
+  color: var(--amber);
   font-weight: 900;
 }
 
@@ -1262,7 +1265,7 @@ button {
 }
 
 .direct-contact-card strong {
-  color: var(--ember);
+  color: var(--amber);
 }
 
 .brief-builder {
@@ -1364,7 +1367,7 @@ button {
 .faq-list summary::after {
   content: "+";
   float: right;
-  color: var(--copper-bright);
+  color: var(--amber);
 }
 
 .faq-list details[open] summary::after {
@@ -1404,7 +1407,7 @@ button {
 }
 
 .footer-grid a:hover {
-  color: var(--ember);
+  color: var(--amber);
 }
 
 .footer-bottom {

@@ -1,0 +1,21 @@
+{
+  "name": "Actrix — Idaho AI Implementation Firm",
+  "short_name": "Actrix",
+  "description": "Practical AI implementation and custom agent systems for Idaho businesses.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#27231d",
+  "theme_color": "#27231d",
+  "icons": [
+    {
+      "src": "/android-chrome-192x192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "/android-chrome-512x512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
+}

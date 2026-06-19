@@ -269,3 +269,21 @@ backlinks + GBP, which Samuel owns).
   email, sitemap covers all content + correctly excludes 404. **ALL PASS → DEPLOY-READY.**
 - Builds on prior full audits (iter 8: all 3,603 links resolve; iter 12: zero heading skips).
 - CONCLUSION: site is complete + deploy-ready. The right next action is Samuel's: commit + ship.
+
+### Iteration 14 — 2026-06-18  (GIT CRISIS RESOLVED + REAL LOGO ADOPTED)
+- Samuel hit a merge conflict in GitHub Desktop (51 files). Root cause: my polish work got committed
+  locally (144552e), while a SEPARATE favicon/logo effort was pushed to origin/main (3 commits) —
+  both edited every HTML <head>, so the pull collided. Nothing was lost.
+- Aborted the merge safely (git merge --abort → back to 144552e with 100% of the polish intact).
+- DISCOVERY: the remote favicon work contained the REAL Actrix logo (blue "X" mark) + a complete,
+  coherent icon set generated from it (favicon.ico/16/32/svg, apple-touch, android-chrome 192/512).
+  My OG card + app icons had used a placeholder graph mark. Samuel chose: real logo EVERYWHERE.
+- Reconciled (best-of-both): adopted the real-logo icon set, reconciled every page's icon <head>
+  block (full favicon set + manifest.json), rebuilt the OG card with the real logo (kept the polished
+  card design), fixed manifest theme to #27231d, removed redundant graph-mark files
+  (icon-192/512, site.webmanifest, _icon-render.html). KEPT all polish + the email fix (critical:
+  the remote's schema still had the OLD wpbflsf email — did NOT take it).
+- Committed (743e602) + `git merge -s ours origin/main` (84e97e6) → branches unified, working tree
+  clean, **ahead of origin by 3, behind 0** (clean push, no force, no conflicts).
+- Re-certified: ALL pre-flight checks PASS; 50/50 pages on real-logo favicons; manifest valid.
+- PENDING: Samuel's go to `git push` (the only remaining step; outward-facing, awaiting his OK).

@@ -287,3 +287,18 @@ backlinks + GBP, which Samuel owns).
   clean, **ahead of origin by 3, behind 0** (clean push, no force, no conflicts).
 - Re-certified: ALL pre-flight checks PASS; 50/50 pages on real-logo favicons; manifest valid.
 - PENDING: Samuel's go to `git push` (the only remaining step; outward-facing, awaiting his OK).
+
+### Iteration 15 — 2026-06-18  (nav scroll-shrink overlap fix + push confirmed)
+- Samuel reported a real bug: on scroll the nav bar constricts (.is-constricted), but the centered
+  link cluster (.nav-center) is absolutely positioned (reserves no layout space), so at the narrower
+  width the links overlapped the phone pill.
+- Samuel chose the approach: keep all 5 links visible, hide the PHONE pill on constrict (CTA stays;
+  phone is in every footer). Added to polish.css (site-wide, one block):
+    .nav.is-constricted .phone { display:none } + .nav.is-constricted .brand small { display:none }
+  (the subtitle-tuck gives the centered links left-side clearance from the brand).
+- Verified: constricted nav shows all 5 links + CTA, phone hidden, 88px left gap / 42px right gap,
+  ZERO overlap, shrink animation intact. styles.css pages have no shrink (flex nav) → unaffected.
+- PUSH CONFIRMED: Samuel pushed the reconciliation — main == origin/main == 74481f0. The real logo,
+  email fix, and full polish are LIVE on origin (Vercel auto-deploy). 
+- REMAINING: the nav fix (polish.css) is the one uncommitted change — awaits Samuel's "commit and
+  push" to ship it too. Site still certifies deploy-ready.

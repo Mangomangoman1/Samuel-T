@@ -44,3 +44,13 @@ p, li, figcaption, blockquote { text-wrap: pretty; }
 /* 6. Predictable media + iOS tap behaviour. */
 img, svg, video { max-width: 100%; height: auto; }
 a, button, summary, [role="button"] { -webkit-tap-highlight-color: transparent; }
+
+/* 7. Nav scroll-shrink overlap fix. On scroll the bar constricts (.is-constricted),
+   but the centered link cluster (.nav-center) is absolutely positioned and reserves
+   no layout space, so it overlapped the phone pill at the narrower width. Keep all
+   nav links visible; hide the phone PILL when constricted so the links clear the CTA
+   (the Text-the-workflow CTA stays; phone is in every footer). The brand subtitle
+   also tucks away on constrict to give the centered links left-side clearance.
+   Keeps the shrink animation. (Inline-page nav; styles.css nav flexes, unaffected.) */
+.nav.is-constricted .phone { display: none; }
+.nav.is-constricted .brand small { display: none; }
